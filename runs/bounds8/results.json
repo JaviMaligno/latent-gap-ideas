@@ -1,0 +1,940 @@
+{
+  "sources": {
+    "arxiv/coherent_search/claude-sonnet-5-5": {
+      "distinct_texts": 2160,
+      "original_unresolved": 2159,
+      "opus_missing_opus": 2160,
+      "original_settled": 1,
+      "original_missing_embedding": 1,
+      "original_negative": 1
+    },
+    "arxiv/coherent_search/claude-sonnet-5-5-free": {
+      "distinct_texts": 425,
+      "original_unresolved": 425,
+      "opus_missing_opus": 425
+    },
+    "arxiv/coherent_search/claude-sonnet-5-5-random": {
+      "distinct_texts": 440,
+      "original_unresolved": 440,
+      "opus_missing_opus": 440
+    },
+    "arxiv/coherent_search/gateway-gpt-6-luna": {
+      "distinct_texts": 2197,
+      "original_unresolved": 2197,
+      "opus_missing_opus": 2197
+    },
+    "coherent_calibration": {
+      "distinct_texts": 200,
+      "original_settled": 200,
+      "original_missing_embedding": 150,
+      "original_negative": 157,
+      "opus_missing_opus": 200,
+      "original_positive": 43,
+      "original_embedded": 50
+    },
+    "cover/queue": {
+      "distinct_texts": 9,
+      "original_settled": 9,
+      "original_embedded": 9,
+      "original_positive": 4,
+      "opus_settled": 9,
+      "opus_embedded": 9,
+      "opus_positive": 3,
+      "original_negative": 5,
+      "opus_negative": 6
+    },
+    "fluent-search/cputest": {
+      "distinct_texts": 2,
+      "original_settled": 2,
+      "original_embedded": 2,
+      "original_negative": 2,
+      "opus_missing_opus": 2
+    },
+    "fluent-search/full": {
+      "distinct_texts": 3166,
+      "original_unresolved": 1060,
+      "opus_missing_opus": 3166,
+      "original_settled": 2106,
+      "original_embedded": 2106,
+      "original_negative": 1982,
+      "original_positive": 124
+    },
+    "fluent-search/smoke": {
+      "distinct_texts": 69,
+      "original_settled": 62,
+      "original_embedded": 62,
+      "original_negative": 61,
+      "opus_missing_opus": 69,
+      "original_unresolved": 7,
+      "original_positive": 1
+    },
+    "fluent-search/smoke2": {
+      "distinct_texts": 49,
+      "original_settled": 41,
+      "original_embedded": 41,
+      "original_negative": 39,
+      "opus_missing_opus": 49,
+      "original_unresolved": 8,
+      "original_positive": 2
+    },
+    "fluent-search/smoke6": {
+      "distinct_texts": 68,
+      "original_settled": 68,
+      "original_embedded": 68,
+      "original_negative": 68,
+      "opus_missing_opus": 68
+    },
+    "fluent-search/smoke7": {
+      "distinct_texts": 64,
+      "original_unresolved": 21,
+      "opus_missing_opus": 64,
+      "original_settled": 43,
+      "original_embedded": 43,
+      "original_negative": 37,
+      "original_positive": 6
+    },
+    "fluent-search/smoke8": {
+      "distinct_texts": 38,
+      "original_settled": 38,
+      "original_embedded": 38,
+      "original_negative": 38,
+      "opus_missing_opus": 38
+    },
+    "fluent-search/smoke9": {
+      "distinct_texts": 43,
+      "original_settled": 43,
+      "original_embedded": 43,
+      "original_negative": 43,
+      "opus_missing_opus": 43
+    },
+    "fluent-search/steam4b": {
+      "distinct_texts": 1300,
+      "original_settled": 769,
+      "original_embedded": 769,
+      "original_negative": 663,
+      "opus_missing_opus": 1300,
+      "original_unresolved": 531,
+      "original_positive": 106
+    },
+    "fluent-search/steam4b-smoke": {
+      "distinct_texts": 33,
+      "original_settled": 31,
+      "original_embedded": 31,
+      "original_negative": 30,
+      "opus_missing_opus": 33,
+      "original_unresolved": 2,
+      "original_positive": 1
+    },
+    "fluent-search/steam4b-smoke2": {
+      "distinct_texts": 22,
+      "original_settled": 22,
+      "original_embedded": 22,
+      "original_negative": 22,
+      "opus_missing_opus": 22
+    },
+    "fluent-search/steam4b-smoke3": {
+      "distinct_texts": 30,
+      "original_settled": 23,
+      "original_embedded": 23,
+      "original_negative": 21,
+      "opus_missing_opus": 30,
+      "original_unresolved": 7,
+      "original_positive": 2
+    },
+    "fluent-search/steam4b-smoke4": {
+      "distinct_texts": 25,
+      "original_unresolved": 9,
+      "opus_missing_opus": 25,
+      "original_settled": 16,
+      "original_embedded": 16,
+      "original_positive": 4,
+      "original_negative": 12
+    },
+    "seed-rewrite/test": {
+      "distinct_texts": 2144,
+      "original_settled": 552,
+      "original_embedded": 552,
+      "original_negative": 365,
+      "opus_missing_opus": 1996,
+      "original_unresolved": 1592,
+      "original_positive": 187,
+      "opus_settled": 148,
+      "opus_embedded": 148,
+      "opus_positive": 115,
+      "opus_negative": 33
+    },
+    "seed-rewrite/tune-v1": {
+      "distinct_texts": 358,
+      "original_unresolved": 232,
+      "opus_missing_opus": 358,
+      "original_settled": 126,
+      "original_embedded": 126,
+      "original_negative": 91,
+      "original_positive": 35
+    },
+    "seed-rewrite/tune-v2": {
+      "distinct_texts": 429,
+      "original_settled": 92,
+      "original_embedded": 92,
+      "original_negative": 53,
+      "opus_missing_opus": 429,
+      "original_unresolved": 337,
+      "original_positive": 39
+    },
+    "steam/coherent_search/claude-haiku-5-5-free-smoke-r2": {
+      "distinct_texts": 8,
+      "original_unresolved": 8,
+      "opus_missing_opus": 8
+    },
+    "steam/coherent_search/claude-haiku-5-5-random-smoke-r2": {
+      "distinct_texts": 8,
+      "original_unresolved": 8,
+      "opus_missing_opus": 8
+    },
+    "steam/coherent_search/claude-haiku-5-5-smoke": {
+      "distinct_texts": 4,
+      "original_unresolved": 4,
+      "opus_missing_opus": 4
+    },
+    "steam/coherent_search/claude-haiku-5-5-smoke-j2": {
+      "distinct_texts": 4,
+      "original_unresolved": 4,
+      "opus_missing_opus": 4
+    },
+    "steam/coherent_search/claude-haiku-5-5-smoke-r2": {
+      "distinct_texts": 12,
+      "original_unresolved": 12,
+      "opus_missing_opus": 12
+    },
+    "steam/coherent_search/claude-sonnet-5-5": {
+      "distinct_texts": 2070,
+      "original_unresolved": 2070,
+      "opus_missing_opus": 2070
+    },
+    "steam/coherent_search/claude-sonnet-5-5-free": {
+      "distinct_texts": 410,
+      "original_unresolved": 410,
+      "opus_missing_opus": 410
+    },
+    "steam/coherent_search/claude-sonnet-5-5-random": {
+      "distinct_texts": 440,
+      "original_unresolved": 440,
+      "opus_missing_opus": 440
+    },
+    "steam/coherent_search/claude-sonnet-5-5-timing-k4": {
+      "distinct_texts": 8,
+      "original_unresolved": 8,
+      "opus_missing_opus": 8
+    },
+    "steam/coherent_search/gateway-gpt-6-luna": {
+      "distinct_texts": 2197,
+      "original_unresolved": 2197,
+      "opus_missing_opus": 2197
+    },
+    "steam/coherent_search/gateway-gpt-6-luna-smoke": {
+      "distinct_texts": 12,
+      "original_unresolved": 12,
+      "opus_missing_opus": 12
+    },
+    "steam/coherent_search/gateway-gpt-6-luna-smoke-r2": {
+      "distinct_texts": 18,
+      "original_unresolved": 18,
+      "opus_missing_opus": 18
+    },
+    "steam/coherent_search/gateway-gpt-6-luna-timing-k4": {
+      "distinct_texts": 8,
+      "original_unresolved": 8,
+      "opus_missing_opus": 8
+    }
+  },
+  "regularity": [
+    {
+      "gate": "original",
+      "domain": "steam",
+      "positive": 263,
+      "negative": 2163,
+      "d_min": 0.012196580462939841,
+      "L_min": 81.99019413995337,
+      "positive_pair": {
+        "domain": "steam",
+        "sha256": "5d552bcdeea363385e88b9630e9b2e8d1d95f3380061da24c4f756158e769b10",
+        "text": "Genres: Action, Adventure, Puzzle, Simulation. Tags: Action-Adventure, Adventure-Quest, Puzzle-Adventure. About: This is a first-person adventure game where you will be able to explore a beautiful world and solve a variety of puzzles to progress through the story. The game is developed with the help of a team of talented artists, programmers, and sound designers who have worked on many successful games in the past. The story is based on a classic adventure game, but with a modern soundtrack that will keep you engaged and entertained for hours on end. The soundtrack is a mix of orchestral and electronic music that will enhance the atmosphere of the game and make you feel like you are truly in the game world.",
+        "ratings": {
+          "haiku": [
+            7
+          ],
+          "luna": [
+            9
+          ]
+        },
+        "rating_sources": [
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/full/judgements.jsonl",
+            "judge": "haiku",
+            "score": 7
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/full/judgements.jsonl",
+            "judge": "luna",
+            "score": 9
+          }
+        ],
+        "embedding_sources": [
+          "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/5d552bcdeea363385e88b9630e9b2e8d1d95f3380061da24c4f756158e769b10.npy"
+        ],
+        "eligibility_flags": [
+          true
+        ]
+      },
+      "negative_pair": {
+        "domain": "steam",
+        "sha256": "031b93c44bd71a05f14f8288e2cf47bc5b8ea3922e9888901b6977322648ad7f",
+        "text": "Genres: Action, Adventure, Puzzle, Simulation. Tags: Action-Adventure, Adventure-Quest, Puzzle-Adventure. About: This is a first-person adventure game where you will be able to explore a beautiful world and solve a variety of puzzles to progress through the story. The game is developed with the help of a team of talented artists, programmers, and sound designers who have worked on many successful games in the past. The story is based on a classic adventure game, but with a modern soundtrack that will keep you engaged and entertained for hours on end. The soundtrack is a mix of orchestral and electronic music that will enhance the atmosphere of the game and make you feel like you are really in the game world.",
+        "ratings": {
+          "haiku": [
+            6
+          ]
+        },
+        "rating_sources": [
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/full/judgements.jsonl",
+            "judge": "haiku",
+            "score": 6
+          }
+        ],
+        "embedding_sources": [
+          "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/031b93c44bd71a05f14f8288e2cf47bc5b8ea3922e9888901b6977322648ad7f.npy"
+        ],
+        "eligibility_flags": [
+          true
+        ]
+      },
+      "same_label_edges_at_L_factor": {
+        "1": 53,
+        "2": 9
+      }
+    },
+    {
+      "gate": "original",
+      "domain": "arxiv",
+      "positive": 246,
+      "negative": 1355,
+      "d_min": 0.0102591554472838,
+      "L_min": 97.47391051226919,
+      "positive_pair": {
+        "domain": "arxiv",
+        "sha256": "c1d5cb47ace2e15d3e38f4eff4e9b0cfee7564013b05a1d5499b11f5e2a72a8e",
+        "text": "Title: A Survey on Quantum Machine Learning Algorithms and Applications. Abstract: Quantum machine learning algorithms have emerged as a promising research area in recent years. This paper reviews recent advances in quantum machine learning research. We start by providing a brief overview of quantum machine algorithms. We then review quantum optimization algorithms. Next, we review quantum machine and hybrid machine learning systems. We also review quantum and hybrid quantum machine systems.",
+        "ratings": {
+          "haiku": [
+            7
+          ],
+          "luna": [
+            7
+          ]
+        },
+        "rating_sources": [
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/full/judgements.jsonl",
+            "judge": "haiku",
+            "score": 7
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/full/judgements.jsonl",
+            "judge": "luna",
+            "score": 7
+          }
+        ],
+        "embedding_sources": [
+          "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/c1d5cb47ace2e15d3e38f4eff4e9b0cfee7564013b05a1d5499b11f5e2a72a8e.npy"
+        ],
+        "eligibility_flags": [
+          true
+        ]
+      },
+      "negative_pair": {
+        "domain": "arxiv",
+        "sha256": "1d09226a759531714efc93be5029b17402b4967ea068dc2d62f18e432cfed331",
+        "text": "Title: A Survey on Quantum Machine Learning Algorithms and Applications. Abstract: Quantum machine learning algorithms have emerged as a promising research area in recent years. This paper reviews recent advances in quantum machine learning research. We begin by providing a brief overview of quantum machine algorithms. We then review quantum optimization algorithms. Next, we review quantum machine and hybrid machine learning systems. We also review quantum and hybrid quantum machine systems.",
+        "ratings": {
+          "haiku": [
+            6
+          ]
+        },
+        "rating_sources": [
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/full/judgements.jsonl",
+            "judge": "haiku",
+            "score": 6
+          }
+        ],
+        "embedding_sources": [
+          "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/1d09226a759531714efc93be5029b17402b4967ea068dc2d62f18e432cfed331.npy"
+        ],
+        "eligibility_flags": [
+          true
+        ]
+      },
+      "same_label_edges_at_L_factor": {
+        "1": 14,
+        "2": 6
+      }
+    },
+    {
+      "gate": "original",
+      "domain": "pooled",
+      "positive": 509,
+      "negative": 3518,
+      "d_min": 0.0102591554472838,
+      "L_min": 97.47391051226919,
+      "positive_pair": {
+        "domain": "arxiv",
+        "sha256": "c1d5cb47ace2e15d3e38f4eff4e9b0cfee7564013b05a1d5499b11f5e2a72a8e",
+        "text": "Title: A Survey on Quantum Machine Learning Algorithms and Applications. Abstract: Quantum machine learning algorithms have emerged as a promising research area in recent years. This paper reviews recent advances in quantum machine learning research. We start by providing a brief overview of quantum machine algorithms. We then review quantum optimization algorithms. Next, we review quantum machine and hybrid machine learning systems. We also review quantum and hybrid quantum machine systems.",
+        "ratings": {
+          "haiku": [
+            7
+          ],
+          "luna": [
+            7
+          ]
+        },
+        "rating_sources": [
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/full/judgements.jsonl",
+            "judge": "haiku",
+            "score": 7
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/full/judgements.jsonl",
+            "judge": "luna",
+            "score": 7
+          }
+        ],
+        "embedding_sources": [
+          "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/c1d5cb47ace2e15d3e38f4eff4e9b0cfee7564013b05a1d5499b11f5e2a72a8e.npy"
+        ],
+        "eligibility_flags": [
+          true
+        ]
+      },
+      "negative_pair": {
+        "domain": "arxiv",
+        "sha256": "1d09226a759531714efc93be5029b17402b4967ea068dc2d62f18e432cfed331",
+        "text": "Title: A Survey on Quantum Machine Learning Algorithms and Applications. Abstract: Quantum machine learning algorithms have emerged as a promising research area in recent years. This paper reviews recent advances in quantum machine learning research. We begin by providing a brief overview of quantum machine algorithms. We then review quantum optimization algorithms. Next, we review quantum machine and hybrid machine learning systems. We also review quantum and hybrid quantum machine systems.",
+        "ratings": {
+          "haiku": [
+            6
+          ]
+        },
+        "rating_sources": [
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/full/judgements.jsonl",
+            "judge": "haiku",
+            "score": 6
+          }
+        ],
+        "embedding_sources": [
+          "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/1d09226a759531714efc93be5029b17402b4967ea068dc2d62f18e432cfed331.npy"
+        ],
+        "eligibility_flags": [
+          true
+        ]
+      },
+      "same_label_edges_at_L_factor": {
+        "1": 47,
+        "2": 11
+      }
+    },
+    {
+      "gate": "opus",
+      "domain": "steam",
+      "positive": 62,
+      "negative": 22,
+      "d_min": 0.5000550892919621,
+      "L_min": 1.9997796671081178,
+      "positive_pair": {
+        "domain": "steam",
+        "sha256": "88b531b2c070c21e60296d43cd0d43fc68f0097548ef2e53e95cbdb75fa3ae27",
+        "text": "Genres: Sports,Simulation,Casual. Tags: Sports,Ball Games,Crafting,Simulation,Building,Casual,Singleplayer. About: Slim Ball Classics is a relaxed crafting and sports simulation about designing, assembling and testing handmade balls. Start in a small workshop with a few basic materials and learn which ones suit each kind of ball. Every ball has its own construction, features and advantages, and you will need to balance strength, weight and bounce to get a perfect result.\n\nChoose from a collection of classic designs, each with a history and a traditional use. Work through the assembly step by step, then try optional upgrades and extra parts to improve performance. Watch for construction complications, because a poor choice of material can cause energy loss and ruin a ball's flight.\n\nTest your creations on the practice field, where every ball behaves according to its materials and build. Compare your results against earlier designs and see how each new version improves on its predecessors.\n\nFeatures:\n- Craft 16 different balls, from traditional handmade types to modern functional designs\n- Collect and combine a wide range of materials\n- Learn the strengths and properties of each material\n- Unlock new workshop tools and a power-holder station\n- Test balls in varied conditions and accelerate your d",
+        "ratings": {
+          "haiku": [
+            7
+          ],
+          "luna": [
+            7
+          ],
+          "opus": [
+            8
+          ]
+        },
+        "rating_sources": [
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/claude-sonnet-5-5/FAR-20.json:gate",
+            "judge": "haiku",
+            "score": 7
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/claude-sonnet-5-5/FAR-20.json:gate",
+            "judge": "luna",
+            "score": 7
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+            "judge": "haiku",
+            "score": 7
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+            "judge": "luna",
+            "score": 7
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+            "judge": "opus",
+            "score": 8
+          }
+        ],
+        "embedding_sources": [
+          "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/88b531b2c070c21e60296d43cd0d43fc68f0097548ef2e53e95cbdb75fa3ae27.npy"
+        ],
+        "eligibility_flags": [
+          true
+        ]
+      },
+      "negative_pair": {
+        "domain": "steam",
+        "sha256": "cd3ba9df4443dc276ed11d7b630e36ba17410b7e6cf53cae5e96075b241d7871",
+        "text": "Genres: Simulation,Sports,Casual. Tags: Physics,Ball,Crafting,Sandbox. About: Step into a hands-on workshop devoted to the design, history, and practical use of balls. Choose materials, compare their strengths and properties, and build equivalent balls to see how construction changes their performance. Begin with classic forms, including traditional horned designs, or try a slim B-ball and the distinctive Baxter model. Each design has trade-offs: handmade assembly and familiar construction methods can offer useful qualities while bringing their own complications.\n\nCreate and compare a collection of up to 16 balls, then test them with a 250 W power-holder. Explore how regional traditions and real-world applications shape material choices, from everyday play to specialized uses. Study the features that made earlier designs popular, refine your own functional builds, and weigh each advantage against the demands of production. Experiment, test, and uncover how thoughtful design turns simple materials into objects made to move.",
+        "ratings": {
+          "haiku": [
+            7
+          ],
+          "luna": [
+            7
+          ],
+          "opus": [
+            5
+          ]
+        },
+        "rating_sources": [
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/gpt-6-luna/FAR-20.json:gate",
+            "judge": "haiku",
+            "score": 7
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/gpt-6-luna/FAR-20.json:gate",
+            "judge": "luna",
+            "score": 7
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+            "judge": "haiku",
+            "score": 7
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+            "judge": "luna",
+            "score": 7
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+            "judge": "opus",
+            "score": 5
+          }
+        ],
+        "embedding_sources": [
+          "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/cd3ba9df4443dc276ed11d7b630e36ba17410b7e6cf53cae5e96075b241d7871.npy"
+        ],
+        "eligibility_flags": [
+          true
+        ]
+      },
+      "same_label_edges_at_L_factor": {
+        "1": 4,
+        "2": 0
+      }
+    },
+    {
+      "gate": "opus",
+      "domain": "arxiv",
+      "positive": 56,
+      "negative": 17,
+      "d_min": 0.49712722069087983,
+      "L_min": 2.011557521654629,
+      "positive_pair": {
+        "domain": "arxiv",
+        "sha256": "796ccd5b513152ce26273839970606fd47ac69048044a2fdd533e8b8eac26384",
+        "text": "Title: Triangle Closing for Recruiter Search on LinkedIn: Location-Aware Candidate Retrieval Across Cities and Metropolitan Areas. Abstract: Recruiters on LinkedIn search for candidates across many cities and metropolitan areas, yet location and job-title fields are noisy and inconsistent. We study recruiter search as link prediction on a heterogeneous graph of recruiters, candidates, jobs, companies, and locations, using triangles as the central structural signal. Our method scores a recruiter-candidate pair by counting closed triples through shared employers, industries, and areas. We normalize location strings and job-title variants and feed the triangle counts into a ranking model. On a large offline dataset of recruiter interactions, the approach improves ranking quality over text-only and embedding baselines, especially for rare titles and small areas. Ablations show that location-aware triangles account for most of the gain.",
+        "ratings": {
+          "haiku": [
+            8
+          ],
+          "luna": [
+            9
+          ],
+          "opus": [
+            9
+          ]
+        },
+        "rating_sources": [
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/claude-sonnet-5-5/FAR-15.json:gate",
+            "judge": "haiku",
+            "score": 8
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/claude-sonnet-5-5/FAR-15.json:gate",
+            "judge": "luna",
+            "score": 9
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+            "judge": "haiku",
+            "score": 8
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+            "judge": "luna",
+            "score": 9
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+            "judge": "opus",
+            "score": 9
+          }
+        ],
+        "embedding_sources": [
+          "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/796ccd5b513152ce26273839970606fd47ac69048044a2fdd533e8b8eac26384.npy"
+        ],
+        "eligibility_flags": [
+          true
+        ]
+      },
+      "negative_pair": {
+        "domain": "arxiv",
+        "sha256": "2959579a0fb090f246314d5890b48f20d03ff3c5b64ff149b2842f363005aac2",
+        "text": "Title: Triangles Conquer Recruiter via LI. Abstract: We study triangle-based candidate discovery for recruiters on LinkedIn (LI). Recruiters, candidates, and organizations form a heterogeneous graph, where a triangle represents mutually reinforcing connections among these entities. We score recruiter\u2013candidate links using local triangle patterns alongside profile and employment signals, then rank candidates for outreach. This approach favors candidates supported by multiple paths through the network while retaining useful evidence from sparse neighborhoods. Recommendations can be interpreted through the shared connections and organizational context contributing to each score. The source draft contains no recoverable dataset, benchmark, or quantitative findings; accordingly, this description makes no performance claims and frames the contribution as a graph-based method and evaluation protocol for recruiter\u2013candidate interactions.",
+        "ratings": {
+          "haiku": [
+            7
+          ],
+          "luna": [
+            8
+          ],
+          "opus": [
+            6
+          ]
+        },
+        "rating_sources": [
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/gpt-6-luna/FAR-15.json:gate",
+            "judge": "haiku",
+            "score": 7
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/gpt-6-luna/FAR-15.json:gate",
+            "judge": "luna",
+            "score": 8
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+            "judge": "haiku",
+            "score": 7
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+            "judge": "luna",
+            "score": 8
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+            "judge": "opus",
+            "score": 6
+          }
+        ],
+        "embedding_sources": [
+          "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/2959579a0fb090f246314d5890b48f20d03ff3c5b64ff149b2842f363005aac2.npy"
+        ],
+        "eligibility_flags": [
+          true
+        ]
+      },
+      "same_label_edges_at_L_factor": {
+        "1": 2,
+        "2": 0
+      }
+    },
+    {
+      "gate": "opus",
+      "domain": "pooled",
+      "positive": 118,
+      "negative": 39,
+      "d_min": 0.49712722069087983,
+      "L_min": 2.011557521654629,
+      "positive_pair": {
+        "domain": "arxiv",
+        "sha256": "796ccd5b513152ce26273839970606fd47ac69048044a2fdd533e8b8eac26384",
+        "text": "Title: Triangle Closing for Recruiter Search on LinkedIn: Location-Aware Candidate Retrieval Across Cities and Metropolitan Areas. Abstract: Recruiters on LinkedIn search for candidates across many cities and metropolitan areas, yet location and job-title fields are noisy and inconsistent. We study recruiter search as link prediction on a heterogeneous graph of recruiters, candidates, jobs, companies, and locations, using triangles as the central structural signal. Our method scores a recruiter-candidate pair by counting closed triples through shared employers, industries, and areas. We normalize location strings and job-title variants and feed the triangle counts into a ranking model. On a large offline dataset of recruiter interactions, the approach improves ranking quality over text-only and embedding baselines, especially for rare titles and small areas. Ablations show that location-aware triangles account for most of the gain.",
+        "ratings": {
+          "haiku": [
+            8
+          ],
+          "luna": [
+            9
+          ],
+          "opus": [
+            9
+          ]
+        },
+        "rating_sources": [
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/claude-sonnet-5-5/FAR-15.json:gate",
+            "judge": "haiku",
+            "score": 8
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/claude-sonnet-5-5/FAR-15.json:gate",
+            "judge": "luna",
+            "score": 9
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+            "judge": "haiku",
+            "score": 8
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+            "judge": "luna",
+            "score": 9
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+            "judge": "opus",
+            "score": 9
+          }
+        ],
+        "embedding_sources": [
+          "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/796ccd5b513152ce26273839970606fd47ac69048044a2fdd533e8b8eac26384.npy"
+        ],
+        "eligibility_flags": [
+          true
+        ]
+      },
+      "negative_pair": {
+        "domain": "arxiv",
+        "sha256": "2959579a0fb090f246314d5890b48f20d03ff3c5b64ff149b2842f363005aac2",
+        "text": "Title: Triangles Conquer Recruiter via LI. Abstract: We study triangle-based candidate discovery for recruiters on LinkedIn (LI). Recruiters, candidates, and organizations form a heterogeneous graph, where a triangle represents mutually reinforcing connections among these entities. We score recruiter\u2013candidate links using local triangle patterns alongside profile and employment signals, then rank candidates for outreach. This approach favors candidates supported by multiple paths through the network while retaining useful evidence from sparse neighborhoods. Recommendations can be interpreted through the shared connections and organizational context contributing to each score. The source draft contains no recoverable dataset, benchmark, or quantitative findings; accordingly, this description makes no performance claims and frames the contribution as a graph-based method and evaluation protocol for recruiter\u2013candidate interactions.",
+        "ratings": {
+          "haiku": [
+            7
+          ],
+          "luna": [
+            8
+          ],
+          "opus": [
+            6
+          ]
+        },
+        "rating_sources": [
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/gpt-6-luna/FAR-15.json:gate",
+            "judge": "haiku",
+            "score": 7
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/gpt-6-luna/FAR-15.json:gate",
+            "judge": "luna",
+            "score": 8
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+            "judge": "haiku",
+            "score": 7
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+            "judge": "luna",
+            "score": 8
+          },
+          {
+            "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+            "judge": "opus",
+            "score": 6
+          }
+        ],
+        "embedding_sources": [
+          "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/2959579a0fb090f246314d5890b48f20d03ff3c5b64ff149b2842f363005aac2.npy"
+        ],
+        "eligibility_flags": [
+          true
+        ]
+      },
+      "same_label_edges_at_L_factor": {
+        "1": 6,
+        "2": 0
+      }
+    }
+  ],
+  "nll": [
+    {
+      "run": "full",
+      "domain": "steam",
+      "header": "A video game page on the Steam store:\n",
+      "counts": {
+        "distinct_texts": 1601,
+        "unresolved": 429,
+        "settled": 1172,
+        "settled_nll_conflict": 3
+      },
+      "n": 1169,
+      "positive": 10,
+      "negative": 1159,
+      "max_accepted": [
+        "a95a372191ece8846d7c3682629444ba0404093bad9f06790a1dc64368ac40aa",
+        2.240147352218628,
+        1
+      ],
+      "min_rejected": [
+        "7f7ac12fe782e3a0eed8f1a14b3e76ebc5def43e272f2b00443fbe772be7502b",
+        1.0146061182022095,
+        0
+      ],
+      "separable": false,
+      "best_errors": 10,
+      "best_h": null,
+      "best_h_null_means": "below all observations",
+      "false_accepts": 0,
+      "false_rejects": 10,
+      "auc_negative_nll": 0.7208800690250216
+    },
+    {
+      "run": "full",
+      "domain": "arxiv",
+      "header": "arXiv computer science paper. The title is followed by the abstract, a paragraph that summarises the problem, the approach and the contribution.\n",
+      "counts": {
+        "distinct_texts": 1565,
+        "unresolved": 631,
+        "settled": 934,
+        "settled_nll_conflict": 5
+      },
+      "n": 929,
+      "positive": 112,
+      "negative": 817,
+      "max_accepted": [
+        "1d3b94c6e07e606e844012b557dca7996affe07306dd66364c92f1bc3c8dd4b0",
+        2.3516273498535156,
+        1
+      ],
+      "min_rejected": [
+        "1c84d6cc2a8c7d038e50dd797c25cba1f4fe52f080e7833ee21510e5684a9ffa",
+        0.8256680369377136,
+        0
+      ],
+      "separable": false,
+      "best_errors": 110,
+      "best_h": 0.7946056127548218,
+      "best_h_null_means": "below all observations",
+      "false_accepts": 0,
+      "false_rejects": 110,
+      "auc_negative_nll": 0.807593110683686
+    },
+    {
+      "run": "steam4b",
+      "domain": "steam",
+      "header": "A video game page on the Steam store:\n",
+      "counts": {
+        "distinct_texts": 1300,
+        "unresolved": 531,
+        "settled": 769,
+        "settled_nll_conflict": 7
+      },
+      "n": 762,
+      "positive": 105,
+      "negative": 657,
+      "max_accepted": [
+        "daacbf669aae790411f88dcb78c0e7ff1ccb9439e6285a9bc54fd5c0f1d6bcf3",
+        2.2680397033691406,
+        1
+      ],
+      "min_rejected": [
+        "1ed5b9ec89892c766f9b13f08a8d1e4b2fb7ca7726944e40ce9ad23f3e799b9e",
+        0.8627408742904663,
+        0
+      ],
+      "separable": false,
+      "best_errors": 100,
+      "best_h": 1.043018102645874,
+      "best_h_null_means": "below all observations",
+      "false_accepts": 6,
+      "false_rejects": 94,
+      "auc_negative_nll": 0.7671957671957672
+    }
+  ],
+  "exclusions": {
+    "arxiv/grid-claude-sonnet-5-5": {
+      "items": 650,
+      "best_embedding_present": 650,
+      "reason": "normalized-pitch rubric; no exact-text Haiku/luna original-gate labels"
+    },
+    "arxiv/grid-gpt-4o-0806": {
+      "items": 450,
+      "best_embedding_present": 450,
+      "reason": "normalized-pitch rubric; no exact-text Haiku/luna original-gate labels"
+    },
+    "arxiv/grid-gpt-6-luna": {
+      "items": 650,
+      "best_embedding_present": 650,
+      "reason": "normalized-pitch rubric; no exact-text Haiku/luna original-gate labels"
+    },
+    "patents/grid-claude-sonnet-5-5": {
+      "items": 442,
+      "best_embedding_present": 442,
+      "reason": "normalized-pitch rubric; no exact-text Haiku/luna original-gate labels"
+    },
+    "patents/grid-gpt-6-luna": {
+      "items": 450,
+      "best_embedding_present": 450,
+      "reason": "normalized-pitch rubric; no exact-text Haiku/luna original-gate labels"
+    },
+    "steam/grid-claude-haiku-5-5": {
+      "items": 450,
+      "best_embedding_present": 450,
+      "reason": "normalized-pitch rubric; no exact-text Haiku/luna original-gate labels"
+    },
+    "steam/grid-claude-opus-5-5": {
+      "items": 450,
+      "best_embedding_present": 450,
+      "reason": "normalized-pitch rubric; no exact-text Haiku/luna original-gate labels"
+    },
+    "steam/grid-claude-sonnet-5-5": {
+      "items": 630,
+      "best_embedding_present": 630,
+      "reason": "normalized-pitch rubric; no exact-text Haiku/luna original-gate labels"
+    },
+    "steam/grid-gpt-4o-0806": {
+      "items": 430,
+      "best_embedding_present": 424,
+      "reason": "normalized-pitch rubric; no exact-text Haiku/luna original-gate labels"
+    },
+    "steam/grid-gpt-6-1-sol": {
+      "items": 450,
+      "best_embedding_present": 450,
+      "reason": "normalized-pitch rubric; no exact-text Haiku/luna original-gate labels"
+    },
+    "steam/grid-gpt-6-luna": {
+      "items": 630,
+      "best_embedding_present": 630,
+      "reason": "normalized-pitch rubric; no exact-text Haiku/luna original-gate labels"
+    },
+    "steam/pilot": {
+      "items": 399,
+      "best_embedding_present": 395,
+      "reason": "normalized-pitch rubric; no exact-text Haiku/luna original-gate labels"
+    }
+  },
+  "opposite_label_collisions": [],
+  "peak_rss_bytes": 411504640,
+  "completed_utc": "2026-10-29T08:45:47.054738+00:00"
+}

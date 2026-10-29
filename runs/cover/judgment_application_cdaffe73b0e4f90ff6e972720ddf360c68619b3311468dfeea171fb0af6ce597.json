@@ -1,0 +1,198 @@
+{
+  "rule": "cover-r6-v1",
+  "queue_sha256": "820dea7921443f1744b2b64d2f21169f398dded1df77c7a720c76d0b2d7aae5f",
+  "results_sha256": "cdaffe73b0e4f90ff6e972720ddf360c68619b3311468dfeea171fb0af6ce597",
+  "summary": [
+    {
+      "model": "round5",
+      "domain": "arxiv",
+      "gate": "original",
+      "n": 3,
+      "accepted": 2,
+      "pending": 0,
+      "verdict": "REFUTED"
+    },
+    {
+      "model": "round5",
+      "domain": "arxiv",
+      "gate": "opus",
+      "n": 3,
+      "accepted": 2,
+      "pending": 0,
+      "verdict": "REFUTED"
+    },
+    {
+      "model": "round5",
+      "domain": "steam",
+      "gate": "original",
+      "n": 2,
+      "accepted": 2,
+      "pending": 0,
+      "verdict": "REFUTED"
+    },
+    {
+      "model": "round5",
+      "domain": "steam",
+      "gate": "opus",
+      "n": 2,
+      "accepted": 1,
+      "pending": 0,
+      "verdict": "REFUTED"
+    },
+    {
+      "model": "round6",
+      "domain": "arxiv",
+      "gate": "original",
+      "n": 2,
+      "accepted": 0,
+      "pending": 0,
+      "verdict": "NO COHERENT REFUTATION IN QUEUE"
+    },
+    {
+      "model": "round6",
+      "domain": "arxiv",
+      "gate": "opus",
+      "n": 2,
+      "accepted": 0,
+      "pending": 0,
+      "verdict": "NO COHERENT REFUTATION IN QUEUE"
+    },
+    {
+      "model": "round6",
+      "domain": "steam",
+      "gate": "original",
+      "n": 2,
+      "accepted": 0,
+      "pending": 0,
+      "verdict": "NO COHERENT REFUTATION IN QUEUE"
+    },
+    {
+      "model": "round6",
+      "domain": "steam",
+      "gate": "opus",
+      "n": 2,
+      "accepted": 0,
+      "pending": 0,
+      "verdict": "NO COHERENT REFUTATION IN QUEUE"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cover-12859658b6f6a560c38a90919a1a78fea4e0dac7a1fd87b7a4fc06e9c031ceac",
+      "domain": "arxiv",
+      "model": "round5",
+      "op": "T",
+      "phase": "check",
+      "draw": 24,
+      "residual": 0.24442858489561975,
+      "epsilon": 0.18209906233745374,
+      "original": "ACCEPT",
+      "opus": "ACCEPT",
+      "raw_judgment": "{\"id\": \"cover-12859658b6f6a560c38a90919a1a78fea4e0dac7a1fd87b7a4fc06e9c031ceac\", \"text_sha256\": \"12859658b6f6a560c38a90919a1a78fea4e0dac7a1fd87b7a4fc06e9c031ceac\", \"haiku\": 7, \"luna\": 7, \"opus\": 7}"
+    },
+    {
+      "id": "cover-254d3d5e222088a0fd35d7885a3b46b2d872cc3f1128f70d041ea8efc8d0dd7b",
+      "domain": "arxiv",
+      "model": "round5",
+      "op": "T",
+      "phase": "check",
+      "draw": 0,
+      "residual": 0.32111674024328535,
+      "epsilon": 0.18209906233745374,
+      "original": "ACCEPT",
+      "opus": "ACCEPT",
+      "raw_judgment": "{\"id\": \"cover-254d3d5e222088a0fd35d7885a3b46b2d872cc3f1128f70d041ea8efc8d0dd7b\", \"text_sha256\": \"254d3d5e222088a0fd35d7885a3b46b2d872cc3f1128f70d041ea8efc8d0dd7b\", \"haiku\": 9, \"luna\": 8, \"opus\": 9}"
+    },
+    {
+      "id": "cover-304bcc365faab29dd3d8fe9cbb14f305150cd0af9a37c66ef1dfa547bf8ab2e0",
+      "domain": "arxiv",
+      "model": "round6",
+      "op": "ST",
+      "phase": "check",
+      "draw": 9,
+      "residual": 0.4396476424158164,
+      "epsilon": 0.39465063668078004,
+      "original": "REJECT",
+      "opus": "REJECT",
+      "raw_judgment": "{\"id\": \"cover-304bcc365faab29dd3d8fe9cbb14f305150cd0af9a37c66ef1dfa547bf8ab2e0\", \"text_sha256\": \"304bcc365faab29dd3d8fe9cbb14f305150cd0af9a37c66ef1dfa547bf8ab2e0\", \"haiku\": 4, \"luna\": null, \"opus\": 5}"
+    },
+    {
+      "id": "cover-4a967b80eae8393e09af137fca9f47dd80d0cbd62183127bdda3acfdd3f428f4",
+      "domain": "steam",
+      "model": "round5",
+      "op": "T",
+      "phase": "check",
+      "draw": 23,
+      "residual": 0.21522849076690415,
+      "epsilon": 0.21406630461612747,
+      "original": "ACCEPT",
+      "opus": "ACCEPT",
+      "raw_judgment": "{\"id\": \"cover-4a967b80eae8393e09af137fca9f47dd80d0cbd62183127bdda3acfdd3f428f4\", \"text_sha256\": \"4a967b80eae8393e09af137fca9f47dd80d0cbd62183127bdda3acfdd3f428f4\", \"haiku\": 8, \"luna\": 9, \"opus\": 9}"
+    },
+    {
+      "id": "cover-66c58380bd2e5ebf8039240ecb2e1e7096503531ebdfabf74c367e8fedacac5e",
+      "domain": "arxiv",
+      "model": "round6",
+      "op": "F",
+      "phase": "check",
+      "draw": 31,
+      "residual": 0.637252512930955,
+      "epsilon": 0.6152831287088263,
+      "original": "REJECT",
+      "opus": "REJECT",
+      "raw_judgment": "{\"id\": \"cover-66c58380bd2e5ebf8039240ecb2e1e7096503531ebdfabf74c367e8fedacac5e\", \"text_sha256\": \"66c58380bd2e5ebf8039240ecb2e1e7096503531ebdfabf74c367e8fedacac5e\", \"haiku\": 5, \"luna\": null, \"opus\": 3}"
+    },
+    {
+      "id": "cover-689383053dc14ce87eb8dcf14f149d1c8339803275e5257ba13a77c7f1efc43c",
+      "domain": "steam",
+      "model": "round6",
+      "op": "S",
+      "phase": "check",
+      "draw": 2,
+      "residual": 0.3387381305341026,
+      "epsilon": 0.3056989163417021,
+      "original": "REJECT",
+      "opus": "REJECT",
+      "raw_judgment": "{\"id\": \"cover-689383053dc14ce87eb8dcf14f149d1c8339803275e5257ba13a77c7f1efc43c\", \"text_sha256\": \"689383053dc14ce87eb8dcf14f149d1c8339803275e5257ba13a77c7f1efc43c\", \"haiku\": 4, \"luna\": null, \"opus\": 5}"
+    },
+    {
+      "id": "cover-80d63b21f54b15e0882052423fc3d0ebad0090831de83ab008ab71cc374fb545",
+      "domain": "steam",
+      "model": "round5",
+      "op": "ST",
+      "phase": "check",
+      "draw": 7,
+      "residual": 0.6200313625526624,
+      "epsilon": 0.6082256608361963,
+      "original": "ACCEPT",
+      "opus": "REJECT",
+      "raw_judgment": "{\"id\": \"cover-80d63b21f54b15e0882052423fc3d0ebad0090831de83ab008ab71cc374fb545\", \"text_sha256\": \"80d63b21f54b15e0882052423fc3d0ebad0090831de83ab008ab71cc374fb545\", \"haiku\": 8, \"luna\": 8, \"opus\": 6}"
+    },
+    {
+      "id": "cover-a28f0af8f72b063ee50d56395da1a5102e629cd1a0913bd670b18e8005410ac0",
+      "domain": "steam",
+      "model": "round6",
+      "op": "ST",
+      "phase": "check",
+      "draw": 1,
+      "residual": 0.5504786217983463,
+      "epsilon": 0.48315666193878176,
+      "original": "REJECT",
+      "opus": "REJECT",
+      "raw_judgment": "{\"id\": \"cover-a28f0af8f72b063ee50d56395da1a5102e629cd1a0913bd670b18e8005410ac0\", \"text_sha256\": \"a28f0af8f72b063ee50d56395da1a5102e629cd1a0913bd670b18e8005410ac0\", \"haiku\": 4, \"luna\": null, \"opus\": 6}"
+    },
+    {
+      "id": "cover-c8ab27986e694c19ff0f03d586b5a3cb814e3524bf018e36b89eb3224e8cf4de",
+      "domain": "arxiv",
+      "model": "round5",
+      "op": "FT",
+      "phase": "train",
+      "draw": 8,
+      "residual": 0.5765254689269826,
+      "epsilon": 0.5199158273411121,
+      "original": "REJECT",
+      "opus": "REJECT",
+      "raw_judgment": "{\"id\": \"cover-c8ab27986e694c19ff0f03d586b5a3cb814e3524bf018e36b89eb3224e8cf4de\", \"text_sha256\": \"c8ab27986e694c19ff0f03d586b5a3cb814e3524bf018e36b89eb3224e8cf4de\", \"haiku\": 4, \"luna\": null, \"opus\": 5}"
+    }
+  ]
+}

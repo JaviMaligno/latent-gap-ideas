@@ -1,0 +1,16 @@
+key,value,utc
+seed,202610285,2026-10-28T18:04:38.268830+00:00
+encoder,6ae3845eab14497b,2026-10-28T18:04:38.268849+00:00
+threads,4,2026-10-28T18:04:38.268853+00:00
+counts,"{""train"": 16, ""cal"": 64, ""check"": 32}",2026-10-28T18:04:38.268856+00:00
+delta_family,0.05,2026-10-28T18:04:38.268858+00:00
+law,"For each D/op, iid uniform ordered distinct eligible past pairs conditioned on valid, changed output; streams independent across train/cal/check. FST is outside L.",2026-10-28T18:04:38.268860+00:00
+language,"Eligible originals plus F,S,T,FS,FT,ST on all eligible ordered pairs. No recursion. All hidden REAL source positions excluded globally.",2026-10-28T18:04:38.268863+00:00
+model,"q=unit((1-lambda)*p_source+lambda*p_donor); lambda in 0,.1,..,1 minimizing train mean squared residual, separately D/op; cal maximum residual. Original cell epsilon=0.",2026-10-28T18:04:38.268865+00:00
+rewrite_extension,"m8(x)=unit(mean of 8 nearest visible corpus rows). epsilon=max(grammar calibration maxima, all measured tune-v2 REAL11..20 m8 residuals). Tested, not assumed to follow from grammar.",2026-10-28T18:04:38.268867+00:00
+tail,"q95 empirical body plus scaled Beta(a,b) exceedances ending at 1; MLE on past only; future rows untouched until measure; REAL masks per refs.",2026-10-28T18:04:38.268870+00:00
+tail_criterion,"Each domain/arm: median future observed/predicted exceedance ratios at fixed past-model q99,q999 in [.5,2]; absolute median maximum bias <=.03 for REAL/GAP, <=.01 for FAR/RANDOM; 95% maximum interval coverage >=.80.",2026-10-28T18:04:38.268872+00:00
+search_criterion,"Each D/writer/arm: gate coverage>=.9, absolute paired median prediction error<=.03, and 95% plug-in maximum interval coverage>=.8. REAL-only fit of median log10 N. No refitting on test.",2026-10-28T18:04:38.268874+00:00
+disclosure,"The test results and round-4 summaries are already known; out-of-set reuse, not prospective validation. Only tuning records enter fitting. No new coherence judgments.",2026-10-28T18:04:38.268877+00:00
+directional_addition_before_fit,"Before any residual fit/check: separately test directional residual maximum pooled over all grammar calibration vectors; extension enlarges it by all tune-v2 REAL11..20 m8 residual projections. Fixed directions only. Both forecast and actual residual violations reported; no test outcome used to fit. This is an extra hypothesis, not implied by the norm bound.",2026-10-28T18:13:14.679269+00:00
+identity_cell_removed_after_parity_check,"Supersedes original language/model identity clause. First fit stopped before writing artifacts: prepared/local Steam source discrepancy 0.0020168304 exceeded 0.0005 parity guard. L now contains only valid changed F,S,T,FS,FT,ST outputs, no identity cell. Prepared unit vectors are fixed reference anchors; their equality to local E(source) is not assumed. Four original encodings remain diagnostics. Training/calibration outputs were computed internally before the parity stop; no held-out residuals, future projections or test records were measured. All six operation models, sampling draws and criteria unchanged.",2026-10-28T18:34:02.362407+00:00

@@ -1,0 +1,14 @@
+{
+  "id": "javieraguilarmartin/latent-gap-fluent-search",
+  "title": "latent-gap-fluent-search",
+  "code_file": "search.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": ["javieraguilarmartin/latent-gap-fluent-inputs"],
+  "competition_sources": [],
+  "kernel_sources": []
+}

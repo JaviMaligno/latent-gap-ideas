@@ -1,0 +1,8 @@
+{
+  "n": 24,
+  "old_median_abs_error": 0.002195225554515191,
+  "corrected_median_abs_error": 0.0018465759842486579,
+  "corrected_max_abs_error": 0.003191145689051364,
+  "corrected_within_005": 24,
+  "success": true
+}

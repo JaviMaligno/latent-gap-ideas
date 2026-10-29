@@ -1,0 +1,198 @@
+{
+  "rule": "cover-r6-v1",
+  "queue_sha256": "820dea7921443f1744b2b64d2f21169f398dded1df77c7a720c76d0b2d7aae5f",
+  "results_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "summary": [
+    {
+      "model": "round5",
+      "domain": "arxiv",
+      "gate": "original",
+      "n": 3,
+      "accepted": 0,
+      "pending": 3,
+      "verdict": "AWAITING JUDGMENTS"
+    },
+    {
+      "model": "round5",
+      "domain": "arxiv",
+      "gate": "opus",
+      "n": 3,
+      "accepted": 0,
+      "pending": 3,
+      "verdict": "AWAITING JUDGMENTS"
+    },
+    {
+      "model": "round5",
+      "domain": "steam",
+      "gate": "original",
+      "n": 2,
+      "accepted": 0,
+      "pending": 2,
+      "verdict": "AWAITING JUDGMENTS"
+    },
+    {
+      "model": "round5",
+      "domain": "steam",
+      "gate": "opus",
+      "n": 2,
+      "accepted": 0,
+      "pending": 2,
+      "verdict": "AWAITING JUDGMENTS"
+    },
+    {
+      "model": "round6",
+      "domain": "arxiv",
+      "gate": "original",
+      "n": 2,
+      "accepted": 0,
+      "pending": 2,
+      "verdict": "AWAITING JUDGMENTS"
+    },
+    {
+      "model": "round6",
+      "domain": "arxiv",
+      "gate": "opus",
+      "n": 2,
+      "accepted": 0,
+      "pending": 2,
+      "verdict": "AWAITING JUDGMENTS"
+    },
+    {
+      "model": "round6",
+      "domain": "steam",
+      "gate": "original",
+      "n": 2,
+      "accepted": 0,
+      "pending": 2,
+      "verdict": "AWAITING JUDGMENTS"
+    },
+    {
+      "model": "round6",
+      "domain": "steam",
+      "gate": "opus",
+      "n": 2,
+      "accepted": 0,
+      "pending": 2,
+      "verdict": "AWAITING JUDGMENTS"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cover-12859658b6f6a560c38a90919a1a78fea4e0dac7a1fd87b7a4fc06e9c031ceac",
+      "domain": "arxiv",
+      "model": "round5",
+      "op": "T",
+      "phase": "check",
+      "draw": 24,
+      "residual": 0.24442858489561975,
+      "epsilon": 0.18209906233745374,
+      "original": "PENDING",
+      "opus": "PENDING",
+      "raw_judgment": "{}"
+    },
+    {
+      "id": "cover-254d3d5e222088a0fd35d7885a3b46b2d872cc3f1128f70d041ea8efc8d0dd7b",
+      "domain": "arxiv",
+      "model": "round5",
+      "op": "T",
+      "phase": "check",
+      "draw": 0,
+      "residual": 0.32111674024328535,
+      "epsilon": 0.18209906233745374,
+      "original": "PENDING",
+      "opus": "PENDING",
+      "raw_judgment": "{}"
+    },
+    {
+      "id": "cover-304bcc365faab29dd3d8fe9cbb14f305150cd0af9a37c66ef1dfa547bf8ab2e0",
+      "domain": "arxiv",
+      "model": "round6",
+      "op": "ST",
+      "phase": "check",
+      "draw": 9,
+      "residual": 0.4396476424158164,
+      "epsilon": 0.39465063668078004,
+      "original": "PENDING",
+      "opus": "PENDING",
+      "raw_judgment": "{}"
+    },
+    {
+      "id": "cover-4a967b80eae8393e09af137fca9f47dd80d0cbd62183127bdda3acfdd3f428f4",
+      "domain": "steam",
+      "model": "round5",
+      "op": "T",
+      "phase": "check",
+      "draw": 23,
+      "residual": 0.21522849076690415,
+      "epsilon": 0.21406630461612747,
+      "original": "PENDING",
+      "opus": "PENDING",
+      "raw_judgment": "{}"
+    },
+    {
+      "id": "cover-66c58380bd2e5ebf8039240ecb2e1e7096503531ebdfabf74c367e8fedacac5e",
+      "domain": "arxiv",
+      "model": "round6",
+      "op": "F",
+      "phase": "check",
+      "draw": 31,
+      "residual": 0.637252512930955,
+      "epsilon": 0.6152831287088263,
+      "original": "PENDING",
+      "opus": "PENDING",
+      "raw_judgment": "{}"
+    },
+    {
+      "id": "cover-689383053dc14ce87eb8dcf14f149d1c8339803275e5257ba13a77c7f1efc43c",
+      "domain": "steam",
+      "model": "round6",
+      "op": "S",
+      "phase": "check",
+      "draw": 2,
+      "residual": 0.3387381305341026,
+      "epsilon": 0.3056989163417021,
+      "original": "PENDING",
+      "opus": "PENDING",
+      "raw_judgment": "{}"
+    },
+    {
+      "id": "cover-80d63b21f54b15e0882052423fc3d0ebad0090831de83ab008ab71cc374fb545",
+      "domain": "steam",
+      "model": "round5",
+      "op": "ST",
+      "phase": "check",
+      "draw": 7,
+      "residual": 0.6200313625526624,
+      "epsilon": 0.6082256608361963,
+      "original": "PENDING",
+      "opus": "PENDING",
+      "raw_judgment": "{}"
+    },
+    {
+      "id": "cover-a28f0af8f72b063ee50d56395da1a5102e629cd1a0913bd670b18e8005410ac0",
+      "domain": "steam",
+      "model": "round6",
+      "op": "ST",
+      "phase": "check",
+      "draw": 1,
+      "residual": 0.5504786217983463,
+      "epsilon": 0.48315666193878176,
+      "original": "PENDING",
+      "opus": "PENDING",
+      "raw_judgment": "{}"
+    },
+    {
+      "id": "cover-c8ab27986e694c19ff0f03d586b5a3cb814e3524bf018e36b89eb3224e8cf4de",
+      "domain": "arxiv",
+      "model": "round5",
+      "op": "FT",
+      "phase": "train",
+      "draw": 8,
+      "residual": 0.5765254689269826,
+      "epsilon": 0.5199158273411121,
+      "original": "PENDING",
+      "opus": "PENDING",
+      "raw_judgment": "{}"
+    }
+  ]
+}

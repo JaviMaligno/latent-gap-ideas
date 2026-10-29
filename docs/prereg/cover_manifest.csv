@@ -1,0 +1,14 @@
+path,sha256,frozen_utc
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/scripts/bounds/cover.py,176b7d3efd7cfd1685d511e08f14f32a0c3d531e09243581ba27b871861117b6,2026-10-28T18:35:56.738229+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/docs/prereg/cover_plan.csv,f9356c34ffd65c89a67d62b6aa87dfe6cb1af5f65a2ced91c48a7a5e63f368fd,2026-10-28T18:35:56.742893+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/docs/prereg/cover_bank.csv,c996602c3ec09dc14e50b89d44529986791ff54e847ff2e462a7702b84bbaaba,2026-10-28T18:35:56.756070+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/docs/prereg/cover_protocol.csv,602390d21b1a62914d01628c2ff502d4e921a8103051aff8b8c5ae0b7c60fcd2,2026-10-28T18:35:56.756533+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/docs/prereg/cover_embeddings.csv,a77ff3c8a8e746c36c9cc5c01e7fd570625e816afbc46fb78ae4e880be381d27,2026-10-28T18:35:56.842935+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/docs/prereg/cover_calibration.csv,fa07d5de83fdc230c13643013eead4f0ba81915793e2ba3d722e3ab6a7fcf38c,2026-10-28T18:35:56.843692+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/docs/prereg/cover_models.csv,94f4b4229aff12ffbff1c821ed4373a46ffd46740d473019a304bbc3d6c24c74,2026-10-28T18:35:56.844211+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/docs/prereg/cover_tuning.csv,f9ad88c192194a6f91fba1bbc75c37f4f2b3f2083d371741aa58c4c3c5f762f8,2026-10-28T18:35:56.844653+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/docs/prereg/cover_tails.csv,3a44bd492be2d41d572128ecdd5965cd6a15df870d69a5c382a4f5490602262e,2026-10-28T18:35:56.856015+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/docs/prereg/cover_fits.csv,ed0e6fd9efefe95828a9d5ed6b2993c6ba0542f5de58a323cbef62029a0c3250,2026-10-28T18:35:56.856469+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/docs/prereg/cover_sources.csv,0b4cc878b699820c4f808cd123161246d20787a65ca2045e496049d6a28681dc,2026-10-28T18:35:56.856978+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/docs/prereg/cover_predictions.csv,f44bd3a765147c7f17da49cc51e286fa2a8fabfc424ce01caf7e1b28fe1010cc,2026-10-28T18:35:56.857283+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/docs/prereg/cover_cones.csv,f412052dceffea1715d2560891583c63358da5a3b292287191b900406e1f5fe4,2026-10-28T18:35:56.861751+00:00

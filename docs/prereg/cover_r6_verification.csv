@@ -1,0 +1,18 @@
+check,status,value
+r6_freezes_and_legacy_archive,PASS,--r6-check passed
+fresh_texts,PASS,1344
+independent_checks,PASS,384
+finite_vectors_and_measurements,PASS,True
+intersection_with_current_stored_cache,PASS,0
+queue_texts,PASS,9
+queue_domains,PASS,steam=4;arxiv=5
+queue_text_hashes,PASS,True
+published_queue_sha256,PASS,820dea7921443f1744b2b64d2f21169f398dded1df77c7a720c76d0b2d7aae5f
+empty_results_preserve_pending,PASS,True
+bad_id_hash_duplicate_rejected,PASS,True
+gate_accept_reject_pending,PASS,True
+kaggle_runner_sha256,PASS,8f31ac628dbce6dde45e7e90228a7b524a18011e459a5e48b6bc22461631454f
+kaggle_job_status,PASS,SPECIFIED_NOT_RUN
+llm_calls,PASS,0
+lean_changes,PASS,0
+audit_seconds,PASS,10.255353993969038

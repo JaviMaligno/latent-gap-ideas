@@ -1,0 +1,64 @@
+{
+  "utc": "2026-10-29T08:53:26.142310+00:00",
+  "checks": [
+    {
+      "test": "independent scipy cdist all opposite pairs",
+      "gate": "original",
+      "domain": "steam",
+      "d_min": 0.01219658046293985
+    },
+    {
+      "test": "independent scipy cdist all opposite pairs",
+      "gate": "original",
+      "domain": "arxiv",
+      "d_min": 0.010259155447283801
+    },
+    {
+      "test": "independent scipy cdist all opposite pairs",
+      "gate": "original",
+      "domain": "pooled",
+      "d_min": 0.010259155447283801
+    },
+    {
+      "test": "independent scipy cdist all opposite pairs",
+      "gate": "opus",
+      "domain": "steam",
+      "d_min": 0.5000550892919617
+    },
+    {
+      "test": "independent scipy cdist all opposite pairs",
+      "gate": "opus",
+      "domain": "arxiv",
+      "d_min": 0.49712722069087967
+    },
+    {
+      "test": "independent scipy cdist all opposite pairs",
+      "gate": "opus",
+      "domain": "pooled",
+      "d_min": 0.49712722069087967
+    },
+    {
+      "test": "independent exhaustive threshold and pair-count AUC",
+      "run": "full",
+      "domain": "steam",
+      "best_errors": 10,
+      "auc": 0.7208800690250216
+    },
+    {
+      "test": "independent exhaustive threshold and pair-count AUC",
+      "run": "full",
+      "domain": "arxiv",
+      "best_errors": 110,
+      "auc": 0.807593110683686
+    },
+    {
+      "test": "independent exhaustive threshold and pair-count AUC",
+      "run": "steam4b",
+      "domain": "steam",
+      "best_errors": 100,
+      "auc": 0.7671957671957672
+    }
+  ],
+  "unchanged_input_files": 7989,
+  "peak_rss_bytes": 227708928
+}

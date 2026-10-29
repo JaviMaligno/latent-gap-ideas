@@ -1,0 +1,12 @@
+path,sha256,utc
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/scripts/bounds/cover.py,b87a3f1bdec75f6791e1834a3834c38d9eedd196329ad6119fa7934b5db0583c,2026-10-28T19:04:13.681225+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/runs/cover/protocol.json,7e8976a34164f7c5742446310614107b315ff99c56b533f27bc91a1732f7cd48,2026-10-28T19:04:13.681762+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/runs/cover/historical_hashes.json,708892f4417a6d9528d6d2e9ad7a61533add794e56aea65afd31c18c69b26b5d,2026-10-28T19:04:13.844589+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/docs/prereg/cover_r6_plan.csv,059e1eb50793e28c74f90d2241e9d5225c4833ce68747ec3b76ddf134a671257,2026-10-28T19:04:13.847362+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/docs/prereg/cover_bank.csv,c996602c3ec09dc14e50b89d44529986791ff54e847ff2e462a7702b84bbaaba,2026-10-28T19:04:13.869219+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/src/latent_gap/embedder.py,3dc9561ee3999da9c322ad3c018682d70cb356c944568c6b4f480662329d4b97,2026-10-28T19:04:13.869486+00:00
+/Users/javieraguilarmartin1/Documents/repos/latent-gap-ideas/scripts/bounds/support_probe.py,db9aaad955988cbe7617b23ff78ab8d85f1e968921602428d537b03b4cb95c40,2026-10-28T19:04:13.870187+00:00
+/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/prepared/steam/corpus.parquet,fa146deb033b671e3f0a44f81df90490ddb09514c4996352e34b6113aa14a43f,2026-10-28T19:04:14.175783+00:00
+/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/prepared/steam/emb_qwen3e06.npy,57f525cec52efae349160d0d6800bda3ec2b7053172ca956068555949b5a8652,2026-10-28T19:04:15.363437+00:00
+/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/prepared/arxiv/corpus.parquet,3f82b9d9af1ff6936fc2c7c104c2d3ce98b4e7771005a001b5fb886dc48e8b65,2026-10-28T19:04:16.019844+00:00
+/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/prepared/arxiv/emb_qwen3e06.npy,923ae3b6f6aec0044535eecc73a1a36af2870c8b8caa36815463857f5244023d,2026-10-28T19:04:16.822081+00:00

@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-29T08:45:13.842097+00:00",
+  "code_sha256": "b2e263fd42f7bfdb09693a2bfc264630af50b6669833933caf1ebd7de0a9c142",
+  "code": "scripts/bounds/round8_saved.py",
+  "supersedes": "freeze.json",
+  "reason": "pre-outcome null best parsing fix and explicit frozen FAR k range"
+}

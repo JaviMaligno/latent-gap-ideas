@@ -1,0 +1,18 @@
+Lean / Mathlib v4.36.0-rc1. Direct source and lake-env source checks exited 0.
+lake build: completed successfully (18116 jobs), exit 0.
+Bounds.lean SHA-256: 5832f873dcbbd57c4af7e76d8fc7f5eb4fd01cc4f0db4572342a3a24b5c69426
+
+'LatentGap.Bounds.cap_dual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatentGap.Bounds.unit_distance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatentGap.Bounds.anchor_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatentGap.Bounds.normalized_mean_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatentGap.Bounds.quadratic_young' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatentGap.Bounds.ellipsoid_ball_dual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatentGap.Bounds.covering_measure_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatentGap.Bounds.unit_support_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatentGap.Bounds.antipodal_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatentGap.Bounds.two_point_latitude' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatentGap.Bounds.threshold_count_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatentGap.Bounds.directional_second_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatentGap.Bounds.cdf_power_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LatentGap.Bounds.cdf_quantile_bracket' depends on axioms: [propext, Classical.choice, Quot.sound]

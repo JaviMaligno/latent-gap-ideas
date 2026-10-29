@@ -1,0 +1,5 @@
+domain,writer,log10_neff,n
+steam,claude-sonnet-5-5,7.6471011976761343,10
+steam,gpt-6-luna,7.0455516812267209,10
+arxiv,claude-sonnet-5-5,10.26522450085014,9
+arxiv,gpt-6-luna,9.7299179044420825,10

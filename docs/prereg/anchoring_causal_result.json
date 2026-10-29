@@ -1,0 +1,934 @@
+{
+  "overall": "cross-domain/model anchoring supported",
+  "supported_cells": {
+    "REAL": 4,
+    "GAP": 4,
+    "FAR": 4
+  },
+  "cells": [
+    {
+      "domain": "steam",
+      "gen": "luna",
+      "arm": "REAL",
+      "counts": {
+        "true": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "swap": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "none": {
+          "attempted": 20,
+          "valid": 20
+        }
+      },
+      "n_complete": 20,
+      "drop": {
+        "mean": 0.2646772827503282,
+        "low": 0.16133202754995954,
+        "high": 0.36802253795069684
+      },
+      "attraction": {
+        "mean": 0.5489224997527387,
+        "low": 0.4217502191546276,
+        "high": 0.6760947803508497
+      },
+      "verdict": "causal anchoring supported",
+      "no_neighbours_drop_descriptive": 0.3076145414241035,
+      "quantitative": {
+        "true": {
+          "target": 0.0570974465447886,
+          "donor": 0.0478081754931884,
+          "kappa_mae": 0.03487409706020121,
+          "means": {
+            "target": 0.6910556757756183,
+            "donor": 0.37690573241493697,
+            "true_centroid": 0.7883121108932911,
+            "donor_centroid": 0.47396485444799435,
+            "shown": 0.7883121108932911
+          },
+          "mean_remainder": 0.03487284716571924,
+          "mae_remainder": 0.03963744042338423,
+          "shown_bias": 0.012048293907801561,
+          "transport_pass": true
+        },
+        "swap": {
+          "target": 0.06255669989248697,
+          "donor": 0.044664467395536915,
+          "kappa_mae": 0.24959958487766037,
+          "means": {
+            "target": 0.42637839302529024,
+            "donor": 0.6386969205807511,
+            "true_centroid": 0.5197934748824888,
+            "donor_centroid": 0.7543687181899306,
+            "shown": 0.7543687181899306
+          },
+          "mean_remainder": 0.05500438807241824,
+          "mae_remainder": 0.06360271337717995,
+          "shown_bias": -0.021895098795559047,
+          "transport_pass": true
+        },
+        "none": {
+          "target": 0.0966093200481267,
+          "donor": 0.07442101563256232,
+          "kappa_mae": 0.29253684355143567,
+          "means": {
+            "target": 0.38344113435151495,
+            "donor": 0.32052338031683086,
+            "true_centroid": 0.46943304970830513,
+            "donor_centroid": 0.41663829708881706
+          }
+        }
+      }
+    },
+    {
+      "domain": "steam",
+      "gen": "sonnet",
+      "arm": "REAL",
+      "counts": {
+        "true": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "swap": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "none": {
+          "attempted": 20,
+          "valid": 20
+        }
+      },
+      "n_complete": 20,
+      "drop": {
+        "mean": 0.31078202880356903,
+        "low": 0.22239478255895773,
+        "high": 0.39916927504818034
+      },
+      "attraction": {
+        "mean": 0.646219349488084,
+        "low": 0.49904743792493667,
+        "high": 0.7933912610512314
+      },
+      "verdict": "causal anchoring supported",
+      "no_neighbours_drop_descriptive": 0.30038270229002206,
+      "quantitative": {
+        "true": {
+          "target": 0.0539560564314029,
+          "donor": 0.04085967835130687,
+          "kappa_mae": 0.03449686776171259,
+          "means": {
+            "target": 0.7650606275845553,
+            "donor": 0.4022100646516818,
+            "true_centroid": 0.8696168677828195,
+            "donor_centroid": 0.5101201462494915,
+            "shown": 0.8696168677828195
+          },
+          "mean_remainder": 0.041384413957680596,
+          "mae_remainder": 0.04413727393219898,
+          "shown_bias": 0.004062156671990213,
+          "transport_pass": true
+        },
+        "swap": {
+          "target": 0.05141131638589115,
+          "donor": 0.042449079344489334,
+          "kappa_mae": 0.2784334115407035,
+          "means": {
+            "target": 0.4542785987809864,
+            "donor": 0.7046454160702159,
+            "true_centroid": 0.5567052743516177,
+            "donor_centroid": 0.8434279023063734,
+            "shown": 0.8434279023063734
+          },
+          "mean_remainder": 0.04131543759956549,
+          "mae_remainder": 0.04763411746238287,
+          "shown_bias": -0.022126808804456118,
+          "transport_pass": true
+        },
+        "none": {
+          "target": 0.12584726461553053,
+          "donor": 0.0694724680372931,
+          "kappa_mae": 0.26803408502715664,
+          "means": {
+            "target": 0.4646779252945333,
+            "donor": 0.3941127978817721,
+            "true_centroid": 0.5696244395629989,
+            "donor_centroid": 0.4941989989507608
+          }
+        }
+      }
+    },
+    {
+      "domain": "steam",
+      "gen": "luna",
+      "arm": "GAP",
+      "counts": {
+        "true": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "swap": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "none": {
+          "attempted": 20,
+          "valid": 20
+        }
+      },
+      "n_complete": 20,
+      "drop": {
+        "mean": 0.14160206540372994,
+        "low": 0.08499369630899666,
+        "high": 0.1982104344984632
+      },
+      "attraction": {
+        "mean": 0.34940534331673734,
+        "low": 0.27554917016533675,
+        "high": 0.4232615164681379
+      },
+      "verdict": "causal anchoring supported",
+      "no_neighbours_drop_descriptive": 0.1408120418155811,
+      "quantitative": {
+        "true": {
+          "target": 0.032411180900329364,
+          "donor": 0.03843699773951075,
+          "kappa_mae": 0.031134042946623964,
+          "means": {
+            "target": 0.4697694826363044,
+            "donor": 0.30459718385142104,
+            "true_centroid": 0.7101009717138315,
+            "donor_centroid": 0.5183792807064613,
+            "shown": 0.7101009717138315
+          },
+          "mean_remainder": -0.0005567085507344665,
+          "mae_remainder": 0.02502269244373717,
+          "shown_bias": -0.01221346478633743,
+          "transport_pass": true
+        },
+        "swap": {
+          "target": 0.04119202208276492,
+          "donor": 0.06172741868147726,
+          "kappa_mae": 0.15289685343944798,
+          "means": {
+            "target": 0.32816741723257453,
+            "donor": 0.435915869251765,
+            "true_centroid": 0.5312350880866414,
+            "donor_centroid": 0.6889187403960086,
+            "shown": 0.6889187403960086
+          },
+          "mean_remainder": 0.015871797013510144,
+          "mae_remainder": 0.04291664708474763,
+          "shown_bias": -0.03339569610416002,
+          "transport_pass": false
+        },
+        "none": {
+          "target": 0.08586524576068498,
+          "donor": 0.06195573189011472,
+          "kappa_mae": 0.15210682985129917,
+          "means": {
+            "target": 0.32895744082072337,
+            "donor": 0.2852443314727303,
+            "true_centroid": 0.5068108632520438,
+            "donor_centroid": 0.4763871965231865
+          }
+        }
+      }
+    },
+    {
+      "domain": "steam",
+      "gen": "sonnet",
+      "arm": "GAP",
+      "counts": {
+        "true": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "swap": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "none": {
+          "attempted": 20,
+          "valid": 20
+        }
+      },
+      "n_complete": 20,
+      "drop": {
+        "mean": 0.13299963457571407,
+        "low": 0.08352632751243609,
+        "high": 0.18247294163899203
+      },
+      "attraction": {
+        "mean": 0.4050969389231211,
+        "low": 0.3210303900668785,
+        "high": 0.4891634877793637
+      },
+      "verdict": "causal anchoring supported",
+      "no_neighbours_drop_descriptive": 0.15344830837546,
+      "quantitative": {
+        "true": {
+          "target": 0.030463086426289632,
+          "donor": 0.05411884036645265,
+          "kappa_mae": 0.02190035501099356,
+          "means": {
+            "target": 0.525982114158815,
+            "donor": 0.32081856445977186,
+            "true_centroid": 0.7922812045664538,
+            "donor_centroid": 0.5475637861656929,
+            "shown": 0.7922812045664538
+          },
+          "mean_remainder": 0.001186956478243964,
+          "mae_remainder": 0.019660214622605112,
+          "shown_bias": -0.021668089571318362,
+          "transport_pass": false
+        },
+        "swap": {
+          "target": 0.04328345389960497,
+          "donor": 0.04418703114986242,
+          "kappa_mae": 0.12845694652293774,
+          "means": {
+            "target": 0.392982479583101,
+            "donor": 0.5035265337201109,
+            "true_centroid": 0.6193356651310931,
+            "donor_centroid": 0.779715185653453,
+            "shown": 0.779715185653453
+          },
+          "mean_remainder": 0.039974683287925916,
+          "mae_remainder": 0.04981355280728015,
+          "shown_bias": -0.03423410848431911,
+          "transport_pass": true
+        },
+        "none": {
+          "target": 0.11175624280397349,
+          "donor": 0.054490946433588636,
+          "kappa_mae": 0.14890562032268367,
+          "means": {
+            "target": 0.37253380578335504,
+            "donor": 0.29795681314655564,
+            "true_centroid": 0.5879429665068214,
+            "donor_centroid": 0.5150312580312411
+          }
+        }
+      }
+    },
+    {
+      "domain": "steam",
+      "gen": "luna",
+      "arm": "FAR",
+      "counts": {
+        "true": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "swap": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "none": {
+          "attempted": 20,
+          "valid": 20
+        }
+      },
+      "n_complete": 20,
+      "drop": {
+        "mean": 0.03817363285275409,
+        "low": 0.0190518589884964,
+        "high": 0.057295406717011776
+      },
+      "attraction": {
+        "mean": 0.30286433549013037,
+        "low": 0.21119470660480638,
+        "high": 0.39453396437545435
+      },
+      "verdict": "causal anchoring supported",
+      "no_neighbours_drop_descriptive": 0.026567330736800027,
+      "quantitative": {
+        "true": {
+          "target": 0.01927877346442084,
+          "donor": 0.021585568289329192,
+          "kappa_mae": 0.02085631639191397,
+          "means": {
+            "target": 0.01947014942662901,
+            "donor": -0.05151336353748317,
+            "true_centroid": 0.5822848465213074,
+            "donor_centroid": 0.4135178179490513,
+            "shown": 0.5822848465213074
+          },
+          "mean_remainder": -0.010392396706842907,
+          "mae_remainder": 0.01740889707001537,
+          "shown_bias": -0.04636107962108259,
+          "transport_pass": true
+        },
+        "swap": {
+          "target": 0.032892020688963575,
+          "donor": 0.03884011835803505,
+          "kappa_mae": 0.05504975968907736,
+          "means": {
+            "target": -0.018703483426125083,
+            "donor": -0.005593804405111771,
+            "true_centroid": 0.447308385760398,
+            "donor_centroid": 0.5814056926782721,
+            "shown": 0.5814056926782721
+          },
+          "mean_remainder": 0.026391010825779233,
+          "mae_remainder": 0.031757421914887604,
+          "shown_bias": -0.047240233464117765,
+          "transport_pass": false
+        },
+        "none": {
+          "target": 0.03993447374170579,
+          "donor": 0.024931841793303627,
+          "kappa_mae": 0.04344345757312329,
+          "means": {
+            "target": -0.007097181310171017,
+            "donor": -0.03569938622386314,
+            "true_centroid": 0.44197123931638077,
+            "donor_centroid": 0.4319107841478737
+          }
+        }
+      }
+    },
+    {
+      "domain": "steam",
+      "gen": "sonnet",
+      "arm": "FAR",
+      "counts": {
+        "true": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "swap": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "none": {
+          "attempted": 20,
+          "valid": 20
+        }
+      },
+      "n_complete": 20,
+      "drop": {
+        "mean": 0.056539589086106526,
+        "low": 0.041036435899959166,
+        "high": 0.07204274227225388
+      },
+      "attraction": {
+        "mean": 0.40598541855915327,
+        "low": 0.30005135060992083,
+        "high": 0.5119194865083857
+      },
+      "verdict": "causal anchoring supported",
+      "no_neighbours_drop_descriptive": 0.05384889700087884,
+      "quantitative": {
+        "true": {
+          "target": 0.012285798197014117,
+          "donor": 0.01581470364438961,
+          "kappa_mae": 0.013104106054004163,
+          "means": {
+            "target": 0.03485737541769413,
+            "donor": -0.048876760775347826,
+            "true_centroid": 0.717047940216583,
+            "donor_centroid": 0.47600273544444854,
+            "shown": 0.717047940216583
+          },
+          "mean_remainder": -0.0018296035851986566,
+          "mae_remainder": 0.012103530181439762,
+          "shown_bias": -0.0015507251132973576,
+          "transport_pass": true
+        },
+        "swap": {
+          "target": 0.03524843875952227,
+          "donor": 0.03648416464843467,
+          "kappa_mae": 0.061078989922799067,
+          "means": {
+            "target": -0.021682213668412394,
+            "donor": 0.00363804735497856,
+            "true_centroid": 0.4820492754760006,
+            "donor_centroid": 0.6469894892630195,
+            "shown": 0.6469894892630195
+          },
+          "mean_remainder": 0.02844770101116793,
+          "mae_remainder": 0.02860733910623155,
+          "shown_bias": -0.07160917606686071,
+          "transport_pass": false
+        },
+        "none": {
+          "target": 0.026692758248082687,
+          "donor": 0.023377984603493586,
+          "kappa_mae": 0.058388297837571365,
+          "means": {
+            "target": -0.018991521583184706,
+            "donor": -0.059296909733824135,
+            "true_centroid": 0.5120277333013167,
+            "donor_centroid": 0.4673763427429768
+          }
+        }
+      }
+    },
+    {
+      "domain": "arxiv",
+      "gen": "luna",
+      "arm": "REAL",
+      "counts": {
+        "true": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "swap": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "none": {
+          "attempted": 20,
+          "valid": 20
+        }
+      },
+      "n_complete": 20,
+      "drop": {
+        "mean": 0.3998405667901065,
+        "low": 0.3327701870722468,
+        "high": 0.46691094650796616
+      },
+      "attraction": {
+        "mean": 0.8055729353843619,
+        "low": 0.6835556592770268,
+        "high": 0.9275902114916971
+      },
+      "verdict": "causal anchoring supported",
+      "no_neighbours_drop_descriptive": 0.39625911077785736,
+      "quantitative": {
+        "true": {
+          "target": 0.07201583753831547,
+          "donor": 0.03593596997510708,
+          "kappa_mae": 0.04502351925029848,
+          "means": {
+            "target": 0.7584040719554572,
+            "donor": 0.30004214660423356,
+            "true_centroid": 0.8328199290102256,
+            "donor_centroid": 0.3697538711317798,
+            "shown": 0.8328199290102256
+          },
+          "mean_remainder": 0.06133487810407012,
+          "mae_remainder": 0.06133487810407012,
+          "shown_bias": 0.0036737246162671156,
+          "transport_pass": true
+        },
+        "swap": {
+          "target": 0.05928847917787985,
+          "donor": 0.05311954760957016,
+          "kappa_mae": 0.3689869537505984,
+          "means": {
+            "target": 0.3585635051653508,
+            "donor": 0.6749157598636243,
+            "true_centroid": 0.4331234174085303,
+            "donor_centroid": 0.7756302949144461,
+            "shown": 0.7756302949144461
+          },
+          "mean_remainder": 0.07630669027374032,
+          "mae_remainder": 0.07630669027374032,
+          "shown_bias": -0.05351590947951239,
+          "transport_pass": true
+        },
+        "none": {
+          "target": 0.08473704730850098,
+          "donor": 0.0599765128792049,
+          "kappa_mae": 0.36540549773834924,
+          "means": {
+            "target": 0.3621449611776,
+            "donor": 0.31602417329997584,
+            "true_centroid": 0.4267658988197807,
+            "donor_centroid": 0.39070064763069434
+          }
+        }
+      }
+    },
+    {
+      "domain": "arxiv",
+      "gen": "sonnet",
+      "arm": "REAL",
+      "counts": {
+        "true": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "swap": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "none": {
+          "attempted": 20,
+          "valid": 20
+        }
+      },
+      "n_complete": 20,
+      "drop": {
+        "mean": 0.478727737124062,
+        "low": 0.4105258769176408,
+        "high": 0.5469295973304833
+      },
+      "attraction": {
+        "mean": 0.9923648038699696,
+        "low": 0.8641793254909713,
+        "high": 1.120550282248968
+      },
+      "verdict": "causal anchoring supported",
+      "no_neighbours_drop_descriptive": 0.43239665814055633,
+      "quantitative": {
+        "true": {
+          "target": 0.07388843998278109,
+          "donor": 0.033695976690880314,
+          "kappa_mae": 0.04483803606837823,
+          "means": {
+            "target": 0.8089375426811907,
+            "donor": 0.2970405851041202,
+            "true_centroid": 0.8921523865486976,
+            "donor_centroid": 0.36906774371450457,
+            "shown": 0.8921523865486976
+          },
+          "mean_remainder": 0.062736102713327,
+          "mae_remainder": 0.06408186301072014,
+          "shown_bias": 0.01080056311943114,
+          "transport_pass": true
+        },
+        "swap": {
+          "target": 0.026836197068959268,
+          "donor": 0.04169874429444971,
+          "kappa_mae": 0.444707306999805,
+          "means": {
+            "target": 0.33020980555712887,
+            "donor": 0.76895682186583,
+            "true_centroid": 0.4037278340070343,
+            "donor_centroid": 0.8730079950428108,
+            "shown": 0.8730079950428108
+          },
+          "mean_remainder": 0.01261315723604237,
+          "mae_remainder": 0.025086829051202752,
+          "shown_bias": -0.008343828386455865,
+          "transport_pass": true
+        },
+        "none": {
+          "target": 0.10205575516603269,
+          "donor": 0.08306803111944809,
+          "kappa_mae": 0.39837622801629924,
+          "means": {
+            "target": 0.3765408845406345,
+            "donor": 0.3409822725352921,
+            "true_centroid": 0.4421147736839347,
+            "donor_centroid": 0.4193777736741273
+          }
+        }
+      }
+    },
+    {
+      "domain": "arxiv",
+      "gen": "luna",
+      "arm": "GAP",
+      "counts": {
+        "true": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "swap": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "none": {
+          "attempted": 20,
+          "valid": 20
+        }
+      },
+      "n_complete": 20,
+      "drop": {
+        "mean": 0.12752904887047542,
+        "low": 0.07987211853253261,
+        "high": 0.17518597920841822
+      },
+      "attraction": {
+        "mean": 0.46014474744263756,
+        "low": 0.3700872964611267,
+        "high": 0.5502021984241484
+      },
+      "verdict": "causal anchoring supported",
+      "no_neighbours_drop_descriptive": 0.1354574322804194,
+      "quantitative": {
+        "true": {
+          "target": 0.03578830328597103,
+          "donor": 0.04751780517417255,
+          "kappa_mae": 0.03982578179066355,
+          "means": {
+            "target": 0.4416362727876123,
+            "donor": 0.2616471864285286,
+            "true_centroid": 0.7497565045944932,
+            "donor_centroid": 0.4989760734168728,
+            "shown": 0.7497565045944932
+          },
+          "mean_remainder": 0.006743814633029236,
+          "mae_remainder": 0.027351860116983418,
+          "shown_bias": 0.010780185406096304,
+          "transport_pass": true
+        },
+        "swap": {
+          "target": 0.06142114692489191,
+          "donor": 0.049161322019788914,
+          "kappa_mae": 0.11198198042869936,
+          "means": {
+            "target": 0.31410722391713697,
+            "donor": 0.39580717060037535,
+            "true_centroid": 0.49987519979069506,
+            "donor_centroid": 0.7092395160557122,
+            "shown": 0.7092395160557122
+          },
+          "mean_remainder": 0.07140883078234893,
+          "mae_remainder": 0.07140883078234893,
+          "shown_bias": -0.029736803132684564,
+          "transport_pass": false
+        },
+        "none": {
+          "target": 0.056045178862033015,
+          "donor": 0.04280563552956342,
+          "kappa_mae": 0.11991036383864336,
+          "means": {
+            "target": 0.30617884050719296,
+            "donor": 0.2668084782896202,
+            "true_centroid": 0.5063682200162009,
+            "donor_centroid": 0.48407666014470785
+          }
+        }
+      }
+    },
+    {
+      "domain": "arxiv",
+      "gen": "sonnet",
+      "arm": "GAP",
+      "counts": {
+        "true": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "swap": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "none": {
+          "attempted": 20,
+          "valid": 20
+        }
+      },
+      "n_complete": 20,
+      "drop": {
+        "mean": 0.18361660095598498,
+        "low": 0.1398113377324343,
+        "high": 0.22742186417953567
+      },
+      "attraction": {
+        "mean": 0.6368257464694376,
+        "low": 0.5171906053972581,
+        "high": 0.756460887541617
+      },
+      "verdict": "causal anchoring supported",
+      "no_neighbours_drop_descriptive": 0.20280578445855607,
+      "quantitative": {
+        "true": {
+          "target": 0.020633503294048335,
+          "donor": 0.030156391762114966,
+          "kappa_mae": 0.03783044577106309,
+          "means": {
+            "target": 0.4861068209288951,
+            "donor": 0.25155002111501346,
+            "true_centroid": 0.8392974555763513,
+            "donor_centroid": 0.5012351223890812,
+            "shown": 0.8392974555763513
+          },
+          "mean_remainder": -0.0005081605043247839,
+          "mae_remainder": 0.02174684477985983,
+          "shown_bias": 0.027591263321909094,
+          "transport_pass": true
+        },
+        "swap": {
+          "target": 0.03157712330879074,
+          "donor": 0.03285648720277397,
+          "kappa_mae": 0.15133921807779369,
+          "means": {
+            "target": 0.3024902199729101,
+            "donor": 0.4545910955456722,
+            "true_centroid": 0.5035875485479392,
+            "donor_centroid": 0.8023509618301065,
+            "shown": 0.8023509618301065
+          },
+          "mean_remainder": 0.028333160244013843,
+          "mae_remainder": 0.03652041759643341,
+          "shown_bias": -0.009355230424335776,
+          "transport_pass": true
+        },
+        "none": {
+          "target": 0.06037653784855375,
+          "donor": 0.0558421908559588,
+          "kappa_mae": 0.1705284015803647,
+          "means": {
+            "target": 0.28330103647033905,
+            "donor": 0.2412259226501504,
+            "true_centroid": 0.47907013081471356,
+            "donor_centroid": 0.47508497764307733
+          }
+        }
+      }
+    },
+    {
+      "domain": "arxiv",
+      "gen": "luna",
+      "arm": "FAR",
+      "counts": {
+        "true": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "swap": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "none": {
+          "attempted": 20,
+          "valid": 20
+        }
+      },
+      "n_complete": 20,
+      "drop": {
+        "mean": 0.053793766406597054,
+        "low": 0.03453069072536781,
+        "high": 0.0730568420878263
+      },
+      "attraction": {
+        "mean": 0.47161672792699705,
+        "low": 0.346800112329359,
+        "high": 0.5964333435246352
+      },
+      "verdict": "causal anchoring supported",
+      "no_neighbours_drop_descriptive": 0.05362322154043207,
+      "quantitative": {
+        "true": {
+          "target": 0.019737125890370022,
+          "donor": 0.01662390202401754,
+          "kappa_mae": 0.020658617626028136,
+          "means": {
+            "target": 0.038170954573137586,
+            "donor": -0.04685398194657255,
+            "true_centroid": 0.6733179602506549,
+            "donor_centroid": 0.39561788681709775,
+            "shown": 0.6733179602506549
+          },
+          "mean_remainder": -0.014147153984001038,
+          "mae_remainder": 0.017270422982716787,
+          "shown_bias": 0.008122083731872315,
+          "transport_pass": true
+        },
+        "swap": {
+          "target": 0.03421233831631022,
+          "donor": 0.04322241275249768,
+          "kappa_mae": 0.06891760520232798,
+          "means": {
+            "target": -0.015622811833459468,
+            "donor": 0.01128297148153997,
+            "true_centroid": 0.4157016129661731,
+            "donor_centroid": 0.6096182674596128,
+            "shown": 0.6096182674596128
+          },
+          "mean_remainder": 0.029962360220227618,
+          "mae_remainder": 0.030247349464001906,
+          "shown_bias": -0.055577609059169884,
+          "transport_pass": false
+        },
+        "none": {
+          "target": 0.0363561201430016,
+          "donor": 0.023812381208813425,
+          "kappa_mae": 0.06874706033616299,
+          "means": {
+            "target": -0.015452266967294483,
+            "donor": -0.04924476429317541,
+            "true_centroid": 0.48594051742662697,
+            "donor_centroid": 0.4200086280639531
+          }
+        }
+      }
+    },
+    {
+      "domain": "arxiv",
+      "gen": "sonnet",
+      "arm": "FAR",
+      "counts": {
+        "true": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "swap": {
+          "attempted": 20,
+          "valid": 20
+        },
+        "none": {
+          "attempted": 20,
+          "valid": 20
+        }
+      },
+      "n_complete": 20,
+      "drop": {
+        "mean": 0.08309429228422541,
+        "low": 0.06616145060188115,
+        "high": 0.10002713396656966
+      },
+      "attraction": {
+        "mean": 0.6446573722157023,
+        "low": 0.5232391230774106,
+        "high": 0.766075621353994
+      },
+      "verdict": "causal anchoring supported",
+      "no_neighbours_drop_descriptive": 0.0786118460560977,
+      "quantitative": {
+        "true": {
+          "target": 0.014283710639167313,
+          "donor": 0.013270682994359606,
+          "kappa_mae": 0.01488205497234204,
+          "means": {
+            "target": 0.06639074428077699,
+            "donor": -0.04638472550439189,
+            "true_centroid": 0.7743275653905584,
+            "donor_centroid": 0.4080805986834683,
+            "shown": 0.7743275653905584
+          },
+          "mean_remainder": 0.006104939250013822,
+          "mae_remainder": 0.013257231180448966,
+          "shown_bias": -0.001535672320919268,
+          "transport_pass": true
+        },
+        "swap": {
+          "target": 0.04142258042264409,
+          "donor": 0.029638250583052573,
+          "kappa_mae": 0.07346806087759,
+          "means": {
+            "target": -0.016703548003448428,
+            "donor": 0.030838415384431113,
+            "true_centroid": 0.4205485050697728,
+            "donor_centroid": 0.6989589105783847,
+            "shown": 0.6989589105783847
+          },
+          "mean_remainder": 0.035835819133412765,
+          "mae_remainder": 0.035835819133412765,
+          "shown_bias": -0.07690432713309289,
+          "transport_pass": false
+        },
+        "none": {
+          "target": 0.03647785578077106,
+          "donor": 0.0195365689329695,
+          "kappa_mae": 0.06898561464946226,
+          "means": {
+            "target": -0.012221101775320705,
+            "donor": -0.05210314384091509,
+            "true_centroid": 0.45700040561228905,
+            "donor_centroid": 0.40705436401315326
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+kind,name,value,verified_utc
+lean_axioms,LatentGap.Cover.pair_polar,propext; Classical.choice; Quot.sound,2026-10-28T18:50:17.584265+00:00
+lean_axioms,LatentGap.Cover.pair_norm_lower,propext; Classical.choice; Quot.sound,2026-10-28T18:50:17.584443+00:00
+lean_axioms,LatentGap.Cover.cell_certificate,propext; Classical.choice; Quot.sound,2026-10-28T18:50:17.584454+00:00
+lean_axioms,LatentGap.Cover.directional_cell_certificate,propext; Classical.choice; Quot.sound,2026-10-28T18:50:17.584461+00:00
+lean_axioms,LatentGap.Cover.covered_language_certificate,propext; Classical.choice; Quot.sound,2026-10-28T18:50:17.584471+00:00
+lean_axioms,LatentGap.Cover.coherent_restriction,propext; Classical.choice; Quot.sound,2026-10-28T18:50:17.584478+00:00
+lean_axioms,LatentGap.Cover.score_failure_requires_residual,propext; Classical.choice; Quot.sound,2026-10-28T18:50:17.584485+00:00
+lean_axioms,LatentGap.Cover.residual_inflation,propext; Classical.choice; Quot.sound,2026-10-28T18:50:17.584492+00:00
+lean_axioms,LatentGap.Cover.mixture_risk_bound,propext; Classical.choice; Quot.sound,2026-10-28T18:50:17.584498+00:00
+lean_axioms,LatentGap.Cover.search_risk_budget,propext; Classical.choice; Quot.sound,2026-10-28T18:50:17.584505+00:00
+check,lake build,PASS; single full build; 18120 jobs,2026-10-28T18:50:17.584511+00:00
+check,cover.py --check,PASS; frozen artifacts and numerical identities,2026-10-28T18:50:17.584518+00:00
+sha256,lean/LatentGap/Cover.lean,ffae0eaf90a97208c6b5c178d234887243657afab44c68aa44119a0b5f330f50,2026-10-28T18:50:17.584524+00:00
+sha256,lean/LatentGap.lean,5291d587cfeee27edfdfcd978c697d3e8e6b3fbbde22623a506169f96d270679,2026-10-28T18:50:17.584531+00:00
+sha256,scripts/bounds/cover.py,176b7d3efd7cfd1685d511e08f14f32a0c3d531e09243581ba27b871861117b6,2026-10-28T18:50:17.584541+00:00

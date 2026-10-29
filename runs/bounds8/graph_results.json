@@ -1,0 +1,4133 @@
+{
+  "completed_utc": "2026-10-29T08:50:21.564281+00:00",
+  "peak_rss_bytes": 228261888,
+  "graphs": [
+    {
+      "domain": "steam",
+      "gate": "original",
+      "L_factor": 1,
+      "radius": 0.012196580462939841,
+      "n_vertices": 3904,
+      "n_components": 3848,
+      "mixed_components": 0,
+      "conflict_paths": [],
+      "targets": [
+        {
+          "k": 1,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 1,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 2,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 2,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 3,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 3,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 4,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 4,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 5,
+          "margin": 0.03,
+          "M_cached": 2,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 2,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 5,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 6,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 6,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 7,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 7,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 8,
+          "margin": 0.03,
+          "M_cached": 8,
+          "unknown_dangerous_components": 8,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 2,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 8,
+          "margin": 0.05,
+          "M_cached": 5,
+          "unknown_dangerous_components": 5,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 9,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 9,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 10,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 10,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 11,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 11,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 12,
+          "margin": 0.03,
+          "M_cached": 14,
+          "unknown_dangerous_components": 14,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 2,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 12,
+          "margin": 0.05,
+          "M_cached": 8,
+          "unknown_dangerous_components": 8,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 2,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 13,
+          "margin": 0.03,
+          "M_cached": 10,
+          "unknown_dangerous_components": 10,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 2,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 13,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 14,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 2,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 14,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 15,
+          "margin": 0.03,
+          "M_cached": 4,
+          "unknown_dangerous_components": 4,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 15,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 16,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 16,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 17,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 17,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 18,
+          "margin": 0.03,
+          "M_cached": 2,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 18,
+          "margin": 0.05,
+          "M_cached": 1,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 19,
+          "margin": 0.03,
+          "M_cached": 1,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 19,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 20,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 20,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        }
+      ]
+    },
+    {
+      "domain": "steam",
+      "gate": "original",
+      "L_factor": 2,
+      "radius": 0.006098290231469921,
+      "n_vertices": 3904,
+      "n_components": 3895,
+      "mixed_components": 0,
+      "conflict_paths": [],
+      "targets": [
+        {
+          "k": 1,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 1,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 2,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 2,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 3,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 3,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 4,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 4,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 5,
+          "margin": 0.03,
+          "M_cached": 2,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 2,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 5,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 6,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 6,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 7,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 7,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 8,
+          "margin": 0.03,
+          "M_cached": 8,
+          "unknown_dangerous_components": 8,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 2,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 8,
+          "margin": 0.05,
+          "M_cached": 5,
+          "unknown_dangerous_components": 5,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 9,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 9,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 10,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 10,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 11,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 11,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 12,
+          "margin": 0.03,
+          "M_cached": 14,
+          "unknown_dangerous_components": 14,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 2,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 12,
+          "margin": 0.05,
+          "M_cached": 8,
+          "unknown_dangerous_components": 8,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 2,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 13,
+          "margin": 0.03,
+          "M_cached": 10,
+          "unknown_dangerous_components": 10,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 2,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 13,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 14,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 2,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 14,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 15,
+          "margin": 0.03,
+          "M_cached": 4,
+          "unknown_dangerous_components": 4,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 15,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 16,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 16,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 17,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 17,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 18,
+          "margin": 0.03,
+          "M_cached": 2,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 18,
+          "margin": 0.05,
+          "M_cached": 1,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 19,
+          "margin": 0.03,
+          "M_cached": 1,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 19,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 20,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 20,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        }
+      ]
+    },
+    {
+      "domain": "steam",
+      "gate": "opus",
+      "L_factor": 1,
+      "radius": 0.5000550892919621,
+      "n_vertices": 3904,
+      "n_components": 419,
+      "mixed_components": 5,
+      "conflict_paths": [
+        {
+          "positive": {
+            "domain": "steam",
+            "sha256": "c5de1cd9762192eb492ce011ad7da3cb85850580284f350e3cecc48b23ae7404",
+            "text": "Genres: Simulation,Indie. Tags: VR,Multiplayer,Survival,Simulation,Co-op,Horde Survival,Management. About: Welcome to the Bureau. You and your teammates are the last gravekeepers on the night shift, and the horde is coming back. Graveyard Shift Bureau is a multiplayer VR survival simulation where every minute on the clock matters.\n\nWork together to run a cemetery office under pressure. Monitor the grounds on a wall of security screens, track each approaching wave, and keep the systems running. When the power flickers, rewire it and bring it back online before time runs out. Did you set it up right? If not, you will have to set it up again, and the clock will not wait.\n\nBetween waves, sit down in the boardroom, review your notes, and edit the records in the bureau's wiki. Every story you compile, every note you log, and every correction you make changes what your team knows about the next attack. A probation officer reviews your performance at the end of each night, and a tribunal decides whether your crew keeps its post.\n\nFeatures:\n- Cooperative VR play for multiple players\n- Timed survival rounds against escalating hordes\n- Monitoring stations, wiring puzzles, and emergency repairs\n- A shared wiki editor that records the story of every shift\n- Restart a night and try a different approa",
+            "ratings": {
+              "haiku": [
+                7
+              ],
+              "luna": [
+                8
+              ],
+              "opus": [
+                7
+              ]
+            },
+            "rating_sources": [
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/claude-sonnet-5-5/GAP-15.json:gate",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/claude-sonnet-5-5/GAP-15.json:gate",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+                "judge": "opus",
+                "score": 7
+              }
+            ],
+            "embedding_sources": [
+              "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/c5de1cd9762192eb492ce011ad7da3cb85850580284f350e3cecc48b23ae7404.npy"
+            ],
+            "eligibility_flags": [
+              true
+            ]
+          },
+          "negative": {
+            "domain": "steam",
+            "sha256": "80c01c7298f0d3c5dd676a266dcf556cb246537a555227fb74104e82fd52a7ac",
+            "text": "Genres: Simulation,Survival,Multiplayer. Tags: VR,Multiplayer,Survival,Bureaucracy,Time Management,Story Rich,Editor,Co-op. About: The Bureau\u2019s archive is under siege. In this VR multiplayer survival simulation, reconnect the wires and reset the timers before the Horde reaches the boardroom. Each round is a race to keep the record alive: edit and compile wiki pages, stitch together clips and notes, and track timer updates as the story restarts. A disputed change can send you before the editor tribunal, where your team must decide what belongs in the archive and what needs to be recovered. Take on the work of a gravekeeper-editor, restoring damaged entries while probation officers and monitoring programs watch for mistakes. Coordinate across the room, keep the system running, and protect the story through its finale. Every repaired page buys time, but the Horde keeps coming\u2014and a missed update can unravel the whole archive.",
+            "ratings": {
+              "haiku": [
+                7
+              ],
+              "luna": [
+                8
+              ],
+              "opus": [
+                6
+              ]
+            },
+            "rating_sources": [
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/gpt-6-luna/GAP-15.json:gate",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/gpt-6-luna/GAP-15.json:gate",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+                "judge": "opus",
+                "score": 6
+              }
+            ],
+            "embedding_sources": [
+              "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/80c01c7298f0d3c5dd676a266dcf556cb246537a555227fb74104e82fd52a7ac.npy"
+            ],
+            "eligibility_flags": [
+              true
+            ]
+          },
+          "path": [
+            {
+              "from": "c5de1cd9762192eb492ce011ad7da3cb85850580284f350e3cecc48b23ae7404",
+              "to": "0c9b7fa43198984607027621608fc1d7a91efb779dcf8f1ed09a37d124e33e71",
+              "distance": 0.4638312335783744
+            },
+            {
+              "from": "0c9b7fa43198984607027621608fc1d7a91efb779dcf8f1ed09a37d124e33e71",
+              "to": "01788005c19c5448b288a59de0e20a169fbc36d7e99d97791b8b935378ff06d9",
+              "distance": 0.47310659762000995
+            },
+            {
+              "from": "01788005c19c5448b288a59de0e20a169fbc36d7e99d97791b8b935378ff06d9",
+              "to": "80c01c7298f0d3c5dd676a266dcf556cb246537a555227fb74104e82fd52a7ac",
+              "distance": 0.18927839547168487
+            }
+          ]
+        },
+        {
+          "positive": {
+            "domain": "steam",
+            "sha256": "855a0fc2ac543195a95f351ae103da8e0c52c401b04015ee20a0696b376ddae8",
+            "text": "Genres: Action,Indie,Platformer,Free to Play. Tags: Free to Play,Dodge,Platformer,Combat,Retro,Burglary,Arcade,Level Up. About: Play Clemsonizer Vault Dodge, a free retro dodge platformer about burglary. Download free and slip into the vaults!\n\nEvery level is a game of squares. Hazards spin clockwise around each room, and you must time every jump to survive. Drop down through the ceiling, pass locked doors, climb over a fence and crack the vault before the guards catch you.\n\nFight with quick combat or dodge past enemies. Traps, switches and hidden doors keep each run fresh.\n\nEach level is harder than the one before it. Finish a stage to earn a trophy, then replay earlier levels to collect the ones you missed. A boss waits at the end of every second vault, testing everything you have learned.\n\nFeatures:\n- Free to download and play\n- Retro platform combat with precise dodging\n- Clockwise square hazard patterns\n- Vaults, doors and fences to get past\n- Level progression with trophies to earn\n- Short stages, easy to learn and hard to master",
+            "ratings": {
+              "haiku": [
+                7
+              ],
+              "luna": [
+                9
+              ],
+              "opus": [
+                7
+              ]
+            },
+            "rating_sources": [
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/claude-sonnet-5-5/GAP-6.json:gate",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/claude-sonnet-5-5/GAP-6.json:gate",
+                "judge": "luna",
+                "score": 9
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "luna",
+                "score": 9
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+                "judge": "opus",
+                "score": 7
+              }
+            ],
+            "embedding_sources": [
+              "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/855a0fc2ac543195a95f351ae103da8e0c52c401b04015ee20a0696b376ddae8.npy"
+            ],
+            "eligibility_flags": [
+              true
+            ]
+          },
+          "negative": {
+            "domain": "steam",
+            "sha256": "8e9c442814fcce8726e3ac92c4dbcc1b0a05d7fcf8cba5a5f414842487fed959",
+            "text": "Genres: Platformer,Action,Combat. Tags: Retro,Dodge,Burglary,Free to Play. About: Take control of Vera, a burglar racing through Leeds in a free retro platformer. Leap across square platforms, duck beneath low ceilings and thread through doors as you make your way toward a guarded vault. Tight corridors leave little room to hesitate: dodge danger, fight when a route is blocked, and use pumps and shifting hazards to turn each room into a test of timing. Fences and locked doors complicate the getaway, so scout the layout and watch the simple on-screen overlay as you move through the building\u2019s traditional infrastructure and machinery. Every level takes you deeper into the job, building toward a trophy for mastering the route. Quick reactions and careful platforming can get Vera in and out clean.",
+            "ratings": {
+              "haiku": [
+                7
+              ],
+              "luna": [
+                8
+              ],
+              "opus": [
+                6
+              ]
+            },
+            "rating_sources": [
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/gpt-6-luna/GAP-6.json:gate",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/gpt-6-luna/GAP-6.json:gate",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+                "judge": "opus",
+                "score": 6
+              }
+            ],
+            "embedding_sources": [
+              "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/8e9c442814fcce8726e3ac92c4dbcc1b0a05d7fcf8cba5a5f414842487fed959.npy"
+            ],
+            "eligibility_flags": [
+              true
+            ]
+          },
+          "path": [
+            {
+              "from": "855a0fc2ac543195a95f351ae103da8e0c52c401b04015ee20a0696b376ddae8",
+              "to": "42bf99c5a87648b3439d0ad6024b79a71e7f7e43be91fad36ed7848af7e34ba4",
+              "distance": 0.3941207272471212
+            },
+            {
+              "from": "42bf99c5a87648b3439d0ad6024b79a71e7f7e43be91fad36ed7848af7e34ba4",
+              "to": "90b63a5d711a5db7ebf38d3347e17040946eba70812317d8dd61520ab6faaf32",
+              "distance": 0.4952450410198378
+            },
+            {
+              "from": "90b63a5d711a5db7ebf38d3347e17040946eba70812317d8dd61520ab6faaf32",
+              "to": "96be1a519bfae97d0c315e11978342ddbdaec8158d6e511d2ff7ab1d7f5b36f1",
+              "distance": 0.49043342939659973
+            },
+            {
+              "from": "96be1a519bfae97d0c315e11978342ddbdaec8158d6e511d2ff7ab1d7f5b36f1",
+              "to": "8e9c442814fcce8726e3ac92c4dbcc1b0a05d7fcf8cba5a5f414842487fed959",
+              "distance": 0.2627576378555924
+            }
+          ]
+        },
+        {
+          "positive": {
+            "domain": "steam",
+            "sha256": "88b531b2c070c21e60296d43cd0d43fc68f0097548ef2e53e95cbdb75fa3ae27",
+            "text": "Genres: Sports,Simulation,Casual. Tags: Sports,Ball Games,Crafting,Simulation,Building,Casual,Singleplayer. About: Slim Ball Classics is a relaxed crafting and sports simulation about designing, assembling and testing handmade balls. Start in a small workshop with a few basic materials and learn which ones suit each kind of ball. Every ball has its own construction, features and advantages, and you will need to balance strength, weight and bounce to get a perfect result.\n\nChoose from a collection of classic designs, each with a history and a traditional use. Work through the assembly step by step, then try optional upgrades and extra parts to improve performance. Watch for construction complications, because a poor choice of material can cause energy loss and ruin a ball's flight.\n\nTest your creations on the practice field, where every ball behaves according to its materials and build. Compare your results against earlier designs and see how each new version improves on its predecessors.\n\nFeatures:\n- Craft 16 different balls, from traditional handmade types to modern functional designs\n- Collect and combine a wide range of materials\n- Learn the strengths and properties of each material\n- Unlock new workshop tools and a power-holder station\n- Test balls in varied conditions and accelerate your d",
+            "ratings": {
+              "haiku": [
+                7
+              ],
+              "luna": [
+                7
+              ],
+              "opus": [
+                8
+              ]
+            },
+            "rating_sources": [
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/claude-sonnet-5-5/FAR-20.json:gate",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/claude-sonnet-5-5/FAR-20.json:gate",
+                "judge": "luna",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "luna",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+                "judge": "opus",
+                "score": 8
+              }
+            ],
+            "embedding_sources": [
+              "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/88b531b2c070c21e60296d43cd0d43fc68f0097548ef2e53e95cbdb75fa3ae27.npy"
+            ],
+            "eligibility_flags": [
+              true
+            ]
+          },
+          "negative": {
+            "domain": "steam",
+            "sha256": "cd3ba9df4443dc276ed11d7b630e36ba17410b7e6cf53cae5e96075b241d7871",
+            "text": "Genres: Simulation,Sports,Casual. Tags: Physics,Ball,Crafting,Sandbox. About: Step into a hands-on workshop devoted to the design, history, and practical use of balls. Choose materials, compare their strengths and properties, and build equivalent balls to see how construction changes their performance. Begin with classic forms, including traditional horned designs, or try a slim B-ball and the distinctive Baxter model. Each design has trade-offs: handmade assembly and familiar construction methods can offer useful qualities while bringing their own complications.\n\nCreate and compare a collection of up to 16 balls, then test them with a 250 W power-holder. Explore how regional traditions and real-world applications shape material choices, from everyday play to specialized uses. Study the features that made earlier designs popular, refine your own functional builds, and weigh each advantage against the demands of production. Experiment, test, and uncover how thoughtful design turns simple materials into objects made to move.",
+            "ratings": {
+              "haiku": [
+                7
+              ],
+              "luna": [
+                7
+              ],
+              "opus": [
+                5
+              ]
+            },
+            "rating_sources": [
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/gpt-6-luna/FAR-20.json:gate",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/gpt-6-luna/FAR-20.json:gate",
+                "judge": "luna",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "luna",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+                "judge": "opus",
+                "score": 5
+              }
+            ],
+            "embedding_sources": [
+              "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/cd3ba9df4443dc276ed11d7b630e36ba17410b7e6cf53cae5e96075b241d7871.npy"
+            ],
+            "eligibility_flags": [
+              true
+            ]
+          },
+          "path": [
+            {
+              "from": "88b531b2c070c21e60296d43cd0d43fc68f0097548ef2e53e95cbdb75fa3ae27",
+              "to": "0708dae5cfd71ff49f1e3b18e3fb29475d4b086f0fec6965b3ee4ddb702bddf8",
+              "distance": 0.299513856527358
+            },
+            {
+              "from": "0708dae5cfd71ff49f1e3b18e3fb29475d4b086f0fec6965b3ee4ddb702bddf8",
+              "to": "67361df34c51eb7cf7eaf7b659e4b585f2f0ba82b28c8d97544a46bbcb2a1781",
+              "distance": 0.4529248644247456
+            },
+            {
+              "from": "67361df34c51eb7cf7eaf7b659e4b585f2f0ba82b28c8d97544a46bbcb2a1781",
+              "to": "4080505791e6c61e1564113775b21a5440f2e47f54f15b90c1054c0b517f3b4d",
+              "distance": 0.413964264205344
+            },
+            {
+              "from": "4080505791e6c61e1564113775b21a5440f2e47f54f15b90c1054c0b517f3b4d",
+              "to": "cd3ba9df4443dc276ed11d7b630e36ba17410b7e6cf53cae5e96075b241d7871",
+              "distance": 0.049986619465561086
+            }
+          ]
+        },
+        {
+          "positive": {
+            "domain": "steam",
+            "sha256": "4277e062f30291baaedc40afa8ac6bdfc6dc742e0bf25159b27d6ec1ab0061f4",
+            "text": "Genres: Simulation,Puzzle,Casual. Tags: Puzzle,Simulation,Escape Room,Cozy,Singleplayer,Editable,Cosmetic,English. About: Bluemen is a cozy puzzle simulation set inside a single locked cabin. It is your first time there, and the door has closed behind you. Escape by reading clues, decoding notes and editing the rooms around you.\n\nEvery object in the cabin is an editable piece of the puzzle. Open drawers, flip hidden switches, rearrange furniture and swap cosmetic items to reveal secret compartments. Some labels, keys and annotations are wrong on purpose, so check each clue twice before you trust it. A misplaced symbol or a missing character in a code can send you down the wrong path.\n\nEach solved puzzle unlocks a new part of the cabin and brings you closer to the exit. Finish the escape, then return to decorate every room your own way.\n\nFeatures:\n- Escape-style puzzles woven into a relaxed simulation\n- Cosmetic customization for every room\n- Editable layouts that change how puzzles unfold\n- Hidden codes, encoded notes and secret doors\n- No timers and no penalties\n- Full English text with a simple point-and-click interface\n\nTake your time and see whether you can unravel every mystery the cabin holds.",
+            "ratings": {
+              "haiku": [
+                8
+              ],
+              "luna": [
+                8
+              ],
+              "opus": [
+                8
+              ]
+            },
+            "rating_sources": [
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/claude-sonnet-5-5/GAP-16.json:gate",
+                "judge": "haiku",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/claude-sonnet-5-5/GAP-16.json:gate",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "haiku",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+                "judge": "opus",
+                "score": 8
+              }
+            ],
+            "embedding_sources": [
+              "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/4277e062f30291baaedc40afa8ac6bdfc6dc742e0bf25159b27d6ec1ab0061f4.npy"
+            ],
+            "eligibility_flags": [
+              true
+            ]
+          },
+          "negative": {
+            "domain": "steam",
+            "sha256": "dcfcf78bfcefa2b7da3b1e8d6d1f46592f26092b8cd897c508174e34472c9563",
+            "text": "Genres: Simulation,Puzzle. Tags: Cabin,Escape Room,Cozy,Logic,Text Puzzles,XML. About: Welcome to Bluemen, a cheeky cabin simulation where every room hides a small escape mission. Make the cabin your own as you inspect its notes, labels, and annotations for clues. A misplaced key, an editable field, or a stubborn exit label can turn an ordinary object into the next puzzle. Read snippets of HTML and XML, follow IDs and localized strings, and repair what the cabin\u2019s little marshaller has left behind. Some challenges ask you to spot an escape character; others lead through namespaces, empty entries, or a dismissible message that refuses to stay dismissed. Each clue belongs to the room around it, so look closely, experiment, and connect the text to the objects nearby. Whether you\u2019re a first-time Bluemen or a seasoned tinkerer, take your time, solve each mission, and settle into a playful mix of cabin decorating and hands-on, language-based puzzling.",
+            "ratings": {
+              "haiku": [
+                7
+              ],
+              "luna": [
+                9
+              ],
+              "opus": [
+                6
+              ]
+            },
+            "rating_sources": [
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/gpt-6-luna/GAP-16.json:gate",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/gpt-6-luna/GAP-16.json:gate",
+                "judge": "luna",
+                "score": 9
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "luna",
+                "score": 9
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+                "judge": "opus",
+                "score": 6
+              }
+            ],
+            "embedding_sources": [
+              "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/dcfcf78bfcefa2b7da3b1e8d6d1f46592f26092b8cd897c508174e34472c9563.npy"
+            ],
+            "eligibility_flags": [
+              true
+            ]
+          },
+          "path": [
+            {
+              "from": "4277e062f30291baaedc40afa8ac6bdfc6dc742e0bf25159b27d6ec1ab0061f4",
+              "to": "25bb825dbc7ade691cba9ddfba358cd0b3e6d6a4fc8e633f40836133f912583b",
+              "distance": 0.29446032521997345
+            },
+            {
+              "from": "25bb825dbc7ade691cba9ddfba358cd0b3e6d6a4fc8e633f40836133f912583b",
+              "to": "3e57ecae5b6e68fbfc3cc0279d09e46e39de56c50d52e816dd37575679af46c6",
+              "distance": 0.4861566236602764
+            },
+            {
+              "from": "3e57ecae5b6e68fbfc3cc0279d09e46e39de56c50d52e816dd37575679af46c6",
+              "to": "dcfcf78bfcefa2b7da3b1e8d6d1f46592f26092b8cd897c508174e34472c9563",
+              "distance": 0.14427328064884123
+            }
+          ]
+        },
+        {
+          "positive": {
+            "domain": "steam",
+            "sha256": "bcb03794612db2331a261cda759e7a03165d3973770d8a6c74b4a8f17cee978a",
+            "text": "Genres: Simulation,RPG,Strategy. Tags: Fantasy,Strategy,Anime,Colonial Era,History,Sports,Diversity,Fan Art,Team-Based,Simulation,Japanese Art Style. About: Step into a colonial-era fantasy where history meets anime-inspired storytelling. You play a young woman raising her younger sister while helping your community survive and grow.\n\nVisit residents' homes, hear their stories and earn their trust. Join the Partnership Program, a community effort founded fourteen years ago, and work with Joanna Fawerbuckle, a stubborn but caring guide who helps your family and neighbors.\n\nThe yearly Festival is a team-based ball game of defense, blockers and ball-handlers. Pick a teammate, build your squad, and lead your side through the tournament, then return home to manage your town in simulation mode.\n\nTake on billable jobs to earn dollars, unlock animated scenes, and collect fan art inspired by a diverse cast of Japanese-style anime characters.\n\nFeatures:\n- Simulation, RPG and strategy gameplay in one story\n- Team-based festival matches with defense and ball-handling roles\n- A diverse anime cast in a historical colonial setting\n- Animated scenes and fan art gallery",
+            "ratings": {
+              "haiku": [
+                7
+              ],
+              "luna": [
+                8
+              ],
+              "opus": [
+                7
+              ]
+            },
+            "rating_sources": [
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/claude-sonnet-5-5/GAP-19.json:gate",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/claude-sonnet-5-5/GAP-19.json:gate",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+                "judge": "opus",
+                "score": 7
+              }
+            ],
+            "embedding_sources": [
+              "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/bcb03794612db2331a261cda759e7a03165d3973770d8a6c74b4a8f17cee978a.npy"
+            ],
+            "eligibility_flags": [
+              true
+            ]
+          },
+          "negative": {
+            "domain": "steam",
+            "sha256": "0b3bba13366c71d792c3534907fec02c006f1506e3f0417a46b1fc498be99289",
+            "text": "Genres: Simulation,RPG,Platformer,Strategy. Tags: Fantasy,Anime,Story Rich,Character Customization,Team-Based Tactics,Board Game,Festival. About: Explore a colorful fantasy world of anime-inspired characters, expressive art, and personal stories about family, identity, and belonging. Create a hero with distinctive features and meet a diverse cast as you follow a young character developing an anatomical model for her sister\u2014a small, personal project that takes on new meaning as the community gathers for its second-year festival.\n\nMove through platforming stages and board-game-inspired encounters where positioning and teamwork matter. Place defensive blockers to protect your teammates, then coordinate with your team\u2019s ball-handler to open a route through each challenge. Blend role-playing and strategy as you choose how to approach obstacles and help your team advance.\n\nVisit residents\u2019 homes, meet festival-goers, and discover the connections behind the community\u2019s stories. The celebration brings familiar faces and new allies together, while your sister\u2019s project grows into a reason for people to share, create, and support one another.",
+            "ratings": {
+              "haiku": [
+                7
+              ],
+              "luna": [
+                8
+              ],
+              "opus": [
+                5
+              ]
+            },
+            "rating_sources": [
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/gpt-6-luna/GAP-19.json:gate",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/steam/gpt-6-luna/GAP-19.json:gate",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+                "judge": "opus",
+                "score": 5
+              }
+            ],
+            "embedding_sources": [
+              "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/0b3bba13366c71d792c3534907fec02c006f1506e3f0417a46b1fc498be99289.npy"
+            ],
+            "eligibility_flags": [
+              true
+            ]
+          },
+          "path": [
+            {
+              "from": "bcb03794612db2331a261cda759e7a03165d3973770d8a6c74b4a8f17cee978a",
+              "to": "0ee3481d069d8046b8094573e530691795212e141405f4d25d23b2a2dc8f2c10",
+              "distance": 0.3171802678089098
+            },
+            {
+              "from": "0ee3481d069d8046b8094573e530691795212e141405f4d25d23b2a2dc8f2c10",
+              "to": "b8a19b0796f481a10351d06a938cb4614c8dcd7d44c4c89b476d035ab577e3f3",
+              "distance": 0.499324776797114
+            },
+            {
+              "from": "b8a19b0796f481a10351d06a938cb4614c8dcd7d44c4c89b476d035ab577e3f3",
+              "to": "0b3bba13366c71d792c3534907fec02c006f1506e3f0417a46b1fc498be99289",
+              "distance": 0.46465491823097366
+            }
+          ]
+        }
+      ],
+      "targets": [
+        {
+          "k": 1,
+          "margin": 0.03,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 1,
+          "margin": 0.05,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 2,
+          "margin": 0.03,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 1,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 2,
+          "margin": 0.05,
+          "M_cached": 4,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 3
+        },
+        {
+          "k": 3,
+          "margin": 0.03,
+          "M_cached": 1,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 3,
+          "margin": 0.05,
+          "M_cached": 1,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 4,
+          "margin": 0.03,
+          "M_cached": 12,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 10
+        },
+        {
+          "k": 4,
+          "margin": 0.05,
+          "M_cached": 12,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 10
+        },
+        {
+          "k": 5,
+          "margin": 0.03,
+          "M_cached": 7,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 5,
+          "margin": 0.05,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 6,
+          "margin": 0.03,
+          "M_cached": 23,
+          "unknown_dangerous_components": 4,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 19
+        },
+        {
+          "k": 6,
+          "margin": 0.05,
+          "M_cached": 21,
+          "unknown_dangerous_components": 4,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 17
+        },
+        {
+          "k": 7,
+          "margin": 0.03,
+          "M_cached": 7,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 7,
+          "margin": 0.05,
+          "M_cached": 7,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 8,
+          "margin": 0.03,
+          "M_cached": 24,
+          "unknown_dangerous_components": 4,
+          "negative_implied_unknown_texts": 8,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 20
+        },
+        {
+          "k": 8,
+          "margin": 0.05,
+          "M_cached": 21,
+          "unknown_dangerous_components": 3,
+          "negative_implied_unknown_texts": 8,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 18
+        },
+        {
+          "k": 9,
+          "margin": 0.03,
+          "M_cached": 6,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 9,
+          "margin": 0.05,
+          "M_cached": 3,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 2
+        },
+        {
+          "k": 10,
+          "margin": 0.03,
+          "M_cached": 10,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 8
+        },
+        {
+          "k": 10,
+          "margin": 0.05,
+          "M_cached": 10,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 8
+        },
+        {
+          "k": 11,
+          "margin": 0.03,
+          "M_cached": 11,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 9
+        },
+        {
+          "k": 11,
+          "margin": 0.05,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 12,
+          "margin": 0.03,
+          "M_cached": 27,
+          "unknown_dangerous_components": 4,
+          "negative_implied_unknown_texts": 3,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 23
+        },
+        {
+          "k": 12,
+          "margin": 0.05,
+          "M_cached": 21,
+          "unknown_dangerous_components": 4,
+          "negative_implied_unknown_texts": 3,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 17
+        },
+        {
+          "k": 13,
+          "margin": 0.03,
+          "M_cached": 16,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 2,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 15
+        },
+        {
+          "k": 13,
+          "margin": 0.05,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 14,
+          "margin": 0.03,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 14,
+          "margin": 0.05,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 15,
+          "margin": 0.03,
+          "M_cached": 15,
+          "unknown_dangerous_components": 3,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 12
+        },
+        {
+          "k": 15,
+          "margin": 0.05,
+          "M_cached": 10,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 8
+        },
+        {
+          "k": 16,
+          "margin": 0.03,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 16,
+          "margin": 0.05,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 17,
+          "margin": 0.03,
+          "M_cached": 4,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 3
+        },
+        {
+          "k": 17,
+          "margin": 0.05,
+          "M_cached": 4,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 3
+        },
+        {
+          "k": 18,
+          "margin": 0.03,
+          "M_cached": 17,
+          "unknown_dangerous_components": 3,
+          "negative_implied_unknown_texts": 2,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 14
+        },
+        {
+          "k": 18,
+          "margin": 0.05,
+          "M_cached": 8,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 2,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 19,
+          "margin": 0.03,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 19,
+          "margin": 0.05,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 20,
+          "margin": 0.03,
+          "M_cached": 13,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 11
+        },
+        {
+          "k": 20,
+          "margin": 0.05,
+          "M_cached": 13,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 11
+        }
+      ]
+    },
+    {
+      "domain": "steam",
+      "gate": "opus",
+      "L_factor": 2,
+      "radius": 0.25002754464598104,
+      "n_vertices": 3904,
+      "n_components": 1297,
+      "mixed_components": 0,
+      "conflict_paths": [],
+      "targets": [
+        {
+          "k": 1,
+          "margin": 0.03,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 1,
+          "margin": 0.05,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 2,
+          "margin": 0.03,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 1,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 2,
+          "margin": 0.05,
+          "M_cached": 4,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 3
+        },
+        {
+          "k": 3,
+          "margin": 0.03,
+          "M_cached": 1,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 3,
+          "margin": 0.05,
+          "M_cached": 1,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 4,
+          "margin": 0.03,
+          "M_cached": 12,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 10
+        },
+        {
+          "k": 4,
+          "margin": 0.05,
+          "M_cached": 12,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 10
+        },
+        {
+          "k": 5,
+          "margin": 0.03,
+          "M_cached": 7,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 2,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 5,
+          "margin": 0.05,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 6,
+          "margin": 0.03,
+          "M_cached": 23,
+          "unknown_dangerous_components": 6,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 17
+        },
+        {
+          "k": 6,
+          "margin": 0.05,
+          "M_cached": 21,
+          "unknown_dangerous_components": 5,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 16
+        },
+        {
+          "k": 7,
+          "margin": 0.03,
+          "M_cached": 7,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 7,
+          "margin": 0.05,
+          "M_cached": 7,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 8,
+          "margin": 0.03,
+          "M_cached": 24,
+          "unknown_dangerous_components": 12,
+          "negative_implied_unknown_texts": 1,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 12
+        },
+        {
+          "k": 8,
+          "margin": 0.05,
+          "M_cached": 21,
+          "unknown_dangerous_components": 10,
+          "negative_implied_unknown_texts": 1,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 11
+        },
+        {
+          "k": 9,
+          "margin": 0.03,
+          "M_cached": 6,
+          "unknown_dangerous_components": 3,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 3
+        },
+        {
+          "k": 9,
+          "margin": 0.05,
+          "M_cached": 3,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 1
+        },
+        {
+          "k": 10,
+          "margin": 0.03,
+          "M_cached": 10,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 8
+        },
+        {
+          "k": 10,
+          "margin": 0.05,
+          "M_cached": 10,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 8
+        },
+        {
+          "k": 11,
+          "margin": 0.03,
+          "M_cached": 11,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 9
+        },
+        {
+          "k": 11,
+          "margin": 0.05,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 12,
+          "margin": 0.03,
+          "M_cached": 27,
+          "unknown_dangerous_components": 10,
+          "negative_implied_unknown_texts": 2,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 17
+        },
+        {
+          "k": 12,
+          "margin": 0.05,
+          "M_cached": 21,
+          "unknown_dangerous_components": 6,
+          "negative_implied_unknown_texts": 2,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 15
+        },
+        {
+          "k": 13,
+          "margin": 0.03,
+          "M_cached": 16,
+          "unknown_dangerous_components": 6,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 2,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 10
+        },
+        {
+          "k": 13,
+          "margin": 0.05,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 14,
+          "margin": 0.03,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 14,
+          "margin": 0.05,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 15,
+          "margin": 0.03,
+          "M_cached": 15,
+          "unknown_dangerous_components": 6,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 9
+        },
+        {
+          "k": 15,
+          "margin": 0.05,
+          "M_cached": 10,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 8
+        },
+        {
+          "k": 16,
+          "margin": 0.03,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 16,
+          "margin": 0.05,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 17,
+          "margin": 0.03,
+          "M_cached": 4,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 3
+        },
+        {
+          "k": 17,
+          "margin": 0.05,
+          "M_cached": 4,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 3
+        },
+        {
+          "k": 18,
+          "margin": 0.03,
+          "M_cached": 17,
+          "unknown_dangerous_components": 3,
+          "negative_implied_unknown_texts": 2,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 14
+        },
+        {
+          "k": 18,
+          "margin": 0.05,
+          "M_cached": 8,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 2,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 19,
+          "margin": 0.03,
+          "M_cached": 6,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 19,
+          "margin": 0.05,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 20,
+          "margin": 0.03,
+          "M_cached": 13,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 11
+        },
+        {
+          "k": 20,
+          "margin": 0.05,
+          "M_cached": 13,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 11
+        }
+      ]
+    },
+    {
+      "domain": "arxiv",
+      "gate": "original",
+      "L_factor": 1,
+      "radius": 0.0102591554472838,
+      "n_vertices": 2800,
+      "n_components": 2784,
+      "mixed_components": 0,
+      "conflict_paths": [],
+      "targets": [
+        {
+          "k": 1,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 1,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 2,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 2,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 3,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 3,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 4,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 4,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 5,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 5,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 6,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 6,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 7,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 7,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 8,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 8,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 9,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 9,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 10,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 10,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 11,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 11,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 12,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 12,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 13,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 13,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 14,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 14,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 15,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 15,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 16,
+          "margin": 0.03,
+          "M_cached": 1,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 16,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 17,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 17,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 18,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 18,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 19,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 19,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 20,
+          "margin": 0.03,
+          "M_cached": 1,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 20,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        }
+      ]
+    },
+    {
+      "domain": "arxiv",
+      "gate": "original",
+      "L_factor": 2,
+      "radius": 0.0051295777236419,
+      "n_vertices": 2800,
+      "n_components": 2794,
+      "mixed_components": 0,
+      "conflict_paths": [],
+      "targets": [
+        {
+          "k": 1,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 1,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 2,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 2,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 3,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 3,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 4,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 4,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 5,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 5,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 6,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 6,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 7,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 7,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 8,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 8,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 9,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 9,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 10,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 10,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 11,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 11,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 12,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 12,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 13,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 13,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 14,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 14,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 15,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 15,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 16,
+          "margin": 0.03,
+          "M_cached": 1,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 16,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 17,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 17,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 18,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 18,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 19,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 19,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 20,
+          "margin": 0.03,
+          "M_cached": 1,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 20,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        }
+      ]
+    },
+    {
+      "domain": "arxiv",
+      "gate": "opus",
+      "L_factor": 1,
+      "radius": 0.49712722069087983,
+      "n_vertices": 2800,
+      "n_components": 321,
+      "mixed_components": 2,
+      "conflict_paths": [
+        {
+          "positive": {
+            "domain": "arxiv",
+            "sha256": "fea2cd42c422d685cbf3f2254145e84ab5b6af94b9b12f47a476daf050d358d3",
+            "text": "Title: Sparse Reconstruction Algorithms with Graph Neural Networks. Abstract: High-level vision systems use deep learning to predict how real-world systems evolve over time, but their predictions can be unreliable when observations are sparse. We present a software architecture for reconstructing missing information with graph neural networks. The system represents entities as nodes, relationships as edges, and available measurements as graph signals. A gated message-passing module combines observed signals with neighboring context to estimate unobserved states, then passes the reconstructed graph to a temporal prediction model. We describe the architecture and its implementation, and evaluate reconstruction quality and prediction performance as the proportion of observed data varies. Experiments on graph-structured vision tasks assess how reconstruction affects downstream forecasts. The evaluation characterizes the conditions under which graph-based reconstruction supports temporal modeling with limited measurements. This work contributes an integrated design methodology connecting sparse reconstruction algorithms, graph neural network modeling, and future-state prediction in high-level vision systems.",
+            "ratings": {
+              "haiku": [
+                7
+              ],
+              "luna": [
+                9
+              ],
+              "opus": [
+                8
+              ]
+            },
+            "rating_sources": [
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/gpt-6-luna/GAP-18.json:gate",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/gpt-6-luna/GAP-18.json:gate",
+                "judge": "luna",
+                "score": 9
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "luna",
+                "score": 9
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+                "judge": "opus",
+                "score": 8
+              }
+            ],
+            "embedding_sources": [
+              "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/fea2cd42c422d685cbf3f2254145e84ab5b6af94b9b12f47a476daf050d358d3.npy"
+            ],
+            "eligibility_flags": [
+              true
+            ]
+          },
+          "negative": {
+            "domain": "arxiv",
+            "sha256": "bde0e50afb35580db664e2f903352f05e8cbc331ddf65f78ff97573a2f7c47be",
+            "text": "Title: Sparse Reconstruction Algorithms with Graph Neural Networks for Predicting the Remaining Lifetimes of Real-World Systems. Abstract: High-level vision system models today rely heavily on data science frameworks based on deep learning to predict the future lifetimes of real-world systems. Such frameworks often require dense measurements and large training sets, which limits their use when observations are incomplete or noisy. This paper studies sparse reconstruction algorithms built on graph neural networks, in which sensors or system components are represented as nodes of a graph and the learned model recovers missing signals from a small subset of observations. We also contribute to software architecture design methodology by describing a modular implementation that separates data ingestion, graph construction, reconstruction, and prediction, so that each stage can be replaced or extended independently. The approach is evaluated experimentally against dense baselines, and we summarize the implementation, the methodology, and the resulting contributions. Results indicate that sparse reconstruction with graph neural networks preserves predictive accuracy while reducing the amount of data required, and that the proposed architecture makes such pipelines easier to maintain and reuse.",
+            "ratings": {
+              "haiku": [
+                7
+              ],
+              "luna": [
+                8
+              ],
+              "opus": [
+                6
+              ]
+            },
+            "rating_sources": [
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/claude-sonnet-5-5/GAP-18.json:gate",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/claude-sonnet-5-5/GAP-18.json:gate",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+                "judge": "opus",
+                "score": 6
+              }
+            ],
+            "embedding_sources": [
+              "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/bde0e50afb35580db664e2f903352f05e8cbc331ddf65f78ff97573a2f7c47be.npy"
+            ],
+            "eligibility_flags": [
+              true
+            ]
+          },
+          "path": [
+            {
+              "from": "fea2cd42c422d685cbf3f2254145e84ab5b6af94b9b12f47a476daf050d358d3",
+              "to": "0878fcd33f9aa5f90b374ac300a737c00f2b062434dfd730eb6f194a39d8320a",
+              "distance": 0.4760834844177061
+            },
+            {
+              "from": "0878fcd33f9aa5f90b374ac300a737c00f2b062434dfd730eb6f194a39d8320a",
+              "to": "bde0e50afb35580db664e2f903352f05e8cbc331ddf65f78ff97573a2f7c47be",
+              "distance": 0.37707089479613093
+            }
+          ]
+        },
+        {
+          "positive": {
+            "domain": "arxiv",
+            "sha256": "796ccd5b513152ce26273839970606fd47ac69048044a2fdd533e8b8eac26384",
+            "text": "Title: Triangle Closing for Recruiter Search on LinkedIn: Location-Aware Candidate Retrieval Across Cities and Metropolitan Areas. Abstract: Recruiters on LinkedIn search for candidates across many cities and metropolitan areas, yet location and job-title fields are noisy and inconsistent. We study recruiter search as link prediction on a heterogeneous graph of recruiters, candidates, jobs, companies, and locations, using triangles as the central structural signal. Our method scores a recruiter-candidate pair by counting closed triples through shared employers, industries, and areas. We normalize location strings and job-title variants and feed the triangle counts into a ranking model. On a large offline dataset of recruiter interactions, the approach improves ranking quality over text-only and embedding baselines, especially for rare titles and small areas. Ablations show that location-aware triangles account for most of the gain.",
+            "ratings": {
+              "haiku": [
+                8
+              ],
+              "luna": [
+                9
+              ],
+              "opus": [
+                9
+              ]
+            },
+            "rating_sources": [
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/claude-sonnet-5-5/FAR-15.json:gate",
+                "judge": "haiku",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/claude-sonnet-5-5/FAR-15.json:gate",
+                "judge": "luna",
+                "score": 9
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "haiku",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "luna",
+                "score": 9
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+                "judge": "opus",
+                "score": 9
+              }
+            ],
+            "embedding_sources": [
+              "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/796ccd5b513152ce26273839970606fd47ac69048044a2fdd533e8b8eac26384.npy"
+            ],
+            "eligibility_flags": [
+              true
+            ]
+          },
+          "negative": {
+            "domain": "arxiv",
+            "sha256": "2959579a0fb090f246314d5890b48f20d03ff3c5b64ff149b2842f363005aac2",
+            "text": "Title: Triangles Conquer Recruiter via LI. Abstract: We study triangle-based candidate discovery for recruiters on LinkedIn (LI). Recruiters, candidates, and organizations form a heterogeneous graph, where a triangle represents mutually reinforcing connections among these entities. We score recruiter\u2013candidate links using local triangle patterns alongside profile and employment signals, then rank candidates for outreach. This approach favors candidates supported by multiple paths through the network while retaining useful evidence from sparse neighborhoods. Recommendations can be interpreted through the shared connections and organizational context contributing to each score. The source draft contains no recoverable dataset, benchmark, or quantitative findings; accordingly, this description makes no performance claims and frames the contribution as a graph-based method and evaluation protocol for recruiter\u2013candidate interactions.",
+            "ratings": {
+              "haiku": [
+                7
+              ],
+              "luna": [
+                8
+              ],
+              "opus": [
+                6
+              ]
+            },
+            "rating_sources": [
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/gpt-6-luna/FAR-15.json:gate",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/arxiv/gpt-6-luna/FAR-15.json:gate",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "haiku",
+                "score": 7
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/judgements.jsonl",
+                "judge": "luna",
+                "score": 8
+              },
+              {
+                "source": "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/seed-rewrite/test/opus_check.jsonl",
+                "judge": "opus",
+                "score": 6
+              }
+            ],
+            "embedding_sources": [
+              "/Users/javieraguilarmartin1/Documents/experiment-data/latent-gap-ideas/runs/fluent-search/verified_cache/6ae3845eab14497b/2959579a0fb090f246314d5890b48f20d03ff3c5b64ff149b2842f363005aac2.npy"
+            ],
+            "eligibility_flags": [
+              true
+            ]
+          },
+          "path": [
+            {
+              "from": "796ccd5b513152ce26273839970606fd47ac69048044a2fdd533e8b8eac26384",
+              "to": "0de3f494ce25df10969bd03aba970154fd47e4cd824c14eebd7d850534e15593",
+              "distance": 0.4844866384147698
+            },
+            {
+              "from": "0de3f494ce25df10969bd03aba970154fd47e4cd824c14eebd7d850534e15593",
+              "to": "4133c45a4e5857204bc477001f58b9047bb274c12c7304284b9c55d0df7b41a7",
+              "distance": 0.47361729789594204
+            },
+            {
+              "from": "4133c45a4e5857204bc477001f58b9047bb274c12c7304284b9c55d0df7b41a7",
+              "to": "11c95a497331c799897c6d16183f3282033f4f8d93097d72fbe1725b41177aed",
+              "distance": 0.45626440571596155
+            },
+            {
+              "from": "11c95a497331c799897c6d16183f3282033f4f8d93097d72fbe1725b41177aed",
+              "to": "2959579a0fb090f246314d5890b48f20d03ff3c5b64ff149b2842f363005aac2",
+              "distance": 0.33938645851493116
+            }
+          ]
+        }
+      ],
+      "targets": [
+        {
+          "k": 1,
+          "margin": 0.03,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 1,
+          "margin": 0.05,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 2,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 2,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 3,
+          "margin": 0.03,
+          "M_cached": 4,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 3
+        },
+        {
+          "k": 3,
+          "margin": 0.05,
+          "M_cached": 4,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 3
+        },
+        {
+          "k": 4,
+          "margin": 0.03,
+          "M_cached": 7,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 4,
+          "margin": 0.05,
+          "M_cached": 7,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 5,
+          "margin": 0.03,
+          "M_cached": 8,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 7
+        },
+        {
+          "k": 5,
+          "margin": 0.05,
+          "M_cached": 8,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 7
+        },
+        {
+          "k": 6,
+          "margin": 0.03,
+          "M_cached": 8,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 6,
+          "margin": 0.05,
+          "M_cached": 8,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 7,
+          "margin": 0.03,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 7,
+          "margin": 0.05,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 8,
+          "margin": 0.03,
+          "M_cached": 7,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 8,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 9,
+          "margin": 0.03,
+          "M_cached": 7,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 9,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 10,
+          "margin": 0.03,
+          "M_cached": 8,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 7
+        },
+        {
+          "k": 10,
+          "margin": 0.05,
+          "M_cached": 8,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 7
+        },
+        {
+          "k": 11,
+          "margin": 0.03,
+          "M_cached": 4,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 3
+        },
+        {
+          "k": 11,
+          "margin": 0.05,
+          "M_cached": 4,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 3
+        },
+        {
+          "k": 12,
+          "margin": 0.03,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 12,
+          "margin": 0.05,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 13,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 13,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 14,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 14,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 15,
+          "margin": 0.03,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 15,
+          "margin": 0.05,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 16,
+          "margin": 0.03,
+          "M_cached": 8,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 7
+        },
+        {
+          "k": 16,
+          "margin": 0.05,
+          "M_cached": 7,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 17,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 17,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 18,
+          "margin": 0.03,
+          "M_cached": 16,
+          "unknown_dangerous_components": 3,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 13
+        },
+        {
+          "k": 18,
+          "margin": 0.05,
+          "M_cached": 10,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 8
+        },
+        {
+          "k": 19,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 19,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 20,
+          "margin": 0.03,
+          "M_cached": 10,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 9
+        },
+        {
+          "k": 20,
+          "margin": 0.05,
+          "M_cached": 9,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 8
+        }
+      ]
+    },
+    {
+      "domain": "arxiv",
+      "gate": "opus",
+      "L_factor": 2,
+      "radius": 0.24856361034543992,
+      "n_vertices": 2800,
+      "n_components": 938,
+      "mixed_components": 0,
+      "conflict_paths": [],
+      "targets": [
+        {
+          "k": 1,
+          "margin": 0.03,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 1,
+          "margin": 0.05,
+          "M_cached": 6,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 2,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 2,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 3,
+          "margin": 0.03,
+          "M_cached": 4,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 3
+        },
+        {
+          "k": 3,
+          "margin": 0.05,
+          "M_cached": 4,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 3
+        },
+        {
+          "k": 4,
+          "margin": 0.03,
+          "M_cached": 7,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 4,
+          "margin": 0.05,
+          "M_cached": 7,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 5,
+          "margin": 0.03,
+          "M_cached": 8,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 5,
+          "margin": 0.05,
+          "M_cached": 8,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 6,
+          "margin": 0.03,
+          "M_cached": 8,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 6,
+          "margin": 0.05,
+          "M_cached": 8,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 7,
+          "margin": 0.03,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 7,
+          "margin": 0.05,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 8,
+          "margin": 0.03,
+          "M_cached": 7,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 8,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 9,
+          "margin": 0.03,
+          "M_cached": 7,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 9,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 10,
+          "margin": 0.03,
+          "M_cached": 8,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 7
+        },
+        {
+          "k": 10,
+          "margin": 0.05,
+          "M_cached": 8,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 7
+        },
+        {
+          "k": 11,
+          "margin": 0.03,
+          "M_cached": 4,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 3
+        },
+        {
+          "k": 11,
+          "margin": 0.05,
+          "M_cached": 4,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 3
+        },
+        {
+          "k": 12,
+          "margin": 0.03,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 12,
+          "margin": 0.05,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 13,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 13,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 14,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 14,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 15,
+          "margin": 0.03,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 15,
+          "margin": 0.05,
+          "M_cached": 5,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 4
+        },
+        {
+          "k": 16,
+          "margin": 0.03,
+          "M_cached": 8,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 6
+        },
+        {
+          "k": 16,
+          "margin": 0.05,
+          "M_cached": 7,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 5
+        },
+        {
+          "k": 17,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 17,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 18,
+          "margin": 0.03,
+          "M_cached": 16,
+          "unknown_dangerous_components": 4,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 12
+        },
+        {
+          "k": 18,
+          "margin": 0.05,
+          "M_cached": 10,
+          "unknown_dangerous_components": 3,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 7
+        },
+        {
+          "k": 19,
+          "margin": 0.03,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 19,
+          "margin": 0.05,
+          "M_cached": 0,
+          "unknown_dangerous_components": 0,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 0
+        },
+        {
+          "k": 20,
+          "margin": 0.03,
+          "M_cached": 10,
+          "unknown_dangerous_components": 2,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 1,
+          "known_positive_exceeds": true,
+          "conditional_query_saving": 8
+        },
+        {
+          "k": 20,
+          "margin": 0.05,
+          "M_cached": 9,
+          "unknown_dangerous_components": 1,
+          "negative_implied_unknown_texts": 0,
+          "dangerous_positive_components": 0,
+          "known_positive_exceeds": false,
+          "conditional_query_saving": 8
+        }
+      ]
+    }
+  ]
+}

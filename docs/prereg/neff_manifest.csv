@@ -1,0 +1,15 @@
+kind,key,value,frozen_utc
+file,scripts/bounds/neff.py,5ce65378b9c689e938693c94a738904bf7e311a178661afd58d8dcfd92986a9e,2026-10-28T17:35:32.847180+00:00
+file,docs/prereg/neff_predictions.csv,321a55fb8509fb9dedbd92cb70982fb66a4e15e65e0d94a0ad5c94ef36e73f9d,2026-10-28T17:35:32.847180+00:00
+file,docs/prereg/neff_models.csv,3626ae726156c57e8ec8161ead2ad9020cfcce713acf961c8aabbfc76ec2d0ab,2026-10-28T17:35:32.847180+00:00
+file,docs/prereg/neff_tuning.csv,9ee51be0f8627c3fc32d7687d8772da3a64c8aa334ef0b12cad34f290e3b0d44,2026-10-28T17:35:32.847180+00:00
+file,docs/prereg/neff_fits.csv,6d9ebf5143ef666a109ee9cf4dd254cff0517fa83f18976275b250e42f173080,2026-10-28T17:35:32.847180+00:00
+file,docs/prereg/neff_sources.csv,4d45804574288d6a907b864141961cf9069677f924f9fb85cd02ec722f960c80,2026-10-28T17:35:32.847180+00:00
+protocol,criterion,"For each domain/writer, all three arms must have coverage>=0.90, abs(observed median - paired predicted median)<=0.03, and no tuning-vs-arm median-log10N permutation rejection at Holm 0.05 over the 12 domain/writer/arm comparisons, separately per tail/scope. Domain-only survives only if both writers survive. Bootstrap intervals are descriptive 95%, conditional on corpus and gate. An observed score beyond a fitted finite tail endpoint fails support.",2026-10-28T17:35:32.847180+00:00
+protocol,seed,202610284,2026-10-28T17:35:32.847180+00:00
+protocol,bootstrap,10000,2026-10-28T17:35:32.847180+00:00
+protocol,permutations,19999,2026-10-28T17:35:32.847180+00:00
+protocol,disclosure,"Experimenter already measured test. Requested prereg summaries were read. No seed-rewrite/test per-target outcomes opened before this freeze. Out-of-set, not prospective.",2026-10-28T17:35:32.847180+00:00
+protocol,alternative,"gpd95 threshold fixed at corpus q95, MLE shape/scale on excesses; same REAL-only size fit",2026-10-28T17:35:32.847180+00:00
+protocol,gpd_rescue,Rescue only if all 12 cells survive and pooled target MAE improves >=20% over mixture32,2026-10-28T17:35:32.847180+00:00
+protocol,iid_diagnostic,"Secondary held-out maximum PIT KS calibrated by 10000 null simulations including tuning fit; Holm over 12 domain/writer/arm cells, domain_writer only; 9 training maxima for arxiv/Sonnet (REAL-17 missing), 10 otherwise",2026-10-28T17:35:32.847180+00:00

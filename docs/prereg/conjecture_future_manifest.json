@@ -1,0 +1,13 @@
+{
+  "model": "latitude-mixture-v1",
+  "seed": 202610243,
+  "bins": 32,
+  "sobol_power": 15,
+  "replicates": 2,
+  "importance_shift": 2.5,
+  "prediction_sha256": "89fa374621821ef8fcda2f4bdb8f4cca7570f93b3698f9b1bdc9ff1e106fe553",
+  "script_sha256": "0adbdb88e2730509e0349f605e32c31ed1206c38c048f988e9e93b4073e46dae",
+  "success": "Across all 24 rows: median absolute corrected error < old; every corrected absolute error <= 0.005.",
+  "secondary": "Report domain/space signed biases, count within .005, maximum error; no row exclusions.",
+  "future_ceilings_measured": false
+}

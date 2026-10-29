@@ -1,0 +1,37 @@
+{
+  "status": "SPECIFIED_NOT_RUN",
+  "provider": "CPUExecutionProvider",
+  "processes": 1,
+  "threads": 4,
+  "limit": 200,
+  "minutes": 35,
+  "contract": "Frozen local ONNX EOS/last-token/L2 contract; all original rows",
+  "runner_sha256": "8f31ac628dbce6dde45e7e90228a7b524a18011e459a5e48b6bc22461631454f",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "pyarrow": "26.0.0",
+    "onnxruntime": "1.23.2",
+    "tokenizers": "0.23.3"
+  },
+  "input_sha256": {
+    "model/added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+    "model/config.json": "66a10929782f3c9a3cd5dec90e2a95c60e05736134a63cd54479eeae80bed175",
+    "model/onnx/model.onnx": "bf27b2f3f9ef9c32ca337d75b361fa99439deaeaefe82e4701b2dbd8439197cc",
+    "model/onnx/model.onnx_data": "f0a61604465929a27e68aa6217c8c89ec6186572f0209fdb7711adda48a9b9a9",
+    "model/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+    "model/tokenizer.json": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+    "model/tokenizer_config.json": "977648852447cb6587327ff3205b0a84cf2fc9f05621d6c8e88a497caafab2e1",
+    "prepared/steam/corpus.parquet": "fa146deb033b671e3f0a44f81df90490ddb09514c4996352e34b6113aa14a43f",
+    "prepared/steam/emb_qwen3e06.npy": "57f525cec52efae349160d0d6800bda3ec2b7053172ca956068555949b5a8652",
+    "prepared/arxiv/corpus.parquet": "3f82b9d9af1ff6936fc2c7c104c2d3ce98b4e7771005a001b5fb886dc48e8b65",
+    "prepared/arxiv/emb_qwen3e06.npy": "923ae3b6f6aec0044535eecc73a1a36af2870c8b8caa36815463857f5244023d"
+  },
+  "output": "Per-domain indexed float32 npz checkpoints, metadata and COMPLETE.json census audit",
+  "cross_platform": "No assertion of bitwise equality with Mac; census defines named Kaggle ONNX map",
+  "duplicate_text_policy": "Reuse and audit the first-row encoding of each exact text within each domain",
+  "python_major_minor": [
+    3,
+    12
+  ]
+}
