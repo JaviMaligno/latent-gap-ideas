@@ -296,9 +296,10 @@ construction.
 For an idea x of context c, its **tangent** is the unit vector of x − (x·c)c, the part of the move that is not
 towards or away from c. Let f be the unit mean tangent of the context's follow-ups, p the unit mean tangent of its
 nearest later papers outside the sampled follow-up set (as many as it has follow-ups), and s the unit vector of
-f − (f·p)p, the **follow-up-specific** direction. That pool is not guaranteed free of citing papers: 18 of the 150
-contexts hit the cap of 50 saved follow-ups, and citing papers from 2023, before the follow-up window, were never
-excluded from it. An idea's **alignment** is the cosine of its tangent with f. Because f = (f·p) p + √(1 − (f·p)²) s,
+f − (f·p)p, the **follow-up-specific** direction. That pool may contain citing papers, because 18 of the 150
+contexts hit the cap of 50 saved follow-ups and citing papers from 2023 were not excluded; removing every citing arXiv
+paper of any date (9,921, fetched without a cap) changes no contribution in Table 3 by more than 0.001 and leaves the
+same two follow-up-specific changes significant after Holm. An idea's **alignment** is the cosine of its tangent with f. Because f = (f·p) p + √(1 − (f·p)²) s,
 the change in alignment from round 0 to round 2 splits exactly into a contribution along p and one along s, each
 weighted by its context's coefficient (mean weights 0.71 and 0.67 in Qwen3, 0.76 and 0.63 in BGE-M3). As a positive
 control, the real follow-ups' own leave-one-out alignment (each follow-up against the mean of the others) is 0.468 in
@@ -568,8 +569,8 @@ where the future will be.
   orient a model.
 - **The direction result is exploratory.** The tangent test was designed after the pre-registered results; I report
   Holm over its 36 tests, and Appendix A.9 shows how easily a plausible distance-matched baseline can be out of
-  support. Its reference pool, the nearest later papers outside the sampled follow-up set, may contain citing papers
-  (contexts capped at 50 follow-ups; citers from 2023). The equivalence bound of ±0.015 used to read its nulls, and
+  support. Its reference pool, the nearest later papers outside the sampled follow-up set, contains some citing
+  papers; excluding all of them does not change the table (Section 5.3). The equivalence bound of ±0.015 used to read its nulls, and
   those of Section 5.4, was chosen after the results.
 - **The neutral control covers gpt-4o only**, and reuses GEO's round-0 ideas. For OLMo and gpt-5.4-mini the critique
   arms have no neutral counterpart, so their changes are not separated from revising as such.

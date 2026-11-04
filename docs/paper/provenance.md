@@ -137,3 +137,4 @@ Every number in the paper, by section, with the repository file it comes from. M
 - Section 6, date filter, appid check, estimands, CLI clustering, CIs and isolation adjustment: docs/prereg/revision_inspiration.json (scripts/revision_inspiration.py).
 - A.6, repaired bootstrap and H1-H5 wording: docs/prereg/revision_bootstrap_combination.json (scripts/revision_bootstrap_combination.py).
 - Appendix B commits: `git log --diff-filter=A -- docs/prereg/<file>.md`.
+- Section 5.3, pool without any citing paper (complete24 / complete): docs/prereg/revision_direction_tangent.json (decomposition.complete, cap.complete_citing_arxiv_all_dates_total 9,921); citations from scripts/revision_citing_fetch.py.
