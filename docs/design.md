@@ -168,7 +168,7 @@ Added after the pilot's geometry analysis ([geometry.md](geometry.md)), to run b
 ## Budget (pilot, Steam)
 
 Corpus embedding on Kaggle (free GPU quota). Decoder ≈ 1,000 calls of gpt-6-luna (≈ 3k in / 0.6k out)
-≈ 0.6 USD. Normaliser + judge ≈ 700 calls of gpt-5.6-sol ≈ 10–16 USD. All on the company gateway
+≈ 0.6 USD. Normaliser + judge ≈ 700 calls of gpt-5.6-sol ≈ 10–16 USD. All on a gateway
 (Azure), in one or two days.
 
 ## Change log

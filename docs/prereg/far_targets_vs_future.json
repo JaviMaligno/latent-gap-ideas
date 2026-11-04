@@ -1,0 +1,44 @@
+{
+ "steam": {
+  "n_targets": 50,
+  "n_future": 40989,
+  "n_past": 68222,
+  "future_max_cos_to_target": {
+   "median": 0.04573187232017517,
+   "max": 0.06899452209472656
+  },
+  "past_max_cos_to_target": {
+   "median": 0.04550982266664505,
+   "max": 0.04868233576416969
+  },
+  "share_targets_future_above_past": 0.58
+ },
+ "arxiv": {
+  "n_targets": 50,
+  "n_future": 41000,
+  "n_past": 72000,
+  "future_max_cos_to_target": {
+   "median": 0.06589307636022568,
+   "max": 0.10015608370304108
+  },
+  "past_max_cos_to_target": {
+   "median": 0.058057479560375214,
+   "max": 0.0618751160800457
+  },
+  "share_targets_future_above_past": 0.86
+ },
+ "patents": {
+  "n_targets": 50,
+  "n_future": 40342,
+  "n_past": 71521,
+  "future_max_cos_to_target": {
+   "median": 0.06377361714839935,
+   "max": 0.07971237599849701
+  },
+  "past_max_cos_to_target": {
+   "median": 0.06162050738930702,
+   "max": 0.065573550760746
+  },
+  "share_targets_future_above_past": 0.58
+ }
+}

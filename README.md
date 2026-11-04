@@ -23,6 +23,21 @@ Write-up: [The Gaps in the Map Are Not Ideas](https://www.javieraguilar.ai/en/bl
 - **Bounds:** no certifiable ceiling for coherent text without an explicit coherence rule; proofs checked in Lean
   (`lean/`).
 
+## Paper and later studies
+
+The preprint draft is [`docs/paper/draft.md`](docs/paper/draft.md) (figures in `docs/paper/figures/`, every number
+traced to its source file in `docs/paper/provenance.md`). Besides the decoding results above it reports three
+pre-registered studies run against what was published or released later:
+
+- **Gaps do not forecast growth** (`docs/prereg/where_future_lands.md`, `combination_vs_momentum.md`): a hole score
+  ranks the fastest-growing cells of a past-only map at chance (AUC 0.45–0.54) while momentum reaches 0.73–0.92; no
+  future item lands in the far region.
+- **Distances do not steer a continuation** (`continue_from_context.md`, `iterative_critique.md`,
+  `modern_and_oracle_history.md`): LLM continuations of arXiv papers stay closer to their source than the papers that
+  later cite it, and feeding back the similarity to those papers does not raise it.
+- **Inspiration distance has no sweet spot** (`inspiration_from_anything.md`): material from nine sources, graded by
+  distance, gives games that anticipate the post-cutoff Steam catalogue no better at middle distances.
+
 ## Layout
 
 - `docs/design.md` — design, arms, decisions log. `docs/geometry.md` — geometry laws and cross-domain replication.
@@ -30,7 +45,8 @@ Write-up: [The Gaps in the Map Are Not Ideas](https://www.javieraguilar.ai/en/bl
 - `docs/prereg/` — pre-registrations written before each run, with their results (`anchoring_causal.md`,
   `fluent_search.md`, `coherent_search.md`, `memory_probe.md`, …).
 - `src/latent_gap/` — corpus, targets, decoder, embedder, judges. `scripts/` — runs and analyses.
-- `kaggle/` — GPU kernels (embedding, fluent search, Lean check). `lean/` — Lean 4 proofs.
+- `kaggle/` — GPU kernels (embedding, fluent search, continuation, Lean check). `lean/` — Lean 4 proofs.
+- `docs/paper/` — preprint draft, figures, provenance and annotated related-work notes.
 
 ## Reproducing
 

@@ -153,7 +153,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--domain", default="steam")
     ap.add_argument("--pitch-codex", action="store_true",
-                    help="write new pitches with the same model through Codex (no VPN / gateway); recorded as fallback")
+                    help="write new pitches with the same model through Codex (no gateway); recorded as fallback")
     ap.add_argument("--run", default="pilot")
     ap.add_argument("--n-cal", type=int, default=50)
     ap.add_argument("--workers", type=int, default=4)

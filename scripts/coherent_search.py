@@ -439,7 +439,7 @@ def main() -> None:
         print(f"gateway: already spent ${spent:.4f} under this label; projected ${proj:.3f} for {len(todo)} targets "
               f"(cap ${args.max_usd:.2f}, total)", flush=True)
         if spent + proj > args.max_usd:
-            sys.exit("refusing: spent + projected cost above --max-usd (paid company spend needs the owner's OK)")
+            sys.exit("refusing: spent + projected cost above --max-usd (paid spend needs the owner's OK)")
         gw = Gateway(ledger=DATA / "ledger.jsonl", model=GATEWAY_MODEL)
 
     print(f"{args.domain} {args.mode}: {len(todo)} targets to do, {len(done)} done -> {out}", flush=True)

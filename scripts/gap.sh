@@ -12,7 +12,7 @@ queue() {
   for pair in "$@"; do
     out=${pair%%=*}; g=${pair#*=}
     if [ "$g" = gateway ] && ! curl -s -m 10 -o /dev/null "${LITELLM_BASE_URL:-http://localhost:4000/v1}"/../health/liveliness; then
-      echo "$(date '+%H:%M') skip  $out: gateway unreachable (VPN?); rerun later"; continue
+      echo "$(date '+%H:%M') skip  $out: gateway unreachable; rerun later"; continue
     fi
     echo "$(date '+%H:%M') start GAP $g -> $out"
     uv run python scripts/run_pilot.py --domain "$DOMAIN" --n "$N" --out "$out" --arms GAP \

@@ -1,0 +1,239 @@
+{
+ "n_pairs": 30,
+ "labels": {
+  "BACKGROUND": 25,
+  "UNCLEAR": 2,
+  "CONTINUES": 3
+ },
+ "s2_continuing": 6,
+ "label_continuing_and_s2_continuing": 0,
+ "label_continuing": 3,
+ "s2_continuing_by_label": {
+  "BACKGROUND": 5,
+  "UNCLEAR": 1
+ },
+ "s2_all_followups_continuing_share": 0.16822754075615678,
+ "pairs": [
+  {
+   "n": 1,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [
+    "background"
+   ],
+   "s2_influential": false
+  },
+  {
+   "n": 2,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 3,
+   "label": "BACKGROUND",
+   "s2_continuing": true,
+   "s2_intents": [],
+   "s2_influential": true
+  },
+  {
+   "n": 4,
+   "label": "UNCLEAR",
+   "s2_continuing": true,
+   "s2_intents": [
+    "methodology"
+   ],
+   "s2_influential": false
+  },
+  {
+   "n": 5,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 6,
+   "label": "CONTINUES",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 7,
+   "label": "BACKGROUND",
+   "s2_continuing": true,
+   "s2_intents": [
+    "methodology"
+   ],
+   "s2_influential": false
+  },
+  {
+   "n": 8,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 9,
+   "label": "CONTINUES",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 10,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 11,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 12,
+   "label": "BACKGROUND",
+   "s2_continuing": true,
+   "s2_intents": [],
+   "s2_influential": true
+  },
+  {
+   "n": 13,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 14,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 15,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 16,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 17,
+   "label": "BACKGROUND",
+   "s2_continuing": true,
+   "s2_intents": [
+    "background",
+    "methodology"
+   ],
+   "s2_influential": false
+  },
+  {
+   "n": 18,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 19,
+   "label": "UNCLEAR",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 20,
+   "label": "BACKGROUND",
+   "s2_continuing": true,
+   "s2_intents": [
+    "methodology"
+   ],
+   "s2_influential": false
+  },
+  {
+   "n": 21,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 22,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 23,
+   "label": "CONTINUES",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 24,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 25,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 26,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 27,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 28,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 29,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  },
+  {
+   "n": 30,
+   "label": "BACKGROUND",
+   "s2_continuing": false,
+   "s2_intents": [],
+   "s2_influential": false
+  }
+ ]
+}

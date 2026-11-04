@@ -1,0 +1,13 @@
+{
+  "id": "javieraguilarmartin/latent-gap-embed-inspiration-ideas",
+  "title": "latent-gap-embed-inspiration-ideas",
+  "code_file": "embed.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["javieraguilarmartin/latent-gap-inspiration-ideas"],
+  "competition_sources": [],
+  "kernel_sources": []
+}

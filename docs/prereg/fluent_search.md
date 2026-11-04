@@ -90,7 +90,7 @@ the frontier reaches the most fluent end).
 Per target × λ: 50-100 s on T4 (generation 30-65 s, refinement 35 s). 100 targets × 6 λ = 600 runs on two workers
 ≈ 7-8 h of one T4 x2 session (watchdog: no new job after 10 h, kill at 10 h 40). Kaggle free quota: 26.0 h left this
 week before the run (smokes used 1.35 h). Gate: ≤ 15 candidates per target × λ, Haiku then Codex, subscription CLIs
-(free); estimated 2-4 h with 6 workers. No company spend and no gateway.
+(free); estimated 2-4 h with 6 workers. No paid spend and no gateway.
 
 ## Result (2026-10-27; `scripts/fluent_gate.py --run full`, output in runs/fluent-search/full/summary.md)
 
@@ -173,7 +173,7 @@ was, as forecast, without coverage; P1 arXiv had no strong refutation (forecast)
    steered by the encoder does not write Steam pages the judges accept.
 
 Kaggle GPU: 8.72 h in total for this arm (9 smoke runs 1.35 h, full run 7.37 h; quota 11.36 / 30 h this week). No
-company spend, no gateway; judges via subscription CLIs.
+paid spend, no gateway; judges via subscription CLIs.
 
 ## Revision 2: Steam with Qwen3-4B-Base (new arm, frozen 2026-10-28 before its non-smoke run)
 

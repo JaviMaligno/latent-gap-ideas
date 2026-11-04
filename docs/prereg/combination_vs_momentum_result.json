@@ -1,0 +1,2738 @@
+{
+ "smoke": false,
+ "n_boot": 2000,
+ "reductions_applied": [
+  "(1) dropped the V=100 robustness arm: NMF timing projected >= 1.5 h total"
+ ],
+ "atoms_top_words": {
+  "200": [
+   [
+    "machine",
+    "machine learning",
+    "learning",
+    "ml",
+    "learning ml",
+    "learning models"
+   ],
+   [
+    "problem",
+    "solution",
+    "consider",
+    "solve",
+    "consider problem",
+    "abstract consider"
+   ],
+   [
+    "applications",
+    "application",
+    "range",
+    "wide",
+    "wide range",
+    "applications abstract"
+   ],
+   [
+    "channel",
+    "channels",
+    "capacity",
+    "coding",
+    "receiver",
+    "rate"
+   ],
+   [
+    "graphs",
+    "vertex",
+    "vertices",
+    "edge",
+    "graph",
+    "graphs abstract"
+   ],
+   [
+    "reinforcement",
+    "reinforcement learning",
+    "policy",
+    "learning",
+    "rl",
+    "deep reinforcement"
+   ],
+   [
+    "network",
+    "neural network",
+    "neural",
+    "network based",
+    "network abstract",
+    "network model"
+   ],
+   [
+    "languages",
+    "language",
+    "automata",
+    "multilingual",
+    "regular",
+    "lingual"
+   ],
+   [
+    "dynamics",
+    "complex",
+    "dynamical",
+    "behavior",
+    "simulation",
+    "modeling"
+   ],
+   [
+    "memory",
+    "hardware",
+    "cache",
+    "operations",
+    "storage",
+    "size"
+   ],
+   [
+    "image",
+    "images",
+    "color",
+    "image classification",
+    "image processing",
+    "images abstract"
+   ],
+   [
+    "model",
+    "model based",
+    "parameters",
+    "proposed model",
+    "based",
+    "model abstract"
+   ],
+   [
+    "analysis",
+    "sentiment",
+    "analysis abstract",
+    "sentiment analysis",
+    "data analysis",
+    "theoretical"
+   ],
+   [
+    "adversarial",
+    "robustness",
+    "robust",
+    "examples",
+    "adversarial examples",
+    "perturbations"
+   ],
+   [
+    "numerical",
+    "equation",
+    "solution",
+    "boundary",
+    "numerical experiments",
+    "diffusion"
+   ],
+   [
+    "codes",
+    "code",
+    "decoding",
+    "codes abstract",
+    "binary",
+    "ldpc"
+   ],
+   [
+    "attacks",
+    "attack",
+    "defense",
+    "attacker",
+    "adversarial attacks",
+    "vulnerable"
+   ],
+   [
+    "research",
+    "survey",
+    "review",
+    "recent",
+    "challenges",
+    "future"
+   ],
+   [
+    "object",
+    "objects",
+    "object detection",
+    "detectors",
+    "bounding",
+    "3d object"
+   ],
+   [
+    "privacy",
+    "private",
+    "differential privacy",
+    "preserving",
+    "privacy preserving",
+    "differential"
+   ],
+   [
+    "user",
+    "users",
+    "interactive",
+    "interface",
+    "interaction",
+    "experience"
+   ],
+   [
+    "programs",
+    "programming",
+    "program",
+    "verification",
+    "code",
+    "programming language"
+   ],
+   [
+    "convergence",
+    "rate",
+    "convergence rate",
+    "rates",
+    "convergence rates",
+    "prove"
+   ],
+   [
+    "detection",
+    "anomaly",
+    "detect",
+    "anomaly detection",
+    "detection abstract",
+    "detecting"
+   ],
+   [
+    "quantum",
+    "classical",
+    "states",
+    "title quantum",
+    "quantum computing",
+    "circuits"
+   ],
+   [
+    "stability",
+    "stable",
+    "nonlinear",
+    "lyapunov",
+    "stability analysis",
+    "loop"
+   ],
+   [
+    "communication",
+    "communications",
+    "communication systems",
+    "wireless communication",
+    "communication complexity",
+    "wireless"
+   ],
+   [
+    "recognition",
+    "recognition abstract",
+    "action",
+    "action recognition",
+    "speech recognition",
+    "emotion"
+   ],
+   [
+    "temporal",
+    "spatio",
+    "spatio temporal",
+    "spatial temporal",
+    "action",
+    "temporal logic"
+   ],
+   [
+    "gradient",
+    "stochastic",
+    "descent",
+    "gradient descent",
+    "stochastic gradient",
+    "sgd"
+   ],
+   [
+    "state",
+    "art",
+    "state art",
+    "art methods",
+    "art performance",
+    "outperforms state"
+   ],
+   [
+    "deep",
+    "deep learning",
+    "learning",
+    "learning based",
+    "title deep",
+    "deep neural"
+   ],
+   [
+    "shot",
+    "zero",
+    "zero shot",
+    "shot learning",
+    "meta",
+    "learning"
+   ],
+   [
+    "large",
+    "scale",
+    "large scale",
+    "small",
+    "scalable",
+    "large number"
+   ],
+   [
+    "translation",
+    "machine translation",
+    "neural machine",
+    "machine",
+    "nmt",
+    "english"
+   ],
+   [
+    "game",
+    "games",
+    "players",
+    "player",
+    "equilibrium",
+    "nash"
+   ],
+   [
+    "systems",
+    "systems abstract",
+    "dynamical",
+    "dynamical systems",
+    "physical",
+    "physical systems"
+   ],
+   [
+    "real",
+    "world",
+    "real world",
+    "synthetic",
+    "real time",
+    "world data"
+   ],
+   [
+    "bound",
+    "lower bound",
+    "lower",
+    "upper bound",
+    "upper",
+    "omega"
+   ],
+   [
+    "rank",
+    "low",
+    "low rank",
+    "tensor",
+    "decomposition",
+    "tensors"
+   ],
+   [
+    "domain",
+    "adaptation",
+    "domain adaptation",
+    "target",
+    "domains",
+    "target domain"
+   ],
+   [
+    "efficient",
+    "cost",
+    "computational",
+    "computation",
+    "efficiency",
+    "accuracy"
+   ],
+   [
+    "distribution",
+    "distributions",
+    "samples",
+    "sample",
+    "sampling",
+    "data distribution"
+   ],
+   [
+    "multi",
+    "title multi",
+    "view",
+    "multi view",
+    "multi task",
+    "multi agent"
+   ],
+   [
+    "reconstruction",
+    "imaging",
+    "inverse",
+    "sampling",
+    "reconstruct",
+    "image reconstruction"
+   ],
+   [
+    "segmentation",
+    "semantic segmentation",
+    "image segmentation",
+    "segmentation abstract",
+    "pixel",
+    "net"
+   ],
+   [
+    "power",
+    "grid",
+    "voltage",
+    "frequency",
+    "load",
+    "power consumption"
+   ],
+   [
+    "method",
+    "proposed method",
+    "proposed",
+    "method based",
+    "based",
+    "using"
+   ],
+   [
+    "word",
+    "words",
+    "embeddings",
+    "embedding",
+    "word embeddings",
+    "sentence"
+   ],
+   [
+    "al",
+    "et",
+    "et al",
+    "2018",
+    "2019",
+    "introduced"
+   ],
+   [
+    "algorithm",
+    "proposed algorithm",
+    "algorithm based",
+    "learning algorithm",
+    "proposed",
+    "present"
+   ],
+   [
+    "functions",
+    "functions abstract",
+    "boolean",
+    "basis",
+    "boolean functions",
+    "basis functions"
+   ],
+   [
+    "type",
+    "proof",
+    "types",
+    "calculus",
+    "theorem",
+    "lambda"
+   ],
+   [
+    "supervised",
+    "self",
+    "self supervised",
+    "supervised learning",
+    "semi",
+    "semi supervised"
+   ],
+   [
+    "social",
+    "media",
+    "social media",
+    "twitter",
+    "social networks",
+    "social network"
+   ],
+   [
+    "knowledge",
+    "distillation",
+    "knowledge distillation",
+    "knowledge graph",
+    "entities",
+    "student"
+   ],
+   [
+    "covid",
+    "covid 19",
+    "19",
+    "pandemic",
+    "19 pandemic",
+    "spread"
+   ],
+   [
+    "search",
+    "search space",
+    "tree",
+    "search abstract",
+    "architecture search",
+    "search algorithm"
+   ],
+   [
+    "video",
+    "videos",
+    "frames",
+    "frame",
+    "motion",
+    "action"
+   ],
+   [
+    "information",
+    "mutual",
+    "mutual information",
+    "information theoretic",
+    "theoretic",
+    "entropy"
+   ],
+   [
+    "sparse",
+    "sensing",
+    "recovery",
+    "compressed",
+    "sparsity",
+    "compressed sensing"
+   ],
+   [
+    "quality",
+    "high quality",
+    "high",
+    "assessment",
+    "quality assessment",
+    "image quality"
+   ],
+   [
+    "estimation",
+    "pose",
+    "pose estimation",
+    "estimate",
+    "estimator",
+    "estimation abstract"
+   ],
+   [
+    "order",
+    "higher",
+    "higher order",
+    "high order",
+    "second order",
+    "reduced order"
+   ],
+   [
+    "logic",
+    "logics",
+    "semantics",
+    "reasoning",
+    "propositional",
+    "logical"
+   ],
+   [
+    "data",
+    "driven",
+    "data driven",
+    "data abstract",
+    "big",
+    "big data"
+   ],
+   [
+    "set",
+    "sets",
+    "given",
+    "data set",
+    "subset",
+    "data sets"
+   ],
+   [
+    "polynomial",
+    "polynomial time",
+    "np",
+    "hard",
+    "np hard",
+    "complete"
+   ],
+   [
+    "control",
+    "controller",
+    "controllers",
+    "feedback",
+    "optimal control",
+    "loop"
+   ],
+   [
+    "feature",
+    "selection",
+    "feature selection",
+    "extraction",
+    "feature extraction",
+    "maps"
+   ],
+   [
+    "robot",
+    "robots",
+    "robotic",
+    "environment",
+    "environments",
+    "robotics"
+   ],
+   [
+    "decision",
+    "making",
+    "decision making",
+    "decisions",
+    "tree",
+    "trees"
+   ],
+   [
+    "approach",
+    "based",
+    "approaches",
+    "proposed approach",
+    "using",
+    "based approach"
+   ],
+   [
+    "term",
+    "long",
+    "short",
+    "short term",
+    "long term",
+    "long short"
+   ],
+   [
+    "question",
+    "answering",
+    "question answering",
+    "answer",
+    "questions",
+    "qa"
+   ],
+   [
+    "iot",
+    "internet",
+    "things",
+    "internet things",
+    "devices",
+    "things iot"
+   ],
+   [
+    "language",
+    "natural",
+    "natural language",
+    "language processing",
+    "processing",
+    "nlp"
+   ],
+   [
+    "abstract paper",
+    "paper",
+    "presents",
+    "paper presents",
+    "paper proposes",
+    "paper present"
+   ],
+   [
+    "clustering",
+    "cluster",
+    "clusters",
+    "means",
+    "clustering algorithm",
+    "unsupervised"
+   ],
+   [
+    "linear",
+    "non linear",
+    "linear time",
+    "linear systems",
+    "quadratic",
+    "regression"
+   ],
+   [
+    "routing",
+    "ad",
+    "hoc",
+    "ad hoc",
+    "protocol",
+    "protocols"
+   ],
+   [
+    "recurrent",
+    "recurrent neural",
+    "rnn",
+    "rnns",
+    "neural",
+    "network rnn"
+   ],
+   [
+    "visual",
+    "audio",
+    "audio visual",
+    "localization",
+    "visual features",
+    "visual question"
+   ],
+   [
+    "3d",
+    "2d",
+    "shape",
+    "view",
+    "depth",
+    "pose"
+   ],
+   [
+    "framework",
+    "proposed framework",
+    "learning framework",
+    "general",
+    "unified",
+    "proposed"
+   ],
+   [
+    "classification",
+    "classifier",
+    "accuracy",
+    "image classification",
+    "classification abstract",
+    "classifiers"
+   ],
+   [
+    "end",
+    "end end",
+    "title end",
+    "propose end",
+    "end learning",
+    "end propose"
+   ],
+   [
+    "networks",
+    "neural networks",
+    "neural",
+    "deep neural",
+    "networks abstract",
+    "deep"
+   ],
+   [
+    "finite",
+    "element",
+    "finite element",
+    "element method",
+    "elements",
+    "mesh"
+   ],
+   [
+    "scientific",
+    "science",
+    "citation",
+    "impact",
+    "papers",
+    "citations"
+   ],
+   [
+    "training",
+    "training data",
+    "loss",
+    "train",
+    "generalization",
+    "samples"
+   ],
+   [
+    "labels",
+    "label",
+    "labeled",
+    "labeling",
+    "noisy",
+    "active"
+   ],
+   [
+    "box",
+    "black",
+    "black box",
+    "explanations",
+    "white",
+    "explanation"
+   ],
+   [
+    "medical",
+    "clinical",
+    "patients",
+    "patient",
+    "diagnosis",
+    "health"
+   ],
+   [
+    "log",
+    "epsilon",
+    "mathcal",
+    "frac",
+    "log log",
+    "omega"
+   ],
+   [
+    "generative",
+    "generative adversarial",
+    "gan",
+    "adversarial",
+    "gans",
+    "adversarial networks"
+   ],
+   [
+    "problems",
+    "solving",
+    "problems abstract",
+    "solutions",
+    "solve",
+    "optimization problems"
+   ],
+   [
+    "agent",
+    "agents",
+    "multi agent",
+    "agent systems",
+    "environment",
+    "agent reinforcement"
+   ],
+   [
+    "equations",
+    "differential",
+    "differential equations",
+    "partial",
+    "partial differential",
+    "pdes"
+   ],
+   [
+    "cross",
+    "modal",
+    "cross modal",
+    "modality",
+    "modalities",
+    "multi modal"
+   ],
+   [
+    "models",
+    "models abstract",
+    "learning models",
+    "based models",
+    "language models",
+    "modeling"
+   ],
+   [
+    "ai",
+    "intelligence",
+    "artificial",
+    "artificial intelligence",
+    "intelligence ai",
+    "ai systems"
+   ],
+   [
+    "github",
+    "https",
+    "com",
+    "github com",
+    "https github",
+    "code"
+   ],
+   [
+    "nodes",
+    "node",
+    "networks",
+    "network",
+    "networks abstract",
+    "degree"
+   ],
+   [
+    "time",
+    "real time",
+    "real",
+    "varying",
+    "time varying",
+    "running"
+   ],
+   [
+    "convolutional",
+    "convolutional neural",
+    "cnn",
+    "cnns",
+    "neural",
+    "networks cnns"
+   ],
+   [
+    "methods",
+    "existing",
+    "existing methods",
+    "based methods",
+    "based",
+    "learning methods"
+   ],
+   [
+    "optimization",
+    "optimization problem",
+    "objective",
+    "optimization problems",
+    "optimization abstract",
+    "multi objective"
+   ],
+   [
+    "representation",
+    "representations",
+    "representation learning",
+    "learning",
+    "learn",
+    "learned"
+   ],
+   [
+    "non",
+    "non linear",
+    "trivial",
+    "non trivial",
+    "title non",
+    "non convex"
+   ],
+   [
+    "attention",
+    "transformer",
+    "mechanism",
+    "attention mechanism",
+    "self attention",
+    "self"
+   ],
+   [
+    "energy",
+    "consumption",
+    "energy consumption",
+    "energy efficiency",
+    "efficiency",
+    "energy efficient"
+   ],
+   [
+    "second",
+    "second order",
+    "step",
+    "stage",
+    "phase",
+    "second stage"
+   ],
+   [
+    "process",
+    "processes",
+    "gaussian",
+    "gaussian process",
+    "markov",
+    "processes abstract"
+   ],
+   [
+    "architecture",
+    "architectures",
+    "network architecture",
+    "neural architecture",
+    "architecture search",
+    "nas"
+   ],
+   [
+    "point",
+    "points",
+    "point cloud",
+    "point clouds",
+    "clouds",
+    "cloud"
+   ],
+   [
+    "approximation",
+    "approximate",
+    "approximation algorithm",
+    "approximations",
+    "approximation algorithms",
+    "factor"
+   ],
+   [
+    "structure",
+    "structures",
+    "tree",
+    "data structure",
+    "hierarchical",
+    "trees"
+   ],
+   [
+    "local",
+    "global",
+    "local global",
+    "global local",
+    "locally",
+    "title local"
+   ],
+   [
+    "results",
+    "experimental",
+    "experimental results",
+    "results demonstrate",
+    "obtained",
+    "demonstrate"
+   ],
+   [
+    "complexity",
+    "computational",
+    "computational complexity",
+    "sample complexity",
+    "low complexity",
+    "sample"
+   ],
+   [
+    "dimensional",
+    "high",
+    "high dimensional",
+    "low dimensional",
+    "dimension",
+    "dimensionality"
+   ],
+   [
+    "case",
+    "study",
+    "case study",
+    "abstract study",
+    "worst",
+    "worst case"
+   ],
+   [
+    "algorithms",
+    "learning algorithms",
+    "algorithms abstract",
+    "algorithms based",
+    "based algorithms",
+    "proposed algorithms"
+   ],
+   [
+    "graph",
+    "graph neural",
+    "gnns",
+    "graph based",
+    "gnn",
+    "graphs"
+   ],
+   [
+    "face",
+    "facial",
+    "face recognition",
+    "faces",
+    "face images",
+    "identity"
+   ],
+   [
+    "text",
+    "generation",
+    "document",
+    "documents",
+    "summarization",
+    "texts"
+   ],
+   [
+    "random",
+    "variables",
+    "random variables",
+    "walk",
+    "random walk",
+    "walks"
+   ],
+   [
+    "optimal",
+    "title optimal",
+    "optimal control",
+    "optimal solution",
+    "near optimal",
+    "policy"
+   ],
+   [
+    "speech",
+    "speaker",
+    "speech recognition",
+    "audio",
+    "asr",
+    "acoustic"
+   ],
+   [
+    "convex",
+    "non convex",
+    "convex optimization",
+    "dual",
+    "minimization",
+    "smooth"
+   ],
+   [
+    "vehicles",
+    "autonomous",
+    "vehicle",
+    "driving",
+    "traffic",
+    "safety"
+   ],
+   [
+    "scheme",
+    "schemes",
+    "proposed",
+    "proposed scheme",
+    "based",
+    "scheme based"
+   ],
+   [
+    "prediction",
+    "predict",
+    "predicting",
+    "predictions",
+    "prediction abstract",
+    "predictive"
+   ],
+   [
+    "class",
+    "classes",
+    "multi class",
+    "imbalance",
+    "imbalanced",
+    "new class"
+   ],
+   [
+    "series",
+    "time series",
+    "time",
+    "forecasting",
+    "series data",
+    "multivariate"
+   ],
+   [
+    "human",
+    "humans",
+    "interaction",
+    "body",
+    "pose",
+    "behavior"
+   ],
+   [
+    "pre",
+    "trained",
+    "pre trained",
+    "fine",
+    "tuning",
+    "fine tuning"
+   ],
+   [
+    "matrix",
+    "matrices",
+    "factorization",
+    "matrix factorization",
+    "multiplication",
+    "covariance"
+   ],
+   [
+    "different",
+    "types",
+    "different types",
+    "levels",
+    "various",
+    "using different"
+   ],
+   [
+    "resolution",
+    "super",
+    "super resolution",
+    "high resolution",
+    "high",
+    "low resolution"
+   ],
+   [
+    "recommendation",
+    "recommender",
+    "items",
+    "item",
+    "recommender systems",
+    "recommendations"
+   ],
+   [
+    "wireless",
+    "access",
+    "networks",
+    "radio",
+    "interference",
+    "cellular"
+   ],
+   [
+    "kernel",
+    "vector",
+    "support",
+    "kernels",
+    "regression",
+    "support vector"
+   ],
+   [
+    "sensor",
+    "sensors",
+    "sensor networks",
+    "wireless sensor",
+    "wireless",
+    "sensor network"
+   ],
+   [
+    "mimo",
+    "massive",
+    "massive mimo",
+    "multiple input",
+    "input multiple",
+    "multiple output"
+   ],
+   [
+    "dataset",
+    "datasets",
+    "benchmark",
+    "publicly",
+    "annotated",
+    "publicly available"
+   ],
+   [
+    "task",
+    "tasks",
+    "multi task",
+    "task learning",
+    "learning",
+    "challenging"
+   ],
+   [
+    "source",
+    "open",
+    "open source",
+    "source code",
+    "sources",
+    "code"
+   ],
+   [
+    "software",
+    "development",
+    "engineering",
+    "software development",
+    "software engineering",
+    "developers"
+   ],
+   [
+    "space",
+    "spaces",
+    "latent",
+    "latent space",
+    "space time",
+    "state space"
+   ],
+   [
+    "features",
+    "extracted",
+    "extract",
+    "features extracted",
+    "features abstract",
+    "level features"
+   ],
+   [
+    "resource",
+    "allocation",
+    "resource allocation",
+    "resources",
+    "scheduling",
+    "management"
+   ],
+   [
+    "web",
+    "services",
+    "service",
+    "web services",
+    "content",
+    "based"
+   ],
+   [
+    "federated",
+    "federated learning",
+    "fl",
+    "clients",
+    "learning",
+    "server"
+   ],
+   [
+    "computer",
+    "vision",
+    "computer vision",
+    "vision tasks",
+    "computer science",
+    "tasks"
+   ],
+   [
+    "noise",
+    "signal",
+    "signals",
+    "ratio",
+    "signal noise",
+    "noise ratio"
+   ],
+   [
+    "sequence",
+    "sequences",
+    "length",
+    "sequence sequence",
+    "generation",
+    "sequences abstract"
+   ],
+   [
+    "input",
+    "output",
+    "input output",
+    "inputs",
+    "outputs",
+    "input data"
+   ],
+   [
+    "dynamic",
+    "static",
+    "title dynamic",
+    "dynamic programming",
+    "changes",
+    "dynamically"
+   ],
+   [
+    "field",
+    "fields",
+    "mean",
+    "mean field",
+    "finite field",
+    "mathbb"
+   ],
+   [
+    "spatial",
+    "spatial temporal",
+    "location",
+    "locations",
+    "patterns",
+    "spatially"
+   ],
+   [
+    "level",
+    "high level",
+    "high",
+    "low level",
+    "levels",
+    "hierarchical"
+   ],
+   [
+    "computing",
+    "cloud",
+    "cloud computing",
+    "edge",
+    "service",
+    "services"
+   ],
+   [
+    "flow",
+    "flows",
+    "traffic",
+    "optical",
+    "optical flow",
+    "fluid"
+   ],
+   [
+    "monte",
+    "carlo",
+    "monte carlo",
+    "sampling",
+    "markov",
+    "chain"
+   ],
+   [
+    "multiple",
+    "single",
+    "multiple access",
+    "access",
+    "noma",
+    "using multiple"
+   ],
+   [
+    "distributed",
+    "title distributed",
+    "consensus",
+    "distributed systems",
+    "storage",
+    "distributed computing"
+   ],
+   [
+    "tracking",
+    "object tracking",
+    "target",
+    "filter",
+    "track",
+    "tracking abstract"
+   ],
+   [
+    "theory",
+    "theories",
+    "theory abstract",
+    "mathematical",
+    "information theory",
+    "algebraic"
+   ],
+   [
+    "constraints",
+    "constraint",
+    "constrained",
+    "constraints abstract",
+    "satisfaction",
+    "constraint satisfaction"
+   ],
+   [
+    "security",
+    "secure",
+    "key",
+    "protocol",
+    "authentication",
+    "encryption"
+   ],
+   [
+    "regret",
+    "bandit",
+    "armed",
+    "bandits",
+    "multi armed",
+    "armed bandit"
+   ],
+   [
+    "design",
+    "designs",
+    "designing",
+    "designed",
+    "hardware",
+    "design space"
+   ],
+   [
+    "function",
+    "loss",
+    "loss function",
+    "objective",
+    "value",
+    "objective function"
+   ],
+   [
+    "group",
+    "groups",
+    "fairness",
+    "fair",
+    "bias",
+    "individual"
+   ],
+   [
+    "query",
+    "queries",
+    "database",
+    "retrieval",
+    "databases",
+    "relational"
+   ],
+   [
+    "distance",
+    "metric",
+    "measure",
+    "similarity",
+    "measures",
+    "metrics"
+   ],
+   [
+    "mobile",
+    "devices",
+    "device",
+    "mobile devices",
+    "edge",
+    "android"
+   ],
+   [
+    "uncertainty",
+    "quantification",
+    "uncertainty quantification",
+    "bayesian",
+    "uncertainties",
+    "uncertain"
+   ],
+   [
+    "propose",
+    "novel",
+    "propose novel",
+    "paper propose",
+    "experiments",
+    "existing"
+   ],
+   [
+    "performance",
+    "improve",
+    "better",
+    "improve performance",
+    "compared",
+    "high performance"
+   ],
+   [
+    "online",
+    "offline",
+    "online learning",
+    "title online",
+    "competitive",
+    "abstract online"
+   ],
+   [
+    "error",
+    "errors",
+    "mean",
+    "estimates",
+    "error rate",
+    "correction"
+   ],
+   [
+    "conditions",
+    "sufficient",
+    "condition",
+    "necessary",
+    "sufficient conditions",
+    "necessary sufficient"
+   ],
+   [
+    "number",
+    "large number",
+    "small",
+    "parameters",
+    "large",
+    "size"
+   ],
+   [
+    "discrete",
+    "continuous",
+    "discrete time",
+    "continuous time",
+    "transform",
+    "fourier"
+   ],
+   [
+    "parallel",
+    "implementation",
+    "gpu",
+    "gpus",
+    "processing",
+    "cpu"
+   ],
+   [
+    "semantic",
+    "semantic segmentation",
+    "semantics",
+    "parsing",
+    "semantic information",
+    "similarity"
+   ],
+   [
+    "bounds",
+    "lower bounds",
+    "lower",
+    "upper",
+    "upper bounds",
+    "upper lower"
+   ],
+   [
+    "layer",
+    "layers",
+    "physical",
+    "hidden",
+    "multi layer",
+    "physical layer"
+   ],
+   [
+    "test",
+    "testing",
+    "tests",
+    "cases",
+    "test cases",
+    "hypothesis"
+   ],
+   [
+    "event",
+    "events",
+    "event detection",
+    "event based",
+    "sound",
+    "triggered"
+   ],
+   [
+    "probability",
+    "probabilistic",
+    "density",
+    "high probability",
+    "probability distributions",
+    "probabilities"
+   ],
+   [
+    "work",
+    "previous",
+    "abstract work",
+    "previous work",
+    "work propose",
+    "prior"
+   ],
+   [
+    "new",
+    "propose new",
+    "introduce new",
+    "introduce",
+    "present new",
+    "title new"
+   ],
+   [
+    "inference",
+    "bayesian",
+    "variational",
+    "latent",
+    "variables",
+    "causal"
+   ],
+   [
+    "planning",
+    "path",
+    "motion",
+    "motion planning",
+    "paths",
+    "trajectory"
+   ],
+   [
+    "blockchain",
+    "smart",
+    "contracts",
+    "smart contracts",
+    "contract",
+    "transactions"
+   ],
+   [
+    "properties",
+    "property",
+    "verification",
+    "structural",
+    "particular",
+    "desirable"
+   ]
+  ]
+ },
+ "arms": {
+  "V200_k3": {
+   "V": 200,
+   "k": 3,
+   "N_candidates": 1313400,
+   "N_novel_candidates": 1277550,
+   "K": 11492,
+   "n_future_papers": 41000,
+   "n_targets": 24312,
+   "n_novel_targets": 12908,
+   "n_pseudo_positives": 15580,
+   "scores": {
+    "POP": {
+     "enr_all": {
+      "value": 28.224183766276827,
+      "ci": [
+       31.125488516149154,
+       31.817637665531755
+      ]
+     },
+     "auc_all": {
+      "value": 0.9614404728576254,
+      "ci": [
+       0.9614296278316621,
+       0.9622756351313497
+      ]
+     },
+     "enr_novel_full": {
+      "value": 9.553530239060416,
+      "ci": [
+       9.938660946878555,
+       10.637046104077143
+      ]
+     },
+     "enr_novel_within": {
+      "value": 23.506096721760137,
+      "ci": [
+       24.15461870445401,
+       25.213802219969427
+      ]
+     },
+     "auc_novel": {
+      "value": 0.9531042663013317,
+      "ci": [
+       0.9522279062950817,
+       0.9535518910432383
+      ]
+     }
+    },
+    "M": {
+     "enr_all": {
+      "value": 29.13615772541369,
+      "ci": [
+       32.497580026222415,
+       33.213284960082824
+      ]
+     },
+     "auc_all": {
+      "value": 0.9691192383048969,
+      "ci": [
+       0.969224626987648,
+       0.970055882072533
+      ]
+     },
+     "enr_novel_full": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "enr_novel_within": {
+      "value": 30.907639794977264,
+      "ci": [
+       32.23684350967313,
+       33.404676932869506
+      ]
+     },
+     "auc_novel": {
+      "value": 0.9615214208563337,
+      "ci": [
+       0.9608654836400458,
+       0.9622707690293129
+      ]
+     }
+    },
+    "COH": {
+     "enr_all": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "auc_all": {
+      "value": 0.16447107008240833,
+      "ci": [
+       0.1685720052431801,
+       0.1697072412090827
+      ]
+     },
+     "enr_novel_full": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "enr_novel_within": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "auc_novel": {
+      "value": 0.13965760436141209,
+      "ci": [
+       0.14087090666406824,
+       0.14253054062856058
+      ]
+     }
+    },
+    "NC_0.4": {
+     "enr_all": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "auc_all": {
+      "value": 0.08555702300510322,
+      "ci": [
+       0.08204279468181012,
+       0.08345658309134169
+      ]
+     },
+     "enr_novel_full": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "enr_novel_within": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "auc_novel": {
+      "value": 0.1396576042388931,
+      "ci": [
+       0.14087090657342824,
+       0.14253054071398927
+      ]
+     }
+    },
+    "RAR": {
+     "enr_all": {
+      "value": 0.49829504983766554,
+      "ci": [
+       0.40830562566175344,
+       0.5267427689135634
+      ]
+     },
+     "auc_all": {
+      "value": 0.27249706895791853,
+      "ci": [
+       0.25435742804332945,
+       0.2594474597375515
+      ]
+     },
+     "enr_novel_full": {
+      "value": 0.9385303107881411,
+      "ci": [
+       0.8196445873019068,
+       1.0539624706718616
+      ]
+     },
+     "enr_novel_within": {
+      "value": 0.9030590830958697,
+      "ci": [
+       0.7874106331068207,
+       1.016838786234332
+      ]
+     },
+     "auc_novel": {
+      "value": 0.49870950542924,
+      "ci": [
+       0.4953937742737481,
+       0.5023090132538005
+      ]
+     }
+    },
+    "HOLE_qwen3e06": {
+     "enr_all": {
+      "value": 1.433773492457434,
+      "ci": [
+       1.2975339948604923,
+       1.4998746012582311
+      ]
+     },
+     "auc_all": {
+      "value": 0.6216115282962973,
+      "ci": [
+       0.620442376650425,
+       0.624370544557861
+      ]
+     },
+     "enr_novel_full": {
+      "value": 1.868206562040545,
+      "ci": [
+       1.6910607438262604,
+       2.0406269817440377
+      ]
+     },
+     "enr_novel_within": {
+      "value": 1.868092809149299,
+      "ci": [
+       1.6909577771346795,
+       2.040502730377061
+      ]
+     },
+     "auc_novel": {
+      "value": 0.6179638210312121,
+      "ci": [
+       0.6150428387848313,
+       0.6210605739530598
+      ]
+     }
+    },
+    "HOLE_bgem3": {
+     "enr_all": {
+      "value": 2.2987384846284757,
+      "ci": [
+       2.258343694281603,
+       2.4861173764587052
+      ]
+     },
+     "auc_all": {
+      "value": 0.6926081660007567,
+      "ci": [
+       0.692997524846948,
+       0.6968426807169816
+      ]
+     },
+     "enr_novel_full": {
+      "value": 2.35517983650609,
+      "ci": [
+       2.232321189503804,
+       2.625541825523095
+      ]
+     },
+     "enr_novel_within": {
+      "value": 2.390450514077302,
+      "ci": [
+       2.2681992653607894,
+       2.662301438472779
+      ]
+     },
+     "auc_novel": {
+      "value": 0.6958852486168773,
+      "ci": [
+       0.6946335747795479,
+       0.7003952770340394
+      ]
+     }
+    },
+    "FIT_M": {
+     "enr_all": {
+      "value": 34.22252795111514,
+      "ci": [
+       38.30177663376273,
+       39.05470696803054
+      ]
+     },
+     "auc_all": {
+      "value": 0.9701612159895717,
+      "ci": [
+       0.9703311809394424,
+       0.9711724373720965
+      ]
+     },
+     "enr_novel_full": {
+      "value": 8.331670023128686,
+      "ci": [
+       8.948167370958972,
+       9.583253853346134
+      ]
+     },
+     "enr_novel_within": {
+      "value": 31.013882040047367,
+      "ci": [
+       32.34829805127243,
+       33.49445981274508
+      ]
+     },
+     "auc_novel": {
+      "value": 0.9612442078390001,
+      "ci": [
+       0.960596564374498,
+       0.9620157765989849
+      ]
+     }
+    },
+    "FIT_MC": {
+     "enr_all": {
+      "value": 34.532787133089535,
+      "ci": [
+       38.69104949053229,
+       39.4305756667755
+      ]
+     },
+     "auc_all": {
+      "value": 0.9703120793787275,
+      "ci": [
+       0.9704803314969449,
+       0.9713277237320957
+      ]
+     },
+     "enr_novel_full": {
+      "value": 6.15357137733734,
+      "ci": [
+       6.700067513452807,
+       7.221207093318578
+      ]
+     },
+     "enr_novel_within": {
+      "value": 30.916493315399773,
+      "ci": [
+       32.25240989297836,
+       33.40813688129255
+      ]
+     },
+     "auc_novel": {
+      "value": 0.9611193960200342,
+      "ci": [
+       0.9604708892305425,
+       0.9618973651665562
+      ]
+     }
+    },
+    "FIT_MCH_qwen3e06": {
+     "enr_all": {
+      "value": 34.51398354630321,
+      "ci": [
+       38.696469855407216,
+       39.42521063177924
+      ]
+     },
+     "auc_all": {
+      "value": 0.970048017578708,
+      "ci": [
+       0.9702407256583984,
+       0.9710924792071323
+      ]
+     },
+     "enr_novel_full": {
+      "value": 6.43690128248093,
+      "ci": [
+       6.969429696910004,
+       7.52214605247676
+      ]
+     },
+     "enr_novel_within": {
+      "value": 30.597766580189468,
+      "ci": [
+       31.979759679441,
+       33.101884522454576
+      ]
+     },
+     "auc_novel": {
+      "value": 0.9606591373524456,
+      "ci": [
+       0.9600235846039455,
+       0.9614431324562505
+      ]
+     }
+    },
+    "FIT_MCH_bgem3": {
+     "enr_all": {
+      "value": 34.58919789344852,
+      "ci": [
+       38.77088996295485,
+       39.49496815856534
+      ]
+     },
+     "auc_all": {
+      "value": 0.9702913382931172,
+      "ci": [
+       0.9704536968058186,
+       0.9713080918878018
+      ]
+     },
+     "enr_novel_full": {
+      "value": 5.914511769872436,
+      "ci": [
+       6.425979674876324,
+       6.9426883089550255
+      ]
+     },
+     "enr_novel_within": {
+      "value": 30.93420035624479,
+      "ci": [
+       32.30553495175056,
+       33.43364447682165
+      ]
+     },
+     "auc_novel": {
+      "value": 0.9610343163158853,
+      "ci": [
+       0.9603865212268291,
+       0.9618059764559639
+      ]
+     }
+    }
+   },
+   "coefs": {
+    "FIT_M": {
+     "m_atom": 1.0721,
+     "m_pair": 1.1857,
+     "m_comb": 0.0395
+    },
+    "FIT_MC": {
+     "m_atom": 0.8181,
+     "m_pair": 1.2025,
+     "m_comb": -0.002,
+     "COH": -0.2194,
+     "RAR": -0.0694
+    },
+    "FIT_MCH_qwen3e06": {
+     "m_atom": 0.8587,
+     "m_pair": 1.2139,
+     "m_comb": -0.0014,
+     "COH": -0.2322,
+     "RAR": -0.0653,
+     "HOLE_qwen3e06": -0.1261
+    },
+    "FIT_MCH_bgem3": {
+     "m_atom": 0.8337,
+     "m_pair": 1.1972,
+     "m_comb": -0.003,
+     "COH": -0.2482,
+     "RAR": -0.071,
+     "HOLE_bgem3": -0.1149
+    }
+   },
+   "diffs": {
+    "M_minus_NC0_auc_all": {
+     "diff": 0.8046481682224885,
+     "ci": [
+      0.7998335199792641,
+      0.8012059806015233
+     ],
+     "p": 0.0
+    },
+    "M_minus_NC04_auc_all": {
+     "diff": 0.8835622152997936,
+     "ci": [
+      0.885939606517635,
+      0.8878229089025951
+     ],
+     "p": 0.0
+    },
+    "M_minus_NC0_enr_all": {
+     "diff": 29.13615772541369,
+     "ci": [
+      32.497580026222415,
+      33.213284960082824
+     ],
+     "p": 0.0
+    },
+    "M_minus_NC04_enr_all": {
+     "diff": 29.13615772541369,
+     "ci": [
+      32.497580026222415,
+      33.213284960082824
+     ],
+     "p": 0.0
+    },
+    "NC04_minus_NC0_enr_novel_full": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "p": 1.0
+    },
+    "NC04_minus_M_enr_novel_full": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "p": 1.0
+    },
+    "M_minus_COH_auc_novel": {
+     "diff": 0.8218638164949217,
+     "ci": [
+      0.8187867165183963,
+      0.8209721560427478
+     ],
+     "p": 0.0
+    },
+    "FITMC_minus_FITM_auc_all": {
+     "diff": 0.00015086338915581976,
+     "ci": [
+      0.0001263833309279705,
+      0.00017760002100974113
+     ],
+     "p": 0.0
+    },
+    "FITMC_minus_FITM_auc_novel": {
+     "diff": -0.00012481181896595306,
+     "ci": [
+      -0.0001375382771019923,
+      -0.00011018385322246471
+     ],
+     "p": 0.0
+    },
+    "FITMCH_qwen3e06_minus_FITMC_auc_all": {
+     "diff": -0.00026406180001958823,
+     "ci": [
+      -0.0002901643496520362,
+      -0.00019511635050158127
+     ],
+     "p": 0.0
+    },
+    "FITMCH_bgem3_minus_FITMC_auc_all": {
+     "diff": -2.0741085610342935e-05,
+     "ci": [
+      -4.483211108890495e-05,
+      6.0309634950878e-06
+     ],
+     "p": 0.156
+    }
+   },
+   "decisions": {
+    "predictions_hold": {
+     "H1": false,
+     "H2": true,
+     "H3a": false,
+     "H3b": true,
+     "H4": true,
+     "H5_qwen3e06": true,
+     "H5_bgem3": true,
+     "H5_replicated_decision": true
+    },
+    "p_raw": {
+     "H2": 0.0,
+     "H3b": 0.0,
+     "H4": 0.0,
+     "H5": 0.0
+    },
+    "p_holm": {
+     "H2": 0.0,
+     "H3b": 0.0,
+     "H4": 0.0,
+     "H5": 0.0
+    }
+   }
+  },
+  "V200_k2": {
+   "V": 200,
+   "k": 2,
+   "N_candidates": 19900,
+   "N_novel_candidates": 12091,
+   "K": 174,
+   "n_future_papers": 41000,
+   "n_targets": 6781,
+   "n_novel_targets": 389,
+   "n_pseudo_positives": 6214,
+   "scores": {
+    "POP": {
+     "enr_all": {
+      "value": 2.9346704025954873,
+      "ci": [
+       3.1733249368855336,
+       3.2190229699126496
+      ]
+     },
+     "auc_all": {
+      "value": 0.9794822026575355,
+      "ci": [
+       0.9739631934938761,
+       0.9761591179933667
+      ]
+     },
+     "enr_novel_full": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "enr_novel_within": {
+      "value": 17.007275549303973,
+      "ci": [
+       16.355019304143344,
+       20.93410917469404
+      ]
+     },
+     "auc_novel": {
+      "value": 0.9363312755185653,
+      "ci": [
+       0.928892266738948,
+       0.9458339364305041
+      ]
+     }
+    },
+    "M": {
+     "enr_all": {
+      "value": 2.9346704025954873,
+      "ci": [
+       3.1733249368855336,
+       3.2190229699126496
+      ]
+     },
+     "auc_all": {
+      "value": 0.9818762016012623,
+      "ci": [
+       0.9777848898048289,
+       0.9799569196128386
+      ]
+     },
+     "enr_novel_full": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "enr_novel_within": {
+      "value": 18.180191104428385,
+      "ci": [
+       18.331530852504756,
+       23.060281997139157
+      ]
+     },
+     "auc_novel": {
+      "value": 0.9316589039115762,
+      "ci": [
+       0.923376369818452,
+       0.9460773756962222
+      ]
+     }
+    },
+    "COH": {
+     "enr_all": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "auc_all": {
+      "value": 0.07533193115161646,
+      "ci": [
+       0.09068217464024966,
+       0.0946529577276652
+      ]
+     },
+     "enr_novel_full": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "enr_novel_within": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "auc_novel": {
+      "value": 0.06366411120371838,
+      "ci": [
+       0.05416253153189014,
+       0.07110207294166929
+      ]
+     }
+    },
+    "NC_0.4": {
+     "enr_all": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "auc_all": {
+      "value": 0.021254904412648035,
+      "ci": [
+       0.024764942726098003,
+       0.027004065003792453
+      ]
+     },
+     "enr_novel_full": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "enr_novel_within": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "auc_novel": {
+      "value": 0.06366411120371838,
+      "ci": [
+       0.05416253153189014,
+       0.07110207294166929
+      ]
+     }
+    },
+    "RAR": {
+     "enr_all": {
+      "value": 0.08432960926998527,
+      "ci": [
+       0.01844329853522417,
+       0.09208358783571177
+      ]
+     },
+     "auc_all": {
+      "value": 0.041417620576381015,
+      "ci": [
+       0.037628725160936266,
+       0.0413348484399705
+      ]
+     },
+     "enr_novel_full": {
+      "value": 1.470023343084242,
+      "ci": [
+       0.4315361027813515,
+       2.117922520221371
+      ]
+     },
+     "enr_novel_within": {
+      "value": 0.293228888781103,
+      "ci": [
+       0.0,
+       0.4370346273404178
+      ]
+     },
+     "auc_novel": {
+      "value": 0.48199393771372107,
+      "ci": [
+       0.46416086268483087,
+       0.5006345000961645
+      ]
+     }
+    },
+    "HOLE_qwen3e06": {
+     "enr_all": {
+      "value": 1.3492737483197643,
+      "ci": [
+       1.1894110211006763,
+       1.3931757819452268
+      ]
+     },
+     "auc_all": {
+      "value": 0.5562976836123955,
+      "ci": [
+       0.5581604275268168,
+       0.5635911899396245
+      ]
+     },
+     "enr_novel_full": {
+      "value": 3.822060692019029,
+      "ci": [
+       2.5225884451924006,
+       4.972513743128435
+      ]
+     },
+     "enr_novel_within": {
+      "value": 4.398433331716545,
+      "ci": [
+       3.051247723854625,
+       5.6814890375097145
+      ]
+     },
+     "auc_novel": {
+      "value": 0.4637288728356588,
+      "ci": [
+       0.43724097303526177,
+       0.47665972405023377
+      ]
+     }
+    },
+    "HOLE_bgem3": {
+     "enr_all": {
+      "value": 1.7371899509616966,
+      "ci": [
+       1.730057082820032,
+       1.862795678520042
+      ]
+     },
+     "auc_all": {
+      "value": 0.6332201396855724,
+      "ci": [
+       0.6338289982821261,
+       0.6395818646264199
+      ]
+     },
+     "enr_novel_full": {
+      "value": 1.1760186744673935,
+      "ci": [
+       0.4158829676071055,
+       1.7198167833376545
+      ]
+     },
+     "enr_novel_within": {
+      "value": 2.345831110248824,
+      "ci": [
+       1.683631553296665,
+       3.36726310659333
+      ]
+     },
+     "auc_novel": {
+      "value": 0.511515180539525,
+      "ci": [
+       0.4905921456805522,
+       0.5305051989387779
+      ]
+     }
+    },
+    "FIT_M": {
+     "enr_all": {
+      "value": 2.9346704025954873,
+      "ci": [
+       3.1733249368855336,
+       3.2190229699126496
+      ]
+     },
+     "auc_all": {
+      "value": 0.9827520115543245,
+      "ci": [
+       0.9787931730938841,
+       0.9809434372885363
+      ]
+     },
+     "enr_novel_full": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "enr_novel_within": {
+      "value": 18.180191104428385,
+      "ci": [
+       18.331530852504756,
+       23.060281997139157
+      ]
+     },
+     "auc_novel": {
+      "value": 0.9316589039115762,
+      "ci": [
+       0.923376369818452,
+       0.9460773756962222
+      ]
+     }
+    },
+    "FIT_MC": {
+     "enr_all": {
+      "value": 2.9346704025954873,
+      "ci": [
+       3.1733249368855336,
+       3.2190229699126496
+      ]
+     },
+     "auc_all": {
+      "value": 0.9842204028489723,
+      "ci": [
+       0.9802703965308811,
+       0.9823841437061352
+      ]
+     },
+     "enr_novel_full": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "enr_novel_within": {
+      "value": 17.88696221564728,
+      "ci": [
+       18.053617483371795,
+       22.642400629294542
+      ]
+     },
+     "auc_novel": {
+      "value": 0.9307724955503838,
+      "ci": [
+       0.9223999087072899,
+       0.9454354408753548
+      ]
+     }
+    },
+    "FIT_MCH_qwen3e06": {
+     "enr_all": {
+      "value": 2.9346704025954873,
+      "ci": [
+       3.1733249368855336,
+       3.2190229699126496
+      ]
+     },
+     "auc_all": {
+      "value": 0.9842478196843188,
+      "ci": [
+       0.9802959297342362,
+       0.9823985685386329
+      ]
+     },
+     "enr_novel_full": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "enr_novel_within": {
+      "value": 18.180191104428385,
+      "ci": [
+       18.14664062831461,
+       22.980337272790102
+      ]
+     },
+     "auc_novel": {
+      "value": 0.9309614202568585,
+      "ci": [
+       0.9225618091939147,
+       0.9456828871326177
+      ]
+     }
+    },
+    "FIT_MCH_bgem3": {
+     "enr_all": {
+      "value": 2.9346704025954873,
+      "ci": [
+       3.1733249368855336,
+       3.2190229699126496
+      ]
+     },
+     "auc_all": {
+      "value": 0.9842204253310021,
+      "ci": [
+       0.9802691440100255,
+       0.9823826359493638
+      ]
+     },
+     "enr_novel_full": {
+      "value": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ]
+     },
+     "enr_novel_within": {
+      "value": 17.88696221564728,
+      "ci": [
+       17.947019976537,
+       22.635757559751415
+      ]
+     },
+     "auc_novel": {
+      "value": 0.9307573376378876,
+      "ci": [
+       0.9223914118830719,
+       0.9454423714448759
+      ]
+     }
+    }
+   },
+   "coefs": {
+    "FIT_M": {
+     "m_atom": 3.6334,
+     "m_comb": 1.2601
+    },
+    "FIT_MC": {
+     "m_atom": 3.3432,
+     "m_comb": 0.4774,
+     "COH": 0.1578,
+     "RAR": -1.0359
+    },
+    "FIT_MCH_qwen3e06": {
+     "m_atom": 3.3294,
+     "m_comb": 0.4728,
+     "COH": 0.1476,
+     "RAR": -1.0388,
+     "HOLE_qwen3e06": 0.0211
+    },
+    "FIT_MCH_bgem3": {
+     "m_atom": 3.3426,
+     "m_comb": 0.472,
+     "COH": 0.1589,
+     "RAR": -1.0388,
+     "HOLE_bgem3": 0.0055
+    }
+   },
+   "diffs": {
+    "M_minus_NC0_auc_all": {
+     "diff": 0.9065442704496458,
+     "ci": [
+      0.8835743611634199,
+      0.8888397696160866
+     ],
+     "p": 0.0
+    },
+    "M_minus_NC04_auc_all": {
+     "diff": 0.9606212971886143,
+     "ci": [
+      0.950903985650044,
+      0.9550836848603669
+     ],
+     "p": 0.0
+    },
+    "M_minus_NC0_enr_all": {
+     "diff": 2.9346704025954873,
+     "ci": [
+      3.1733249368855336,
+      3.2190229699126496
+     ],
+     "p": 0.0
+    },
+    "M_minus_NC04_enr_all": {
+     "diff": 2.9346704025954873,
+     "ci": [
+      3.1733249368855336,
+      3.2190229699126496
+     ],
+     "p": 0.0
+    },
+    "NC04_minus_NC0_enr_novel_full": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "p": 1.0
+    },
+    "NC04_minus_M_enr_novel_full": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "p": 1.0
+    },
+    "M_minus_COH_auc_novel": {
+     "diff": 0.8679947927078578,
+     "ci": [
+      0.8525796900547268,
+      0.8912057309360218
+     ],
+     "p": 0.0
+    },
+    "FITMC_minus_FITM_auc_all": {
+     "diff": 0.0014683912946478195,
+     "ci": [
+      0.0012287617589360866,
+      0.0016788915253550195
+     ],
+     "p": 0.0
+    },
+    "FITMC_minus_FITM_auc_novel": {
+     "diff": -0.00088640836119247,
+     "ci": [
+      -0.0010500037418669922,
+      -0.0004136845187721756
+     ],
+     "p": 0.0
+    },
+    "FITMCH_qwen3e06_minus_FITMC_auc_all": {
+     "diff": 2.741683534657202e-05,
+     "ci": [
+      8.335058778183302e-06,
+      3.3741806160500464e-05
+     ],
+     "p": 0.0
+    },
+    "FITMCH_bgem3_minus_FITMC_auc_all": {
+     "diff": 2.248202979338032e-08,
+     "ci": [
+      -2.4058896313766674e-06,
+      3.902432031091529e-06
+     ],
+     "p": 0.62
+    }
+   },
+   "decisions": {
+    "predictions_hold": {
+     "H1": false,
+     "H2": true,
+     "H3a": false,
+     "H3b": true,
+     "H4": true,
+     "H5_qwen3e06": true,
+     "H5_bgem3": true,
+     "H5_replicated_decision": true
+    },
+    "p_raw": {
+     "H2": 0.0,
+     "H3b": 0.0,
+     "H4": 0.0,
+     "H5": 0.0
+    },
+    "p_holm": {
+     "H2": 0.0,
+     "H3b": 0.0,
+     "H4": 0.0,
+     "H5": 0.0
+    }
+   }
+  }
+ },
+ "runtime_s": 2412.760379076004
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Judge every generator-grid run with the four subscription judges (sol on the gateway is left out: company spend).
+# Judge every generator-grid run with the four subscription judges (sol on the gateway is left out: paid spend).
 # Per run: pitches (gateway luna, cached), then one queue per CLI quota in parallel. Resumable.
 set -u
 DOMAIN=${DOMAIN:-steam}

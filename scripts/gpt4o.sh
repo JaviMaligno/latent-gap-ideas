@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Pre-cutoff generator (gpt-4o 2024-08-06, training cutoff Oct 2023) for the anticipation test: same targets as the
-# grid, arms REAL (control), FAR, GAP, PLAIN, PLAIND. Gateway alias in ALIAS. Company spend: logged in ledger.jsonl.
+# grid, arms REAL (control), FAR, GAP, PLAIN, PLAIND. Gateway alias in ALIAS. Paid spend: logged in ledger.jsonl.
 set -u
 ALIAS=${ALIAS:?gateway alias of gpt-4o 2024-08-06}
 N=${N:-50}
