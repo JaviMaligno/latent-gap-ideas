@@ -2,6 +2,8 @@
 
   ALIAS=gpt-4o-0806 uv run python scripts/iterative_critique.py generate [--limit N]
   uv run python scripts/iterative_critique.py analyse
+NEUTRAL arm (docs/prereg/neutral_revision.md): LG_ITER_ARMS=NEUTRAL LG_ITER_R0_FROM=GEO LG_ITER_OUT=iter_ideas_neutral.jsonl
+  LG_TAG=iter-neutral ALIAS=gpt-4o-0806 uv run python scripts/iterative_critique.py generate
 Ideas: <run>/iter_ideas.jsonl (one line per idea and round). Results: key "iterative_critique" in
 docs/prereg/continue_from_context_result.json
 """
@@ -28,6 +30,8 @@ ARMS = tuple(os.environ.get("LG_ITER_ARMS", "GEO,LLM,ORACLE").split(","))
 N_IDEAS, N_ROUNDS = 3, 3
 BAND = (0.574, 0.661)
 TAG = os.environ.get("LG_TAG", "iter-critique")
+NEUTRAL_FB = "Revise your proposal: write an improved version."  # docs/prereg/neutral_revision.md
+R0_FROM = os.environ.get("LG_ITER_R0_FROM")  # reuse this arm's round 0 from iter_ideas.jsonl (neutral_revision.md)
 
 
 def geo_feedback(s: float) -> str:
@@ -62,6 +66,10 @@ def generate(limit: int | None) -> None:
     prior = [json.loads(l) for l in OUT.read_text().splitlines()] if OUT.exists() else []
     done = {(r["ctx"], r["arm"], r["k"], r["round"]): r for r in prior}
     lock = threading.Lock()
+    seed = {}
+    if R0_FROM:
+        base = [json.loads(l) for l in (M.RUN / "iter_ideas.jsonl").read_text().splitlines()]
+        seed = {(r["ctx"], r["k"]): r for r in base if r["arm"] == R0_FROM and r["round"] == 0}
 
     def chat(text: str, key: str) -> dict:
         for _ in range(3):
@@ -86,6 +94,10 @@ def generate(limit: int | None) -> None:
         for r in range(N_ROUNDS):
             if (i, arm, k, r) in done:
                 rec = done[(i, arm, k, r)]
+            elif r == 0 and (i, k) in seed:
+                rec = {**seed[(i, k)], "arm": arm, "r0_from": R0_FROM}
+                with lock, OUT.open("a") as fh:
+                    fh.write(json.dumps(rec) + "\n")
             else:
                 idea = chat(M.prompt("CTX", cb, [], []) if r == 0 else revise_prompt(cb, prev, feedback), "title")
                 e = q.embed_one(item_text(idea["title"], idea["abstract"])) if idea["abstract"] else None
@@ -111,6 +123,8 @@ def generate(limit: int | None) -> None:
                     feedback = ("Your proposals so far and their similarity (embedding cosine) to the closest paper actually "
                                 f"published as a follow-up:\n{lines}\nThe best so far is proposal {best + 1}; the proposal "
                                 "above is that one. Try to get closer.")
+                elif arm == "NEUTRAL":
+                    feedback = NEUTRAL_FB
                 elif arm == "ORACLE":
                     feedback = (f"Your proposal's similarity to the closest paper actually published as a follow-up is "
                                 f"{rec['fit']:.2f} (embedding cosine). Try to get closer.")

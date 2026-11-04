@@ -41,10 +41,10 @@ Every number in the paper, by section, with the repository file it comes from. M
 ## 5.3 Direction, measured independently of the step (exploratory)
 
 - src: docs/prereg/direction_tangent.json (per cell: share_above_pool_max.round0 0.692 / 0.918 / 0.964 / 0.971, round2 0.400 / 0.736 / 0.790 / 0.840; followups_loo_alignment 0.468 qwen3e06, 0.525 bgem3; {GEO,LLM,ORACLE}.alignment_round0, alignment_round2, alignment_change_p ≤ 0.0054, towards_nearest_noncitingdir(_p), towards_followup_specific(_p)); scripts/direction_tangent.py (docstring: exploratory, raised in review; paired Wilcoxon; all follow-ups)
-## 5.4 Second generator
+## 5.1 (continued) Second generator, OLMo
 
 - src: docs/prereg/continuation_reanalysis.json (all 8 cells: B.CTX.mean_step_gap, B1_step_gap_CTX_p, I.{GEO,LLM,ORACLE}.step_reduction, fit_change, fit_change_p: 17 of 24 below 0.05; olmo-7b-0424/bgem3/continuing.I.GEO.fit_change +0.0027, p 0.57); docs/prereg/direction_tangent.json (alignment_change, towards_followup_specific per cell and arm); docs/paper/pending.md (Second generator: gpt-4o-mini ServiceModelDeprecating, Llama 3.1 access disabled, OLMo 2,048 window, prepended system text); kaggle/llama-continuation/run.py (parse: OLMo writes prose; N_IDEAS_ITER = 1)
-## 5.5 A 2026 generator, and score feedback with history (pre-registered)
+## 5.4 A 2026 generator, and score feedback with history (pre-registered)
 
 - src: docs/prereg/modern_and_oracle_history.md (design, pre-registered predictions M1-M4, H1-H2, Result section); docs/prereg/oracle_history.json (continue-from-context: ORACLE, ORACLE-H, H1_fit_gain_H_minus_plain; continue-modern: M1.CTX.mean_step_gap 0.211, M1.CTX+MEM 0.198, GEO, LLM, ORACLE, ORACLE-H step/fit/align/spec, H1_fit_gain_H_minus_plain 0.0006); scripts/oracle_history_analysis.py; scripts/modern_step_gap.py
 ## 6 The distance of inspiration does not help (pre-registered)
@@ -100,17 +100,17 @@ Every number in the paper, by section, with the repository file it comes from. M
 - src: docs/geometry.md §12 (PLAIND − INTERP Steam +1.16 to +3.19, arXiv CIs; PLAIND pair cos 0.534 / 0.504); docs/design.md (Patents outcome (6) with CIs; "PLAIN collapses": 0.864, 0.404, 0.35-0.49, 45/50; GAP outcome 4.91 vs 5.52)
 - src: docs/design.md ("Item agreement is weak everywhere after batch 1": −0.32, 0.36, 0.34, 0.13; patents −1.2 to −3.0; "Human batch P1": 3/4 FAR, 1/3 GAP, 0/5 PLAIND; "Reading: the judges' novelty rewards ..."); docs/geometry.md "Human batch 3" (7.00 vs 5.75, p = 0.105)
 - src: docs/prereg/memory_probe.md ("Style-free anticipation ... exploratory": 0.58, 0.50, p 0.002 / 0.020, gpt-4o 0.38 p 0.198, published cutoff October 2023); scripts/anticipation_normalised.py (--future-from 2024-01-01)
-## A.8 Limitations of the gaps study
+## 8 Limitations (gaps-study paragraphs, formerly an appendix)
 
 - src: docs/design.md ("Judge criteria are not independent": coherence ~ feasibility 0.35 / 0.62 / 0.63, ~ appeal 0.41 / 0.66 / 0.79); docs/prereg/where_future_lands_result.json (F5.n patents 9,477); docs/prereg/where_future_lands.md (30,865 pending); docs/paper/pending.md (A: 8,640 calls, ≈ 12 h; B: 16 items, ≥ 3 raters); docs/prereg/combination_vs_momentum.md (Limitations)
-## A.9 Continuation study: how real follow-ups move, and the one-shot arms
+## A.8 Continuation study: how real follow-ups move, and the one-shot arms
 
 - src: docs/prereg/continue_from_context_result.json (A: A1_step_median 0.620, A1_step_quartiles 0.574-0.661, A2_mean_proj_momentum 0.0162, A2_mean_proj_hole 0.3364, A2_mean_diff −0.320, A2_diff_ci, A2_holds false, A3_mean_proj_centre 0.427, A3_ci; A_baseline: median_abs_step_mismatch 0.00049, centre 0.427 vs 0.471 p 3e-23, hole 0.336 vs 0.350 p 5.8e-5, momentum 0.0162 vs 0.0147 p 0.61); scripts/continue_from_context.py (directions()); scripts/continue_from_context_baseline.py (docstring: exploratory)
 - src: docs/prereg/continue_from_context_result.json (B.{CTX,CTX+NB,CTX+MEM,CTX+MOM}.mean_step_gap, mean_fit, mean_hit, mean_div)
 - src: docs/prereg/continue_from_context_result.json (B.holm B1 9.3e-26, B2 0.068, B3 2.7e-20, B4 1.0; B.B2 mean_diff 0.0080, ci, p 0.023; B.B3 0.767 vs 0.824; B.B4 hit_MOM 0.617, hit_CTX 0.659, mean_diff −0.041, ci, mcnemar_b 8, mcnemar_c 15, fit_MOM 0.685, fit_CTX 0.680, best_arm_by_hit CTX+NB; B_centre: followups 0.427, CTX 0.129 to CTX+MOM 0.152); docs/prereg/continuation_reanalysis.json (B3_div_MEM_vs_CTX_p ≤ 1.5e-9 in the four gpt-4o cells; olmo-7b-0424/qwen3e06/all.B.CTX.mean_div 0.826, CTX+MEM 0.808); scripts/continue_from_context.py (Part B scoring)
 - src: docs/paper/pending.md (Second generator: what was tried — gpt-4o-mini ServiceModelDeprecating, Llama 3.1 access disabled, OLMo 2,048 window, prepended system text); kaggle/llama-continuation/run.py (parse: OLMo writes prose; N_IDEAS_ITER = 1)
 - src: docs/prereg/encoder_agreement.json (ctx 150, fup 2883, partB 3000 texts; min_cos 0.999994-0.999996), produced by scripts/encoder_agreement.py; reproduction: docs/prereg/continuation_reanalysis.json gpt-4o/qwen3e06/all.I.GEO.step_reduction 0.08684 vs docs/prereg/continue_from_context_result.json iterative_critique.C1.step_reduction 0.08682
-## A.10 The withdrawn distance-matched baseline
+## A.9 Why a distance-matched baseline is not identified
 
 - src: docs/prereg/direction_tangent.json (share_above_pool_max.round0 / round2 per cell: 0.692/0.400, 0.964/0.790, 0.918/0.736, 0.971/0.840); scripts/direction_tangent.py (docstring: "the distance-matched baseline of iterative_critique is out of support at round 0"); docs/prereg/continuation_reanalysis.json (I.*.excess, excess_change, excess_change_p, kept for the record); docs/prereg/continue_from_context_result.json (A_baseline.median_abs_step_mismatch 0.00049)
 
@@ -124,3 +124,16 @@ Every number in the paper, by section, with the repository file it comes from. M
 - Table A1 direct AUCs: docs/prereg/where_future_lands_controls.json (auc_no_cv).
 - Table A2 CIs: docs/prereg/anchoring_causal_result.json (cells[].drop, cells[].attraction).
 - Figures 1-5: scripts/paper_figures.py, from the files above and runs/inspiration/gpt-4o-0806/scored_{qwen3e06,bgem3}.parquet.
+
+## Added in the review pass (2026-11-04, Codex review)
+
+- Section 3, REAL margin 0.036-0.071: docs/prereg/anchoring_none_margin.json (REAL own_minus_other 0.03556-0.07057).
+- Section 3, future above past ceiling 58 / 86 / 58 %, max 0.1002: docs/prereg/far_targets_vs_future.json (share_targets_future_above_past; arxiv.future_max_cos_to_target.max 0.100156).
+- Section 4 and A.2, F3 cluster-bootstrap intervals, raw vs partial ρ, F6 fallback: docs/prereg/revision_future_cells.json (scripts/revision_future_cells.py).
+- Section 5.1, first-version dates and versions: docs/prereg/revision_first_public.json (scripts/revision_arxiv_versions.py, scripts/revision_first_public.py); one-shot narrowing 0.022 of 0.149: docs/prereg/revision_null_effects.json.
+- Section 5.2, NEUTRAL arm (N1-N6, Table 2 row): docs/prereg/neutral_revision.md (Result), docs/prereg/revision_neutral.json (scripts/revision_neutral.py; generation scripts/iterative_critique.py with LG_ITER_ARMS=NEUTRAL, LG_ITER_R0_FROM=GEO, LG_ITER_OUT=iter_ideas_neutral.jsonl).
+- Section 5.3, Table 3 weighted contributions and Holm-36, cap counts: docs/prereg/revision_direction_tangent.json (scripts/revision_direction_tangent.py); MDE, intervals and TOST bounds: docs/prereg/revision_null_effects.json (scripts/revision_null_effects.py).
+- Section 5.4, intervals and bounds: docs/prereg/revision_null_effects.json.
+- Section 6, date filter, appid check, estimands, CLI clustering, CIs and isolation adjustment: docs/prereg/revision_inspiration.json (scripts/revision_inspiration.py).
+- A.6, repaired bootstrap and H1-H5 wording: docs/prereg/revision_bootstrap_combination.json (scripts/revision_bootstrap_combination.py).
+- Appendix B commits: `git log --diff-filter=A -- docs/prereg/<file>.md`.

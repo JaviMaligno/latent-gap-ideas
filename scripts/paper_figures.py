@@ -106,14 +106,20 @@ def fig4_tangent() -> None:
             x = i + (j - 1) * 0.22
             r0, r2 = t[k][arm]["alignment_round0"], t[k][arm]["alignment_round2"]
             ax.annotate("", xy=(x, r2), xytext=(x, r0), arrowprops=dict(arrowstyle="->", color=col, lw=1.6))
-            ax.plot(x, r0, "o", color=col, ms=3, label=arm if i == 0 else None)
+            ax.plot(x, r0, "o", color=col, ms=3, label={"LLM": "Reviewer"}.get(arm, arm) if i == 0 else None)
+        if k.startswith("gpt-4o"):  # neutral-revision control (docs/prereg/neutral_revision.md)
+            nr = load("revision_neutral.json")[k.split("/")[1]]["NEUTRAL"]
+            x = i + 0.33
+            ax.annotate("", xy=(x, nr["round2"]["align"]), xytext=(x, nr["round0"]["align"]),
+                        arrowprops=dict(arrowstyle="->", color=C["grey"], lw=1.6))
+            ax.plot(x, nr["round0"]["align"], "o", color=C["grey"], ms=3, label="NEUTRAL" if i == 0 else None)
         loo = t[k]["followups_loo_alignment"]
         ax.plot([i - 0.38, i + 0.38], [loo, loo], color=C["black"], lw=1.2,
                 label="follow-ups among themselves" if i == 0 else None)
     g = {"gpt-4o": "gpt-4o", "olmo-7b-0424": "OLMo"}
     ax.set_xticks(range(4), [f"{g[k.split('/')[0]]} / {EMB[k.split('/')[1]]}" for k in keys])
     ax.set_ylabel("tangent alignment with\nfollow-ups' direction")
-    ax.legend(fontsize=7, ncol=4, loc="upper center", bbox_to_anchor=(0.5, 1.15))
+    ax.legend(fontsize=7, ncol=5, loc="upper center", bbox_to_anchor=(0.5, 1.15))
     fig.savefig(OUT / "fig4_tangent.png")
 
 

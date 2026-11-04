@@ -60,6 +60,8 @@ def load_generator(gen: str, space: str):
         IT = V[o:]
     pb = [r for r in pb if r["abstract"]]
     it = [r for r in it if r["abstract"]]
+    if gen == "gpt-4o":  # oracle_history.py later appended ORACLE-H rows, embedded separately
+        it = [r for r in it if r.get("arm") != "ORACLE-H"]
     assert len(pb) == len(PB) and len(it) == len(IT), (gen, len(pb), len(PB), len(it), len(IT))
     starts = np.cumsum([0] + nf)
     F = [Fall[starts[i]:starts[i + 1]] for i in range(len(ctx))]

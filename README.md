@@ -34,9 +34,13 @@ pre-registered studies run against what was published or released later:
   future item lands in the far region.
 - **Distances do not steer a continuation** (`continue_from_context.md`, `iterative_critique.md`,
   `modern_and_oracle_history.md`): LLM continuations of arXiv papers stay closer to their source than the papers that
-  later cite it, and feeding back the similarity to those papers does not raise it.
+  later cite it; feeding back the similarity to those papers turns the ideas towards them by no more than about 0.015
+  in cosine, and a content-free revision control (`neutral_revision.md`) turns them as much as any critique does.
 - **Inspiration distance has no sweet spot** (`inspiration_from_anything.md`): material from nine sources, graded by
-  distance, gives games that anticipate the post-cutoff Steam catalogue no better at middle distances.
+  distance, gives games whose anticipation of the post-cutoff Steam catalogue has no middle optimum, only a small
+  positive slope in one embedder.
+- Review-pass reanalyses (cluster bootstraps, Holm, date audits, bounded nulls) are in `scripts/revision_*.py` and
+  `docs/prereg/revision_*.json`.
 
 ## Layout
 
