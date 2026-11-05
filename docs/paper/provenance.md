@@ -5,7 +5,7 @@ Every number in the paper, by section, with the repository file it comes from. M
 ## Abstract
 
 - src: docs/prereg/anchoring_causal.md (Result: 12/12 supported); docs/geometry.md §12 and docs/design.md ("arXiv FAR ceiling, parameter-free": predicted 0.062, observed 0.058)
-- src: docs/prereg/where_future_lands_controls.json (auc_no_cv: hole 0.449-0.540, momentum 0.728-0.920); docs/prereg/combination_vs_momentum_result.json (arms.V200_k3.N_candidates 1,313,400; diffs.FITMC_minus_FITM_auc_all 0.00015)
+- src: docs/prereg/where_future_lands_result.json (F3.auc_hole 0.39-0.48 and F3.auc_momentum 0.71-0.92, cross-validated, pre-registered); docs/prereg/combination_vs_momentum_result.json (arms.V200_k3.N_candidates 1,313,400; diffs.FITMC_minus_FITM_auc_all 0.00015)
 - src: docs/prereg/continue_from_context_result.json (A.n_contexts 150; B.B1.CTX.mean_step_gap 0.1494; iterative_critique.C5.fit_gain −0.0115); docs/prereg/direction_tangent.json (alignment_change > 0 in 12/12 cells; followups_loo_alignment 0.468 / 0.525)
 ## 1 Introduction
 
@@ -26,7 +26,7 @@ Every number in the paper, by section, with the repository file it comes from. M
 ## 4 Gaps do not forecast where the future grows
 
 - src: docs/prereg/where_future_lands.md ("Measures", K = 256, 200,000 draws, far threshold 0.15); scripts/where_future_lands.py (KMeans refitted per embedder)
-- src: docs/prereg/where_future_lands_controls.json (auc_no_cv: n_top 26; hole 0.449-0.540, all CIs include 0.5; momentum 0.728-0.920; exploratory); docs/prereg/where_future_lands_result.json (F3: auc_momentum 0.705-0.917, gain −0.021 to +0.006, patents/bgem3 gain 0.0311, gain_ci [−0.058, 0.125])
+- src: docs/prereg/where_future_lands_controls.json (auc_no_cv: n_top 26; hole 0.449-0.540, all CIs include 0.5; momentum 0.728-0.920; exploratory); docs/prereg/where_future_lands_result.json (F3: auc_momentum 0.705-0.917, gain −0.021 to +0.006, patents/bgem3 gain 0.0311, gain_ci [−0.058, 0.125]) [gain_ci superseded by docs/prereg/revision_future_cells.json F3.cluster_bootstrap.gain_ci]
 - src: docs/prereg/where_future_lands_result.json (F2.partial_rho, F2.ci, F2.raw_rho_hole); docs/prereg/where_future_lands_controls.json (f2_numerators); docs/paper/related_work.md (Luo and Evans 2026)
 - src: docs/prereg/where_future_lands_result.json (sizes.future 40,989 + 41,000 + 40,342 = 122,331; F1.far_count 0; F1.max_cos_future_min 0.41-0.57; F1.median_iso_diff 0.002-0.029); docs/prereg/where_future_lands_controls.json (cross_domain: share_far 0; out-of-domain min_max_cos 0.165-0.495; out-of-domain median_iso minus in-domain median_iso of the same past, 0.083-0.321)
 - src: docs/prereg/combination_vs_momentum.md (Result: M within-novel 30.9x, AUC 0.962; POP 23.5x, AUC 0.953; COH AUC 0.164; H5 −0.0003 Qwen3); docs/prereg/combination_vs_momentum_result.json (arms.V200_k3.N_candidates 1,313,400; diffs.FITMC_minus_FITM_auc_all 0.00015); docs/paper/related_work.md (Alien Space: no momentum or popularity baseline)
@@ -37,7 +37,7 @@ Every number in the paper, by section, with the repository file it comes from. M
 
 - src: docs/prereg/iterative_critique.md (Design, Predictions; Result header: spend $16.06, 4,950 calls; correction 2026-11-01)
 - src: docs/prereg/continue_from_context_result.json (iterative_critique.{GEO,LLM,ORACLE}.round0/round2.{step,fit,hit}; followup_step_median 0.620; C1 step_reduction 0.0868, ci 0.0795-0.0940, gap_closed 0.0868, step_gap_round0 0.148; C2 hit_change −0.109, ci −0.16 to −0.06; C3 0.0629, ci 0.0561-0.0693; C4 −0.053, ci −0.089 to −0.020; C5 fit_gain −0.0115, ci −0.0162 to −0.0067)
-- src: docs/prereg/continuation_reanalysis.json (gpt-4o/qwen3e06/all.I.GEO: matched-paper fit = fit − excess, round0 0.6770 + 0.0377 = 0.7147, round2 0.6363 + 0.0450 = 0.6812, difference −0.034; the matching is out of support at round 0, see Appendix A.10, so this is indicative only)
+- src: docs/prereg/continuation_reanalysis.json (gpt-4o/qwen3e06/all.I.GEO: matched-paper fit = fit − excess, round0 0.6770 + 0.0377 = 0.7147, round2 0.6363 + 0.0450 = 0.6812, difference −0.034; the matching is out of support at round 0, see Appendix A.9, so this is indicative only)
 ## 5.3 Direction, measured independently of the step (exploratory)
 
 - src: docs/prereg/direction_tangent.json (per cell: share_above_pool_max.round0 0.692 / 0.918 / 0.964 / 0.971, round2 0.400 / 0.736 / 0.790 / 0.840; followups_loo_alignment 0.468 qwen3e06, 0.525 bgem3; {GEO,LLM,ORACLE}.alignment_round0, alignment_round2, alignment_change_p ≤ 0.0054, towards_nearest_noncitingdir(_p), towards_followup_specific(_p)); scripts/direction_tangent.py (docstring: exploratory, raised in review; paired Wilcoxon; all follow-ups)
@@ -75,7 +75,7 @@ Every number in the paper, by section, with the repository file it comes from. M
 ## A.2 Full table of the future test
 
 - src: docs/prereg/where_future_lands_result.json (all cells: F1.far_count, F1.max_cos_future_min, F1.median_iso_diff, F2.partial_rho, F3.auc_momentum, F3.auc_hole, F3.gain, F4.rank_biserial, F5.rho, F6.median_percentile); rounded as in the Result table of docs/prereg/where_future_lands.md, except patents/Qwen3 max-cos 0.4649, which that table rounds to 0.47
-- src: docs/prereg/where_future_lands_result.json (F3.gain_ci; F4.rank_biserial; F5.n, F5.rho; F6.median_percentile, F6.matched_within_001 = 0, F6.median_gap_density 0.406-0.525, F6.median_heldout_density 0.636-0.696); docs/prereg/where_future_lands_controls.json (f2_numerators: steam/qwen 0.216, arxiv/qwen 0.186, steam/bge 0.314, arxiv/bge 0.315; patents/qwen 0.092 [−0.03, 0.22], patents/bge 0.144 [0.00, 0.28]); docs/prereg/where_future_lands.md (30,865 pending; 7,081 before the adult filter)
+- src: docs/prereg/where_future_lands_result.json (F3.gain_ci; F4.rank_biserial; F5.n, F5.rho; F6.median_percentile, F6.matched_within_001 = 0, F6.median_gap_density 0.406-0.525, F6.median_heldout_density 0.636-0.696); docs/prereg/where_future_lands_controls.json (f2_numerators: steam/qwen 0.216, arxiv/qwen 0.186, steam/bge 0.314, arxiv/bge 0.315; patents/qwen 0.092 [−0.03, 0.22], patents/bge 0.144 [0.00, 0.28]); docs/prereg/where_future_lands.md (30,865 pending; 7,081 before the adult filter) [F3.gain_ci superseded by revision_future_cells.json; F6 fallback numbers there]
 ## A.3 Causal anchoring and the cap
 
 - src: docs/geometry.md §5 (0.63-0.72 vs 0.06; 100 % FAR), §12 (arXiv 100 %); docs/design.md (Patents outcome (3)); docs/bounds.md §3 (identity)
@@ -138,3 +138,4 @@ Every number in the paper, by section, with the repository file it comes from. M
 - A.6, repaired bootstrap and H1-H5 wording: docs/prereg/revision_bootstrap_combination.json (scripts/revision_bootstrap_combination.py).
 - Appendix B commits: `git log --diff-filter=A -- docs/prereg/<file>.md`.
 - Section 5.3, pool without any citing paper (complete24 / complete): docs/prereg/revision_direction_tangent.json (decomposition.complete, cap.complete_citing_arxiv_all_dates_total 9,921); citations from scripts/revision_citing_fetch.py.
+- Section 6, anchoring under instruction (steam_game vs other sources and vs NONE): docs/prereg/revision_anchoring_test.json (scripts/revision_anchoring_test.py).

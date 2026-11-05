@@ -1,0 +1,38 @@
+{
+ "qwen3e06/INCIDENTAL": {
+  "steam_mean": 0.003791969968006015,
+  "none_mean": -0.0010524872923269868,
+  "steam_vs_none_p": 0.12187433242797852,
+  "steam_vs_none_holm9": 0.48749732971191406,
+  "steam_minus_others": -0.0028605812694877386,
+  "steam_vs_others_p": 0.06028803810477257,
+  "rank_from_worst_of_9": 4
+ },
+ "qwen3e06/INSTRUCTED": {
+  "steam_mean": -0.005266443360596895,
+  "none_mean": -0.0010524872923269868,
+  "steam_vs_none_p": 0.11775816977024078,
+  "steam_vs_none_holm9": 0.47103267908096313,
+  "steam_minus_others": -0.012947507202625275,
+  "steam_vs_others_p": 2.209090155247395e-08,
+  "rank_from_worst_of_9": 1
+ },
+ "bgem3/INCIDENTAL": {
+  "steam_mean": -0.0010505056707188487,
+  "none_mean": -0.002734485547989607,
+  "steam_vs_none_p": 0.38635727763175964,
+  "steam_vs_none_holm9": 1.0,
+  "steam_minus_others": 0.00351782888174057,
+  "steam_vs_others_p": 0.03291836008429527,
+  "rank_from_worst_of_9": 9
+ },
+ "bgem3/INSTRUCTED": {
+  "steam_mean": -0.005859929136931896,
+  "none_mean": -0.002734485547989607,
+  "steam_vs_none_p": 0.12355193495750427,
+  "steam_vs_none_holm9": 0.8648635447025299,
+  "steam_minus_others": -0.002327738329768181,
+  "steam_vs_others_p": 0.038728345185518265,
+  "rank_from_worst_of_9": 2
+ }
+}

@@ -78,10 +78,13 @@ def fig3_step() -> None:
     ic = load("continue_from_context_result.json")["iterative_critique"]
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(7.0, 2.6))
     cols = {"GEO": C["blue"], "LLM": C["green"], "ORACLE": C["red"]}
-    labs = {"GEO": "GEO (rule)", "LLM": "LLM reviewer", "ORACLE": "ORACLE (score to follow-ups)"}
+    labs = {"GEO": "GEO (rule)", "LLM": "Reviewer", "ORACLE": "ORACLE (score to follow-ups)"}
     for arm, col in cols.items():
         a1.plot([0, 1, 2], [ic[arm][f"round{r}"]["step"] for r in range(3)], "o-", color=col, label=labs[arm])
         a2.plot([0, 1, 2], [ic[arm][f"round{r}"]["fit"] for r in range(3)], "o-", color=col)
+    nr = load("revision_neutral.json")["qwen3e06"]["NEUTRAL"]  # content-free revision control
+    a1.plot([0, 1, 2], [nr[f"round{r}"]["step"] for r in range(3)], "o:", color=C["grey"], label="NEUTRAL (no information)")
+    a2.plot([0, 1, 2], [nr[f"round{r}"]["fit"] for r in range(3)], "o:", color=C["grey"])
     a1.axhspan(0.574, 0.661, color=C["grey"], alpha=0.15, lw=0)
     a1.axhline(ic["followup_step_median"], color=C["grey"], lw=1, ls="--")
     a1.text(2.05, ic["followup_step_median"], "real follow-ups\n(median, IQR)", fontsize=7, va="center")
@@ -91,8 +94,8 @@ def fig3_step() -> None:
         ax.set_xticks([0, 1, 2], ["round 0", "1", "2"])
         ax.set_xlim(-0.2, 2.2)
     a1.set_xlim(-0.2, 2.9)
-    a1.legend(fontsize=7, loc="lower left")
-    fig.tight_layout()
+    fig.tight_layout(rect=(0, 0, 1, 0.9))
+    fig.legend(*a1.get_legend_handles_labels(), fontsize=7, ncol=4, loc="upper center", bbox_to_anchor=(0.5, 1.0))
     fig.savefig(OUT / "fig3_step.png")
 
 
