@@ -1,0 +1,488 @@
+{
+ "prereg": "docs/prereg/strengthen_human_labels.md",
+ "n": 40,
+ "P1_precision_consensus": {
+  "k": 24,
+  "n": 25,
+  "share": 0.96,
+  "wilson95": [
+   0.8045593608838223,
+   0.9929037665766179
+  ],
+  "continues_or_uses": {
+   "k": 24,
+   "share": 0.96,
+   "wilson95": [
+    0.8045593608838223,
+    0.9929037665766179
+   ]
+  }
+ },
+ "S_dis": {
+  "gpt61sol": 4,
+  "opus55": 4,
+  "n": 8
+ },
+ "S_bg_human_continues": {
+  "k": 0,
+  "n": 7
+ },
+ "agreement_stratified_sample": {
+  "gpt61sol": {
+   "raw_4label": 0.825,
+   "kappa_continues": 0.7109826589595376
+  },
+  "opus55": {
+   "raw_4label": 0.875,
+   "kappa_continues": 0.6575342465753424
+  }
+ },
+ "human_label_counts": {
+  "CONTINUES": 29,
+  "USES": 0,
+  "BACKGROUND": 11,
+  "UNCLEAR": 0
+ },
+ "rows": [
+  {
+   "hid": "h01",
+   "stratum": "S-cons",
+   "pair_id": "s2-34-10",
+   "ctx_index": 34,
+   "followup_index": 10,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "clear"
+  },
+  {
+   "hid": "h02",
+   "stratum": "S-cons",
+   "pair_id": "s2-133-30",
+   "ctx_index": 133,
+   "followup_index": 30,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "less certain"
+  },
+  {
+   "hid": "h03",
+   "stratum": "S-cons",
+   "pair_id": "s3-63-22",
+   "ctx_index": 63,
+   "followup_index": 22,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "clear"
+  },
+  {
+   "hid": "h04",
+   "stratum": "S-cons",
+   "pair_id": "s3-23-45",
+   "ctx_index": 23,
+   "followup_index": 45,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "less certain; alt BACKGROUND"
+  },
+  {
+   "hid": "h05",
+   "stratum": "S-cons",
+   "pair_id": "s3-118-33",
+   "ctx_index": 118,
+   "followup_index": 33,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "clear"
+  },
+  {
+   "hid": "h06",
+   "stratum": "S-cons",
+   "pair_id": "s2-114-11",
+   "ctx_index": 114,
+   "followup_index": 11,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "less certain; alt USES"
+  },
+  {
+   "hid": "h07",
+   "stratum": "S-cons",
+   "pair_id": "s2-141-15",
+   "ctx_index": 141,
+   "followup_index": 15,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "clear"
+  },
+  {
+   "hid": "h08",
+   "stratum": "S-dis",
+   "pair_id": "s3-43-19",
+   "ctx_index": 43,
+   "followup_index": 19,
+   "gpt61sol": "UNCLEAR",
+   "opus55": "CONTINUES",
+   "human": "BACKGROUND",
+   "note": ""
+  },
+  {
+   "hid": "h09",
+   "stratum": "S-dis",
+   "pair_id": "s2-142-6",
+   "ctx_index": 142,
+   "followup_index": 6,
+   "gpt61sol": "UNCLEAR",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "less certain; alt USES"
+  },
+  {
+   "hid": "h10",
+   "stratum": "S-cons",
+   "pair_id": "s3-118-11",
+   "ctx_index": 118,
+   "followup_index": 11,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "clear"
+  },
+  {
+   "hid": "h11",
+   "stratum": "S-cons",
+   "pair_id": "s2-10-0",
+   "ctx_index": 10,
+   "followup_index": 0,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "clear"
+  },
+  {
+   "hid": "h12",
+   "stratum": "S-dis",
+   "pair_id": "s3-81-19",
+   "ctx_index": 81,
+   "followup_index": 19,
+   "gpt61sol": "UNCLEAR",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "less certain"
+  },
+  {
+   "hid": "h13",
+   "stratum": "S-bg",
+   "pair_id": "s3-73-5",
+   "ctx_index": 73,
+   "followup_index": 5,
+   "gpt61sol": "BACKGROUND",
+   "opus55": "BACKGROUND",
+   "human": "BACKGROUND",
+   "note": ""
+  },
+  {
+   "hid": "h14",
+   "stratum": "S-dis",
+   "pair_id": "s1-99-4",
+   "ctx_index": 99,
+   "followup_index": 4,
+   "gpt61sol": "UNCLEAR",
+   "opus55": "CONTINUES",
+   "human": "BACKGROUND",
+   "note": "h14: probably same group, not assertable from abstracts"
+  },
+  {
+   "hid": "h15",
+   "stratum": "S-cons",
+   "pair_id": "s3-122-4",
+   "ctx_index": 122,
+   "followup_index": 4,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "clear"
+  },
+  {
+   "hid": "h16",
+   "stratum": "S-cons",
+   "pair_id": "s2-141-10",
+   "ctx_index": 141,
+   "followup_index": 10,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "clear"
+  },
+  {
+   "hid": "h17",
+   "stratum": "S-cons",
+   "pair_id": "s2-141-20",
+   "ctx_index": 141,
+   "followup_index": 20,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "clear"
+  },
+  {
+   "hid": "h18",
+   "stratum": "S-cons",
+   "pair_id": "s3-6-6",
+   "ctx_index": 6,
+   "followup_index": 6,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "clear"
+  },
+  {
+   "hid": "h19",
+   "stratum": "S-cons",
+   "pair_id": "s2-148-37",
+   "ctx_index": 148,
+   "followup_index": 37,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "less certain"
+  },
+  {
+   "hid": "h20",
+   "stratum": "S-cons",
+   "pair_id": "s2-133-17",
+   "ctx_index": 133,
+   "followup_index": 17,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "less certain"
+  },
+  {
+   "hid": "h21",
+   "stratum": "S-cons",
+   "pair_id": "s2-133-18",
+   "ctx_index": 133,
+   "followup_index": 18,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "less certain"
+  },
+  {
+   "hid": "h22",
+   "stratum": "S-cons",
+   "pair_id": "s3-35-10",
+   "ctx_index": 35,
+   "followup_index": 10,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "less certain"
+  },
+  {
+   "hid": "h23",
+   "stratum": "S-cons",
+   "pair_id": "s1-148-49",
+   "ctx_index": 148,
+   "followup_index": 49,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "clear"
+  },
+  {
+   "hid": "h24",
+   "stratum": "S-bg",
+   "pair_id": "s3-39-11",
+   "ctx_index": 39,
+   "followup_index": 11,
+   "gpt61sol": "BACKGROUND",
+   "opus55": "BACKGROUND",
+   "human": "BACKGROUND",
+   "note": ""
+  },
+  {
+   "hid": "h25",
+   "stratum": "S-dis",
+   "pair_id": "s3-43-16",
+   "ctx_index": 43,
+   "followup_index": 16,
+   "gpt61sol": "UNCLEAR",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "clear"
+  },
+  {
+   "hid": "h26",
+   "stratum": "S-cons",
+   "pair_id": "s2-141-4",
+   "ctx_index": 141,
+   "followup_index": 4,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "BACKGROUND",
+   "note": ""
+  },
+  {
+   "hid": "h27",
+   "stratum": "S-cons",
+   "pair_id": "s3-104-15",
+   "ctx_index": 104,
+   "followup_index": 15,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "clear"
+  },
+  {
+   "hid": "h28",
+   "stratum": "S-bg",
+   "pair_id": "s3-136-0",
+   "ctx_index": 136,
+   "followup_index": 0,
+   "gpt61sol": "BACKGROUND",
+   "opus55": "BACKGROUND",
+   "human": "BACKGROUND",
+   "note": ""
+  },
+  {
+   "hid": "h29",
+   "stratum": "S-dis",
+   "pair_id": "s2-10-8",
+   "ctx_index": 10,
+   "followup_index": 8,
+   "gpt61sol": "BACKGROUND",
+   "opus55": "CONTINUES",
+   "human": "BACKGROUND",
+   "note": ""
+  },
+  {
+   "hid": "h30",
+   "stratum": "S-cons",
+   "pair_id": "s3-83-17",
+   "ctx_index": 83,
+   "followup_index": 17,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "less certain"
+  },
+  {
+   "hid": "h31",
+   "stratum": "S-cons",
+   "pair_id": "s3-53-34",
+   "ctx_index": 53,
+   "followup_index": 34,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "less certain; alt USES"
+  },
+  {
+   "hid": "h32",
+   "stratum": "S-bg",
+   "pair_id": "s3-51-17",
+   "ctx_index": 51,
+   "followup_index": 17,
+   "gpt61sol": "BACKGROUND",
+   "opus55": "BACKGROUND",
+   "human": "BACKGROUND",
+   "note": ""
+  },
+  {
+   "hid": "h33",
+   "stratum": "S-cons",
+   "pair_id": "s3-118-42",
+   "ctx_index": 118,
+   "followup_index": 42,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "less certain; alt BACKGROUND"
+  },
+  {
+   "hid": "h34",
+   "stratum": "S-bg",
+   "pair_id": "s3-128-22",
+   "ctx_index": 128,
+   "followup_index": 22,
+   "gpt61sol": "BACKGROUND",
+   "opus55": "BACKGROUND",
+   "human": "BACKGROUND",
+   "note": ""
+  },
+  {
+   "hid": "h35",
+   "stratum": "S-cons",
+   "pair_id": "s2-10-12",
+   "ctx_index": 10,
+   "followup_index": 12,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "less certain; alt BACKGROUND"
+  },
+  {
+   "hid": "h36",
+   "stratum": "S-cons",
+   "pair_id": "s3-23-27",
+   "ctx_index": 23,
+   "followup_index": 27,
+   "gpt61sol": "CONTINUES",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "clear"
+  },
+  {
+   "hid": "h37",
+   "stratum": "S-dis",
+   "pair_id": "s3-35-8",
+   "ctx_index": 35,
+   "followup_index": 8,
+   "gpt61sol": "UNCLEAR",
+   "opus55": "CONTINUES",
+   "human": "CONTINUES",
+   "note": "less certain"
+  },
+  {
+   "hid": "h38",
+   "stratum": "S-bg",
+   "pair_id": "s2-133-2",
+   "ctx_index": 133,
+   "followup_index": 2,
+   "gpt61sol": "BACKGROUND",
+   "opus55": "BACKGROUND",
+   "human": "BACKGROUND",
+   "note": ""
+  },
+  {
+   "hid": "h39",
+   "stratum": "S-bg",
+   "pair_id": "s3-41-7",
+   "ctx_index": 41,
+   "followup_index": 7,
+   "gpt61sol": "BACKGROUND",
+   "opus55": "BACKGROUND",
+   "human": "BACKGROUND",
+   "note": ""
+  },
+  {
+   "hid": "h40",
+   "stratum": "S-dis",
+   "pair_id": "s3-24-7",
+   "ctx_index": 24,
+   "followup_index": 7,
+   "gpt61sol": "CONTINUES",
+   "opus55": "BACKGROUND",
+   "human": "CONTINUES",
+   "note": "less certain"
+  }
+ ]
+}

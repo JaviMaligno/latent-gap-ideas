@@ -1,4 +1,4 @@
-"""Minimal client for a LiteLLM gateway (set LITELLM_BASE_URL and LITELLM_KEY_FILE). Logs token usage to a JSONL ledger."""
+"""Minimal client for a LiteLLM gateway (set LG_BASE_URL and LG_KEY_FILE). Logs token usage to a JSONL ledger."""
 from __future__ import annotations
 
 import json
@@ -10,8 +10,10 @@ from pathlib import Path
 import httpx
 import numpy as np
 
-BASE_URL = os.environ.get("LITELLM_BASE_URL", "http://localhost:4000/v1")
-KEY_FILE = Path(os.environ.get("LITELLM_KEY_FILE", Path.home() / ".litellm-key"))
+# Any OpenAI-compatible endpoint; e.g. OpenRouter: LG_BASE_URL=https://openrouter.ai/api/v1 LG_KEY_FILE=~/.openrouter-key
+# and model ids like ALIAS=openai/gpt-4o-2024-08-06.
+BASE_URL = os.environ.get("LG_BASE_URL", "https://openrouter.ai/api/v1")
+KEY_FILE = Path(os.environ.get("LG_KEY_FILE", Path.home() / ".litellm-key")).expanduser()
 CHAT_MODEL = "gpt-6-luna"
 EMBED_MODEL = "text-embedding-3-small"
 
@@ -24,6 +26,7 @@ PREFIX_PRICES = {"gpt-4o": (2.50, 10.0)}
 
 
 def price(model: str) -> tuple[float, float]:
+    model = model.split("/")[-1]  # OpenRouter ids carry a provider prefix (openai/gpt-4o-...)
     if model in PRICES:
         return PRICES[model]
     return next((v for k, v in PREFIX_PRICES.items() if model.startswith(k)), (0.0, 0.0))

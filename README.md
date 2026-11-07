@@ -27,20 +27,25 @@ Write-up: [The Gaps in the Map Are Not Ideas](https://www.javieraguilar.ai/en/bl
 
 The preprint draft is [`docs/paper/draft.md`](docs/paper/draft.md) (figures in `docs/paper/figures/`, every number
 traced to its source file in `docs/paper/provenance.md`). Besides the decoding results above it reports three
-pre-registered studies run against what was published or released later:
+pre-registered studies run against what was published or released later, and a set of strengthening studies
+pre-registered during review (`docs/prereg/strengthen_*.md`, listed with their commits in the paper's Appendix B):
 
-- **Gaps do not forecast growth** (`docs/prereg/where_future_lands.md`, `combination_vs_momentum.md`): a hole score
-  ranks the fastest-growing cells of a past-only map at chance (AUC 0.45–0.54) while momentum reaches 0.73–0.92; no
-  future item lands in the far region.
-- **Distances do not steer a continuation** (`continue_from_context.md`, `iterative_critique.md`,
-  `modern_and_oracle_history.md`): LLM continuations of arXiv papers stay closer to their source than the papers that
-  later cite it; feeding back the similarity to those papers turns the ideas towards them by no more than about 0.015
-  in cosine, and a content-free revision control (`neutral_revision.md`) turns them as much as any critique does.
+- **Gaps do not forecast growth** (`docs/prereg/where_future_lands.md`, `combination_vs_momentum.md`): on Steam, arXiv
+  and patents a hole score ranks the fastest-growing regions of a past-only map no better than chance (cross-validated
+  AUC 0.39–0.48) while momentum reaches 0.71–0.92; no future item lands in the far region.
+- **Distances barely steer a continuation** (`continue_from_context.md`, `iterative_critique.md`,
+  `modern_and_oracle_history.md`, `neutral_revision.md`, `strengthen_critique_replication.md`): LLM continuations of
+  arXiv papers stay closer to their source than the papers that later cite it. In a pre-registered replication on 150
+  new papers, critique turns gpt-4o's ideas towards those papers specifically by estimated mean changes of up to about
+  0.02 in cosine, but revising with no information turns them by about 0.01 as well; what the feedback adds was detected
+  only for distance feedback in one of two embedders, and is bounded at 0.015 only for two arms of a 2026 model.
 - **Inspiration distance has no sweet spot** (`inspiration_from_anything.md`): material from nine sources, graded by
-  distance, gives games whose anticipation of the post-cutoff Steam catalogue has no middle optimum, only a small
-  positive slope in one embedder.
+  distance, gives games whose anticipation of the post-cutoff Steam catalogue shows no detected inverted U, only a
+  small positive slope in one embedder; under instruction, a past game given as material anticipates worse than no
+  material (`strengthen_anchoring_none.md`).
 - Review-pass reanalyses (cluster bootstraps, Holm, date audits, bounded nulls) are in `scripts/revision_*.py` and
-  `docs/prereg/revision_*.json`.
+  `docs/prereg/revision_*.json`; the strengthening studies in `scripts/strengthen_*.py` and
+  `docs/prereg/strengthen_*.json`. One of them (`strengthen_olmo_direction.md`) is still running.
 
 ## Layout
 
@@ -49,7 +54,7 @@ pre-registered studies run against what was published or released later:
 - `docs/prereg/` — pre-registrations written before each run, with their results (`anchoring_causal.md`,
   `fluent_search.md`, `coherent_search.md`, `memory_probe.md`, …).
 - `src/latent_gap/` — corpus, targets, decoder, embedder, judges. `scripts/` — runs and analyses.
-- `kaggle/` — GPU kernels (embedding, fluent search, continuation, Lean check). `lean/` — Lean 4 proofs.
+- `kaggle/` — GPU kernels (embedding, fluent search, continuation, OLMo critique and neutral arms, Lean check). `lean/` — Lean 4 proofs.
 - `docs/paper/` — preprint draft, figures, provenance and annotated related-work notes.
 
 ## Reproducing

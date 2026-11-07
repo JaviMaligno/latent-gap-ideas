@@ -1,0 +1,1707 @@
+{
+ "prereg": "docs/prereg/strengthen_continuations.md",
+ "deviations": [
+  "stage 2 batch_012 (Claude Opus 5.5): 3 runs omitted pair s2-37-28 (19 of 20 labels); that pair was labelled in a single-pair call with the same prompt and merged (labels_claude_batch_012.json, attempt field)",
+  "E4 has 8 consensus contexts with >= 2 continuations (< 10): descriptive only, as pre-registered; the lenient set (15 contexts) is reported alongside"
+ ],
+ "E1_share_stage1": {
+  "gpt61sol_CONTINUES": {
+   "k": 21,
+   "n": 400,
+   "share_pairs": 0.0525,
+   "share_pairs_cluster_ci": [
+    0.03037592067085419,
+    0.07673743335872046
+   ],
+   "share_pairs_wilson": [
+    0.03459152824487474,
+    0.07892197531734993
+   ],
+   "share_followup_weighted": 0.05104636374147301,
+   "share_followup_weighted_ci": [
+    0.023650158907111727,
+    0.08498218504817454
+   ],
+   "contexts_with_one": 19
+  },
+  "opus55_CONTINUES": {
+   "k": 24,
+   "n": 400,
+   "share_pairs": 0.06,
+   "share_pairs_cluster_ci": [
+    0.03703475643130815,
+    0.08397482084436825
+   ],
+   "share_pairs_wilson": [
+    0.04064796998941564,
+    0.08772284915556505
+   ],
+   "share_followup_weighted": 0.05023702162099665,
+   "share_followup_weighted_ci": [
+    0.024502496337808603,
+    0.0830790184462192
+   ],
+   "contexts_with_one": 22
+  },
+  "consensus_CONTINUES": {
+   "k": 18,
+   "n": 400,
+   "share_pairs": 0.045,
+   "share_pairs_cluster_ci": [
+    0.024327954613739596,
+    0.0675
+   ],
+   "share_pairs_wilson": [
+    0.02865145855289397,
+    0.0700047294265747
+   ],
+   "share_followup_weighted": 0.04410914556596138,
+   "share_followup_weighted_ci": [
+    0.01808389066259473,
+    0.07636869972436426
+   ],
+   "contexts_with_one": 16
+  },
+  "lenient_CONTINUES": {
+   "k": 27,
+   "n": 400,
+   "share_pairs": 0.0675,
+   "share_pairs_cluster_ci": [
+    0.043256997455470736,
+    0.0935979297873667
+   ],
+   "share_pairs_wilson": [
+    0.046801469028858476,
+    0.09642666569887823
+   ],
+   "share_followup_weighted": 0.05717423979650827,
+   "share_followup_weighted_ci": [
+    0.02940688751811527,
+    0.09077635153771722
+   ],
+   "contexts_with_one": 25
+  },
+  "consensus_CONTINUES_or_USES": {
+   "k": 23,
+   "n": 400,
+   "share_pairs": 0.0575,
+   "share_pairs_cluster_ci": [
+    0.03508771929824561,
+    0.08121827411167512
+   ],
+   "share_pairs_wilson": [
+    0.0386175426370987,
+    0.08480083798029665
+   ],
+   "share_followup_weighted": 0.056596138281882306,
+   "share_followup_weighted_ci": [
+    0.028612622667789415,
+    0.09063845535536202
+   ],
+   "contexts_with_one": 21
+  },
+  "gpt61sol_CONTINUES_or_USES": {
+   "k": 25,
+   "n": 400,
+   "share_pairs": 0.0625,
+   "share_pairs_cluster_ci": [
+    0.039309630486101074,
+    0.0875
+   ],
+   "share_pairs_wilson": [
+    0.04268914128429305,
+    0.09063411638827298
+   ],
+   "share_followup_weighted": 0.058561683431610584,
+   "share_followup_weighted_ci": [
+    0.030354005623229936,
+    0.0926413496355121
+   ],
+   "contexts_with_one": 23
+  },
+  "opus55_CONTINUES_or_USES": {
+   "k": 35,
+   "n": 400,
+   "share_pairs": 0.0875,
+   "share_pairs_cluster_ci": [
+    0.05955334987593052,
+    0.1172069825436409
+   ],
+   "share_pairs_wilson": [
+    0.06358691005100905,
+    0.11926073289741035
+   ],
+   "share_followup_weighted": 0.08336223840906463,
+   "share_followup_weighted_ci": [
+    0.04738445304918467,
+    0.12480541713145887
+   ],
+   "contexts_with_one": 31
+  }
+ },
+ "label_counts_stage1": {
+  "gpt61sol": {
+   "CONTINUES": 21,
+   "USES": 4,
+   "BACKGROUND": 316,
+   "UNCLEAR": 59
+  },
+  "opus55": {
+   "CONTINUES": 24,
+   "USES": 11,
+   "BACKGROUND": 360,
+   "UNCLEAR": 5
+  }
+ },
+ "confusion_stage1": {
+  "CONTINUES": {
+   "CONTINUES": 18,
+   "USES": 1,
+   "BACKGROUND": 2,
+   "UNCLEAR": 0
+  },
+  "USES": {
+   "CONTINUES": 0,
+   "USES": 4,
+   "BACKGROUND": 0,
+   "UNCLEAR": 0
+  },
+  "BACKGROUND": {
+   "CONTINUES": 0,
+   "USES": 0,
+   "BACKGROUND": 316,
+   "UNCLEAR": 0
+  },
+  "UNCLEAR": {
+   "CONTINUES": 6,
+   "USES": 6,
+   "BACKGROUND": 42,
+   "UNCLEAR": 5
+  }
+ },
+ "E2_agreement_stage1": {
+  "binary_CONTINUES": {
+   "kappa": 0.7881355932203394,
+   "ci": [
+    0.613258332894489,
+    0.9078506954921128
+   ],
+   "raw_agreement": 0.9775
+  },
+  "binary_CONTINUES_or_USES": {
+   "kappa": 0.7483146067415728,
+   "raw_agreement": 0.965
+  },
+  "four_labels": {
+   "kappa": 0.4977641694385091,
+   "ci": [
+    0.3948136354572104,
+    0.5881979113508784
+   ],
+   "raw_agreement": 0.8575
+  }
+ },
+ "overlap": {
+  "pairs_also_in_original_30": [
+   {
+    "id": "s1-15-3",
+    "original_claude": "BACKGROUND",
+    "gpt61sol": "BACKGROUND",
+    "opus55": "BACKGROUND"
+   },
+   {
+    "id": "s1-26-9",
+    "original_claude": "BACKGROUND",
+    "gpt61sol": "BACKGROUND",
+    "opus55": "BACKGROUND"
+   },
+   {
+    "id": "s1-117-0",
+    "original_claude": "BACKGROUND",
+    "gpt61sol": "BACKGROUND",
+    "opus55": "BACKGROUND"
+   },
+   {
+    "id": "s1-97-4",
+    "original_claude": "BACKGROUND",
+    "gpt61sol": "BACKGROUND",
+    "opus55": "BACKGROUND"
+   },
+   {
+    "id": "s1-99-5",
+    "original_claude": "BACKGROUND",
+    "gpt61sol": "BACKGROUND",
+    "opus55": "BACKGROUND"
+   },
+   {
+    "id": "s1-73-3",
+    "original_claude": "BACKGROUND",
+    "gpt61sol": "BACKGROUND",
+    "opus55": "BACKGROUND"
+   },
+   {
+    "id": "s1-17-1",
+    "original_claude": "BACKGROUND",
+    "gpt61sol": "BACKGROUND",
+    "opus55": "BACKGROUND"
+   },
+   {
+    "id": "s1-116-0",
+    "original_claude": "BACKGROUND",
+    "gpt61sol": "BACKGROUND",
+    "opus55": "BACKGROUND"
+   },
+   {
+    "id": "s1-139-3",
+    "original_claude": "BACKGROUND",
+    "gpt61sol": "BACKGROUND",
+    "opus55": "BACKGROUND"
+   },
+   {
+    "id": "s1-59-1",
+    "original_claude": "CONTINUES",
+    "gpt61sol": "UNCLEAR",
+    "opus55": "BACKGROUND"
+   },
+   {
+    "id": "s1-36-8",
+    "original_claude": "BACKGROUND",
+    "gpt61sol": "BACKGROUND",
+    "opus55": "BACKGROUND"
+   },
+   {
+    "id": "s1-70-1",
+    "original_claude": "CONTINUES",
+    "gpt61sol": "BACKGROUND",
+    "opus55": "BACKGROUND"
+   },
+   {
+    "id": "s2-13-32",
+    "original_claude": "BACKGROUND",
+    "gpt61sol": "BACKGROUND",
+    "opus55": "BACKGROUND"
+   }
+  ],
+  "stage1_s2_flagged": 85,
+  "stage1_consensus_and_s2_flagged": 9,
+  "stage1_s2_flagged_share_among_consensus": 0.5,
+  "s2_subset_retained_contexts": 68,
+  "stage1_in_s2_subset": 52,
+  "stage1_consensus_in_s2_subset": 4,
+  "stage1_s2_flagged_share_among_not_consensus": 0.19895287958115182
+ },
+ "stage2": {
+  "eligible": [
+   5,
+   7,
+   10,
+   13,
+   17,
+   30,
+   34,
+   37,
+   46,
+   50,
+   55,
+   61,
+   70,
+   84,
+   92,
+   99,
+   109,
+   114,
+   124,
+   127,
+   133,
+   141,
+   142,
+   143,
+   148
+  ],
+  "used": [
+   5,
+   7,
+   10,
+   13,
+   17,
+   30,
+   34,
+   37,
+   46,
+   50,
+   55,
+   61,
+   70,
+   84,
+   92,
+   99,
+   109,
+   114,
+   124,
+   127,
+   133,
+   141,
+   142,
+   143,
+   148
+  ],
+  "n_pairs": 331
+ },
+ "n_contexts_with_continuations": {
+  "consensus": {
+   ">=1": 18,
+   ">=2": 8,
+   ">=3": 6
+  },
+  "lenient": {
+   ">=1": 25,
+   ">=2": 15,
+   ">=3": 10
+  }
+ },
+ "n_consensus_continuations_total": 59,
+ "E3_step_gap": {
+  "gpt-4o/qwen3e06/consensus": {
+   "n_contexts": 18,
+   "gap_vs_continuations": 0.02252953251202901,
+   "ci": [
+    -0.025131520877281825,
+    0.0694283002780543
+   ],
+   "p_one_sided_gt0": 0.24753952026367188,
+   "share_contexts_gap_gt0": 0.5,
+   "gap_vs_all_followups_same_contexts": 0.12038790848520067,
+   "ci_all": [
+    0.07244552233152919,
+    0.16644521016213626
+   ],
+   "difference_cont_minus_all": -0.09785837597317165,
+   "ci_difference": [
+    -0.12616279522577922,
+    -0.07177050453093319
+   ],
+   "p_difference": 7.62939453125e-06,
+   "T2_continuation_minus_background_step": {
+    "n_contexts": 18,
+    "mean": 0.1306331538491779,
+    "ci": [
+     0.10304096009996203,
+     0.16200009526477913
+    ],
+    "p": 7.62939453125e-06
+   }
+  },
+  "gpt-4o/qwen3e06/lenient": {
+   "n_contexts": 25,
+   "gap_vs_continuations": 0.0578345775604248,
+   "ci": [
+    0.012793259978294374,
+    0.10784964370727536
+   ],
+   "p_one_sided_gt0": 0.027535229921340942,
+   "share_contexts_gap_gt0": 0.56,
+   "gap_vs_all_followups_same_contexts": 0.12676878213882448,
+   "ci_all": [
+    0.09126981323957443,
+    0.1617398141622543
+   ],
+   "difference_cont_minus_all": -0.06893420457839966,
+   "ci_difference": [
+    -0.09720992118120193,
+    -0.03762079638242723
+   ],
+   "p_difference": 5.3882598876953125e-05
+  },
+  "olmo-7b-0424/qwen3e06/consensus": {
+   "n_contexts": 18,
+   "gap_vs_continuations": 0.09824894534216987,
+   "ci": [
+    0.05698458908332719,
+    0.138335120677948
+   ],
+   "p_one_sided_gt0": 0.000125885009765625,
+   "share_contexts_gap_gt0": 0.8333333333333334,
+   "gap_vs_all_followups_same_contexts": 0.19610732131534153,
+   "ci_all": [
+    0.1521522090666824,
+    0.23872876672281157
+   ],
+   "difference_cont_minus_all": -0.09785837597317165,
+   "ci_difference": [
+    -0.12540918439626694,
+    -0.06958745817343394
+   ],
+   "p_difference": 7.62939453125e-06,
+   "T2_continuation_minus_background_step": {
+    "n_contexts": 18,
+    "mean": 0.1306331538491779,
+    "ci": [
+     0.10262844781908724,
+     0.16104632553954917
+    ],
+    "p": 7.62939453125e-06
+   }
+  },
+  "olmo-7b-0424/qwen3e06/lenient": {
+   "n_contexts": 25,
+   "gap_vs_continuations": 0.12889102935791016,
+   "ci": [
+    0.08144097411632538,
+    0.17959268873929976
+   ],
+   "p_one_sided_gt0": 9.149312973022461e-06,
+   "share_contexts_gap_gt0": 0.84,
+   "gap_vs_all_followups_same_contexts": 0.19782523393630982,
+   "ci_all": [
+    0.1595991405248642,
+    0.23710530054569243
+   ],
+   "difference_cont_minus_all": -0.06893420457839966,
+   "ci_difference": [
+    -0.09994432592391968,
+    -0.038299074292182926
+   ],
+   "p_difference": 5.3882598876953125e-05
+  },
+  "gpt-4o/bgem3/consensus": {
+   "n_contexts": 18,
+   "gap_vs_continuations": 0.07093211346202427,
+   "ci": [
+    0.033611648860904904,
+    0.10853873822424145
+   ],
+   "p_one_sided_gt0": 0.001682281494140625,
+   "share_contexts_gap_gt0": 0.7777777777777778,
+   "gap_vs_all_followups_same_contexts": 0.14964434835645887,
+   "ci_all": [
+    0.11795891871054968,
+    0.18315148419804042
+   ],
+   "difference_cont_minus_all": -0.07871223489443462,
+   "ci_difference": [
+    -0.10057380803757245,
+    -0.058269375148746715
+   ],
+   "p_difference": 7.62939453125e-06,
+   "T2_continuation_minus_background_step": {
+    "n_contexts": 18,
+    "mean": 0.10464748740196228,
+    "ci": [
+     0.08535104062822131,
+     0.1262530995739831
+    ],
+    "p": 7.62939453125e-06
+   }
+  },
+  "gpt-4o/bgem3/lenient": {
+   "n_contexts": 25,
+   "gap_vs_continuations": 0.09235460519790649,
+   "ci": [
+    0.06042757511138916,
+    0.1251221330761909
+   ],
+   "p_one_sided_gt0": 4.082918167114258e-06,
+   "share_contexts_gap_gt0": 0.88,
+   "gap_vs_all_followups_same_contexts": 0.15590364694595338,
+   "ci_all": [
+    0.13072826343774796,
+    0.1810552179813385
+   ],
+   "difference_cont_minus_all": -0.06354904174804688,
+   "ci_difference": [
+    -0.08151448810100556,
+    -0.04418945944309235
+   ],
+   "p_difference": 4.172325134277344e-06
+  },
+  "olmo-7b-0424/bgem3/consensus": {
+   "n_contexts": 18,
+   "gap_vs_continuations": 0.09405507975154453,
+   "ci": [
+    0.061587222334411405,
+    0.12723816459377607
+   ],
+   "p_one_sided_gt0": 1.9073486328125e-05,
+   "share_contexts_gap_gt0": 0.8888888888888888,
+   "gap_vs_all_followups_same_contexts": 0.17276731464597914,
+   "ci_all": [
+    0.1414748980767197,
+    0.2024850445489088
+   ],
+   "difference_cont_minus_all": -0.07871223489443462,
+   "ci_difference": [
+    -0.10055711699856652,
+    -0.05835190523001883
+   ],
+   "p_difference": 7.62939453125e-06,
+   "T2_continuation_minus_background_step": {
+    "n_contexts": 18,
+    "mean": 0.10464748740196228,
+    "ci": [
+     0.08479960221383306,
+     0.12617962972985372
+    ],
+    "p": 7.62939453125e-06
+   }
+  },
+  "olmo-7b-0424/bgem3/lenient": {
+   "n_contexts": 25,
+   "gap_vs_continuations": 0.11589770078659058,
+   "ci": [
+    0.08520260119438171,
+    0.14952146941423414
+   ],
+   "p_one_sided_gt0": 8.940696716308594e-08,
+   "share_contexts_gap_gt0": 0.96,
+   "gap_vs_all_followups_same_contexts": 0.17944674253463744,
+   "ci_all": [
+    0.15330240368843076,
+    0.20390706586837767
+   ],
+   "difference_cont_minus_all": -0.06354904174804688,
+   "ci_difference": [
+    -0.08319522994756699,
+    -0.04441464316844942
+   ],
+   "p_difference": 4.172325134277344e-06
+  }
+ },
+ "E4_direction": {
+  "gpt-4o/qwen3e06/consensus/k_continuations": {
+   "n_contexts": 8,
+   "continuations_loo_alignment": 0.37081459164619446,
+   "mean_f_dot_p": 0.4725131280720234,
+   "GEO": {
+    "n": 8,
+    "change_along_s_cont": 0.013686212012544274,
+    "ci": [
+     -0.03135784724727273,
+     0.05817996387486342
+    ],
+    "p": 0.640625,
+    "change_along_s_original_same_contexts": -0.005881407254491933,
+    "ci_original": [
+     -0.05251292786560953,
+     0.05072102418744176
+    ],
+    "p_original": 0.546875,
+    "minus_NEUTRAL": {
+     "mean": 0.015550903626717627,
+     "ci": [
+      -0.022142407926730813,
+      0.052058470839983766
+     ],
+     "p": 0.640625,
+     "n": 8
+    }
+   },
+   "LLM": {
+    "n": 8,
+    "change_along_s_cont": 0.007653578068129718,
+    "ci": [
+     -0.034045947910635734,
+     0.05494623506965581
+    ],
+    "p": 0.84375,
+    "change_along_s_original_same_contexts": -0.012314769672229886,
+    "ci_original": [
+     -0.0598665289580822,
+     0.035614537575747805
+    ],
+    "p_original": 0.84375,
+    "minus_NEUTRAL": {
+     "mean": 0.009518269682303071,
+     "ci": [
+      -0.04570629622321576,
+      0.0740175829734653
+     ],
+     "p": 0.9453125,
+     "n": 8
+    }
+   },
+   "ORACLE": {
+    "n": 8,
+    "change_along_s_cont": 0.03147312474902719,
+    "ci": [
+     0.007856571910087951,
+     0.0573729115945752
+    ],
+    "p": 0.078125,
+    "change_along_s_original_same_contexts": 0.006048188777640462,
+    "ci_original": [
+     -0.017728186445310712,
+     0.030597678822232372
+    ],
+    "p_original": 0.640625,
+    "minus_NEUTRAL": {
+     "mean": 0.033337816363200545,
+     "ci": [
+      -0.019938072987133636,
+      0.08528785839444021
+     ],
+     "p": 0.3125,
+     "n": 8
+    }
+   },
+   "NEUTRAL": {
+    "n": 8,
+    "change_along_s_cont": -0.0018646916141733527,
+    "ci": [
+     -0.042963575304020195,
+     0.03768702008528635
+    ],
+    "p": 1.0,
+    "change_along_s_original_same_contexts": -0.006467254672315903,
+    "ci_original": [
+     -0.04317852263338864,
+     0.032329084473894903
+    ],
+    "p_original": 0.7421875
+   }
+  },
+  "gpt-4o/qwen3e06/consensus/k_followups": {
+   "n_contexts": 8,
+   "continuations_loo_alignment": 0.37081459164619446,
+   "mean_f_dot_p": 0.5395174883306026,
+   "GEO": {
+    "n": 8,
+    "change_along_s_cont": 0.009017508127726614,
+    "ci": [
+     -0.031751972102210854,
+     0.0520159706007689
+    ],
+    "p": 0.9453125,
+    "change_along_s_original_same_contexts": -0.005881407254491933,
+    "ci_original": [
+     -0.05214513305108994,
+     0.04867151814105455
+    ],
+    "p_original": 0.546875,
+    "minus_NEUTRAL": {
+     "mean": 0.010624193586409092,
+     "ci": [
+      -0.02776188573334366,
+      0.04940380423795427
+     ],
+     "p": 0.7421875,
+     "n": 8
+    }
+   },
+   "LLM": {
+    "n": 8,
+    "change_along_s_cont": 0.0035918574139941484,
+    "ci": [
+     -0.03945890496834181,
+     0.04864211505409907
+    ],
+    "p": 0.84375,
+    "change_along_s_original_same_contexts": -0.012314769672229886,
+    "ci_original": [
+     -0.06107981600798666,
+     0.03533503098879005
+    ],
+    "p_original": 0.84375,
+    "minus_NEUTRAL": {
+     "mean": 0.005198542872676626,
+     "ci": [
+      -0.04841667876316933,
+      0.0677136093319859
+     ],
+     "p": 0.7421875,
+     "n": 8
+    }
+   },
+   "ORACLE": {
+    "n": 8,
+    "change_along_s_cont": 0.03696988336741924,
+    "ci": [
+     0.005992106115445495,
+     0.07262599151581525
+    ],
+    "p": 0.109375,
+    "change_along_s_original_same_contexts": 0.006048188777640462,
+    "ci_original": [
+     -0.01747731164796278,
+     0.03031546389684081
+    ],
+    "p_original": 0.640625,
+    "minus_NEUTRAL": {
+     "mean": 0.03857656882610172,
+     "ci": [
+      -0.015489101922139524,
+      0.09678024598106255
+     ],
+     "p": 0.3125,
+     "n": 8
+    }
+   },
+   "NEUTRAL": {
+    "n": 8,
+    "change_along_s_cont": -0.0016066854586824775,
+    "ci": [
+     -0.043708980910014364,
+     0.040041901290533116
+    ],
+    "p": 0.84375,
+    "change_along_s_original_same_contexts": -0.006467254672315903,
+    "ci_original": [
+     -0.04240560312282469,
+     0.029720983979132056
+    ],
+    "p_original": 0.7421875
+   }
+  },
+  "gpt-4o/qwen3e06/lenient/k_continuations": {
+   "n_contexts": 15,
+   "continuations_loo_alignment": 0.4284504741430283,
+   "mean_f_dot_p": 0.3987234219908714,
+   "GEO": {
+    "n": 15,
+    "change_along_s_cont": 0.01937789705892404,
+    "ci": [
+     -0.01492477866820991,
+     0.05392210314671195
+    ],
+    "p": 0.359130859375,
+    "change_along_s_original_same_contexts": 0.018072465892570715,
+    "ci_original": [
+     -0.019546431930114825,
+     0.06036560322061021
+    ],
+    "p_original": 0.67877197265625,
+    "minus_NEUTRAL": {
+     "mean": 0.016563209736098847,
+     "ci": [
+      -0.015231505887738118,
+      0.05150718878566593
+     ],
+     "p": 0.5614013671875,
+     "n": 15
+    }
+   },
+   "LLM": {
+    "n": 15,
+    "change_along_s_cont": -0.004087974581246575,
+    "ci": [
+     -0.029643589010617387,
+     0.02435717005437857
+    ],
+    "p": 0.803955078125,
+    "change_along_s_original_same_contexts": -0.011249359945456188,
+    "ci_original": [
+     -0.04082046915466587,
+     0.01910459100268781
+    ],
+    "p_original": 0.48870849609375,
+    "minus_NEUTRAL": {
+     "mean": -0.006902661904071768,
+     "ci": [
+      -0.04303412366309203,
+      0.03421933685390584
+     ],
+     "p": 0.42120361328125,
+     "n": 15
+    }
+   },
+   "ORACLE": {
+    "n": 15,
+    "change_along_s_cont": 0.02315947076616188,
+    "ci": [
+     -0.004485583315836266,
+     0.05304699698501887
+    ],
+    "p": 0.207763671875,
+    "change_along_s_original_same_contexts": 0.01641000242282947,
+    "ci_original": [
+     -0.010802733761568864,
+     0.04878528688102955
+    ],
+    "p_original": 0.42120361328125,
+    "minus_NEUTRAL": {
+     "mean": 0.020344783443336685,
+     "ci": [
+      -0.02286594773487498,
+      0.06555793786266197
+     ],
+     "p": 0.45428466796875,
+     "n": 15
+    }
+   },
+   "NEUTRAL": {
+    "n": 15,
+    "change_along_s_cont": 0.0028146873228251934,
+    "ci": [
+     -0.022860797448083756,
+     0.02502588452693693
+    ],
+    "p": 0.76153564453125,
+    "change_along_s_original_same_contexts": 0.0024397414720927677,
+    "ci_original": [
+     -0.021459752097725868,
+     0.026977490780215396
+    ],
+    "p_original": 0.890380859375
+   }
+  },
+  "gpt-4o/qwen3e06/lenient/k_followups": {
+   "n_contexts": 15,
+   "continuations_loo_alignment": 0.4284504741430283,
+   "mean_f_dot_p": 0.4704671323299408,
+   "GEO": {
+    "n": 15,
+    "change_along_s_cont": 0.017790262773633003,
+    "ci": [
+     -0.01871657614906629,
+     0.05554053855128584
+    ],
+    "p": 0.42120361328125,
+    "change_along_s_original_same_contexts": 0.018072465892570715,
+    "ci_original": [
+     -0.01958995479469498,
+     0.06431239745016987
+    ],
+    "p_original": 0.67877197265625,
+    "minus_NEUTRAL": {
+     "mean": 0.018103401487072308,
+     "ci": [
+      -0.015772665476736922,
+      0.05365970344127458
+     ],
+     "p": 0.389404296875,
+     "n": 15
+    }
+   },
+   "LLM": {
+    "n": 15,
+    "change_along_s_cont": -0.004458290749850372,
+    "ci": [
+     -0.03136790596414357,
+     0.023979652603738928
+    ],
+    "p": 0.638671875,
+    "change_along_s_original_same_contexts": -0.011249359945456188,
+    "ci_original": [
+     -0.043187229229758185,
+     0.018586585701753654
+    ],
+    "p_original": 0.48870849609375,
+    "minus_NEUTRAL": {
+     "mean": -0.004145152036411067,
+     "ci": [
+      -0.035535465145173174,
+      0.03356016594606136
+     ],
+     "p": 0.45428466796875,
+     "n": 15
+    }
+   },
+   "ORACLE": {
+    "n": 15,
+    "change_along_s_cont": 0.023428702882180612,
+    "ci": [
+     -0.007958370468113572,
+     0.057652848341191804
+    ],
+    "p": 0.389404296875,
+    "change_along_s_original_same_contexts": 0.01641000242282947,
+    "ci_original": [
+     -0.01087282531739523,
+     0.050304314428940386
+    ],
+    "p_original": 0.42120361328125,
+    "minus_NEUTRAL": {
+     "mean": 0.023741841595619918,
+     "ci": [
+      -0.020779926497489214,
+      0.07175196498166764
+     ],
+     "p": 0.5994873046875,
+     "n": 15
+    }
+   },
+   "NEUTRAL": {
+    "n": 15,
+    "change_along_s_cont": -0.00031313871343930565,
+    "ci": [
+     -0.02326879741468777,
+     0.022898243760379636
+    ],
+    "p": 0.803955078125,
+    "change_along_s_original_same_contexts": 0.0024397414720927677,
+    "ci_original": [
+     -0.022274169819429517,
+     0.02798219925568749
+    ],
+    "p_original": 0.890380859375
+   }
+  },
+  "olmo-7b-0424/qwen3e06/consensus/k_continuations": {
+   "n_contexts": 8,
+   "continuations_loo_alignment": 0.37081459164619446,
+   "mean_f_dot_p": 0.4725131280720234,
+   "GEO": {
+    "n": 8,
+    "change_along_s_cont": -0.0069227395579218864,
+    "ci": [
+     -0.05069405881222337,
+     0.03539564646780491
+    ],
+    "p": 0.84375,
+    "change_along_s_original_same_contexts": -0.04452485090587288,
+    "ci_original": [
+     -0.11529206351842732,
+     0.019879232670064074
+    ],
+    "p_original": 0.3125
+   },
+   "LLM": {
+    "n": 8,
+    "change_along_s_cont": 0.01314795995131135,
+    "ci": [
+     -0.09765186626464128,
+     0.13120898854685942
+    ],
+    "p": 0.9453125,
+    "change_along_s_original_same_contexts": -0.026553606963716447,
+    "ci_original": [
+     -0.14208664641191718,
+     0.05894165638310369
+    ],
+    "p_original": 1.0
+   },
+   "ORACLE": {
+    "n": 8,
+    "change_along_s_cont": 0.011294389143586159,
+    "ci": [
+     -0.0516677291947417,
+     0.08091256394982338
+    ],
+    "p": 0.9453125,
+    "change_along_s_original_same_contexts": 0.04408911941573024,
+    "ci_original": [
+     -0.021602833818178624,
+     0.10886219398817047
+    ],
+    "p_original": 0.3125
+   }
+  },
+  "olmo-7b-0424/qwen3e06/consensus/k_followups": {
+   "n_contexts": 8,
+   "continuations_loo_alignment": 0.37081459164619446,
+   "mean_f_dot_p": 0.5395174883306026,
+   "GEO": {
+    "n": 8,
+    "change_along_s_cont": 0.0002054939977824688,
+    "ci": [
+     -0.04826095006428659,
+     0.03975256336852905
+    ],
+    "p": 0.84375,
+    "change_along_s_original_same_contexts": -0.04452485090587288,
+    "ci_original": [
+     -0.11240777951024938,
+     0.017856598060461686
+    ],
+    "p_original": 0.3125
+   },
+   "LLM": {
+    "n": 8,
+    "change_along_s_cont": 0.0033027033787220716,
+    "ci": [
+     -0.10160636703367346,
+     0.10601150453439899
+    ],
+    "p": 0.9453125,
+    "change_along_s_original_same_contexts": -0.026553606963716447,
+    "ci_original": [
+     -0.15039900853298604,
+     0.060668539733160276
+    ],
+    "p_original": 1.0
+   },
+   "ORACLE": {
+    "n": 8,
+    "change_along_s_cont": -0.002251623081974685,
+    "ci": [
+     -0.05516929383156821,
+     0.050151902108336796
+    ],
+    "p": 1.0,
+    "change_along_s_original_same_contexts": 0.04408911941573024,
+    "ci_original": [
+     -0.022520830226130783,
+     0.1084749954752624
+    ],
+    "p_original": 0.3125
+   }
+  },
+  "olmo-7b-0424/qwen3e06/lenient/k_continuations": {
+   "n_contexts": 15,
+   "continuations_loo_alignment": 0.4284504741430283,
+   "mean_f_dot_p": 0.3987234219908714,
+   "GEO": {
+    "n": 15,
+    "change_along_s_cont": 0.03882879602412383,
+    "ci": [
+     -0.028142377690722545,
+     0.10636963427998122
+    ],
+    "p": 0.5614013671875,
+    "change_along_s_original_same_contexts": 0.021332443753878275,
+    "ci_original": [
+     -0.04967070558884491,
+     0.10118121807308245
+    ],
+    "p_original": 0.76153564453125
+   },
+   "LLM": {
+    "n": 15,
+    "change_along_s_cont": 0.01855000735570987,
+    "ci": [
+     -0.06119727266641954,
+     0.09095134788658449
+    ],
+    "p": 0.5994873046875,
+    "change_along_s_original_same_contexts": -0.006885069546600183,
+    "ci_original": [
+     -0.0893045787870263,
+     0.06567424573935565
+    ],
+    "p_original": 0.97796630859375
+   },
+   "ORACLE": {
+    "n": 15,
+    "change_along_s_cont": 0.05064480602741241,
+    "ci": [
+     -0.010933232000097633,
+     0.1163250955659896
+    ],
+    "p": 0.25238037109375,
+    "change_along_s_original_same_contexts": 0.05921353052059809,
+    "ci_original": [
+     9.322769939899526e-05,
+     0.12008564149339991
+    ],
+    "p_original": 0.1353759765625
+   }
+  },
+  "olmo-7b-0424/qwen3e06/lenient/k_followups": {
+   "n_contexts": 15,
+   "continuations_loo_alignment": 0.4284504741430283,
+   "mean_f_dot_p": 0.4704671323299408,
+   "GEO": {
+    "n": 15,
+    "change_along_s_cont": 0.03255189191550016,
+    "ci": [
+     -0.03127737309007595,
+     0.10966638987263043
+    ],
+    "p": 0.5994873046875,
+    "change_along_s_original_same_contexts": 0.021332443753878275,
+    "ci_original": [
+     -0.04988350479087482,
+     0.10072445490707951
+    ],
+    "p_original": 0.76153564453125
+   },
+   "LLM": {
+    "n": 15,
+    "change_along_s_cont": 0.01294749639928341,
+    "ci": [
+     -0.0610292222785453,
+     0.08983475227840243
+    ],
+    "p": 0.803955078125,
+    "change_along_s_original_same_contexts": -0.006885069546600183,
+    "ci_original": [
+     -0.08810757244471461,
+     0.06505171248844513
+    ],
+    "p_original": 0.97796630859375
+   },
+   "ORACLE": {
+    "n": 15,
+    "change_along_s_cont": 0.036618623820443945,
+    "ci": [
+     -0.02680260205641389,
+     0.100678264501815
+    ],
+    "p": 0.42120361328125,
+    "change_along_s_original_same_contexts": 0.05921353052059809,
+    "ci_original": [
+     -0.00396507877856493,
+     0.12114254950235272
+    ],
+    "p_original": 0.1353759765625
+   }
+  },
+  "gpt-4o/bgem3/consensus/k_continuations": {
+   "n_contexts": 8,
+   "continuations_loo_alignment": 0.4293261952698231,
+   "mean_f_dot_p": 0.5254484042525291,
+   "GEO": {
+    "n": 8,
+    "change_along_s_cont": -0.01483217068016529,
+    "ci": [
+     -0.04705271543934941,
+     0.017920209839940058
+    ],
+    "p": 0.4609375,
+    "change_along_s_original_same_contexts": -0.014366446295753121,
+    "ci_original": [
+     -0.051590138324536385,
+     0.03010372362332418
+    ],
+    "p_original": 0.546875,
+    "minus_NEUTRAL": {
+     "mean": -0.0027754660695791245,
+     "ci": [
+      -0.02337629720568657,
+      0.020790067780762898
+     ],
+     "p": 0.9453125,
+     "n": 8
+    }
+   },
+   "LLM": {
+    "n": 8,
+    "change_along_s_cont": 0.017500311136245728,
+    "ci": [
+     -0.005249558016657829,
+     0.046201855875551694
+    ],
+    "p": 0.3125,
+    "change_along_s_original_same_contexts": 0.017074918665457517,
+    "ci_original": [
+     -0.02042938652448356,
+     0.057851352593570445
+    ],
+    "p_original": 0.84375,
+    "minus_NEUTRAL": {
+     "mean": 0.029557015746831894,
+     "ci": [
+      -0.012945294287055731,
+      0.07266141148284076
+     ],
+     "p": 0.3828125,
+     "n": 8
+    }
+   },
+   "ORACLE": {
+    "n": 8,
+    "change_along_s_cont": -0.007207934744656086,
+    "ci": [
+     -0.04474819265305996,
+     0.03354036621749401
+    ],
+    "p": 0.84375,
+    "change_along_s_original_same_contexts": 0.014996356563642621,
+    "ci_original": [
+     -0.02420773242483847,
+     0.05442519597709179
+    ],
+    "p_original": 0.546875,
+    "minus_NEUTRAL": {
+     "mean": 0.00484876986593008,
+     "ci": [
+      -0.035211630584672096,
+      0.04722786783240733
+     ],
+     "p": 1.0,
+     "n": 8
+    }
+   },
+   "NEUTRAL": {
+    "n": 8,
+    "change_along_s_cont": -0.012056704610586166,
+    "ci": [
+     -0.0431650101672858,
+     0.022561632376164053
+    ],
+    "p": 0.640625,
+    "change_along_s_original_same_contexts": -0.0013682041317224503,
+    "ci_original": [
+     -0.03095595862250775,
+     0.0300979560241103
+    ],
+    "p_original": 0.640625
+   }
+  },
+  "gpt-4o/bgem3/consensus/k_followups": {
+   "n_contexts": 8,
+   "continuations_loo_alignment": 0.4293261952698231,
+   "mean_f_dot_p": 0.6030020751059055,
+   "GEO": {
+    "n": 8,
+    "change_along_s_cont": -0.021701817400753498,
+    "ci": [
+     -0.05075370892882347,
+     0.010769315948709843
+    ],
+    "p": 0.25,
+    "change_along_s_original_same_contexts": -0.014366446295753121,
+    "ci_original": [
+     -0.051007576077245174,
+     0.02632233703625387
+    ],
+    "p_original": 0.546875,
+    "minus_NEUTRAL": {
+     "mean": -0.005317906849086285,
+     "ci": [
+      -0.03383569738361984,
+      0.024799155909568042
+     ],
+     "p": 0.7421875,
+     "n": 8
+    }
+   },
+   "LLM": {
+    "n": 8,
+    "change_along_s_cont": 0.013522222638130188,
+    "ci": [
+     -0.012542953528463841,
+     0.04427140522748227
+    ],
+    "p": 0.4609375,
+    "change_along_s_original_same_contexts": 0.017074918665457517,
+    "ci_original": [
+     -0.018826609849929808,
+     0.05872481902624712
+    ],
+    "p_original": 0.84375,
+    "minus_NEUTRAL": {
+     "mean": 0.0299061331897974,
+     "ci": [
+      -0.013940449594520033,
+      0.07999460909049956
+     ],
+     "p": 0.3828125,
+     "n": 8
+    }
+   },
+   "ORACLE": {
+    "n": 8,
+    "change_along_s_cont": -0.00793126318603754,
+    "ci": [
+     -0.048330357763916254,
+     0.028159608901478336
+    ],
+    "p": 0.84375,
+    "change_along_s_original_same_contexts": 0.014996356563642621,
+    "ci_original": [
+     -0.026753406779607757,
+     0.05537196711520663
+    ],
+    "p_original": 0.546875,
+    "minus_NEUTRAL": {
+     "mean": 0.008452647365629673,
+     "ci": [
+      -0.040218501398339865,
+      0.06147505883127447
+     ],
+     "p": 0.9453125,
+     "n": 8
+    }
+   },
+   "NEUTRAL": {
+    "n": 8,
+    "change_along_s_cont": -0.016383910551667213,
+    "ci": [
+     -0.047507205465808514,
+     0.015070779691450287
+    ],
+    "p": 0.4609375,
+    "change_along_s_original_same_contexts": -0.0013682041317224503,
+    "ci_original": [
+     -0.03120764810591936,
+     0.03187272418290377
+    ],
+    "p_original": 0.640625
+   }
+  },
+  "gpt-4o/bgem3/lenient/k_continuations": {
+   "n_contexts": 15,
+   "continuations_loo_alignment": 0.4663919319709142,
+   "mean_f_dot_p": 0.4853502154350281,
+   "GEO": {
+    "n": 15,
+    "change_along_s_cont": 0.004384087522824606,
+    "ci": [
+     -0.022672566572825112,
+     0.02904763321081796
+    ],
+    "p": 0.803955078125,
+    "change_along_s_original_same_contexts": 0.014674011742075284,
+    "ci_original": [
+     -0.016218362903843323,
+     0.045157988977928956
+    ],
+    "p_original": 0.45428466796875,
+    "minus_NEUTRAL": {
+     "mean": 0.007091455658276876,
+     "ci": [
+      -0.015852755134304366,
+      0.0282372576991717
+     ],
+     "p": 0.42120361328125,
+     "n": 15
+    }
+   },
+   "LLM": {
+    "n": 15,
+    "change_along_s_cont": 0.005907482405503591,
+    "ci": [
+     -0.019169991152981916,
+     0.03171330177535612
+    ],
+    "p": 0.76153564453125,
+    "change_along_s_original_same_contexts": 0.007047408477713664,
+    "ci_original": [
+     -0.015075035082797209,
+     0.0326815638023739
+    ],
+    "p_original": 0.890380859375,
+    "minus_NEUTRAL": {
+     "mean": 0.008614850540955862,
+     "ci": [
+      -0.024676041019459565,
+      0.04251222232977549
+     ],
+     "p": 0.76153564453125,
+     "n": 15
+    }
+   },
+   "ORACLE": {
+    "n": 15,
+    "change_along_s_cont": 0.0034712140758832296,
+    "ci": [
+     -0.022567490066091222,
+     0.028578776394327442
+    ],
+    "p": 0.890380859375,
+    "change_along_s_original_same_contexts": 0.010331869249542554,
+    "ci_original": [
+     -0.014662394238015014,
+     0.03488761322262383
+    ],
+    "p_original": 0.52447509765625,
+    "minus_NEUTRAL": {
+     "mean": 0.0061785822113355005,
+     "ci": [
+      -0.025485436071952184,
+      0.03893158271908758
+     ],
+     "p": 0.846923828125,
+     "n": 15
+    }
+   },
+   "NEUTRAL": {
+    "n": 15,
+    "change_along_s_cont": -0.0027073681354522704,
+    "ci": [
+     -0.020614642724394797,
+     0.015366393700242037
+    ],
+    "p": 0.76153564453125,
+    "change_along_s_original_same_contexts": 0.007367036739985148,
+    "ci_original": [
+     -0.011689742965002855,
+     0.025807268830637126
+    ],
+    "p_original": 0.5994873046875
+   }
+  },
+  "gpt-4o/bgem3/lenient/k_followups": {
+   "n_contexts": 15,
+   "continuations_loo_alignment": 0.4663919319709142,
+   "mean_f_dot_p": 0.5491873363653819,
+   "GEO": {
+    "n": 15,
+    "change_along_s_cont": -0.00021180510520935059,
+    "ci": [
+     -0.030815316749115786,
+     0.02869698144495486
+    ],
+    "p": 0.93408203125,
+    "change_along_s_original_same_contexts": 0.014674011742075284,
+    "ci_original": [
+     -0.014849116935705146,
+     0.04471949246712028
+    ],
+    "p_original": 0.45428466796875,
+    "minus_NEUTRAL": {
+     "mean": 0.006769147515296936,
+     "ci": [
+      -0.01845974085231622,
+      0.03069057853271563
+     ],
+     "p": 0.638671875,
+     "n": 15
+    }
+   },
+   "LLM": {
+    "n": 15,
+    "change_along_s_cont": -0.000465364009141922,
+    "ci": [
+     -0.024299222448219856,
+     0.024313516809294618
+    ],
+    "p": 0.93408203125,
+    "change_along_s_original_same_contexts": 0.007047408477713664,
+    "ci_original": [
+     -0.014388247538202753,
+     0.03235359260967621
+    ],
+    "p_original": 0.890380859375,
+    "minus_NEUTRAL": {
+     "mean": 0.006515588611364365,
+     "ci": [
+      -0.02419911315664649,
+      0.04076181427265207
+     ],
+     "p": 0.846923828125,
+     "n": 15
+    }
+   },
+   "ORACLE": {
+    "n": 15,
+    "change_along_s_cont": -0.0012786681453386942,
+    "ci": [
+     -0.02745317205786705,
+     0.025107654395202794
+    ],
+    "p": 1.0,
+    "change_along_s_original_same_contexts": 0.010331869249542554,
+    "ci_original": [
+     -0.015252864705398678,
+     0.03524456458787122
+    ],
+    "p_original": 0.52447509765625,
+    "minus_NEUTRAL": {
+     "mean": 0.005702284475167592,
+     "ci": [
+      -0.029665409699082376,
+      0.041495963744819134
+     ],
+     "p": 0.93408203125,
+     "n": 15
+    }
+   },
+   "NEUTRAL": {
+    "n": 15,
+    "change_along_s_cont": -0.0069809526205062864,
+    "ci": [
+     -0.02496252053727706,
+     0.01245691029975811
+    ],
+    "p": 0.45428466796875,
+    "change_along_s_original_same_contexts": 0.007367036739985148,
+    "ci_original": [
+     -0.010667545882364113,
+     0.025039316937327378
+    ],
+    "p_original": 0.5994873046875
+   }
+  },
+  "olmo-7b-0424/bgem3/consensus/k_continuations": {
+   "n_contexts": 8,
+   "continuations_loo_alignment": 0.4293261952698231,
+   "mean_f_dot_p": 0.5254484042525291,
+   "GEO": {
+    "n": 8,
+    "change_along_s_cont": 0.03883317485451698,
+    "ci": [
+     0.01621451466344297,
+     0.06255939048714931
+    ],
+    "p": 0.0234375,
+    "change_along_s_original_same_contexts": 0.011242390028201044,
+    "ci_original": [
+     -0.018765534218982794,
+     0.04219703539274633
+    ],
+    "p_original": 0.640625
+   },
+   "LLM": {
+    "n": 8,
+    "change_along_s_cont": 0.021455972455441952,
+    "ci": [
+     -0.03137289932928979,
+     0.08296443149447441
+    ],
+    "p": 0.84375,
+    "change_along_s_original_same_contexts": -0.03502010088413954,
+    "ci_original": [
+     -0.11178583337459713,
+     0.04276511506177473
+    ],
+    "p_original": 0.546875
+   },
+   "ORACLE": {
+    "n": 8,
+    "change_along_s_cont": 0.017005106434226036,
+    "ci": [
+     -0.0297337437979877,
+     0.062472717836499214
+    ],
+    "p": 0.25,
+    "change_along_s_original_same_contexts": -0.008640139363706112,
+    "ci_original": [
+     -0.025651768175885083,
+     0.00994824897497892
+    ],
+    "p_original": 0.3125
+   }
+  },
+  "olmo-7b-0424/bgem3/consensus/k_followups": {
+   "n_contexts": 8,
+   "continuations_loo_alignment": 0.4293261952698231,
+   "mean_f_dot_p": 0.6030020751059055,
+   "GEO": {
+    "n": 8,
+    "change_along_s_cont": 0.03278895700350404,
+    "ci": [
+     -0.012761917198076844,
+     0.06638504065340384
+    ],
+    "p": 0.25,
+    "change_along_s_original_same_contexts": 0.011242390028201044,
+    "ci_original": [
+     -0.019224917035899125,
+     0.04209223453945012
+    ],
+    "p_original": 0.640625
+   },
+   "LLM": {
+    "n": 8,
+    "change_along_s_cont": -0.004444739781320095,
+    "ci": [
+     -0.06699121529236436,
+     0.07028552517294884
+    ],
+    "p": 0.7421875,
+    "change_along_s_original_same_contexts": -0.03502010088413954,
+    "ci_original": [
+     -0.11629607647191732,
+     0.04135201454628259
+    ],
+    "p_original": 0.546875
+   },
+   "ORACLE": {
+    "n": 8,
+    "change_along_s_cont": 0.009098260663449764,
+    "ci": [
+     -0.032345782942138614,
+     0.05340792350471016
+    ],
+    "p": 0.7421875,
+    "change_along_s_original_same_contexts": -0.008640139363706112,
+    "ci_original": [
+     -0.02568002894986421,
+     0.009549256716854864
+    ],
+    "p_original": 0.3125
+   }
+  },
+  "olmo-7b-0424/bgem3/lenient/k_continuations": {
+   "n_contexts": 15,
+   "continuations_loo_alignment": 0.4663919319709142,
+   "mean_f_dot_p": 0.4853502154350281,
+   "GEO": {
+    "n": 15,
+    "change_along_s_cont": 0.0545431820054849,
+    "ci": [
+     -0.008607668038457632,
+     0.13504410222793609
+    ],
+    "p": 0.05535888671875,
+    "change_along_s_original_same_contexts": 0.04190090348323186,
+    "ci_original": [
+     -0.01291152169307073,
+     0.11482861970861752
+    ],
+    "p_original": 0.30279541015625
+   },
+   "LLM": {
+    "n": 15,
+    "change_along_s_cont": -0.0008224340776602427,
+    "ci": [
+     -0.0509871102993687,
+     0.04629250361273681
+    ],
+    "p": 1.0,
+    "change_along_s_original_same_contexts": -0.032448073973258336,
+    "ci_original": [
+     -0.08418075755859414,
+     0.017602595941474036
+    ],
+    "p_original": 0.27685546875
+   },
+   "ORACLE": {
+    "n": 15,
+    "change_along_s_cont": 0.010334678242603939,
+    "ci": [
+     -0.02443519205475847,
+     0.04817925700296957
+    ],
+    "p": 0.5994873046875,
+    "change_along_s_original_same_contexts": 0.020388129726052286,
+    "ci_original": [
+     -0.0094613335467875,
+     0.051945416893189114
+    ],
+    "p_original": 0.45428466796875
+   }
+  },
+  "olmo-7b-0424/bgem3/lenient/k_followups": {
+   "n_contexts": 15,
+   "continuations_loo_alignment": 0.4663919319709142,
+   "mean_f_dot_p": 0.5491873363653819,
+   "GEO": {
+    "n": 15,
+    "change_along_s_cont": 0.05983860281606515,
+    "ci": [
+     0.0008285029822339615,
+     0.1359945771501709
+    ],
+    "p": 0.10699462890625,
+    "change_along_s_original_same_contexts": 0.04190090348323186,
+    "ci_original": [
+     -0.012892085586984953,
+     0.11419392344852286
+    ],
+    "p_original": 0.30279541015625
+   },
+   "LLM": {
+    "n": 15,
+    "change_along_s_cont": -0.022013920793930688,
+    "ci": [
+     -0.07501985009759665,
+     0.033913104167828924
+    ],
+    "p": 0.5994873046875,
+    "change_along_s_original_same_contexts": -0.032448073973258336,
+    "ci_original": [
+     -0.07976092407479883,
+     0.016664592872063237
+    ],
+    "p_original": 0.27685546875
+   },
+   "ORACLE": {
+    "n": 15,
+    "change_along_s_cont": 0.006549205506841341,
+    "ci": [
+     -0.0332551406044513,
+     0.04337178165403505
+    ],
+    "p": 0.5614013671875,
+    "change_along_s_original_same_contexts": 0.020388129726052286,
+    "ci_original": [
+     -0.010485884233688314,
+     0.0542388058733195
+    ],
+    "p_original": 0.45428466796875
+   }
+  }
+ }
+}

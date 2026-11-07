@@ -1,0 +1,4490 @@
+{
+ "prereg": "docs/prereg/strengthen_shape_coverage.md",
+ "seed": 20261106,
+ "n_sim": 500,
+ "B_inner": 1000,
+ "workers": 4,
+ "threads_per_worker": 1,
+ "grid": [
+  0.1,
+  0.9
+ ],
+ "fine_sup_step": 0.0005,
+ "cells": {
+  "qwen3e06/INCIDENTAL": {
+   "U_observed": 0.0045284737522873425,
+   "sd_idea": 0.02559712619848954,
+   "half_sd": 0.01279856309924477,
+   "qwen3_slope": 0.0038081157347957953
+  },
+  "qwen3e06/INSTRUCTED": {
+   "U_observed": 0.007356391038975433,
+   "sd_idea": 0.026789493066813094,
+   "half_sd": 0.013394746533406547,
+   "qwen3_slope": 0.00526897868526933
+  },
+  "bgem3/INCIDENTAL": {
+   "U_observed": 0.00398970805528192,
+   "sd_idea": 0.016448682055659598,
+   "half_sd": 0.008224341027829799,
+   "qwen3_slope": 0.0038081157347957953
+  },
+  "bgem3/INSTRUCTED": {
+   "U_observed": 0.004981105268460981,
+   "sd_idea": 0.016029127043628622,
+   "half_sd": 0.008014563521814311,
+   "qwen3_slope": 0.00526897868526933
+  }
+ },
+ "wall_seconds": 13971.927197933197,
+ "results": {
+  "bgem3/INCIDENTAL": {
+   "between_hU": {
+    "kind": "between",
+    "h": 0.00398970805528192,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.00398970805528192,
+    "H_true_grid": 0.00398697417716734,
+    "H_proj": 0.001650404437306666,
+    "fall_max_true": 0.0038149468096091285,
+    "seed": 2248794663,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.322,
+     "wilson95": [
+      0.2825360921268586,
+      0.36417817311994716
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.322,
+     "wilson95": [
+      0.2825360921268586,
+      0.36417817311994716
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.922,
+     "wilson95": [
+      0.8951464498877953,
+      0.9424186066619128
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.136,
+     "wilson95": [
+      0.10871544321337934,
+      0.1688350767295267
+     ]
+    },
+    "H_hat_mean": 0.0012573107211904702,
+    "H_hat_sd": 0.001346504758052948,
+    "U_mean": 0.0034325352288974214,
+    "U_quantiles_5_50_95": [
+     0.0013163122971875862,
+     0.0033929614997570004,
+     0.005548706413869335
+    ],
+    "mean_U_minus_H_true": -0.0005571728263844988,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.972,
+     "wilson95": [
+      0.9535535971456605,
+      0.9832490253459559
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.058,
+    "fall_true_at_bp_mean": 0.0012704941210084928
+   },
+   "between_hhalfSD": {
+    "kind": "between",
+    "h": 0.008224341027829799,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.008224341027829799,
+    "H_true_grid": 0.008218705441057211,
+    "H_proj": 0.0034021258543670135,
+    "fall_max_true": 0.007864090086421053,
+    "seed": 1837965536,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.006,
+     "wilson95": [
+      0.002042596256088514,
+      0.01749025223785535
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.006,
+     "wilson95": [
+      0.002042596256088514,
+      0.01749025223785535
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.918,
+     "wilson95": [
+      0.8906451406002484,
+      0.938980910674107
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.602,
+     "wilson95": [
+      0.5584746121028343,
+      0.6439700224186591
+     ]
+    },
+    "H_hat_mean": 0.0030786417840605526,
+    "H_hat_sd": 0.0013704859301761079,
+    "U_mean": 0.005211125571976766,
+    "U_quantiles_5_50_95": [
+     0.0031059172776092985,
+     0.005216741764483545,
+     0.007168156397957851
+    ],
+    "mean_U_minus_H_true": -0.003013215455853033,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.81,
+     "wilson95": [
+      0.7733002874365166,
+      0.8419726214033164
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.008,
+    "two_lines_hump_declared_share": 0.158,
+    "fall_true_at_bp_mean": 0.0032711185220539395
+   },
+   "broad_hU": {
+    "kind": "broad",
+    "h": 0.00398970805528192,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.003988723715240102,
+    "H_true_grid": 0.003988723715240102,
+    "H_proj": 0.0043573732927185095,
+    "fall_max_true": 0.004973197134732973,
+    "seed": 1382621153,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.93,
+     "wilson95": [
+      0.9042028099167505,
+      0.9492402571836629
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.93,
+     "wilson95": [
+      0.9042028099167505,
+      0.9492402571836629
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.892,
+     "wilson95": [
+      0.8617453264524084,
+      0.9162771905321545
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.788,
+     "wilson95": [
+      0.7500478838671217,
+      0.8215604959582715
+     ]
+    },
+    "H_hat_mean": 0.003701488830142496,
+    "H_hat_sd": 0.001397867117782337,
+    "U_mean": 0.005897362043462716,
+    "U_quantiles_5_50_95": [
+     0.003655177161218979,
+     0.005904236496867353,
+     0.007985287144662104
+    ],
+    "mean_U_minus_H_true": 0.0019086383282226132,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.986,
+     "wilson95": [
+      0.9713869307089691,
+      0.9932022102463818
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.162,
+    "two_lines_hump_declared_share": 0.598,
+    "fall_true_at_bp_mean": 0.0040594702874837164
+   },
+   "broad_hhalfSD": {
+    "kind": "broad",
+    "h": 0.008224341027829799,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.008222311919915364,
+    "H_true_grid": 0.008222311919915364,
+    "H_proj": 0.008982242171185251,
+    "fall_max_true": 0.01025169477764702,
+    "seed": 3095014089,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.94,
+     "wilson95": [
+      0.9156389366536348,
+      0.9576516436351601
+     ],
+     "verdict": "calibrated"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.94,
+     "wilson95": [
+      0.9156389366536348,
+      0.9576516436351601
+     ],
+     "verdict": "calibrated"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.87,
+     "wilson95": [
+      0.8376786381458893,
+      0.8966793498242339
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ]
+    },
+    "H_hat_mean": 0.008358377938795758,
+    "H_hat_sd": 0.0013934594538251984,
+    "U_mean": 0.010388555057317728,
+    "U_quantiles_5_50_95": [
+     0.008086790391064577,
+     0.010459265680099365,
+     0.012369404695651409
+    ],
+    "mean_U_minus_H_true": 0.002166243137402363,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.984,
+     "wilson95": [
+      0.9687488913091183,
+      0.9918707470085563
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.99,
+     "wilson95": [
+      0.9768069001002011,
+      0.9957212461305025
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.978,
+     "wilson95": [
+      0.9610391386195835,
+      0.9876719917850619
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.934,
+    "two_lines_hump_declared_share": 0.996,
+    "fall_true_at_bp_mean": 0.009496985500501256
+   },
+   "flat": {
+    "kind": "flat",
+    "h": 0.0,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.0,
+    "H_true_grid": 0.0,
+    "H_proj": 0.0,
+    "fall_max_true": -0.0,
+    "seed": 1789649078,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.97,
+     "wilson95": [
+      0.9510963329814702,
+      0.9817367868724699
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.97,
+     "wilson95": [
+      0.9510963329814702,
+      0.9817367868724699
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.97,
+     "wilson95": [
+      0.9510963329814702,
+      0.9817367868724699
+     ],
+     "verdict": "conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.022,
+     "wilson95": [
+      0.012328008214938036,
+      0.03896086138041656
+     ]
+    },
+    "H_hat_mean": 0.00011197372778575506,
+    "H_hat_sd": 0.0012166970985586897,
+    "U_mean": 0.002504951791327359,
+    "U_quantiles_5_50_95": [
+     0.00030152122369847464,
+     0.00250408840566909,
+     0.004791682529229028
+    ],
+    "mean_U_minus_H_true": 0.002504951791327359,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.002,
+    "fall_true_at_bp_mean": 0.0
+   },
+   "het_hU": {
+    "kind": "het",
+    "h": 0.00398970805528192,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.0008866017900626494,
+    "H_true_grid": 0.0008866017900626494,
+    "H_proj": 0.0011251839880432543,
+    "fall_max_true": 0.0012132619463537469,
+    "seed": 569500478,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.97,
+     "wilson95": [
+      0.9510963329814702,
+      0.9817367868724699
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.97,
+     "wilson95": [
+      0.9510963329814702,
+      0.9817367868724699
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.956,
+     "wilson95": [
+      0.9342805569252562,
+      0.9707660444649494
+     ],
+     "verdict": "calibrated"
+    },
+    "H_source_specific_max": 0.00398970805528192,
+    "coverage_U_vs_H_source_specific_max": {
+     "share": 0.388,
+     "wilson95": [
+      0.3462960290301564,
+      0.4314118232599687
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.166,
+     "wilson95": [
+      0.1359577430142233,
+      0.20113531649382788
+     ]
+    },
+    "H_hat_mean": 0.0011153561849749148,
+    "H_hat_sd": 0.0014558320852897893,
+    "U_mean": 0.0036008912655826337,
+    "U_quantiles_5_50_95": [
+     0.0012909947491398107,
+     0.0035224738705437924,
+     0.006045633763236529
+    ],
+    "mean_U_minus_H_true": 0.002714289475519985,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.038,
+    "fall_true_at_bp_mean": 0.0008268447318088196
+   },
+   "het_hhalfSD": {
+    "kind": "het",
+    "h": 0.008224341027829799,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.001827631339517734,
+    "H_true_grid": 0.001827631339517734,
+    "H_proj": 0.002319442101652044,
+    "fall_max_true": 0.0025010050521595533,
+    "seed": 3835086298,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.992,
+     "wilson95": [
+      0.9796129640268147,
+      0.9968846848415651
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.992,
+     "wilson95": [
+      0.9796129640268147,
+      0.9968846848415651
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.96,
+     "wilson95": [
+      0.9390264039680075,
+      0.9739592026975509
+     ],
+     "verdict": "calibrated"
+    },
+    "H_source_specific_max": 0.008224341027829799,
+    "coverage_U_vs_H_source_specific_max": {
+     "share": 0.006,
+     "wilson95": [
+      0.002042596256088514,
+      0.01749025223785535
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.402,
+     "wilson95": [
+      0.35992874000256914,
+      0.4455656307512903
+     ]
+    },
+    "H_hat_mean": 0.0022596130260340566,
+    "H_hat_sd": 0.0014252259195973193,
+    "U_mean": 0.004769848298257971,
+    "U_quantiles_5_50_95": [
+     0.002514445868610635,
+     0.0047536181519284015,
+     0.006991382720064465
+    ],
+    "mean_U_minus_H_true": 0.0029422169587402383,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.024,
+    "two_lines_hump_declared_share": 0.124,
+    "fall_true_at_bp_mean": 0.0018428512172139787
+   },
+   "linear_qwen3_slope": {
+    "kind": "linear",
+    "h": 0.0,
+    "slope": 0.0038081157347957953,
+    "H_true": -0.00038081157347957936,
+    "H_true_grid": -0.00038081157347957936,
+    "H_proj": -0.00038081157347879093,
+    "fall_max_true": -0.0003789075156121939,
+    "seed": 2967738511,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.98,
+     "wilson95": [
+      0.963579816587725,
+      0.9891008164545969
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.98,
+     "wilson95": [
+      0.963579816587725,
+      0.9891008164545969
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.98,
+     "wilson95": [
+      0.963579816587725,
+      0.9891008164545969
+     ],
+     "verdict": "conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.016,
+     "wilson95": [
+      0.008129252991443795,
+      0.03125110869088177
+     ]
+    },
+    "H_hat_mean": -0.00016509617397780817,
+    "H_hat_sd": 0.0012244644079787265,
+    "U_mean": 0.002343454054361091,
+    "U_quantiles_5_50_95": [
+     5.099381218913053e-05,
+     0.002415906444536417,
+     0.004720679746190527
+    ],
+    "mean_U_minus_H_true": 0.00272426562784067,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.996,
+     "wilson95": [
+      0.9855342846565502,
+      0.9989023694871824
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.996,
+     "wilson95": [
+      0.9855342846565502,
+      0.9989023694871824
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.004,
+    "fall_true_at_bp_mean": -0.0020892986970837742
+   },
+   "narrow_hU": {
+    "kind": "narrow",
+    "h": 0.00398970805528192,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.00398970805528192,
+    "H_true_grid": 0.00398970805528192,
+    "H_proj": 0.0013094093862423943,
+    "fall_max_true": 0.004453505772618388,
+    "seed": 4195326047,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.37,
+     "wilson95": [
+      0.32882226345948734,
+      0.4131600650915506
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.37,
+     "wilson95": [
+      0.32882226345948734,
+      0.4131600650915506
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.96,
+     "wilson95": [
+      0.9390264039680075,
+      0.9739592026975509
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.156,
+     "wilson95": [
+      0.12683079119435292,
+      0.19041475512531653
+     ]
+    },
+    "H_hat_mean": 0.001181685310564239,
+    "H_hat_sd": 0.001392130680232281,
+    "U_mean": 0.003513133320170183,
+    "U_quantiles_5_50_95": [
+     0.0014915336785774357,
+     0.0034884036531576844,
+     0.0056957183629405056
+    ],
+    "mean_U_minus_H_true": -0.00047657473511173733,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.992,
+     "wilson95": [
+      0.9796129640268147,
+      0.9968846848415651
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.992,
+     "wilson95": [
+      0.9796129640268147,
+      0.9968846848415651
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.946,
+     "wilson95": [
+      0.9225734382748384,
+      0.9626256499269855
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.062,
+    "fall_true_at_bp_mean": 0.001120461587019217
+   },
+   "narrow_hhalfSD": {
+    "kind": "narrow",
+    "h": 0.008224341027829799,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.008224341027829799,
+    "H_true_grid": 0.008224341027829799,
+    "H_proj": 0.0026992023447035994,
+    "fall_max_true": 0.009180408625370992,
+    "seed": 2119974263,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.006,
+     "wilson95": [
+      0.002042596256088514,
+      0.01749025223785535
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.006,
+     "wilson95": [
+      0.002042596256088514,
+      0.01749025223785535
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.958,
+     "wilson95": [
+      0.936648414045857,
+      0.9723676899820252
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.542,
+     "wilson95": [
+      0.49817416483049864,
+      0.5851853905607045
+     ]
+    },
+    "H_hat_mean": 0.0027378323969484727,
+    "H_hat_sd": 0.0014600556593243256,
+    "U_mean": 0.005092552115540094,
+    "U_quantiles_5_50_95": [
+     0.0028646011057912673,
+     0.005014052932488423,
+     0.007367608487870895
+    ],
+    "mean_U_minus_H_true": -0.0031317889122897047,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.982,
+     "wilson95": [
+      0.96614832892973,
+      0.9905018067502681
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.984,
+     "wilson95": [
+      0.9687488913091183,
+      0.9918707470085563
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.708,
+     "wilson95": [
+      0.6666807678672768,
+      0.7461475064510625
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.002,
+    "two_lines_hump_declared_share": 0.18,
+    "fall_true_at_bp_mean": 0.0019839115504197667
+   },
+   "rise_narrow_hU": {
+    "kind": "rise_narrow",
+    "h": 0.00398970805528192,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.0024747450493838247,
+    "H_true_grid": 0.002466461761363602,
+    "H_proj": 0.0009956886567753492,
+    "fall_max_true": 0.0027130847024501347,
+    "seed": 3380032722,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.832,
+     "wilson95": [
+      0.7967256706129094,
+      0.8622117672413631
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.832,
+     "wilson95": [
+      0.7967256706129094,
+      0.8622117672413631
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.98,
+     "wilson95": [
+      0.963579816587725,
+      0.9891008164545969
+     ],
+     "verdict": "conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.18,
+     "wilson95": [
+      0.14880490768628485,
+      0.2160746702855007
+     ]
+    },
+    "H_hat_mean": 0.0013234179102644625,
+    "H_hat_sd": 0.0015604725895212528,
+    "U_mean": 0.003959393419467986,
+    "U_quantiles_5_50_95": [
+     0.0014938298531246407,
+     0.0039780544392400315,
+     0.006394471123613314
+    ],
+    "mean_U_minus_H_true": 0.0014846483700841609,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.996,
+     "wilson95": [
+      0.9855342846565502,
+      0.9989023694871824
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.996,
+     "wilson95": [
+      0.9855342846565502,
+      0.9989023694871824
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.724,
+     "wilson95": [
+      0.6832224280834737,
+      0.7613618673362764
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.02,
+    "fall_true_at_bp_mean": -0.0025218430613125477
+   },
+   "rise_narrow_hhalfSD": {
+    "kind": "rise_narrow",
+    "h": 0.008224341027829799,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.0067051038931779045,
+    "H_true_grid": 0.0067010947339114805,
+    "H_proj": 0.0036780027966870042,
+    "fall_max_true": 0.007435028634419418,
+    "seed": 40537675,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.25,
+     "wilson95": [
+      0.21404849648057134,
+      0.2897636738098861
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.252,
+     "wilson95": [
+      0.21593384811311933,
+      0.2918478248150145
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.932,
+     "wilson95": [
+      0.906479077036752,
+      0.9509334927013379
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.678,
+     "wilson95": [
+      0.6358218268800528,
+      0.7174639078731415
+     ]
+    },
+    "H_hat_mean": 0.0034267401551500666,
+    "H_hat_sd": 0.0015386529414474883,
+    "U_mean": 0.005812066153668328,
+    "U_quantiles_5_50_95": [
+     0.0033801558919466295,
+     0.005870914718497067,
+     0.008131700363160665
+    ],
+    "mean_U_minus_H_true": -0.0008930377395095757,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.996,
+     "wilson95": [
+      0.9855342846565502,
+      0.9989023694871824
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.996,
+     "wilson95": [
+      0.9855342846565502,
+      0.9989023694871824
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.588,
+     "wilson95": [
+      0.5443465916629446,
+      0.6303115243948143
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.06,
+    "fall_true_at_bp_mean": -0.0020841369410912807
+   },
+   "spike_hU": {
+    "kind": "spike",
+    "h": 0.00398970805528192,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.00398970805528192,
+    "H_true_grid": 0.003965148091931187,
+    "H_proj": 0.0005558920873717948,
+    "fall_max_true": 0.0017625126462112437,
+    "seed": 1763344466,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.148,
+     "wilson95": [
+      0.11956140518579197,
+      0.1818061305831721
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.154,
+     "wilson95": [
+      0.12501068007034682,
+      0.18826536361164625
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.95,
+     "wilson95": [
+      0.9272318386186077,
+      0.965906254858569
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.04,
+     "wilson95": [
+      0.026040797302449202,
+      0.06097359603199246
+     ]
+    },
+    "H_hat_mean": 0.0003483602422978701,
+    "H_hat_sd": 0.0012493609360880484,
+    "U_mean": 0.0026606649061000007,
+    "U_quantiles_5_50_95": [
+     0.0005680366113263311,
+     0.0026235517586416183,
+     0.004906666909192347
+    ],
+    "mean_U_minus_H_true": -0.00132904314918192,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.004,
+    "fall_true_at_bp_mean": 0.0004256198645489606
+   },
+   "spike_hhalfSD": {
+    "kind": "spike",
+    "h": 0.008224341027829799,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.008224341027829799,
+    "H_true_grid": 0.008173713385047762,
+    "H_proj": 0.0011459099357325067,
+    "fall_max_true": 0.0036332245035106264,
+    "seed": 3269087528,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.0,
+     "wilson95": [
+      4.336808689942018e-19,
+      0.007624340580914839
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.0,
+     "wilson95": [
+      4.336808689942018e-19,
+      0.007624340580914839
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.928,
+     "wilson95": [
+      0.9019315957497824,
+      0.9475419687129547
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.096,
+     "wilson95": [
+      0.07317350450798382,
+      0.12498696268139539
+     ]
+    },
+    "H_hat_mean": 0.0008263529324527731,
+    "H_hat_sd": 0.0013925980737227524,
+    "U_mean": 0.003057059130788634,
+    "U_quantiles_5_50_95": [
+     0.0008752070377793176,
+     0.0030890088084485267,
+     0.005115882005409583
+    ],
+    "mean_U_minus_H_true": -0.005167281897041164,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.966,
+     "wilson95": [
+      0.9462286343096964,
+      0.978665480268891
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.022,
+    "fall_true_at_bp_mean": 0.00095854214212392
+   }
+  },
+  "bgem3/INSTRUCTED": {
+   "between_hU": {
+    "kind": "between",
+    "h": 0.004981105268460981,
+    "slope": 0.00526897868526933,
+    "H_true": 0.004981105268460981,
+    "H_true_grid": 0.004977692052633863,
+    "H_proj": 0.00206051122634746,
+    "fall_max_true": 0.004762917834823805,
+    "seed": 1262947731,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.178,
+     "wilson95": [
+      0.14696488648220932,
+      0.21394518885189986
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.178,
+     "wilson95": [
+      0.14696488648220932,
+      0.21394518885189986
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.89,
+     "wilson95": [
+      0.8595444293324002,
+      0.9145085850144863
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.268,
+     "wilson95": [
+      0.2310539731603579,
+      0.30848372086918663
+     ]
+    },
+    "H_hat_mean": 0.0016935117004607924,
+    "H_hat_sd": 0.001434247331842591,
+    "U_mean": 0.0037569756640123486,
+    "U_quantiles_5_50_95": [
+     0.0016110618871182202,
+     0.003762503579685702,
+     0.005906469437035673
+    ],
+    "mean_U_minus_H_true": -0.0012241296044486324,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.98,
+     "wilson95": [
+      0.963579816587725,
+      0.9891008164545969
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.982,
+     "wilson95": [
+      0.96614832892973,
+      0.9905018067502681
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.892,
+     "wilson95": [
+      0.8617453264524084,
+      0.9162771905321545
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.008,
+    "two_lines_hump_declared_share": 0.108,
+    "fall_true_at_bp_mean": 0.0016986469624814956
+   },
+   "between_hhalfSD": {
+    "kind": "between",
+    "h": 0.008014563521814311,
+    "slope": 0.00526897868526933,
+    "H_true": 0.008014563521814311,
+    "H_true_grid": 0.008009071681432358,
+    "H_proj": 0.003315348144825484,
+    "fall_max_true": 0.0076635014678523294,
+    "seed": 1930055270,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.002,
+     "wilson95": [
+      0.0003531363906594037,
+      0.011240706827931778
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.002,
+     "wilson95": [
+      0.0003531363906594037,
+      0.011240706827931778
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.94,
+     "wilson95": [
+      0.9156389366536348,
+      0.9576516436351601
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.642,
+     "wilson95": [
+      0.5990422903652528,
+      0.6827923969097673
+     ]
+    },
+    "H_hat_mean": 0.003044415948313506,
+    "H_hat_sd": 0.001260519702702821,
+    "U_mean": 0.005097084977400941,
+    "U_quantiles_5_50_95": [
+     0.0032551293191894807,
+     0.005151114526936021,
+     0.006989137158363439
+    ],
+    "mean_U_minus_H_true": -0.0029174785444133697,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.848,
+     "wilson95": [
+      0.8138858514230042,
+      0.8768076075326791
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.01,
+    "two_lines_hump_declared_share": 0.184,
+    "fall_true_at_bp_mean": 0.0030608553538929747
+   },
+   "broad_hU": {
+    "kind": "broad",
+    "h": 0.004981105268460981,
+    "slope": 0.00526897868526933,
+    "H_true": 0.0049798763310800204,
+    "H_true_grid": 0.0049798763310800204,
+    "H_proj": 0.0054401311485127645,
+    "fall_max_true": 0.006208980232555647,
+    "seed": 3969416855,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.918,
+     "wilson95": [
+      0.8906451406002484,
+      0.938980910674107
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.918,
+     "wilson95": [
+      0.8906451406002484,
+      0.938980910674107
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.87,
+     "wilson95": [
+      0.8376786381458893,
+      0.8966793498242339
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.928,
+     "wilson95": [
+      0.9019315957497824,
+      0.9475419687129547
+     ]
+    },
+    "H_hat_mean": 0.004638247316805109,
+    "H_hat_sd": 0.0013553134306755327,
+    "U_mean": 0.006791574392650501,
+    "U_quantiles_5_50_95": [
+     0.004574804911733865,
+     0.006795150262128799,
+     0.008754981117619619
+    ],
+    "mean_U_minus_H_true": 0.0018116980615704805,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.984,
+     "wilson95": [
+      0.9687488913091183,
+      0.9918707470085563
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.358,
+    "two_lines_hump_declared_share": 0.788,
+    "fall_true_at_bp_mean": 0.005169990392912352
+   },
+   "broad_hhalfSD": {
+    "kind": "broad",
+    "h": 0.008014563521814311,
+    "slope": 0.00526897868526933,
+    "H_true": 0.008012586170167799,
+    "H_true_grid": 0.008012586170167799,
+    "H_proj": 0.00875313295079693,
+    "fall_max_true": 0.00999020574702323,
+    "seed": 1900556013,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.946,
+     "wilson95": [
+      0.9225734382748384,
+      0.9626256499269855
+     ],
+     "verdict": "calibrated"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.946,
+     "wilson95": [
+      0.9225734382748384,
+      0.9626256499269855
+     ],
+     "verdict": "calibrated"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.868,
+     "wilson95": [
+      0.8355052089902186,
+      0.8948832763422281
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ]
+    },
+    "H_hat_mean": 0.00801243753142678,
+    "H_hat_sd": 0.0013322538230351717,
+    "U_mean": 0.010012525773750612,
+    "U_quantiles_5_50_95": [
+     0.008002090997017444,
+     0.010015408454088659,
+     0.011841394677676488
+    ],
+    "mean_U_minus_H_true": 0.0019999396035828136,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.99,
+     "wilson95": [
+      0.9768069001002011,
+      0.9957212461305025
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.992,
+     "wilson95": [
+      0.9796129640268147,
+      0.9968846848415651
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.978,
+     "wilson95": [
+      0.9610391386195835,
+      0.9876719917850619
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.924,
+    "two_lines_hump_declared_share": 0.996,
+    "fall_true_at_bp_mean": 0.009254150161432146
+   },
+   "flat": {
+    "kind": "flat",
+    "h": 0.0,
+    "slope": 0.00526897868526933,
+    "H_true": 0.0,
+    "H_true_grid": 0.0,
+    "H_proj": 0.0,
+    "fall_max_true": -0.0,
+    "seed": 78944402,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.976,
+     "wilson95": [
+      0.9585229423634402,
+      0.986218685403529
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.976,
+     "wilson95": [
+      0.9585229423634402,
+      0.986218685403529
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.976,
+     "wilson95": [
+      0.9585229423634402,
+      0.986218685403529
+     ],
+     "verdict": "conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.028,
+     "wilson95": [
+      0.016750974654044105,
+      0.04644640285433951
+     ]
+    },
+    "H_hat_mean": 7.68661885880639e-05,
+    "H_hat_sd": 0.001199151570962212,
+    "U_mean": 0.002404887630295789,
+    "U_quantiles_5_50_95": [
+     0.00024958472781601765,
+     0.002375769839384719,
+     0.004611507739568185
+    ],
+    "mean_U_minus_H_true": 0.002404887630295789,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.002,
+    "fall_true_at_bp_mean": 0.0
+   },
+   "het_hU": {
+    "kind": "het",
+    "h": 0.004981105268460981,
+    "slope": 0.00526897868526933,
+    "H_true": 0.0011069122818802186,
+    "H_true_grid": 0.0011069122818802186,
+    "H_proj": 0.0014047794508194032,
+    "fall_max_true": 0.0015147437830708222,
+    "seed": 4279556254,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.974,
+     "wilson95": [
+      0.9560285089896903,
+      0.9847436161396026
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.974,
+     "wilson95": [
+      0.9560285089896903,
+      0.9847436161396026
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.956,
+     "wilson95": [
+      0.9342805569252562,
+      0.9707660444649494
+     ],
+     "verdict": "calibrated"
+    },
+    "H_source_specific_max": 0.004981105268460981,
+    "coverage_U_vs_H_source_specific_max": {
+     "share": 0.212,
+     "wilson95": [
+      0.17843950404172862,
+      0.24995211613287835
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.212,
+     "wilson95": [
+      0.17843950404172862,
+      0.24995211613287835
+     ]
+    },
+    "H_hat_mean": 0.0014060897350965749,
+    "H_hat_sd": 0.001352636884804324,
+    "U_mean": 0.0038132734224766603,
+    "U_quantiles_5_50_95": [
+     0.0015587023847412134,
+     0.003862001319855493,
+     0.006030656182146984
+    ],
+    "mean_U_minus_H_true": 0.0027063611405964425,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.002,
+    "two_lines_hump_declared_share": 0.05,
+    "fall_true_at_bp_mean": 0.0010643044927452347
+   },
+   "het_hhalfSD": {
+    "kind": "het",
+    "h": 0.008014563521814311,
+    "slope": 0.00526897868526933,
+    "H_true": 0.0017810141159587366,
+    "H_true_grid": 0.0017810141159587366,
+    "H_proj": 0.0022602803064653222,
+    "fall_max_true": 0.002437212147585336,
+    "seed": 793580204,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.984,
+     "wilson95": [
+      0.9687488913091183,
+      0.9918707470085563
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.984,
+     "wilson95": [
+      0.9687488913091183,
+      0.9918707470085563
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.95,
+     "wilson95": [
+      0.9272318386186077,
+      0.965906254858569
+     ],
+     "verdict": "calibrated"
+    },
+    "H_source_specific_max": 0.008014563521814311,
+    "coverage_U_vs_H_source_specific_max": {
+     "share": 0.006,
+     "wilson95": [
+      0.002042596256088514,
+      0.01749025223785535
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.352,
+     "wilson95": [
+      0.3114108415816156,
+      0.3948459632303353
+     ]
+    },
+    "H_hat_mean": 0.002074536166808133,
+    "H_hat_sd": 0.001405190577764404,
+    "U_mean": 0.004512603796848935,
+    "U_quantiles_5_50_95": [
+     0.0023127397174179344,
+     0.004512360237495705,
+     0.006602998220018421
+    ],
+    "mean_U_minus_H_true": 0.0027315896808901992,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.996,
+     "wilson95": [
+      0.9855342846565502,
+      0.9989023694871824
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.022,
+    "two_lines_hump_declared_share": 0.112,
+    "fall_true_at_bp_mean": 0.0018033037763714478
+   },
+   "linear_qwen3_slope": {
+    "kind": "linear",
+    "h": 0.0,
+    "slope": 0.00526897868526933,
+    "H_true": -0.0005268978685269328,
+    "H_true_grid": -0.0005268978685269328,
+    "H_proj": -0.0005268978685295722,
+    "fall_max_true": -0.000524263379184288,
+    "seed": 4098469666,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.958,
+     "wilson95": [
+      0.936648414045857,
+      0.9723676899820252
+     ],
+     "verdict": "calibrated"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.958,
+     "wilson95": [
+      0.936648414045857,
+      0.9723676899820252
+     ],
+     "verdict": "calibrated"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.958,
+     "wilson95": [
+      0.936648414045857,
+      0.9723676899820252
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.024,
+     "wilson95": [
+      0.013781314596471032,
+      0.0414770576365599
+     ]
+    },
+    "H_hat_mean": -0.0002890583887087485,
+    "H_hat_sd": 0.0013025190762454945,
+    "U_mean": 0.0021434978172981916,
+    "U_quantiles_5_50_95": [
+     -0.0003088321580679994,
+     0.002185383874780823,
+     0.005104829065236839
+    ],
+    "mean_U_minus_H_true": 0.002670395685825124,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.956,
+     "wilson95": [
+      0.9342805569252562,
+      0.9707660444649494
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.004,
+    "fall_true_at_bp_mean": -0.0030320159337465487
+   },
+   "narrow_hU": {
+    "kind": "narrow",
+    "h": 0.004981105268460981,
+    "slope": 0.00526897868526933,
+    "H_true": 0.004981105268460981,
+    "H_true_grid": 0.004981105268460981,
+    "H_proj": 0.001634782771574136,
+    "fall_max_true": 0.005560151459639397,
+    "seed": 1273424954,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.198,
+     "wilson95": [
+      0.1654311223310867,
+      0.2351739793797859
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.198,
+     "wilson95": [
+      0.1654311223310867,
+      0.2351739793797859
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.944,
+     "wilson95": [
+      0.9202552061365208,
+      0.9609743794276269
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.25,
+     "wilson95": [
+      0.21404849648057134,
+      0.2897636738098861
+     ]
+    },
+    "H_hat_mean": 0.001518651850713813,
+    "H_hat_sd": 0.0014721839819847793,
+    "U_mean": 0.0038184738796005063,
+    "U_quantiles_5_50_95": [
+     0.0015875632725097987,
+     0.0038035660479836197,
+     0.0061206065445171196
+    ],
+    "mean_U_minus_H_true": -0.0011626313888604752,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.98,
+     "wilson95": [
+      0.963579816587725,
+      0.9891008164545969
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.982,
+     "wilson95": [
+      0.96614832892973,
+      0.9905018067502681
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.918,
+     "wilson95": [
+      0.8906451406002484,
+      0.938980910674107
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.002,
+    "two_lines_hump_declared_share": 0.12,
+    "fall_true_at_bp_mean": 0.0013045114786315291
+   },
+   "narrow_hhalfSD": {
+    "kind": "narrow",
+    "h": 0.008014563521814311,
+    "slope": 0.00526897868526933,
+    "H_true": 0.008014563521814311,
+    "H_true_grid": 0.008014563521814311,
+    "H_proj": 0.00263035404011824,
+    "fall_max_true": 0.008946244791561484,
+    "seed": 1734949000,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.01,
+     "wilson95": [
+      0.004278753869497569,
+      0.02319309989979898
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.01,
+     "wilson95": [
+      0.004278753869497569,
+      0.02319309989979898
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.948,
+     "wilson95": [
+      0.9248988558499484,
+      0.964269734989552
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.532,
+     "wilson95": [
+      0.48818610778755606,
+      0.5753259344152654
+     ]
+    },
+    "H_hat_mean": 0.0026265356049100046,
+    "H_hat_sd": 0.0014688594192011914,
+    "U_mean": 0.004912503567296189,
+    "U_quantiles_5_50_95": [
+     0.00262058830901907,
+     0.004867211311645811,
+     0.0071560054813924094
+    ],
+    "mean_U_minus_H_true": -0.003102059954518123,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.99,
+     "wilson95": [
+      0.9768069001002011,
+      0.9957212461305025
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.99,
+     "wilson95": [
+      0.9768069001002011,
+      0.9957212461305025
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.658,
+     "wilson95": [
+      0.6153562147365015,
+      0.6982344936399296
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.002,
+    "two_lines_hump_declared_share": 0.148,
+    "fall_true_at_bp_mean": 0.0019541425406420544
+   },
+   "rise_narrow_hU": {
+    "kind": "rise_narrow",
+    "h": 0.004981105268460981,
+    "slope": 0.00526897868526933,
+    "H_true": 0.002886215179858459,
+    "H_true_grid": 0.0028735137943532493,
+    "H_proj": 0.0010471910709099023,
+    "fall_max_true": 0.00315428801536047,
+    "seed": 2422745218,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.78,
+     "wilson95": [
+      0.7416313015951191,
+      0.8140990676795686
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.784,
+     "wilson95": [
+      0.7458371191553347,
+      0.8178322553947058
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.976,
+     "wilson95": [
+      0.9585229423634402,
+      0.986218685403529
+     ],
+     "verdict": "conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.21,
+     "wilson95": [
+      0.17657727026301198,
+      0.24784484727391867
+     ]
+    },
+    "H_hat_mean": 0.0013468873086750757,
+    "H_hat_sd": 0.0015996308617720195,
+    "U_mean": 0.004155893823148839,
+    "U_quantiles_5_50_95": [
+     0.0017180283025627,
+     0.00408338249918134,
+     0.006855540519696745
+    ],
+    "mean_U_minus_H_true": 0.00126967864329038,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.996,
+     "wilson95": [
+      0.9855342846565502,
+      0.9989023694871824
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.314,
+     "wilson95": [
+      0.2748678555404942,
+      0.3559683991556062
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.0,
+    "fall_true_at_bp_mean": -0.004486718050001569
+   },
+   "rise_narrow_hhalfSD": {
+    "kind": "rise_narrow",
+    "h": 0.008014563521814311,
+    "slope": 0.00526897868526933,
+    "H_true": 0.005914871528583684,
+    "H_true_grid": 0.00590697204770658,
+    "H_proj": 0.002942352294742309,
+    "fall_max_true": 0.006532289182981674,
+    "seed": 2414252016,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.43,
+     "wilson95": [
+      0.3873016472602541,
+      0.47376576042107404
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.432,
+     "wilson95": [
+      0.3892622534060545,
+      0.47577465691295
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.972,
+     "wilson95": [
+      0.9535535971456605,
+      0.9832490253459559
+     ],
+     "verdict": "conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.594,
+     "wilson95": [
+      0.5503970657802756,
+      0.6361695581905124
+     ]
+    },
+    "H_hat_mean": 0.00309769344134777,
+    "H_hat_sd": 0.0016120081545567082,
+    "U_mean": 0.005687777112990159,
+    "U_quantiles_5_50_95": [
+     0.003357769019716322,
+     0.005712677930350345,
+     0.007930127448046618
+    ],
+    "mean_U_minus_H_true": -0.00022709441559352466,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.316,
+     "wilson95": [
+      0.27678362782353494,
+      0.3580221295102418
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.01,
+    "fall_true_at_bp_mean": -0.0046332410345129044
+   },
+   "spike_hU": {
+    "kind": "spike",
+    "h": 0.004981105268460981,
+    "slope": 0.00526897868526933,
+    "H_true": 0.004981105268460981,
+    "H_true_grid": 0.004950442432698453,
+    "H_proj": 0.0006940249679265311,
+    "fall_max_true": 0.002200477053991255,
+    "seed": 3753133727,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.038,
+     "wilson95": [
+      0.024460117971724295,
+      0.05858477272504103
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.042,
+     "wilson95": [
+      0.02763231001797491,
+      0.0633515859541431
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.928,
+     "wilson95": [
+      0.9019315957497824,
+      0.9475419687129547
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.054,
+     "wilson95": [
+      0.03737435007301449,
+      0.07742656172516155
+     ]
+    },
+    "H_hat_mean": 0.00037850250411396814,
+    "H_hat_sd": 0.0013182006579748936,
+    "U_mean": 0.0026447096336840985,
+    "U_quantiles_5_50_95": [
+     0.0005106239088118438,
+     0.0026234036934908523,
+     0.004754698082502022
+    ],
+    "mean_U_minus_H_true": -0.002336395634776883,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.99,
+     "wilson95": [
+      0.9768069001002011,
+      0.9957212461305025
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.006,
+    "fall_true_at_bp_mean": 0.0005689147646183801
+   },
+   "spike_hhalfSD": {
+    "kind": "spike",
+    "h": 0.008014563521814311,
+    "slope": 0.00526897868526933,
+    "H_true": 0.008014563521814311,
+    "H_true_grid": 0.007965227233634705,
+    "H_proj": 0.0011166813169742901,
+    "fall_max_true": 0.0035405521820976705,
+    "seed": 3635677943,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.0,
+     "wilson95": [
+      4.336808689942018e-19,
+      0.007624340580914839
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.0,
+     "wilson95": [
+      4.336808689942018e-19,
+      0.007624340580914839
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.914,
+     "wilson95": [
+      0.8861601882556522,
+      0.9355268577433504
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.058,
+     "wilson95": [
+      0.04068372899829183,
+      0.08205618807523692
+     ]
+    },
+    "H_hat_mean": 0.0006611550621232114,
+    "H_hat_sd": 0.0012992108662571104,
+    "U_mean": 0.0028335632522151206,
+    "U_quantiles_5_50_95": [
+     0.0007599340715080949,
+     0.002867941732717671,
+     0.004783641746708228
+    ],
+    "mean_U_minus_H_true": -0.00518100026959919,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.95,
+     "wilson95": [
+      0.9272318386186077,
+      0.965906254858569
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.002,
+    "two_lines_hump_declared_share": 0.01,
+    "fall_true_at_bp_mean": 0.0008433700306738443
+   }
+  },
+  "qwen3e06/INCIDENTAL": {
+   "between_hU": {
+    "kind": "between",
+    "h": 0.0045284737522873425,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.0045284737522873425,
+    "H_true_grid": 0.004525370694341175,
+    "H_proj": 0.0018732731998042079,
+    "fall_max_true": 0.0043301129441829615,
+    "seed": 2757518499,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.536,
+     "wilson95": [
+      0.49217923414911574,
+      0.5792718133290585
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.536,
+     "wilson95": [
+      0.49217923414911574,
+      0.5792718133290585
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.916,
+     "wilson95": [
+      0.8884006852957278,
+      0.9372558633409511
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.08,
+     "wilson95": [
+      0.05929812926951214,
+      0.10710631681845634
+     ]
+    },
+    "H_hat_mean": 0.0011757088705472002,
+    "H_hat_sd": 0.0021295760382266794,
+    "U_mean": 0.004688647618890164,
+    "U_quantiles_5_50_95": [
+     0.0013033876778490115,
+     0.004652729874684026,
+     0.007872155170663503
+    ],
+    "mean_U_minus_H_true": 0.00016017386660282018,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.992,
+     "wilson95": [
+      0.9796129640268147,
+      0.9968846848415651
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.04,
+    "fall_true_at_bp_mean": 0.0014383125628681364
+   },
+   "between_hhalfSD": {
+    "kind": "between",
+    "h": 0.01279856309924477,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.01279856309924477,
+    "H_true_grid": 0.012789793106285315,
+    "H_proj": 0.005294323553869433,
+    "fall_max_true": 0.012237947435378165,
+    "seed": 2709293289,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.01,
+     "wilson95": [
+      0.004278753869497569,
+      0.02319309989979898
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.01,
+     "wilson95": [
+      0.004278753869497569,
+      0.02319309989979898
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.932,
+     "wilson95": [
+      0.906479077036752,
+      0.9509334927013379
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.604,
+     "wilson95": [
+      0.5604958403398934,
+      0.6459182968192763
+     ]
+    },
+    "H_hat_mean": 0.0048257201628788505,
+    "H_hat_sd": 0.0021854744474567502,
+    "U_mean": 0.00813672558299179,
+    "U_quantiles_5_50_95": [
+     0.005082089210764737,
+     0.008117133035798564,
+     0.011447389122007035
+    ],
+    "mean_U_minus_H_true": -0.004661837516252978,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.992,
+     "wilson95": [
+      0.9796129640268147,
+      0.9968846848415651
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.992,
+     "wilson95": [
+      0.9796129640268147,
+      0.9968846848415651
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.818,
+     "wilson95": [
+      0.7817973643668829,
+      0.8493535550236552
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.018,
+    "two_lines_hump_declared_share": 0.18,
+    "fall_true_at_bp_mean": 0.005268611851460474
+   },
+   "broad_hU": {
+    "kind": "broad",
+    "h": 0.0045284737522873425,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.004527356488071281,
+    "H_true_grid": 0.004527356488071281,
+    "H_proj": 0.004945788090650563,
+    "fall_max_true": 0.0056447720929790005,
+    "seed": 2586735346,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.918,
+     "wilson95": [
+      0.8906451406002484,
+      0.938980910674107
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.918,
+     "wilson95": [
+      0.8906451406002484,
+      0.938980910674107
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.892,
+     "wilson95": [
+      0.8617453264524084,
+      0.9162771905321545
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.49,
+     "wilson95": [
+      0.4464261743998208,
+      0.5337263124117976
+     ]
+    },
+    "H_hat_mean": 0.0039050607199905478,
+    "H_hat_sd": 0.0022294221755023943,
+    "U_mean": 0.007515646969741141,
+    "U_quantiles_5_50_95": [
+     0.004199246947011509,
+     0.007511758361995561,
+     0.010837821072665897
+    ],
+    "mean_U_minus_H_true": 0.0029882904816698587,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.988,
+     "wilson95": [
+      0.9740696387347714,
+      0.9944890048582558
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.99,
+     "wilson95": [
+      0.9768069001002011,
+      0.9957212461305025
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.986,
+     "wilson95": [
+      0.9713869307089691,
+      0.9932022102463818
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.04,
+    "two_lines_hump_declared_share": 0.276,
+    "fall_true_at_bp_mean": 0.004122198064074483
+   },
+   "broad_hhalfSD": {
+    "kind": "broad",
+    "h": 0.01279856309924477,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.012795405440097343,
+    "H_true_grid": 0.012795405440097343,
+    "H_proj": 0.013977994444973755,
+    "fall_max_true": 0.01595349244905225,
+    "seed": 3177801099,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.962,
+     "wilson95": [
+      0.941415227274959,
+      0.9755398820282757
+     ],
+     "verdict": "calibrated"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.962,
+     "wilson95": [
+      0.941415227274959,
+      0.9755398820282757
+     ],
+     "verdict": "calibrated"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.874,
+     "wilson95": [
+      0.8420322820053944,
+      0.9002647112400813
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ]
+    },
+    "H_hat_mean": 0.012921493997196162,
+    "H_hat_sd": 0.0020841884775652337,
+    "U_mean": 0.01614623528506777,
+    "U_quantiles_5_50_95": [
+     0.01308907507760285,
+     0.016064809590702722,
+     0.01913095826005203
+    ],
+    "mean_U_minus_H_true": 0.003350829844970428,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.99,
+     "wilson95": [
+      0.9768069001002011,
+      0.9957212461305025
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.99,
+     "wilson95": [
+      0.9768069001002011,
+      0.9957212461305025
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.984,
+     "wilson95": [
+      0.9687488913091183,
+      0.9918707470085563
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.94,
+    "two_lines_hump_declared_share": 0.99,
+    "fall_true_at_bp_mean": 0.014805951365026907
+   },
+   "flat": {
+    "kind": "flat",
+    "h": 0.0,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.0,
+    "H_true_grid": 0.0,
+    "H_proj": 0.0,
+    "fall_max_true": -0.0,
+    "seed": 1525109820,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.984,
+     "wilson95": [
+      0.9687488913091183,
+      0.9918707470085563
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.984,
+     "wilson95": [
+      0.9687488913091183,
+      0.9918707470085563
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.984,
+     "wilson95": [
+      0.9687488913091183,
+      0.9918707470085563
+     ],
+     "verdict": "conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.042,
+     "wilson95": [
+      0.02763231001797491,
+      0.0633515859541431
+     ]
+    },
+    "H_hat_mean": 0.0003114560788511611,
+    "H_hat_sd": 0.002055055683115369,
+    "U_mean": 0.004056032499496638,
+    "U_quantiles_5_50_95": [
+     0.0005775367927862489,
+     0.003996960586252698,
+     0.007907661978736056
+    ],
+    "mean_U_minus_H_true": 0.004056032499496638,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.008,
+    "fall_true_at_bp_mean": 0.0
+   },
+   "het_hU": {
+    "kind": "het",
+    "h": 0.0045284737522873425,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.0010063275005082989,
+    "H_true_grid": 0.0010063275005082989,
+    "H_proj": 0.0012771275706759126,
+    "fall_max_true": 0.0013770994776016927,
+    "seed": 1399691722,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.964,
+     "wilson95": [
+      0.9438156728403976,
+      0.9771089391005136
+     ],
+     "verdict": "calibrated"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.964,
+     "wilson95": [
+      0.9438156728403976,
+      0.9771089391005136
+     ],
+     "verdict": "calibrated"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.954,
+     "wilson95": [
+      0.9319222070267744,
+      0.969154891725755
+     ],
+     "verdict": "calibrated"
+    },
+    "H_source_specific_max": 0.0045284737522873425,
+    "coverage_U_vs_H_source_specific_max": {
+     "share": 0.594,
+     "wilson95": [
+      0.5503970657802756,
+      0.6361695581905124
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.108,
+     "wilson95": [
+      0.08372280946784565,
+      0.13825467354759163
+     ]
+    },
+    "H_hat_mean": 0.0012889039243209259,
+    "H_hat_sd": 0.002227801451332561,
+    "U_mean": 0.0050875030605732315,
+    "U_quantiles_5_50_95": [
+     0.0013336617325564854,
+     0.00500729113056712,
+     0.009012002662671385
+    ],
+    "mean_U_minus_H_true": 0.004081175560064932,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.002,
+    "two_lines_hump_declared_share": 0.02,
+    "fall_true_at_bp_mean": 0.000949303605726728
+   },
+   "het_hhalfSD": {
+    "kind": "het",
+    "h": 0.01279856309924477,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.0028441251331655054,
+    "H_true_grid": 0.0028441251331655054,
+    "H_proj": 0.0036094716880768615,
+    "fall_max_true": 0.0038920164987419647,
+    "seed": 164195451,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.982,
+     "wilson95": [
+      0.96614832892973,
+      0.9905018067502681
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.982,
+     "wilson95": [
+      0.96614832892973,
+      0.9905018067502681
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.964,
+     "wilson95": [
+      0.9438156728403976,
+      0.9771089391005136
+     ],
+     "verdict": "calibrated"
+    },
+    "H_source_specific_max": 0.01279856309924477,
+    "coverage_U_vs_H_source_specific_max": {
+     "share": 0.008,
+     "wilson95": [
+      0.0031153151584348837,
+      0.020387035973185322
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.394,
+     "wilson95": [
+      0.3521341691635584,
+      0.4374821910395957
+     ]
+    },
+    "H_hat_mean": 0.0035138849029677025,
+    "H_hat_sd": 0.002229880237325363,
+    "U_mean": 0.007468746889196885,
+    "U_quantiles_5_50_95": [
+     0.004023315945139257,
+     0.007210590307671518,
+     0.011070902567772812
+    ],
+    "mean_U_minus_H_true": 0.004624621756031378,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.996,
+     "wilson95": [
+      0.9855342846565502,
+      0.9989023694871824
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.024,
+    "two_lines_hump_declared_share": 0.11,
+    "fall_true_at_bp_mean": 0.0028000679700891603
+   },
+   "linear_qwen3_slope": {
+    "kind": "linear",
+    "h": 0.0,
+    "slope": 0.0038081157347957953,
+    "H_true": -0.00038081157347957936,
+    "H_true_grid": -0.00038081157347957936,
+    "H_proj": -0.00038081157348140906,
+    "fall_max_true": -0.0003789075156121746,
+    "seed": 2430018573,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.97,
+     "wilson95": [
+      0.9510963329814702,
+      0.9817367868724699
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.97,
+     "wilson95": [
+      0.9510963329814702,
+      0.9817367868724699
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.97,
+     "wilson95": [
+      0.9510963329814702,
+      0.9817367868724699
+     ],
+     "verdict": "conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.024,
+     "wilson95": [
+      0.013781314596471032,
+      0.0414770576365599
+     ]
+    },
+    "H_hat_mean": 0.0001037094794962366,
+    "H_hat_sd": 0.0020650076499465313,
+    "U_mean": 0.003932866583821769,
+    "U_quantiles_5_50_95": [
+     7.746628022126097e-05,
+     0.003982373459576988,
+     0.007883533319092877
+    ],
+    "mean_U_minus_H_true": 0.004313678157301349,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.996,
+     "wilson95": [
+      0.9855342846565502,
+      0.9989023694871824
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.004,
+    "fall_true_at_bp_mean": -0.0019909727831594008
+   },
+   "narrow_hU": {
+    "kind": "narrow",
+    "h": 0.0045284737522873425,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.0045284737522873425,
+    "H_true_grid": 0.0045284737522873425,
+    "H_proj": 0.0014862305598375666,
+    "fall_max_true": 0.005054902192721341,
+    "seed": 4005289911,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.602,
+     "wilson95": [
+      0.5584746121028343,
+      0.6439700224186591
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.602,
+     "wilson95": [
+      0.5584746121028343,
+      0.6439700224186591
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.956,
+     "wilson95": [
+      0.9342805569252562,
+      0.9707660444649494
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.114,
+     "wilson95": [
+      0.08903690081920589,
+      0.14484909010926042
+     ]
+    },
+    "H_hat_mean": 0.0013734543063024405,
+    "H_hat_sd": 0.002056316637269823,
+    "U_mean": 0.005039612828129153,
+    "U_quantiles_5_50_95": [
+     0.0016190283934760894,
+     0.004919951779927398,
+     0.008645466745317073
+    ],
+    "mean_U_minus_H_true": 0.0005111390758418103,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.972,
+     "wilson95": [
+      0.9535535971456605,
+      0.9832490253459559
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.034,
+    "fall_true_at_bp_mean": 0.0013109991970666466
+   },
+   "narrow_hhalfSD": {
+    "kind": "narrow",
+    "h": 0.01279856309924477,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.01279856309924477,
+    "H_true_grid": 0.01279856309924477,
+    "H_proj": 0.004200447356132319,
+    "fall_max_true": 0.014286377312306798,
+    "seed": 103322310,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.01,
+     "wilson95": [
+      0.004278753869497569,
+      0.02319309989979898
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.01,
+     "wilson95": [
+      0.004278753869497569,
+      0.02319309989979898
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.962,
+     "wilson95": [
+      0.941415227274959,
+      0.9755398820282757
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.494,
+     "wilson95": [
+      0.45039013057802346,
+      0.5377013615089477
+     ]
+    },
+    "H_hat_mean": 0.004004466459714864,
+    "H_hat_sd": 0.002335454686282822,
+    "U_mean": 0.007691370591406359,
+    "U_quantiles_5_50_95": [
+     0.004537415740582625,
+     0.007681358565091249,
+     0.011214382256617292
+    ],
+    "mean_U_minus_H_true": -0.005107192507838409,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.984,
+     "wilson95": [
+      0.9687488913091183,
+      0.9918707470085563
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.986,
+     "wilson95": [
+      0.9713869307089691,
+      0.9932022102463818
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.674,
+     "wilson95": [
+      0.6317220452129658,
+      0.713624684264876
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.002,
+    "two_lines_hump_declared_share": 0.132,
+    "fall_true_at_bp_mean": 0.002705898117584551
+   },
+   "rise_narrow_hU": {
+    "kind": "rise_narrow",
+    "h": 0.0045284737522873425,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.003012518923891109,
+    "H_true_grid": 0.0030052274583690242,
+    "H_proj": 0.0013307003680705382,
+    "fall_max_true": 0.0033122675822714223,
+    "seed": 3435695434,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.866,
+     "wilson95": [
+      0.8333339843740801,
+      0.8930849983206903
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.87,
+     "wilson95": [
+      0.8376786381458893,
+      0.8966793498242339
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.97,
+     "wilson95": [
+      0.9510963329814702,
+      0.9817367868724699
+     ],
+     "verdict": "conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.11,
+     "wilson95": [
+      0.08549141498551378,
+      0.1404555706675998
+     ]
+    },
+    "H_hat_mean": 0.0015249413247272513,
+    "H_hat_sd": 0.002176391715427944,
+    "U_mean": 0.005415905823127314,
+    "U_quantiles_5_50_95": [
+     0.0018317197380707739,
+     0.005338010647202527,
+     0.009135450894791513
+    ],
+    "mean_U_minus_H_true": 0.0024033868992362054,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.938,
+     "wilson95": [
+      0.9133402866750973,
+      0.9559807909760214
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.028,
+    "fall_true_at_bp_mean": -0.0016967960107230544
+   },
+   "rise_narrow_hhalfSD": {
+    "kind": "rise_narrow",
+    "h": 0.01279856309924477,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.011277871319781217,
+    "H_true_grid": 0.011275316805326452,
+    "H_proj": 0.0063344230632895425,
+    "fall_max_true": 0.012539659472977579,
+    "seed": 596794978,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.132,
+     "wilson95": [
+      0.10511672365777198,
+      0.16449479100978137
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.132,
+     "wilson95": [
+      0.10511672365777198,
+      0.16449479100978137
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.9,
+     "wilson95": [
+      0.8705780901111199,
+      0.9233224374241483
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.72,
+     "wilson95": [
+      0.679081332904201,
+      0.7575639572401965
+     ]
+    },
+    "H_hat_mean": 0.005422814026954308,
+    "H_hat_sd": 0.0022561603214227553,
+    "U_mean": 0.008911319957297173,
+    "U_quantiles_5_50_95": [
+     0.005513818189766973,
+     0.009003047533918116,
+     0.012570859371707425
+    ],
+    "mean_U_minus_H_true": -0.0023665513624840434,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.996,
+     "wilson95": [
+      0.9855342846565502,
+      0.9989023694871824
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.996,
+     "wilson95": [
+      0.9855342846565502,
+      0.9989023694871824
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.774,
+     "wilson95": [
+      0.7353316419726512,
+      0.8084902193890076
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.172,
+    "fall_true_at_bp_mean": 0.0010357679862653653
+   },
+   "spike_hU": {
+    "kind": "spike",
+    "h": 0.0045284737522873425,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.0045284737522873425,
+    "H_true_grid": 0.004500597239056332,
+    "H_proj": 0.0006309591308154765,
+    "fall_max_true": 0.002000520375388255,
+    "seed": 2130460233,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.39,
+     "wilson95": [
+      0.3482413300806645,
+      0.43343602484713684
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.394,
+     "wilson95": [
+      0.3521341691635584,
+      0.4374821910395957
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.94,
+     "wilson95": [
+      0.9156389366536348,
+      0.9576516436351601
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.038,
+     "wilson95": [
+      0.024460117971724295,
+      0.05858477272504103
+     ]
+    },
+    "H_hat_mean": 0.0002637759073741223,
+    "H_hat_sd": 0.0020853721895233946,
+    "U_mean": 0.003914259196392502,
+    "U_quantiles_5_50_95": [
+     0.0004657359883686146,
+     0.003913139525343271,
+     0.007382477643689144
+    ],
+    "mean_U_minus_H_true": -0.0006142145558948404,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.008,
+    "fall_true_at_bp_mean": 0.00044461520437887915
+   },
+   "spike_hhalfSD": {
+    "kind": "spike",
+    "h": 0.01279856309924477,
+    "slope": 0.0038081157347957953,
+    "H_true": 0.01279856309924477,
+    "H_true_grid": 0.01271977732437,
+    "H_proj": 0.001783243249385549,
+    "fall_max_true": 0.005653954876695243,
+    "seed": 2478859429,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.0,
+     "wilson95": [
+      4.336808689942018e-19,
+      0.007624340580914839
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.0,
+     "wilson95": [
+      4.336808689942018e-19,
+      0.007624340580914839
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.918,
+     "wilson95": [
+      0.8906451406002484,
+      0.938980910674107
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.08,
+     "wilson95": [
+      0.05929812926951214,
+      0.10710631681845634
+     ]
+    },
+    "H_hat_mean": 0.0011361029557461241,
+    "H_hat_sd": 0.0021523635712247455,
+    "U_mean": 0.004585985354755042,
+    "U_quantiles_5_50_95": [
+     0.0012425680022686476,
+     0.004645498384698608,
+     0.00799067819870062
+    ],
+    "mean_U_minus_H_true": -0.008212577744489725,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.992,
+     "wilson95": [
+      0.9796129640268147,
+      0.9968846848415651
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.992,
+     "wilson95": [
+      0.9796129640268147,
+      0.9968846848415651
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.946,
+     "wilson95": [
+      0.9225734382748384,
+      0.9626256499269855
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.004,
+    "two_lines_hump_declared_share": 0.022,
+    "fall_true_at_bp_mean": 0.0014592094813306207
+   }
+  },
+  "qwen3e06/INSTRUCTED": {
+   "between_hU": {
+    "kind": "between",
+    "h": 0.007356391038975433,
+    "slope": 0.00526897868526933,
+    "H_true": 0.007356391038975433,
+    "H_true_grid": 0.007351350199850092,
+    "H_proj": 0.003043084918761433,
+    "fall_max_true": 0.007034158924792172,
+    "seed": 2150780174,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.232,
+     "wilson95": [
+      0.19712923819486494,
+      0.2709574083565055
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.232,
+     "wilson95": [
+      0.19712923819486494,
+      0.2709574083565055
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.888,
+     "wilson95": [
+      0.8573463117303591,
+      0.912737199978851
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.168,
+     "wilson95": [
+      0.13778823275863694,
+      0.20327432938709056
+     ]
+    },
+    "H_hat_mean": 0.002221294166809555,
+    "H_hat_sd": 0.0022802380358336173,
+    "U_mean": 0.005731275229315791,
+    "U_quantiles_5_50_95": [
+     0.002571586962102687,
+     0.005529925129999299,
+     0.009167792147720026
+    ],
+    "mean_U_minus_H_true": -0.001625115809659642,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.984,
+     "wilson95": [
+      0.9687488913091183,
+      0.9918707470085563
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.986,
+     "wilson95": [
+      0.9713869307089691,
+      0.9932022102463818
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.932,
+     "wilson95": [
+      0.906479077036752,
+      0.9509334927013379
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.008,
+    "two_lines_hump_declared_share": 0.076,
+    "fall_true_at_bp_mean": 0.002357153466942747
+   },
+   "between_hhalfSD": {
+    "kind": "between",
+    "h": 0.013394746533406547,
+    "slope": 0.00526897868526933,
+    "H_true": 0.013394746533406547,
+    "H_true_grid": 0.013385568016108884,
+    "H_proj": 0.005540944051297826,
+    "fall_max_true": 0.01280801623705059,
+    "seed": 2442141116,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.01,
+     "wilson95": [
+      0.004278753869497569,
+      0.02319309989979898
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.01,
+     "wilson95": [
+      0.004278753869497569,
+      0.02319309989979898
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.916,
+     "wilson95": [
+      0.8884006852957278,
+      0.9372558633409511
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.552,
+     "wilson95": [
+      0.5081797376644709,
+      0.5950273309151141
+     ]
+    },
+    "H_hat_mean": 0.004819838924188611,
+    "H_hat_sd": 0.0022575439971144235,
+    "U_mean": 0.008279905329021122,
+    "U_quantiles_5_50_95": [
+     0.005077739267931308,
+     0.00817350531397663,
+     0.011772946783748782
+    ],
+    "mean_U_minus_H_true": -0.005114841204385427,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.992,
+     "wilson95": [
+      0.9796129640268147,
+      0.9968846848415651
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.992,
+     "wilson95": [
+      0.9796129640268147,
+      0.9968846848415651
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.786,
+     "wilson95": [
+      0.7479418769275724,
+      0.8196970002601444
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.014,
+    "two_lines_hump_declared_share": 0.16,
+    "fall_true_at_bp_mean": 0.0050603830148648506
+   },
+   "broad_hU": {
+    "kind": "broad",
+    "h": 0.007356391038975433,
+    "slope": 0.00526897868526933,
+    "H_true": 0.007354576071523529,
+    "H_true_grid": 0.007354576071523529,
+    "H_proj": 0.008034307623480536,
+    "fall_max_true": 0.009169789450777942,
+    "seed": 4004635368,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.93,
+     "wilson95": [
+      0.9042028099167505,
+      0.9492402571836629
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.93,
+     "wilson95": [
+      0.9042028099167505,
+      0.9492402571836629
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.866,
+     "wilson95": [
+      0.8333339843740801,
+      0.8930849983206903
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.882,
+     "wilson95": [
+      0.8507680118692621,
+      0.9074069919269191
+     ]
+    },
+    "H_hat_mean": 0.006941404680329782,
+    "H_hat_sd": 0.0022690528943658805,
+    "U_mean": 0.01051723181244173,
+    "U_quantiles_5_50_95": [
+     0.0069969684125327815,
+     0.010619345913530392,
+     0.013921417355488776
+    ],
+    "mean_U_minus_H_true": 0.0031626557409182013,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.992,
+     "wilson95": [
+      0.9796129640268147,
+      0.9968846848415651
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.986,
+     "wilson95": [
+      0.9713869307089691,
+      0.9932022102463818
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.272,
+    "two_lines_hump_declared_share": 0.708,
+    "fall_true_at_bp_mean": 0.007574745130859064
+   },
+   "broad_hhalfSD": {
+    "kind": "broad",
+    "h": 0.013394746533406547,
+    "slope": 0.00526897868526933,
+    "H_true": 0.013391441783991266,
+    "H_true_grid": 0.013391441783991266,
+    "H_proj": 0.014629118220847158,
+    "fall_max_true": 0.016696638991472373,
+    "seed": 1165700355,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.95,
+     "wilson95": [
+      0.9272318386186077,
+      0.965906254858569
+     ],
+     "verdict": "calibrated"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.95,
+     "wilson95": [
+      0.9272318386186077,
+      0.965906254858569
+     ],
+     "verdict": "calibrated"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.852,
+     "wilson95": [
+      0.8181938694168279,
+      0.880438594814208
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ]
+    },
+    "H_hat_mean": 0.013418620445849325,
+    "H_hat_sd": 0.002226241575476693,
+    "U_mean": 0.016762592303274957,
+    "U_quantiles_5_50_95": [
+     0.013408624141919557,
+     0.01680253784018024,
+     0.0200912533916956
+    ],
+    "mean_U_minus_H_true": 0.0033711505192836905,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.992,
+     "wilson95": [
+      0.9796129640268147,
+      0.9968846848415651
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.992,
+     "wilson95": [
+      0.9796129640268147,
+      0.9968846848415651
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.98,
+     "wilson95": [
+      0.963579816587725,
+      0.9891008164545969
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.912,
+    "two_lines_hump_declared_share": 0.992,
+    "fall_true_at_bp_mean": 0.01540094948406775
+   },
+   "flat": {
+    "kind": "flat",
+    "h": 0.0,
+    "slope": 0.00526897868526933,
+    "H_true": 0.0,
+    "H_true_grid": 0.0,
+    "H_proj": 0.0,
+    "fall_max_true": -0.0,
+    "seed": 1749210850,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.976,
+     "wilson95": [
+      0.9585229423634402,
+      0.986218685403529
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.976,
+     "wilson95": [
+      0.9585229423634402,
+      0.986218685403529
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.976,
+     "wilson95": [
+      0.9585229423634402,
+      0.986218685403529
+     ],
+     "verdict": "conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.034,
+     "wilson95": [
+      0.021334519731109065,
+      0.05377136569030357
+     ]
+    },
+    "H_hat_mean": 0.00016826323259275364,
+    "H_hat_sd": 0.002098225729137363,
+    "U_mean": 0.004059805243245582,
+    "U_quantiles_5_50_95": [
+     0.0007138345269479346,
+     0.003954522988662133,
+     0.007775271376972161
+    ],
+    "mean_U_minus_H_true": 0.004059805243245582,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.002,
+    "fall_true_at_bp_mean": 0.0
+   },
+   "het_hU": {
+    "kind": "het",
+    "h": 0.007356391038975433,
+    "slope": 0.00526897868526933,
+    "H_true": 0.0016347535642167634,
+    "H_true_grid": 0.0016347535642167634,
+    "H_proj": 0.0020746614268884974,
+    "fall_max_true": 0.002237063260373302,
+    "seed": 34699317,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.974,
+     "wilson95": [
+      0.9560285089896903,
+      0.9847436161396026
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.974,
+     "wilson95": [
+      0.9560285089896903,
+      0.9847436161396026
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.96,
+     "wilson95": [
+      0.9390264039680075,
+      0.9739592026975509
+     ],
+     "verdict": "calibrated"
+    },
+    "H_source_specific_max": 0.007356391038975433,
+    "coverage_U_vs_H_source_specific_max": {
+     "share": 0.284,
+     "wilson95": [
+      0.2462377716724184,
+      0.3250559434585368
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.142,
+     "wilson95": [
+      0.11412936024699216,
+      0.17532966760894286
+     ]
+    },
+    "H_hat_mean": 0.001873337877698433,
+    "H_hat_sd": 0.0023142497745758505,
+    "U_mean": 0.005978543660893128,
+    "U_quantiles_5_50_95": [
+     0.0023931954263863822,
+     0.005950194545195641,
+     0.009914558899291666
+    ],
+    "mean_U_minus_H_true": 0.004343790096676365,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.998,
+     "wilson95": [
+      0.9887592931720683,
+      0.9996468636093407
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.996,
+     "wilson95": [
+      0.9855342846565502,
+      0.9989023694871824
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.004,
+    "two_lines_hump_declared_share": 0.03,
+    "fall_true_at_bp_mean": 0.001578731739733169
+   },
+   "het_hhalfSD": {
+    "kind": "het",
+    "h": 0.013394746533406547,
+    "slope": 0.00526897868526933,
+    "H_true": 0.0029766103407570118,
+    "H_true_grid": 0.0029766103407570118,
+    "H_proj": 0.0037776083148074783,
+    "fall_max_true": 0.004073314644794879,
+    "seed": 996765127,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.988,
+     "wilson95": [
+      0.9740696387347714,
+      0.9944890048582558
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.988,
+     "wilson95": [
+      0.9740696387347714,
+      0.9944890048582558
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.966,
+     "wilson95": [
+      0.9462286343096964,
+      0.978665480268891
+     ],
+     "verdict": "calibrated"
+    },
+    "H_source_specific_max": 0.013394746533406547,
+    "coverage_U_vs_H_source_specific_max": {
+     "share": 0.004,
+     "wilson95": [
+      0.001097630512817676,
+      0.014465715343449847
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.346,
+     "wilson95": [
+      0.30562123148093623,
+      0.3887270654179855
+     ]
+    },
+    "H_hat_mean": 0.0033874879732017867,
+    "H_hat_sd": 0.002136802092784934,
+    "U_mean": 0.0075664786600764915,
+    "U_quantiles_5_50_95": [
+     0.004264933298068267,
+     0.007547917252301318,
+     0.01106352080133293
+    ],
+    "mean_U_minus_H_true": 0.00458986831931948,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.024,
+    "two_lines_hump_declared_share": 0.108,
+    "fall_true_at_bp_mean": 0.002978492700278261
+   },
+   "linear_qwen3_slope": {
+    "kind": "linear",
+    "h": 0.0,
+    "slope": 0.00526897868526933,
+    "H_true": -0.0005268978685269328,
+    "H_true_grid": -0.0005268978685269328,
+    "H_proj": -0.0005268978685308741,
+    "fall_max_true": -0.0005242633791842659,
+    "seed": 3365100472,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.972,
+     "wilson95": [
+      0.9535535971456605,
+      0.9832490253459559
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.972,
+     "wilson95": [
+      0.9535535971456605,
+      0.9832490253459559
+     ],
+     "verdict": "conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.972,
+     "wilson95": [
+      0.9535535971456605,
+      0.9832490253459559
+     ],
+     "verdict": "conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.034,
+     "wilson95": [
+      0.021334519731109065,
+      0.05377136569030357
+     ]
+    },
+    "H_hat_mean": -0.0001382593726513623,
+    "H_hat_sd": 0.002195847028178741,
+    "U_mean": 0.003925506587953534,
+    "U_quantiles_5_50_95": [
+     0.00018231537278338124,
+     0.003921192842892257,
+     0.008215789868286565
+    ],
+    "mean_U_minus_H_true": 0.004452404456480467,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.996,
+     "wilson95": [
+      0.9855342846565502,
+      0.9989023694871824
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.012,
+    "fall_true_at_bp_mean": -0.0028593095976649444
+   },
+   "narrow_hU": {
+    "kind": "narrow",
+    "h": 0.007356391038975433,
+    "slope": 0.00526897868526933,
+    "H_true": 0.007356391038975433,
+    "H_true_grid": 0.007356391038975433,
+    "H_proj": 0.0024143439424202835,
+    "fall_max_true": 0.008211560721677993,
+    "seed": 1700937768,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.248,
+     "wilson95": [
+      0.21216420807970895,
+      0.28767845957307214
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.248,
+     "wilson95": [
+      0.21216420807970895,
+      0.28767845957307214
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.958,
+     "wilson95": [
+      0.936648414045857,
+      0.9723676899820252
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.168,
+     "wilson95": [
+      0.13778823275863694,
+      0.20327432938709056
+     ]
+    },
+    "H_hat_mean": 0.0021351561211902493,
+    "H_hat_sd": 0.0023838594685902685,
+    "U_mean": 0.0060037046895288545,
+    "U_quantiles_5_50_95": [
+     0.002645408260743079,
+     0.005977547413759768,
+     0.009848693657898727
+    ],
+    "mean_U_minus_H_true": -0.0013526863494465777,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.984,
+     "wilson95": [
+      0.9687488913091183,
+      0.9918707470085563
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.988,
+     "wilson95": [
+      0.9740696387347714,
+      0.9944890048582558
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.914,
+     "wilson95": [
+      0.8861601882556522,
+      0.9355268577433504
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.004,
+    "two_lines_hump_declared_share": 0.072,
+    "fall_true_at_bp_mean": 0.0020199755753178917
+   },
+   "narrow_hhalfSD": {
+    "kind": "narrow",
+    "h": 0.013394746533406547,
+    "slope": 0.00526897868526933,
+    "H_true": 0.013394746533406547,
+    "H_true_grid": 0.013394746533406547,
+    "H_proj": 0.004396112846890336,
+    "fall_max_true": 0.014951866197405534,
+    "seed": 1444474589,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.006,
+     "wilson95": [
+      0.002042596256088514,
+      0.01749025223785535
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.006,
+     "wilson95": [
+      0.002042596256088514,
+      0.01749025223785535
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.936,
+     "wilson95": [
+      0.9110475909369747,
+      0.9543039840764677
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.542,
+     "wilson95": [
+      0.49817416483049864,
+      0.5851853905607045
+     ]
+    },
+    "H_hat_mean": 0.004396900282673522,
+    "H_hat_sd": 0.0025800769639364174,
+    "U_mean": 0.008198086885180606,
+    "U_quantiles_5_50_95": [
+     0.004156590742918447,
+     0.00826549742723083,
+     0.011948398616505082
+    ],
+    "mean_U_minus_H_true": -0.00519665964822594,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.978,
+     "wilson95": [
+      0.9610391386195835,
+      0.9876719917850619
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.978,
+     "wilson95": [
+      0.9610391386195835,
+      0.9876719917850619
+     ],
+     "verdict": "calibrated"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.658,
+     "wilson95": [
+      0.6153562147365015,
+      0.6982344936399296
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.156,
+    "fall_true_at_bp_mean": 0.0032748919740276635
+   },
+   "rise_narrow_hU": {
+    "kind": "rise_narrow",
+    "h": 0.007356391038975433,
+    "slope": 0.00526897868526933,
+    "H_true": 0.005257363112425662,
+    "H_true_grid": 0.005248799564867701,
+    "H_proj": 0.0025270061649845695,
+    "fall_max_true": 0.005797797612494747,
+    "seed": 1439272783,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.718,
+     "wilson95": [
+      0.6770122204516047,
+      0.7556635670551164
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.718,
+     "wilson95": [
+      0.6770122204516047,
+      0.7556635670551164
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.94,
+     "wilson95": [
+      0.9156389366536348,
+      0.9576516436351601
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.258,
+     "wilson95": [
+      0.22159619995160001,
+      0.2980939808895628
+     ]
+    },
+    "H_hat_mean": 0.002675483299622776,
+    "H_hat_sd": 0.002650500455759466,
+    "U_mean": 0.006741606683516906,
+    "U_quantiles_5_50_95": [
+     0.002499398559388512,
+     0.006794364700495504,
+     0.01067198917197935
+    ],
+    "mean_U_minus_H_true": 0.0014842435710912443,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.736,
+     "wilson95": [
+      0.6956691423847576,
+      0.7727321688610507
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.044,
+    "fall_true_at_bp_mean": -0.0027200350080649133
+   },
+   "rise_narrow_hhalfSD": {
+    "kind": "rise_narrow",
+    "h": 0.013394746533406547,
+    "slope": 0.00526897868526933,
+    "H_true": 0.011291818282423092,
+    "H_true_grid": 0.011287155059298814,
+    "H_proj": 0.0063821963810963556,
+    "fall_max_true": 0.012536337016532787,
+    "seed": 1290776500,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.198,
+     "wilson95": [
+      0.1654311223310867,
+      0.2351739793797859
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.198,
+     "wilson95": [
+      0.1654311223310867,
+      0.2351739793797859
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.916,
+     "wilson95": [
+      0.8884006852957278,
+      0.9372558633409511
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.71,
+     "wilson95": [
+      0.6687451965475429,
+      0.7480525804084729
+     ]
+    },
+    "H_hat_mean": 0.005668583590215582,
+    "H_hat_sd": 0.0022682770381752225,
+    "U_mean": 0.009417433534233762,
+    "U_quantiles_5_50_95": [
+     0.005811291031560749,
+     0.009382691775203152,
+     0.013026917522083941
+    ],
+    "mean_U_minus_H_true": -0.0018743847481893314,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.728,
+     "wilson95": [
+      0.6873673926224758,
+      0.765155908072627
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.08,
+    "fall_true_at_bp_mean": -0.0011781843894150042
+   },
+   "spike_hU": {
+    "kind": "spike",
+    "h": 0.007356391038975433,
+    "slope": 0.00526897868526933,
+    "H_true": 0.007356391038975433,
+    "H_true_grid": 0.00731110634851501,
+    "H_proj": 0.0010249771445727963,
+    "fall_max_true": 0.003249794736109615,
+    "seed": 618429740,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.082,
+     "wilson95": [
+      0.061019089325893075,
+      0.10935485939975174
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.084,
+     "wilson95": [
+      0.06274413665904895,
+      0.11159931470427224
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.94,
+     "wilson95": [
+      0.9156389366536348,
+      0.9576516436351601
+     ],
+     "verdict": "calibrated"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.046,
+     "wilson95": [
+      0.030845108274245074,
+      0.06807779297322561
+     ]
+    },
+    "H_hat_mean": 0.0004565180825651369,
+    "H_hat_sd": 0.002100425206913598,
+    "U_mean": 0.004295190799786846,
+    "U_quantiles_5_50_95": [
+     0.0009705145800274722,
+     0.004195369340591763,
+     0.008096216861607698
+    ],
+    "mean_U_minus_H_true": -0.0030612002391885865,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 1.0,
+     "wilson95": [
+      0.9923756594190853,
+      1.0000000000000002
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.01,
+    "fall_true_at_bp_mean": 0.0007398662967039688
+   },
+   "spike_hhalfSD": {
+    "kind": "spike",
+    "h": 0.013394746533406547,
+    "slope": 0.00526897868526933,
+    "H_true": 0.013394746533406547,
+    "H_true_grid": 0.013312290754839667,
+    "H_proj": 0.001866310393417758,
+    "fall_max_true": 0.005917327741980634,
+    "seed": 786694923,
+    "n_sim": 500,
+    "coverage_U_vs_H_true": {
+     "share": 0.0,
+     "wilson95": [
+      4.336808689942018e-19,
+      0.007624340580914839
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_true_grid": {
+     "share": 0.0,
+     "wilson95": [
+      4.336808689942018e-19,
+      0.007624340580914839
+     ],
+     "verdict": "anti-conservative"
+    },
+    "coverage_U_vs_H_proj": {
+     "share": 0.924,
+     "wilson95": [
+      0.8974035860890358,
+      0.9441309730983486
+     ],
+     "verdict": "anti-conservative"
+    },
+    "power_lower_bound_gt0": {
+     "share": 0.08,
+     "wilson95": [
+      0.05929812926951214,
+      0.10710631681845634
+     ]
+    },
+    "H_hat_mean": 0.0011031644577891224,
+    "H_hat_sd": 0.0022081360285708873,
+    "U_mean": 0.004795399347157414,
+    "U_quantiles_5_50_95": [
+     0.0014241854495785984,
+     0.004756951053046478,
+     0.008278684039589621
+    ],
+    "mean_U_minus_H_true": -0.008599347186249133,
+    "fall_ci95_coverage_at_selected_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_true_at_selected_bp": {
+     "share": 0.994,
+     "wilson95": [
+      0.9825097477621447,
+      0.9979574037439116
+     ],
+     "verdict": "conservative"
+    },
+    "fall_upper97.5_covers_max_true_fall_over_bp": {
+     "share": 0.952,
+     "wilson95": [
+      0.9295728029566821,
+      0.9675347931581708
+     ],
+     "verdict": "anti-conservative"
+    },
+    "fall_ci_excludes_zero_from_above_share": 0.0,
+    "two_lines_hump_declared_share": 0.014,
+    "fall_true_at_bp_mean": 0.0013696759961017966
+   }
+  }
+ }
+}

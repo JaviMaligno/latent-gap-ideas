@@ -9,23 +9,23 @@ AGILabs (javieraguilar.ai) · javiecija96@gmail.com
 
 ## Abstract
 
-A popular ideation recipe treats an embedding map of existing work as a guide: sample its empty points, decode
-them into ideas, prefer what is far from everything. I test four ways such distances are supposed to guide
-ideation, each against what was published or released later. (1) **Empty points are not ideas:** with the
-target and the score-feedback procedure unchanged, swapping the neighbours shown to an LLM decoder moves the text
-towards the donor's neighbours in 12 of 12 randomised cells, and later items, though often closer than the past,
-reach a cosine of at most about 0.1002 to a far point. (2) **Gaps do not forecast growth:** on Steam games, arXiv and
-patents, a hole score ranks the fastest-growing regions of a past-only map no better than chance (cross-validated
-AUC 0.39-0.48) while momentum reaches 0.71-0.92; holes go with growth more clearly once momentum is
-held fixed, but add nothing to it as a forecast. (3) **Distance feedback does not steer a continuation:**
-continuations of 150 arXiv papers by gpt-4o, OLMo and a 2026 model stay closer to their source than the papers that
-later cite it, as Tang and Yang (2026) found; for gpt-4o and the 2026 model, feeding back the similarity to the citing
-papers, with or without its history, moves the ideas' follow-up-specific projection by at most about 0.015 in cosine
-(OLMo's moves more), and for gpt-4o no turn beyond content-free revision was detected. (4) **No sweet spot for
-inspiration distance was detected:** gpt-4o, shown material from nine sources graded by distance, proposes games whose anticipation of the
-post-cutoff Steam catalogue shows no detected inverted U, only a small positive slope in one embedder. Farther material makes
-the games more isolated and, under instruction, less coherent, and a past game given to build on anticipates worse
-than other material (exploratory). Momentum predicts the future; content moves the model.
+A popular ideation recipe treats an embedding map of existing work as a guide: sample its empty points, decode them
+into ideas, prefer what is far from everything. I test four ways such distances are meant to guide ideation against
+what was published or released later. (1) **Empty points are not ideas:** with the target and the score-feedback
+procedure unchanged, swapping the neighbours shown to an LLM decoder moves the text towards the donor's in 12 of 12
+randomised cells, and later items, though often closer than the past, reach a cosine of at most about 0.1002 to a far
+point. (2) **Gaps do not forecast growth:** on Steam, arXiv and patents, a hole score ranks the fastest-growing
+regions of a past-only map no better than chance (cross-validated AUC 0.39-0.48) while momentum reaches 0.71-0.92;
+holes go with growth more clearly once momentum is held fixed, but add nothing as a forecast. (3) **Distance
+feedback barely steers a continuation:** continuations of 150 arXiv papers by gpt-4o, OLMo and a 2026 model stay
+closer to their source than the papers that later cite it, as Tang and Yang (2026) found, less so against the few that
+continue it. In a pre-registered replication on 150 new papers, critique turns gpt-4o's ideas towards the citing papers
+specifically by estimated mean changes of up to about 0.02 in cosine, but revising with no information turns them by about 0.01 as well; what
+the feedback adds was detected only for distance feedback in one of two embedders (+0.011), and is bounded at 0.015
+only for two arms of the 2026 model. (4) **No sweet spot for inspiration distance was detected:** gpt-4o, shown
+material from nine sources graded by distance, proposes games whose anticipation of later Steam releases shows no
+detected inverted U, only a small positive slope in one embedder. Farther material makes the games more isolated and,
+under instruction, less coherent, and a past game given to build on anticipates worse than no material. Momentum predicts the future; content moves the model.
 
 **Keywords:** idea generation, large language models, embedding spaces, novelty, forecasting, pre-registration
 
@@ -53,11 +53,13 @@ frozen date.
    growth more clearly once momentum is held fixed, but add nothing to it as a forecast. Novel topic combinations
    behave the same way.
 3. **Distances can steer a model continuing a paper** (Section 5, pre-registered with exploratory follow-ups). Real
-   research starts from a given paper. I find that LLM continuations take a shorter step than the papers that came
-   next, as Tang and Yang (2026) showed at scale, and that for gpt-4o and a 2026 model feeding back a similarity
-   score towards the papers that later cited the source moves the ideas' follow-up-specific projection by no more
-   than about 0.015 in cosine; critique lengthens the step beyond what revising alone does, but for gpt-4o no turn
-   beyond revising with no information was detected after Holm correction.
+   research starts from a given paper. I find that LLM continuations take a shorter step than the papers that later
+   cited the source, as Tang and Yang (2026) showed at scale (against the few that continue it, the gap is a third to a half as large), and that critique lengthens the step beyond what
+   revising alone does. A pre-registered replication with gpt-4o on 150 new papers withdraws my earlier post-hoc
+   bound: critique turns the ideas towards the citing papers specifically by estimated mean changes of up to about
+   0.02 in cosine, but revising with no information turns them by about 0.01 as well, and a turn beyond that was detected only for distance
+   feedback in one embedder; for the 2026 model the oracle's extra turn is bounded at 0.015, and for OLMo it is neither
+   shown nor bounded.
 4. **The distance of inspiration matters** (Section 6, pre-registered). Ideas often come from material that looks
    irrelevant. I detect no middle distance at which material shown to the model best anticipates the games released
    after its cutoff; distance predicts how unusual the result is, and anticipation only through a small slope that
@@ -120,7 +122,9 @@ driven by what the model is shown.
 Steam and arXiv, with two decoders (gpt-6-luna and Claude Sonnet 5.5): REAL (hidden held-out items, the positive
 control), GAP (interior holes) and FAR (the recipe's far points). The target and the score-feedback procedure were held fixed;
 only the shown neighbours changed, between the true ones, another target's (SWAP) and none. Swapping moved the decoded
-text towards the donor's neighbours, relative to the true ones, in 12 of 12 cells (Figure 1; Table A2). For FAR
+text towards the donor's neighbours, relative to the true ones, in 12 of 12 cells (Figure 1; Table A2), and again in
+12 of 12 when the decoded texts are re-embedded in BGE-M3 (donor attraction 0.13 to 0.51, about half its Qwen3 size;
+Table 6). For FAR
 targets, the small landing on the target with the true neighbours (cosine 0.02 to 0.07) disappears with swapped or no
 neighbours (−0.02 to −0.01): the score alone does not move text towards a far point. Even for a hidden real item, the
 decoded text without neighbours reaches cosine 0.36 to 0.47 to it, against 0.69 to 0.81 with them, and ends up only
@@ -201,25 +205,27 @@ momentum, and the embedding hole adds −0.0003. My coherence proxy, smoothed PM
 because it rewards pairs of rare topics, so this says that cheap combination signals add nothing to momentum, not that
 Alien Space's trained model would add nothing (Appendix A.6).
 
-## 5 Distances do not steer a continuation
+## 5 Distances barely steer a continuation
 
 **Data.** 150 past arXiv cs papers dated 2021-2022 (the *contexts*), sampled with a fixed seed among those with at
 least five *follow-ups*: arXiv papers that cite the context according to Semantic Scholar (Kinney et al., 2023) and
 appeared on or after 2024-01-01, after every generator's cutoff; at most 50 per context, 2,883 in all. Throughout,
-"follow-up" means a later citing paper, nothing more: in a labelled sample of 30, only 3 continue the context's own
-work and the rest cite it as background or comparison (Section 8). What this section measures is whether the ideas
-move where the literature that cites a paper later went, not whether they anticipate its true continuations. For
+"follow-up" means a later citing paper, nothing more: labelling all 2,883 context/follow-up pairs blind from the two
+abstracts, two LLM labellers (gpt-6.1-sol and Claude Opus 5.5; Cohen's κ = 0.75 on continues-or-not) agree that 112
+(3.9 %) continue the context's own work (95 % CI 2.4 to 5.6 % for similar contexts, cluster bootstrap over contexts),
+and the rest mostly cite it as background or comparison (Section 8). What this section measures is whether the ideas move where the literature that
+cites a paper later went; Section 5.1 checks the step against the continuations alone. For
 robustness I also use the **S2-flagged subset**: follow-ups that Semantic Scholar marks as influential (Valenzuela et
 al., 2015) or with a methodology or result intent (Cohan et al., 2019), keeping contexts with at least three (68
-contexts). On a labelled sample this subset does not overlap the content-based "continues" labels (0 of 3; Section 8),
-so it is a robustness check on a different set, not a cleaner one.
+contexts). It is a robustness check on a different set, not a cleaner one: of its 403 follow-ups, 40 (10 %) are among the 112
+both labellers call continuations, against 2.5 % of the follow-ups Semantic Scholar does not flag.
 
 **Measures.** For an idea or follow-up x of context c, **step** = cos(c, x), so a lower value is a longer step, and
 "lengthening the step" means lowering it. **Fit** is the maximum cosine of an idea to the context's follow-ups. The
 **step gap** is a context's median idea step minus its median follow-up step. The unit of analysis is the context,
 with bootstrap CIs over contexts (2,000 resamples) and Holm correction within each pre-registered family.
 
-### 5.1 The short step replicates
+### 5.1 The short step replicates against citing papers
 
 Asked once to "propose the paper that should come next" from a context's title and abstract, gpt-4o writes ideas that
 stay closer to the context than the real follow-ups: the mean step gap is 0.149 (CI 0.138 to 0.160), and 0.140 with
@@ -233,6 +239,23 @@ contexts have more than one version; 8 of the 150 contexts were last revised aft
 text the model saw, not whether it could have seen a follow-up. Other one-shot variants (memory of earlier titles, a
 verbal hint of where the area is moving) narrow the gap, but by at most a fifth (memory: 0.022 of 0.149, CI 0.016 to
 0.028); they are in Appendix A.8.
+
+**Against the papers that continue the work, the gap is smaller: a third as large in the primary cell, about
+half in the others.** I pre-registered this check during
+review, in two steps. A first sample of 400 pairs, extended to every follow-up of the 25 contexts where it found a
+continuation, gave 18 contexts with a continuation both labellers agree on: an adaptively ascertained set, in which
+gpt-4o's gap against continuations was not detected (0.023, CI −0.025 to +0.069). I then pre-registered labelling the
+rest of the census, so that the test covers every context with a continuation: 47 contexts. In them continuations sit
+0.12 closer to their context than the follow-ups both labellers call background (CI 0.10 to 0.15; closer in 45 of the
+47). gpt-4o's one-shot ideas still stay closer to the context than the continuations do: the gap is 0.048 (CI 0.019 to
+0.076, one-sided Wilcoxon p = 0.0015), positive in 30 of the 47 contexts, against 0.144 for all follow-ups of the same
+contexts (difference −0.096, CI −0.119 to −0.074). The pre-registered test passes, and it passes on the 29 contexts
+never analysed before (0.064, CI 0.028 to 0.095, p < 0.001), while the 18 earlier ones reproduce the earlier
+non-detection (0.023). The gap is larger in BGE-M3 (0.086, CI 0.065 to 0.106) and for OLMo (0.119 and 0.102), and
+larger again when either labeller's continuations count (0.062 in the primary cell; p < 0.001 in every secondary
+cell). Against all follow-ups of the same contexts these gaps are 0.144 (primary cell) and 0.165 to 0.215, so the ratio
+is 0.33 in the primary cell and 0.52 to 0.56 in the others. The short step is, then, a step short of the citing
+literature and, by a third to a half as much, of the papers that continue the work. The continuations are labelled by LLMs from abstracts; in a pre-registered blind check of 40 pairs I confirmed 24 of the 25 consensus continuations sampled, about half of them with some doubt (Section 8).
 
 ### 5.2 Iterative critique (pre-registered)
 
@@ -363,11 +386,46 @@ not detected. As an approximate guide to sensitivity, a mean test on 150 context
 change of 0.011 to 0.017 in cosine with 80 % power (OLMo, with one idea per context: 0.020 to 0.028), without
 correction for multiplicity. For gpt-4o under the reviewer and ORACLE the 95 % intervals lie within ±0.015, and an
 equivalence bound of ±0.015, about GEO's uncorrected change for gpt-4o in Qwen3 (the smallest Holm-significant change
-in Table 3 is 0.024), is accepted in all four cells (a post-hoc bound, not a pre-registered one). For OLMo the bound does not hold: its
+in Table 3 is 0.024), is accepted in all four cells (a post-hoc bound, not a pre-registered one; the confirmatory replication at the end of
+this section does not confirm it). For OLMo the bound does not hold: its
 follow-up-specific changes are +0.012 to +0.032, the reviewer's survives Holm, ORACLE's in Qwen3 has CI +0.006 to
 +0.044, and OLMo/BGE-M3 ORACLE (CI −0.002 to +0.026) is inconclusive. With OLMo the step gap is larger (0.179 to 0.218) and critique lengthens the step in every
 cell, as with gpt-4o; fit falls in 23 of 24 generator × embedder × follow-up-set × arm cells and rises significantly in
-none (Table A6). OLMo has no NEUTRAL arm, so its follow-up-specific changes are untested against plain revision.
+none (Table A6). A NEUTRAL arm for OLMo, pre-registered and run afterwards on the same round-0 ideas, settles part of
+this. Plain revision alone lengthens OLMo's step (0.042 in Qwen3) and turns it along the follow-up-specific direction
+by +0.012 (CI −0.004 to +0.028; +0.019 in BGE-M3), a third to a half of each critique arm's turn in Qwen3 and two
+thirds or more in BGE-M3. Against it, GEO still
+lengthens the step more (+0.043, CI +0.031 to +0.055, Holm p < 0.001; +0.023 in BGE-M3) and raises tangent alignment
+(+0.037; +0.032), while the reviewer's longer step is not detected beyond revision (+0.010, CI −0.002 to +0.022). Along
+the follow-up-specific direction no critique arm differs from NEUTRAL after Holm (GEO +0.012, reviewer +0.020, ORACLE
++0.013 in Qwen3; −0.006 to +0.010 in BGE-M3), but no interval lies wholly within ±0.015 (intervals between −0.024 and +0.042;
+t-based detectable differences with 80 % power before multiplicity correction 0.024 to 0.033), so for OLMo a
+feedback-specific turn is neither shown nor bounded at that size. Plain revision reproduces a substantial fraction of
+OLMo's larger turns; the additional feedback-specific turn remains unresolved.
+
+**A confirmatory replication with gpt-4o (pre-registered, added later).** The ±0.015 reading of gpt-4o above, and "no
+turn beyond revision", rest on one sample of 150 contexts read against a bound chosen after the results, so I treat
+those 150 as a discovery sample. I repeated the four arms (GEO, reviewer, ORACLE, and NEUTRAL from GEO's round-0 ideas;
+3 ideas, 3 rounds; 5,850 gpt-4o calls) on 150 new contexts: the first 150 with at least five follow-ups in a new frame
+of 2021-2022 arXiv cs papers, none of them among the original 150, with 2,419 follow-ups dated by arXiv first version
+from 2024 on (the original ones were dated by Semantic Scholar publication date). The bound, eight tests and a reading
+rule were fixed before any generation: equivalence within ±0.015 is confirmed when the 95 % t interval lies inside it
+after Holm over the eight; a change is detected when that interval excludes zero without equivalence; otherwise the
+result is insufficient. Critique again lengthens the step beyond plain revision (R1, GEO +0.040, Holm p < 10⁻¹⁴; R2,
+reviewer +0.023, Holm p < 10⁻⁶; +0.017 and +0.014 in BGE-M3, both Holm p < 10⁻⁴). Each arm's own follow-up-specific
+change is not confirmed within ±0.015 in five of the six arm × embedder cells: a turn is detected for GEO (+0.019, CI +0.009 to +0.029; +0.020 in BGE-M3), the reviewer
+(+0.012, CI +0.004 to +0.020; +0.010, CI +0.001 to +0.019) and ORACLE in Qwen3 (+0.012, CI +0.003 to +0.021), while
+ORACLE's is confirmed within the bound in BGE-M3 (+0.004, CI −0.003 to +0.011, Holm p = 0.022). NEUTRAL's estimated
+change is positive too (+0.0085 and +0.0090; bootstrap CI −0.001 to +0.018 and +0.000 to +0.018). Against it, the feedback-specific turn
+is insufficient for all three arms in Qwen3 (GEO +0.011, CI −0.0005 to +0.022; reviewer +0.004, CI −0.009 to +0.016;
+ORACLE +0.003, CI −0.010 to +0.016) and, in BGE-M3, detected for GEO (+0.011, CI +0.001 to +0.021, uncorrected
+Wilcoxon p = 0.03) and insufficient for the other two. These are the 95 % t intervals the rule reads; the bootstrap
+intervals differ by at most 0.001. As secondary results, GEO again raises tangent alignment beyond NEUTRAL (+0.020 in
+Qwen3, +0.021 in BGE-M3), and pooling the 300 contexts of both samples gives feedback-specific turns of −0.009 to
++0.004 in Qwen3 and −0.009 to +0.011 in BGE-M3 (GEO +0.011, bootstrap CI +0.004 to +0.018). For gpt-4o, then, the
+discovery sample's "at most about 0.015" is withdrawn: critique turns the ideas towards the citing papers specifically
+by estimated mean changes of up to about 0.02 (+0.004 to +0.020 across arms and embedders), plain revision does about half of that or more, and what feedback adds beyond revision is
+resolved in neither direction, except a GEO turn of about 0.011 in BGE-M3.
 
 ![**Figure 4.** Step-invariant direction (exploratory). Arrows go from round 0 to round 2 of each arm; the black bar is the real follow-ups' leave-one-out alignment with each other. Every arm turns towards the follow-ups' direction, including NEUTRAL (grey, gpt-4o only), which revises with no information; no arm gets near the alignment the follow-ups share.](figures/fig4_tangent.png)
 
@@ -398,22 +456,43 @@ The short step replicates with the 2026 model and is larger: its one-shot ideas 
 the real follow-ups (0.198 with memory of its earlier titles; p ≈ 10⁻²⁶), against 0.149 for gpt-4o (a difference of
 0.062, CI 0.046 to 0.077, on different contexts; M1 holds). Critique lengthens the step (GEO +0.061; M2 holds). The
 single-score oracle does not detectably change the follow-up-specific direction (−0.006, CI −0.016 to +0.004,
-p = 0.19; M3, which predicted no rise, holds) and lowers the overall alignment. History adds little: ORACLE-H's fit gain over ORACLE is +0.004 for gpt-4o (CI −0.003 to +0.011,
-one-sided p = 0.20, the pre-registered H1 fails) and +0.001 for gpt-5.4-mini (CI −0.004 to +0.005, p = 0.48), so any
-gain from the history is below 0.011 and 0.005 in cosine, well below the 0.07 ceiling that C5 set for ORACLE's own
-gain. One
-difference from the 2023-era models: with gpt-5.4-mini even GEO moves the direction only towards nearby papers in
-general (+0.025), not towards the follow-ups specifically (−0.003, CI −0.015 to +0.010).
+p = 0.19; M3, which predicted no rise, holds) and lowers the overall alignment. M1 to M3 replicate in BGE-M3 (step
+gap 0.171; GEO +0.041; ORACLE −0.006, CI −0.013 to +0.002). History adds little: ORACLE-H's fit gain over ORACLE is
++0.004 for gpt-4o (CI −0.003 to +0.011, one-sided p = 0.20, so the pre-registered H1 fails in Qwen3; in BGE-M3 the
+same gain, +0.0045, is significant, CI +0.0002 to +0.0086, Holm p = 0.027) and +0.001 for gpt-5.4-mini (CI −0.004 to
++0.005, p = 0.48; +0.002 in BGE-M3), so any gain from the history is below 0.011 and 0.005 in cosine, well below the
+0.07 ceiling that C5 set for ORACLE's own gain. One apparent difference from the 2023-era models depends on the
+embedder: in Qwen3, with gpt-5.4-mini even GEO moves the direction only towards nearby papers in general (+0.025), not
+towards the follow-ups specifically (−0.003, CI −0.015 to +0.010), but in BGE-M3 GEO's follow-up-specific change is
++0.016 (CI +0.005 to +0.027, uncorrected p = 0.009).
 
 These non-significant results are bounded, not absent. An approximate mean test on 150 contexts would detect a
 follow-up-specific change of 0.013 to 0.017 in cosine with 80 % power, and the 95 % intervals of every null cell in
-Table 4 lie within ±0.016. The equivalence bound of ±0.015 used in Section 5.3 is accepted in all six (post hoc). For gpt-4o that bound is about a sixth of the distance between the ideas' and the
+Table 4 lie within ±0.016. The equivalence bound of ±0.015 used in Section 5.3 is accepted in all six (post hoc), and
+for the four oracle cells again in BGE-M3. For gpt-4o that bound is about a sixth of the distance between the ideas' and the
 follow-ups' own projection on that direction; for gpt-5.4-mini, whose ideas start closer, it is a third or more, so its
-nulls say less. For gpt-4o and gpt-5.4-mini, then, a similarity score towards the papers that later cited the source,
-with or without the history of its scores, produced no follow-up-specific turn larger than about 0.015 in cosine;
-OLMo's oracle does not meet that bound (Section 5.3), and overall tangent alignment, which includes the move towards
-any nearby later paper, rises by more (ORACLE-H +0.018). Critique lengthens the step in all three generators; for
-gpt-4o, the only generator with a neutral control, no turn beyond revising alone was detected after Holm.
+nulls say less. For gpt-5.4-mini, then, a similarity score towards the papers that later cited the source, with or
+without the history of its scores, produced no follow-up-specific turn larger than about 0.015 in cosine; for gpt-4o
+that post-hoc reading was not confirmed by the replication of Section 5.3 (ORACLE +0.012, CI +0.003 to +0.021, in
+Qwen3; within the bound in BGE-M3), and OLMo's oracle does not meet it (Section 5.3), and overall tangent alignment, which includes the move towards
+any nearby later paper, rises by more (ORACLE-H +0.018). Critique lengthens the step in all three generators.
+
+**A neutral control for the 2026 generator (pre-registered, added later).** The NEUTRAL arm of Section 5.2, run with
+gpt-5.4-mini from the same round-0 ideas as GEO (900 calls) and tested with the same 14 comparisons, Holm in each
+embedder. Revising with no information lengthens gpt-5.4-mini's step by 0.021 (BGE-M3 0.016) and produces no detected follow-up-specific change (−0.007,
+CI −0.015 to +0.001, p = 0.17; +0.0004, CI −0.007 to +0.008, in BGE-M3). GEO and the reviewer lengthen the step
+beyond it (N1, N2: +0.040 and +0.029, Holm p < 0.001; +0.025 and +0.026 in BGE-M3) and lose more fit (N3, both in
+Qwen3, the reviewer only in BGE-M3); GEO also loses more hits (N4, −0.12, Qwen3 only). Unlike gpt-4o's in the discovery sample (its replication, Section 5.3, finds +0.020), GEO's ideas
+raise tangent alignment more than NEUTRAL's (N5, +0.029; +0.034 in BGE-M3; Holm p < 0.001), mostly towards nearby
+later papers in general (+0.036, exploratory), while ORACLE raises it less (−0.018, Holm p = 0.011; −0.034). Along the follow-up-specific direction no critique arm differs from NEUTRAL after Holm (N6, Qwen3, with the
+registered bootstrap 95 % intervals: GEO +0.0045, CI −0.007 to
++0.017; reviewer +0.003, CI −0.009 to +0.014; ORACLE +0.001, CI −0.009 to +0.012). Read against ±0.015, fixed before
+this run, the reviewer's and ORACLE's intervals lie inside it in Qwen3 and GEO's does not; in BGE-M3 GEO's extra change
+is +0.016 (CI +0.005 to +0.026, uncorrected p = 0.02, Holm p = 0.16), ORACLE's stays inside (−0.0149 to +0.004, a
+borderline reading: its t-based interval reaches −0.0156) and the reviewer's crosses (to +0.019). In the original contrasts of all three generators, then, no follow-up-specific turn beyond revising alone was
+detected after Holm (in gpt-4o's replication, GEO's is detected in BGE-M3 by the registered interval rule, Section 5.3); for gpt-5.4-mini that is a bound at 0.015 for ORACLE in both embedders (in BGE-M3 only by the bootstrap interval)
+and for the reviewer in Qwen3, and GEO's
+extra turn is neither shown nor bounded.
 
 ## 6 No sweet spot detected for inspiration distance (pre-registered)
 
@@ -472,10 +551,37 @@ Without the 10 late-2023 Steam stimuli no outcome changes (Qwen3 P1 +0.0037 and 
 
 **No sweet spot was detected.** The pre-registered two-lines test finds no inverted U in either embedder or
 framing. That is a failure to detect, not a bound: its breakpoint is chosen from the data, so the segment intervals
-it yields are not confidence bounds on every possible middle optimum. The shapes are not all flat, though. A
-quadratic term is significantly negative in Qwen3 under instruction and in BGE-M3 under the incidental framing, and in
-the latter the margin is compatible with an initial rise over the nearest fifth of distance followed by
-flattening; a peak was not detected (exploratory). The primary result is that P1 fails: in Qwen3 a farther stimulus gives slightly better anticipation,
+it yields are not confidence bounds on every possible middle optimum. I therefore pre-registered, during review and
+after these data had been seen, a bootstrap of the whole procedure (4,000 resamples of stimuli within source, the
+breakpoint re-selected in each). The fall after the breakpoint is compatible with zero in every embedder and framing
+(95 % intervals from −0.007 to +0.008), and the breakpoint itself is not identified (its interval spans most of the
+allowed range). A spline common to all sources (4 df), maximised over distance ranks 0.1 to 0.9, gives the size of a middle peak
+above the better end. Its nominal bootstrap percentile is not a calibrated bound: in a pre-registered simulation from
+the real design it covered the peak of the fitted spline itself in as few as 83 % of datasets. I replaced it, again
+pre-registered, by a simultaneous bound: a one-sided sup-t band over the 162 differences between the curve at each grid
+rank and at either end, projected onto the peak. In 1,000 simulated datasets per scenario and cell (14 scenarios, 4
+cells) this bound covers the peak of the fitted 4-df spline in at least 98 % of datasets in every scenario, and the
+true peak of flat, linear, broad and source-varying curves in at least 99 %. It does not cover narrow humps (width
+0.15 at half maximum), which a 4-df curve flattens (coverage of their true peak 12 to 97 %). With 8 df the same bound
+covers the fitted and the true peak of every simulated hump other than the spike (all at least 0.15 wide) in at least
+95 % of datasets, the pre-registered condition for quoting it for such humps; no variant bounds a spike of width 0.05. Observed, the bound is 0.005 to
+0.010 margin units above the better end with 4 df (0.25 to 0.40 of a per-idea standard deviation) and 0.009 to 0.010
+with 8 df (0.38 to 0.58). Under the simulated shapes and noise model, a broad middle optimum larger than the first, or a hump of the simulated
+kinds at least 0.15 wide larger than the second, is excluded at 95 %; width alone does not guarantee this for other
+shapes, while the bound on the spline-projected peak holds as stated. Smaller optima are not excluded, and by the pre-registered reading rule (a bound under 0.2 of a
+standard deviation and under a quarter of the range of source means) no bound is small enough to exclude an optimum
+of practical size: they are 0.4 to 1.6 times the spread between sources. The bootstrap's lower percentile, read as a test for a peak, behaves well: it is positive in 2 to 4 % of datasets with
+no peak, and for the simulated broad hump (a centred sin² curve common to all sources, residuals resampled within
+source) of half a per-idea standard deviation it is positive in every simulated dataset. Observed, it is below zero in
+all four cells, so the data contradict that broad optimum, while a narrow one of that height is detected only about
+half the time. The interval for the fall at the selected breakpoint is
+conservative in every simulated scenario (coverage at least 0.978), though with a narrow hump it does not bound the
+fall at other breakpoints. The shapes are not all flat, though. A quadratic term is
+significantly negative in Qwen3 under instruction and in BGE-M3 under the incidental framing, and in BGE-M3 the margin
+rises over the nearest fifth of distance (+0.0068, CI +0.0030 to +0.0107, incidental, the registered exploratory
+check; +0.0052, CI +0.0015 to +0.0091, instructed, examined in addition), while its change beyond it is compatible
+with zero but not shown to be small (+0.0004, CI −0.003 to +0.004; −0.0014, CI −0.005 to +0.002); a peak was not
+detected (exploratory). The primary result is that P1 fails: in Qwen3 a farther stimulus gives slightly better anticipation,
 significantly after Holm on its one-sided test (+0.004 to +0.005 from the nearest to the farthest stimulus of a
 source; the incidental interval, two-sided, just includes zero). In BGE-M3 the linear slope is not distinguishable
 from zero. In an exploratory regression that adds the idea's own isolation, the Qwen3 slope falls to +0.0015 and
@@ -496,31 +602,66 @@ under the frozen Qwen3 quintiles (Holm p 0.11 and 0.17) but holds with BGE-M3's 
 (0.046 and 0.009), so the source effect is there in both spaces while the recipe cells are not; I report neither as a
 finding beyond that. The real 2023 games from high-momentum cells do not anticipate the future set better than the
 stimulus-free ideas (margin −0.002 against −0.001), and less so without the 63 of them released after the cutoff
-(−0.007 in Qwen3, −0.004 in BGE-M3). The content effect that recurs is anchoring, and only under instruction
-(exploratory). Told to build on a past game, gpt-4o gives the worst anticipation of any source in Qwen3 (−0.005,
+(−0.007 in Qwen3, −0.004 in BGE-M3). The content effect that recurs is anchoring, and only under instruction. Told to build on a past game, gpt-4o gives the worst anticipation of any source in Qwen3 (−0.005,
 0.013 below the other sources, Mann-Whitney p = 2 × 10⁻⁸) and the second worst in BGE-M3 (0.002 below, p = 0.04),
-while its uptake doubles from 0.11 under the incidental framing to 0.23. It is not significantly worse than no
-material (Holm over the nine sources, p ≥ 0.47), and shown the same game incidentally, the model does no worse than
-with other material (fourth worst of nine in Qwen3, best in BGE-M3). Both stress-test generators below point the same
-way.
+while its uptake doubles from 0.11 under the incidental framing to 0.23. In that run it was not significantly worse than no
+material (Holm over the nine sources, p ≥ 0.47), so I pre-registered that one comparison with new ideas: 1,000
+past-game stimuli not used before (200 per distance quintile), under instruction, against 1,000 calls with no
+material. It is worse, by 0.0052 (CI 0.0032 to 0.0073; one-sided Welch p = 6 × 10⁻⁷) in Qwen3 and by 0.0040 (CI
+0.0025 to 0.0055; p = 9 × 10⁻⁸) in BGE-M3, mostly through the past games nearest the rest of the catalogue (Qwen3:
+−0.006 to −0.009 in quintiles 1 to 3, −0.001 in quintile 5). Shown a past game incidentally in the first run, the
+model does no worse than with other material (fourth worst of nine in Qwen3, best in BGE-M3). In both stress-test generators (below) a past game also scores below no material, by less; the confirmatory
+test does not detect it, though a later run with all 200 past-game stimuli does for gpt-6.1-sol.
 
-**Stress test (exploratory).** Claude Opus 5.5 and gpt-6.1-sol, run as command-line agents with tools disabled, each
-generated 450 instructed ideas (10 stimuli per cell, 25 per call) and 100 with no material. Both were trained after
-the future games appeared, so I read them only against their own NONE arm. Neither shows a distance effect on
-anticipation (slopes +0.0016 and +0.0045, 95 % intervals −0.0047 to +0.0080 and −0.0016 to +0.0106 with errors
-clustered by call) or a recipe advantage. For both, a past game as stimulus scores below no stimulus (−0.010 and
-−0.008), but each source filled only two calls of 25 ideas, so at the call level no test can reach significance
-(with two calls against four, the smallest possible exact permutation p is 1/15; the observed one is 0.13), and
-idea-level p-values of 0.03 do not survive Holm over the nine sources. I report the direction, which matches gpt-4o's
-under instruction, not a test. Distance does not make these generators' ideas detectably more isolated either (the
-manipulation check P3 does not replicate here), so the null slopes say little about distance as such.
+**Stress test (exploratory).** Claude Opus 5.5 and gpt-6.1-sol, run as command-line agents told to answer without
+tools (Claude with its file, shell and web tools disallowed; Codex in a read-only sandbox in an empty directory, with
+no trace kept to confirm abstention), each
+generated 450 instructed ideas (10 stimuli per cell) and 100 with no material. Both were trained after the future
+games appeared, so I read them only against their own NONE arm. A first run wrote 25 ideas per call, which left two
+calls per source and no call-level test able to reach significance (a past game scored −0.010 for Claude and −0.008
+for gpt-6.1-sol below no material). I then pre-registered a second run on the same stimuli with 5 ideas per call (90 stimulus calls and 20
+no-material calls per generator, in random order; all 110 completed in the first pass). In it a past game's gap to
+no material shrinks to −0.0035 for both generators and is not detected (exact Mann-Whitney on call means, p = 0.29
+for gpt-6.1-sol and 0.31 for Claude, Holm 0.57 for both; 95 % cluster-bootstrap intervals −0.011 to +0.004 and
+−0.010 to +0.003); a past game still ranks among the three worst of the nine sources for both. The distance slopes
+stay null with 90 call clusters (gpt-6.1-sol +0.0035, CI −0.0025 to +0.0095; Claude −0.0020, CI −0.0086 to +0.0046),
+but distance does not make these generators' ideas detectably more isolated either (P3 does not replicate
+in either run), so the null slopes say little about distance as such. The no-material baseline moved between the
+runs (Claude's from −0.0003 to −0.0062), so I pre-registered a third run that randomises call size within one run:
+400 no-material ideas and all 200 past-game stimuli, each at 5 and at 25 per call (144 calls per generator in one random
+order, all completed at the first attempt). Call size does not move the baseline detectably (25 minus 5 per call, cluster-bootstrap CIs: gpt-6.1-sol −0.0028,
+CI −0.0062 to +0.0008; Claude +0.0020, CI −0.0014 to +0.0054; CR1 t test, Holm 0.25 for both), nor the
+past game's gap (interaction +0.0039 and −0.0023, Holm 0.65). For Claude the interval excludes the earlier shift's point estimate (+0.0058), but that shift, from 4 and 20
+calls, is itself uncertain (CI +0.0008 to +0.0110), and a joint call bootstrap puts the current effect minus the
+earlier shift at −0.0039 (CI −0.0100 to +0.0022): call size is neither detected nor excluded as its cause. gpt-6.1-sol's
+baseline at 5 per call moved by 0.006 between the two runs that used that size. A fourth pre-registered run repeated
+the no-material arm at both sizes in eight sessions planned two hours apart (per generator and session, 16 calls of 5 and 4 of 25 in random order; an
+overnight connection failure lost three sessions, re-run at the end as recorded before analysis, but two of them
+started about a minute after the previous session's end rather than two hours later). Averaged over sessions, 25 per call lowers gpt-6.1-sol's baseline by 0.005 (cluster-bootstrap CI
+−0.007 to −0.003, CR1 Holm p < 0.001), with no detected difference in that effect between sessions; for Claude it is
+not detected (+0.0013, CI −0.0012 to +0.0038, Holm 0.32). Call size does not explain gpt-6.1-sol's move at a fixed
+size, and for Claude the session effect minus the earlier shift is −0.0046 (joint call bootstrap, implemented after S1 to
+apply the registered reading rule; CI −0.0104 to +0.0011), so call size is again neither detected nor excluded as the
+cause of that shift. No difference between the baseline's session means beyond call-level noise was detected (joint
+Wald p = 0.27 and 0.77, Holm 0.55 and 0.77; standard deviation across sessions 0.0030, CI 0.0022 to 0.0054, and
+0.0019, CI 0.0015 to 0.0048), so within one protocol no session-to-session sensitivity is shown beyond the differences
+between runs reported above. Of the earlier baselines, gpt-6.1-sol's second run at 5 per call (−0.0002) lies below
+its eight session means at that size (0.0018 to 0.0102) and Claude's first run at 25 per call (−0.0003) above its
+eight at that size (−0.0083 to −0.0031); the others lie within their ranges (descriptive). The interaction also changes the mix of stimuli in a call (one quintile
+per call at 5, all five at 25), so it tests that batching protocol rather than call size alone. In this third run a past game again scores
+below no material (secondary, not confirmatory): for gpt-6.1-sol at both sizes (−0.011, CI −0.016 to −0.006, at 5 per
+call; −0.007, CI −0.013 to −0.002, at 25) and for Claude at 25 per call (−0.005, CI −0.009 to −0.001) but not at 5
+(−0.0025, CI −0.007 to +0.002). In the second run Claude's
+recipe ideas anticipate better than its no-material ideas (+0.016, Holm p = 0.003 over the nine sources), which the
+first run did not show.
 
 Distance in the map, then, does not tell you how far to look for inspiration either. It predicts how unusual and,
 under instruction, how incoherent the result will be; its link to anticipation is a small positive slope in one space
-and, in the other, a curve compatible with flattening after an initial rise, and no middle optimum was detected in either. The content
+and, in the other, a rise over the nearest fifth of distance with no detected change beyond it, and no middle
+optimum was detected in either. The content
 effects that the primary space shows depend on how and where they are measured, except for the one that points
-backwards: under instruction, a past game as material anticipates the future worse than other material does
-(exploratory; worst-ranked in Qwen3, second worst in BGE-M3).
+backwards: under instruction, a past game as material anticipates the future worse than no material (pre-registered, in both
+embedders) and worse than other material (exploratory; worst-ranked in Qwen3, second worst in BGE-M3).
 
 ## 7 Related work
 
@@ -591,14 +732,26 @@ where the future will be.
 
 ## 8 Limitations
 
-- **A follow-up is a later citing paper, not a continuation.** In 30 sampled context/follow-up pairs labelled from the
-  two abstracts by an LLM (Claude, Anthropic), 3 clearly continue their source and 25 cite it as background (2
-  unclear). A second LLM labeller (gpt-6.1-sol), blind to the first, finds 2 of 30 continuing plus 10 unclear. The
-  two agree
-  on continuing-or-not in 27 of 30 pairs, but with a base rate of 90 % "not" that agreement is modest (Cohen's κ ≈
-  0.35). The Semantic Scholar flags behind the S2-flagged subset mark 6 of the 30 pairs, 5 of which the abstracts label
-  as background and none of the 3 they label as continuing. Every "direction towards the follow-ups" in Section 5 means
-  towards the papers that later cite the context.
+- **A follow-up is a later citing paper, not a continuation.** Labelling all 2,883 context/follow-up pairs blind from
+  the two abstracts, two LLMs (gpt-6.1-sol and Claude Opus 5.5) both say the follow-up continues its source in 112
+  (3.9 %; 4.5 % and 5.7 % for each labeller alone), spread over 47 of the 150 contexts. They agree on continues-or-not
+  with κ = 0.75 (CI 0.65 to 0.81), and on the four labels with κ = 0.41, most disagreements being "unclear" against
+  "background". An earlier sample of 30, labelled by one LLM, had found 3 continuations; both new labellers reject all
+  three. Semantic Scholar's flags enrich for continuations without isolating them: 11 % of flagged follow-ups are
+  consensus continuations against 2.5 % of the rest, and the S2-flagged subset as analysed holds 40 of the 112. Every
+  "direction towards the follow-ups" in Section 5 means towards the papers that later cite the context. Built from the
+  continuations alone, that direction can be tested in the 17 contexts with at least two consensus continuations
+  (pre-registered as confirmatory once at least ten had them). No critique arm moves along it beyond NEUTRAL after
+  Holm (ORACLE +0.015, CI −0.016 to +0.047; GEO +0.012, CI −0.014 to +0.035; LLM +0.001, CI −0.031 to +0.037), but
+  no interval lies wholly within ±0.015, so this neither shows feedback steering towards continuations nor bounds it below
+  that size. The labellers are LLMs reading abstracts. In a pre-registered blind check I labelled 40 sampled pairs
+  myself from the same abstracts, blind to the LLM labels and to the stratum (I am not a domain expert in most of these
+  fields): I called 24 of 25 consensus continuations continuations (96 %, Wilson CI 0.80 to 0.99), none of 7 consensus
+  background pairs, and 5 of the 8 pairs on which the labellers split (each labeller matched me on 4). I marked 11 of
+  those 24 as less certain, several as possibly "uses" or "background"; counting only the pairs I was sure of, the
+  share is 13 of 25 (CI 0.33 to 0.70; a sensitivity analysis not in the pre-registration). So I accepted almost all sampled
+  consensus continuations, but about half of them are borderline from abstracts alone. This author check is not
+  independent expert validation.
 - **One domain and three generators for the continuation study.** All contexts are arXiv cs papers. gpt-4o and
   OLMo-7B-0424 predate the follow-ups by design; OLMo is smaller and runs fewer arms, with one idea per context in the
   critique arms. The 2026 generator of Section 5.4 runs on other contexts, and its training cutoff is reported only by
@@ -609,10 +762,14 @@ where the future will be.
 - **The direction result is exploratory.** The tangent test was designed after the pre-registered results; I report
   Holm over its 36 tests, and Appendix A.9 shows how easily a plausible distance-matched baseline can be out of
   support. Its reference pool, the nearest later papers outside the sampled follow-up set, contains some citing
-  papers; excluding all of them does not change the table (Section 5.3). The equivalence bound of ±0.015 used to read its nulls, and
-  those of Section 5.4, was chosen after the results.
-- **The neutral control covers gpt-4o only**, and reuses GEO's round-0 ideas. For OLMo and gpt-5.4-mini the critique
-  arms have no neutral counterpart, so their changes are not separated from revising as such.
+  papers; excluding all of them does not change the table (Section 5.3). The equivalence bound of ±0.015 used to read its nulls, and those of Section 5.4, was chosen after the results;
+  it was then fixed before the gpt-5.4-mini neutral contrasts and before a confirmatory replication with gpt-4o on 150
+  new contexts, which withdrew it for gpt-4o's per-arm changes (Section 5.3).
+- **The neutral control covers all three generators**, and reuses GEO's round-0 ideas. For OLMo it separates the step
+  and alignment changes from revision but leaves the follow-up-specific turn unresolved at ±0.015 (Section 5.3); for
+  gpt-5.4-mini it bounds ORACLE's extra turn at that size in both embedders and the reviewer's in Qwen3, not GEO's
+  (Section 5.4); for gpt-4o, in the replication, it leaves all three unresolved in Qwen3 and detects GEO's (+0.011) in
+  BGE-M3 (Section 5.3).
 - **Everything is measured in two general text encoders.** Two embedders give robustness across spaces, not
   independence from embeddings. The encoders were trained on text that may postdate the splits, and arXiv abstracts
   are latest versions; maps are past-only in their items, not in their representations.
@@ -626,21 +783,24 @@ where the future will be.
   source only moderately alike (Spearman 0.33-0.75), and
   the content effects of the primary space do not replicate in the second, which is why they are not claimed. The
   coherence judge (gpt-6.1-sol) is an LLM, checked against a second LLM only. The stress-test generators were trained after
-  the future games appeared and wrote 25 ideas per call, so they are read only against themselves.
+  the future games appeared, so they are read only against themselves, and their no-material baseline moves between runs by up to about 0.006. Over eight sessions of one protocol no
+  session-to-session variation is detected; asking for 25 ideas per call lowers gpt-6.1-sol's baseline by about 0.005,
+  which does not explain its move at a fixed size, and is not detected for Claude.
 - **Gaps study.** One decoder procedure (eight shown neighbours, score-only feedback, 4 × 3 candidates); trained
   inverters such as vec2text may land differently. LLM judges overlap with the generators, and their criteria are not
   independent (coherence correlates with feasibility at 0.35 to 0.63 and appeal at 0.41 to 0.79). One non-expert human
   rater (me, 80 items, 64 with judge scores). The decoders were trained after the Steam and arXiv splits and the patent
   future is inside every generator's training data, so no decoding result is read as anticipation. F5 uses 9,477
   decided patent applications and excludes 30,865 pending ones. One cell resolution and one hole definition (256
-  cells, Gaussian-surrogate hole). The causal anchoring test was run in Qwen3 only. The combination test uses proxies
+  cells, Gaussian-surrogate hole). In BGE-M3 the causal anchoring test re-embeds the same decoded texts; GAP and FAR
+  targets exist only in Qwen3, so their target loss is not defined there. The combination test uses proxies
   (NMF topics, PMI, past rarity) on one corpus.
 
 **Table 6.** Replication of confirmatory results in BGE-M3.
 
 | Result | Section | BGE-M3 |
 |---|---|---|
-| Causal anchoring, 12 of 12 cells | 3 | not run |
+| Causal anchoring, 12 of 12 cells | 3 | replicated: donor attraction in 12 of 12 cells, target loss in the 4 REAL cells (not defined for GAP and FAR targets) |
 | F1, nothing in the far region | 4 | replicated |
 | F2 fails: partial association with growth | 4 | replicated (Steam, arXiv); patents not significant in either |
 | F3, hole adds nothing to momentum | 4 | replicated, except patents/BGE-M3 (+0.031) |
@@ -648,19 +808,23 @@ where the future will be.
 | F5, isolation and quality | 4 | replicated |
 | F6, GAP targets not filled faster | 4 | not run (inconclusive in Qwen3) |
 | H5, hole adds nothing to fitted momentum | 4, A.6 | replicated; H1-H4 do not use an embedder |
-| A1-A3, how real follow-ups move | 5, A.8 | not run |
-| B1, the short step | 5.1 | replicated, both follow-up sets and both generators |
+| A1-A3, how real follow-ups move | 5, A.8 | replicated, including A2's failure |
+| B1, the short step | 5.1 | replicated, both follow-up sets (all citing and S2-flagged) and both generators |
 | B3, memory raises diversity | A.8 | replicated |
-| B2, B4, shown neighbours and momentum hint | A.8 | not run |
+| B2, B4, shown neighbours and momentum hint | A.8 | B2 holds in BGE-M3 (Holm p < 0.001), not in Qwen3; B4 fails in both, its reversal significant in Qwen3 only |
 | C1, C3, the step lengthens under critique; C5 fails | 5.2 | replicated (Table A6) |
-| C2, C4, hit changes | 5.2 | not run |
+| C2, C4, hit changes | 5.2 | replicated |
 | N3-N6, critique against neutral revision | 5.2 | run; N3: the reviewer's extra fit loss in both, GEO's in Qwen3 only; N4: GEO in Qwen3 only; N5: no significant contrast in either; N6: ORACLE negative in Qwen3 only, others not significant |
 | N1, N2, critique lengthens the step beyond neutral revision | 5.2 | replicated |
-| M1-M4, H1-H2, 2026 generator and ORACLE-H | 5.4 | not run |
+| N1-N6 for gpt-5.4-mini (pre-registered in review) | 5.4 | N1, N2 replicated; N5: GEO above and ORACLE below NEUTRAL in both; N6: no contrast after Holm in either (GEO +0.016, uncorrected p 0.02, in BGE-M3) |
+| R1, R2, E1-E6, gpt-4o critique replication on 150 new contexts (pre-registered in review) | 5.3 | R1, R2 replicated; E1, E2 turns detected in both; E3 detected in Qwen3, within ±0.015 in BGE-M3; E4 insufficient in Qwen3, detected in BGE-M3 (+0.011); E5, E6 insufficient in both |
+| M1-M4, H1-H2, 2026 generator and ORACLE-H | 5.4 | M1-M3 replicated and M4 fails in both; H1 fails in Qwen3 but holds in BGE-M3 (+0.0045, Holm p 0.027); H2's oracle nulls within ±0.015 in both |
+| Short step against true continuations (pre-registered in review) | 5.1 | run in both: holds for gpt-4o in Qwen3 over all 47 contexts with a continuation (0.048, a third of the citing-paper gap, about half in the other cells; 0.064 on the 29 not analysed before), in BGE-M3 (0.086) and for OLMo in both |
 | P1, no positive distance slope | 6 | fails in Qwen3, holds in BGE-M3 |
 | P2, source over quintile | 6 | fails with the frozen quintiles; holds with BGE-M3's own |
 | P3, P4, manipulation check and uptake | 6 | replicated |
 | P5, no cell beats both baselines | 6 | fails in Qwen3, holds in BGE-M3 |
+| A1, past game under instruction worse than no material (pre-registered in review) | 6 | replicated (−0.0040, p = 9 × 10⁻⁸) |
 
 ## 9 Conclusion
 
@@ -670,14 +834,15 @@ For the methods I tested, what distances did not do is guide ideation. Their emp
 to decode one writes a blend of the content it was shown, and no later item and no coherent text I could construct
 came near the far points. Their gaps do not forecast the future: a hole score is at chance, and holes go with growth
 more clearly once momentum is accounted for, without adding to it as a forecast. Their distances, fed back as a score,
-do not steer a model continuing a paper: gpt-4o takes a shorter step than the papers that later cited the source, as
-Tang and Yang found, and for gpt-4o and a 2026 model a similarity score towards those papers moved the ideas'
-follow-up-specific projection by no more than about 0.015 in cosine (OLMo's moved more, and is untested against a
-control); for gpt-4o no turn beyond revising with no information was detected after Holm, and what turning there is
-goes mostly towards where any nearby later paper lies. Nor did the distance of inspiration material tell a model how far to look: graded within
+barely steer a model continuing a paper: gpt-4o takes a shorter step than the papers that later cited the source, as
+Tang and Yang found (and, by a third to a half as much, than the few that continue it), and critique turns the ideas towards those papers specifically by estimated mean
+changes of up to about 0.02 in cosine (gpt-4o, replicated on new papers; OLMo's turns are as large or larger), much of which plain revision
+with no information also produces; what feedback adds beyond revision was detected only once, for distance feedback in
+one embedder, and is bounded at 0.015 only for the 2026 model's oracle and, in one embedder, its reviewer; what turning
+there is goes mostly towards where any nearby later paper lies. Nor did the distance of inspiration material tell a model how far to look: graded within
 each of nine sources, it changes how unusual and how coherent the proposed games are, with at most a small slope in
 their anticipation of the games that came out after the model's cutoff and no detected middle optimum; and, under
-instruction, an existing game given as material anticipates the future worse than other material (exploratory). These are bounds on
+instruction, an existing game given as material anticipates the future worse than no material. These are bounds on
 inference-time methods with the generators, encoders and corpora I used, not a proof that no use of a map can help;
 within them, what moved the model was content, and neither the history of its scores nor a 2026 generator changed that.
 
@@ -966,12 +1131,13 @@ its own target. With C the normalised centroid of the shown embeddings and $a_e 
 identity $e \cdot t = a_e\,(C \cdot t) + r \cdot t$, $r = e - a_e C$, separates the anchored part of landing from the
 rest; the randomised test asks whether that anchoring is causal.
 
-**Table A2.** Causal anchoring, 20 targets per cell, with 95 % intervals. D = target loss, the decoded text's cosine
+**Table A2.** Causal anchoring, 20 targets per cell, with the pre-registered Bonferroni intervals (each bound
+one-sided at 0.05/24, so two-sided 99.6 %). D = target loss, the decoded text's cosine
 to its own target with the true neighbours minus with the swapped ones. A = donor attraction, $(e_\mathrm{swap} -
 e_\mathrm{true}) \cdot (C_\mathrm{donor} - C_\mathrm{true})$, the move of the decoded embedding e towards the centroid
 of the donor's neighbours and away from the true ones.
 
-| Domain | Decoder | Arm | D [95 % CI] | A [95 % CI] | $e\cdot t$ true / swap / none |
+| Domain | Decoder | Arm | D [interval] | A [interval] | $e\cdot t$ true / swap / none |
 |---|---|---|---|---|---|
 | Steam | gpt-6-luna | REAL | +0.265 [+0.161, +0.368] | 0.55 [0.42, 0.68] | 0.691 / 0.426 / 0.383 |
 | Steam | Sonnet 5.5 | REAL | +0.311 [+0.222, +0.399] | 0.65 [0.50, 0.79] | 0.765 / 0.454 / 0.465 |
@@ -1168,12 +1334,14 @@ step, per context; diversity = mean pairwise cosine among a context's ideas (low
 | CTX+MOM | 0.138 | 0.685 | 0.617 | 0.803 |
 
 **B2 does not survive Holm.** CTX+NB ideas are slightly closer to the shown neighbours' centroid than to the
-follow-ups' centroid (difference 0.008, CI −0.001 to 0.016; p = 0.023, Holm 0.068). **B3 holds.** Memory of earlier
+follow-ups' centroid (difference 0.008, CI −0.001 to 0.016; p = 0.023, Holm 0.068); in BGE-M3 the same difference,
+0.009 (CI 0.004 to 0.013), survives Holm (p < 0.001), so B2 holds in one embedder only. **B3 holds.** Memory of earlier
 titles diversifies the ideas (0.767 against 0.824; Holm p < 10⁻¹⁹), in all four gpt-4o cells of the robustness grid and
 for OLMo (0.826 → 0.808 in Qwen3), but it does not lengthen the step much (gap 0.128). **B4 fails; the point estimate
 is reversed.** I predicted that a verbal hint of where the area is moving would give the highest hit rate. Its hit
 rate was 0.617 against 0.659 for CTX (difference −0.041, CI −0.083 to −0.001; McNemar on context majorities 8 against
-15), with fit essentially unchanged (0.685 against 0.680); the best arm by hit was CTX+NB (0.675). **Centre drift
+15), with fit essentially unchanged (0.685 against 0.680); the best arm by hit was CTX+NB (0.675). In BGE-M3 B4 also
+fails, but the reversal is not significant (−0.024, CI −0.065 to +0.019) and the best arm by hit is CTX. **Centre drift
 (exploratory).** Ideas drift towards the centre much less than follow-ups (0.13 to 0.15 against 0.427), at a much
 shorter step, so the comparison is confounded by step length.
 
@@ -1227,7 +1395,12 @@ the data it tests were generated or inspected (except `neutral_revision.md`, see
 were added afterwards, in separate sections of the same document. Where a document was revised before its test run,
 the revision has its own commit and date. Smoke calls run before a test run are listed with what happened to their
 outputs: most were run on targets excluded from the test set or not analysed, while the inspiration format check and
-the neutral control's plumbing test used the frozen protocol and are kept in the data.
+the neutral control's plumbing test used the frozen protocol and are kept in the data. The fourteen completed strengthening studies listed below (`strengthen_*` documents) were written during review, after the original results
+were known: two freeze analyses of saved outputs (BGE-M3 replication, inspiration shape), two simulations from the
+real design (shape coverage, shape band), and ten freeze new labels or generations (continuations, in two steps; the
+stress test, in three runs; the blind author check; the OLMo and gpt-5.4-mini neutral arms; the past game against no
+material; the gpt-4o critique replication). One further registered study (`strengthen_olmo_direction.md`) is still
+running and is not used.
 
 | Document | Commit, date | Tests | Smoke calls before the test run | Section |
 |---|---|---|---|---|
@@ -1245,3 +1418,17 @@ the neutral control's plumbing test used the frozen protocol and are kept in the
 | `modern_and_oracle_history.md` | `b649b12`, 2026-11-01 | gpt-5.4-mini; ORACLE with history (M1-M4, H1-H2) | 9 ORACLE-H calls on context 0 and 3 gpt-5.4-mini calls on an unrelated prompt, outputs not analysed | 5.4 |
 | `inspiration_from_anything.md` | draft `5d79dee`, 2026-11-03; frozen `7ea8ae8`, 2026-11-03 | distance of inspiration material (P1-P5) | 6 format calls, kept in the run | 6 |
 | `neutral_revision.md` | 2026-11-04; by my record written before the first call, but committed together with its results, so not independently timestamped | content-free revision control for the critique arms (N1-N6) | a 2-context plumbing test, kept in the data | 5.2, 5.3 |
+| `strengthen_inspiration_shape.md` | `f2bdd71`, 2026-11-05 | selection-aware bootstrap of the two-lines test; bound on a middle optimum | none (saved outputs) | 6 |
+| `strengthen_cli_powered.md` | `565e848`, 2026-11-05 | stress test at 5 ideas per call | none | 6 |
+| `strengthen_continuations.md` | `ae4f914`, 2026-11-05 | blind labelling of 400 + 331 follow-up pairs; step and direction against continuations | none | 5, 5.1, 8 |
+| `strengthen_bge_replication.md` | `a4041b6`, 2026-11-05 | BGE-M3 replication of causal anchoring, M1-M4, H1-H2, A1-A3, B2, B4, C2, C4 | none (re-embedding saved texts) | 3, 5.4, 8, A.8 |
+| `strengthen_continuations_full.md` | `ff86a5b`, 2026-11-05 | blind labelling of the remaining 2,152 follow-up pairs; step and direction against all continuations | none | 5, 5.1, 8 |
+| `strengthen_shape_coverage.md` | `9211060`, 2026-11-05 | coverage simulation of the shape bound | none (simulation) | 6 |
+| `strengthen_cli_callsize.md` | `7476b90`, 2026-11-05 | stress test with call size randomised within one run | none | 6, 8 |
+| `strengthen_cli_sessions.md` | `046a75e`, 2026-11-05; deviation `b444d49`, 2026-11-06 | call size and no-material baseline over eight sessions (S1, S2) | none | 6, 8 |
+| `strengthen_human_labels.md` | `cebcf48`, 2026-11-05 | blind author check of 40 LLM-labelled follow-up pairs | none | 5.1, 8 |
+| `strengthen_shape_band.md` | `011be07`, 2026-11-05 | simultaneous (sup-t) bound on a middle optimum, with coverage simulation | none (simulation; observed bound computed first) | 6 |
+| `strengthen_olmo_neutral.md` | `56d6a1e`, 2026-11-05 | content-free revision control for OLMo (O1-O6) | none | 5.3, 8 |
+| `strengthen_modern_neutral.md` | `67db500`, 2026-11-06 | content-free revision control for gpt-5.4-mini (N1-N6) | none | 5.4, 8 |
+| `strengthen_anchoring_none.md` | `67db500`, 2026-11-06 | past game under instruction against no material, 1,000 new ideas per arm (A1) | none | 6 |
+| `strengthen_critique_replication.md` | `67db500`, 2026-11-06; clarification `3eb74e5`, 2026-11-06, before analysis | confirmatory replication of the gpt-4o critique study on 150 new contexts (R1, R2, E1-E6) | none | 5.3, 5.4, 8 |
