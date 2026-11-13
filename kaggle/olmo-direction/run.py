@@ -152,16 +152,31 @@ def generate(prompts, label):
     order = sorted(range(len(ids)), key=lambda i: len(ids[i]))
     nb = -(-len(order) // BATCH)
     t1 = time.time()
-    for bi, b in enumerate(range(0, len(order), BATCH)):
-        idx = order[b:b + BATCH]
+    def attempt(idx):
         batch = tok.pad({"input_ids": [ids[i] for i in idx]}, return_tensors="pt").to(llm.device)
         with torch.no_grad():
             g = llm.generate(**batch, do_sample=True, temperature=1.0, top_p=1.0, max_new_tokens=MAX_NEW,
                              pad_token_id=tok.pad_token_id)
         for i, row in zip(idx, g[:, batch["input_ids"].shape[1]:]):
             out[i] = tok.decode(row, skip_special_tokens=True)
-        del g, batch
-        torch.cuda.empty_cache()
+
+    def run(idx):  # a batch that does not fit in GPU memory is split in halves (wave 1 part 1 v1 died of OOM in round 1)
+        oom = False
+        try:
+            attempt(idx)
+        except torch.OutOfMemoryError:
+            if len(idx) == 1:
+                raise
+            oom = True
+        torch.cuda.empty_cache()  # outside the except block, so the traceback no longer pins the batch tensors
+        if oom:
+            log(f"  {label}: OOM on a batch of {len(idx)}, splitting")
+            h = len(idx) // 2
+            run(idx[:h])
+            run(idx[h:])
+
+    for bi, b in enumerate(range(0, len(order), BATCH)):
+        run(order[b:b + BATCH])
         if (bi + 1) % 10 == 0 or bi + 1 == nb:
             el = time.time() - t1
             log(f"  {label}: batch {bi + 1}/{nb} ({el:.0f}s, ~{el / (bi + 1) * (nb - bi - 1):.0f}s left in this pass)")

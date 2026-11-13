@@ -223,5 +223,41 @@ def final() -> None:
     OUT.write_text(json.dumps(res, indent=1, default=str) + "\n")
 
 
+def label_diagnostics():
+    """Registered secondary (prereg 'Estimands'): label counts, kappa (CONTINUES vs not) on pairs both labelled,
+    attempts and fallbacks, per labeller, over every block/stage directory. Adds .labels_diagnostics to the JSON."""
+    labs, att = {"codex": {}, "claude": {}}, {}
+    for d in sorted((RUN / "labels").glob("block*")):
+        for who in labs:
+            for f in sorted(d.glob(f"labels_{who}_batch_*.json")):
+                for r in json.loads(f.read_text())["rows"]:
+                    labs[who][r["id"]] = r["label"]
+            af = d / f"attempts_{who}.jsonl"
+            if af.exists():
+                rows = [json.loads(x) for x in af.read_text().splitlines() if x.strip()]
+                a = att.setdefault(who, {"attempts": 0, "batch_attempts_failed": 0, "single_pair_calls": 0,
+                                         "batches_completed_by_single_pair": 0, "status": {}})
+                a["attempts"] += len(rows)
+                a["batch_attempts_failed"] += sum(r["kind"] == "batch" and r["status"] != "ok" for r in rows)
+                a["single_pair_calls"] += sum(r["kind"] == "single" for r in rows)
+                a["batches_completed_by_single_pair"] += len({r["batch"] for r in rows if r["kind"] == "single"})
+                for r in rows:
+                    a["status"][r["status"]] = a["status"].get(r["status"], 0) + 1
+    both = sorted(set(labs["codex"]) & set(labs["claude"]))
+    x = np.array([labs["codex"][i] == "CONTINUES" for i in both])
+    y = np.array([labs["claude"][i] == "CONTINUES" for i in both])
+    po = float((x == y).mean())
+    pe = float(x.mean() * y.mean() + (1 - x.mean()) * (1 - y.mean()))
+    dist = {w: {k: sum(v == k for v in labs[w].values()) for k in ("CONTINUES", "USES", "BACKGROUND", "UNCLEAR")}
+            for w in labs}
+    out = {"pairs_labelled": {w: len(v) for w, v in labs.items()}, "pairs_both": len(both),
+           "consensus_continues": int((x & y).sum()), "label_counts": dist,
+           "agreement": po, "kappa_continues": (po - pe) / (1 - pe), "attempts": att}
+    res = json.loads(OUT.read_text())
+    res["labels_diagnostics"] = out
+    OUT.write_text(json.dumps(res, indent=1, default=str) + "\n")
+    print(json.dumps(out, indent=1))
+
+
 if __name__ == "__main__":
-    {"check": check, "final": final}[sys.argv[1]]()
+    {"check": check, "final": final, "labels": label_diagnostics}[sys.argv[1]]()

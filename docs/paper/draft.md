@@ -22,7 +22,8 @@ closer to their source than the papers that later cite it, as Tang and Yang (202
 continue it. In a pre-registered replication on 150 new papers, critique turns gpt-4o's ideas towards the citing papers
 specifically by estimated mean changes of up to about 0.02 in cosine, but revising with no information turns them by about 0.01 as well; what
 the feedback adds was detected only for distance feedback in one of two embedders (+0.011), and is bounded at 0.015
-only for two arms of the 2026 model. (4) **No sweet spot for inspiration distance was detected:** gpt-4o, shown
+for two arms of the 2026 model and, in a pre-registered test on 150 further papers selected for having an S2-flagged
+continuation, for OLMo's distance and reviewer feedback towards the papers that continue the source. (4) **No sweet spot for inspiration distance was detected:** gpt-4o, shown
 material from nine sources graded by distance, proposes games whose anticipation of later Steam releases shows no
 detected inverted U, only a small positive slope in one embedder. Farther material makes the games more isolated and,
 under instruction, less coherent, and a past game given to build on anticipates worse than no material. Momentum predicts the future; content moves the model.
@@ -58,8 +59,10 @@ frozen date.
    revising alone does. A pre-registered replication with gpt-4o on 150 new papers withdraws my earlier post-hoc
    bound: critique turns the ideas towards the citing papers specifically by estimated mean changes of up to about
    0.02 in cosine, but revising with no information turns them by about 0.01 as well, and a turn beyond that was detected only for distance
-   feedback in one embedder; for the 2026 model the oracle's extra turn is bounded at 0.015, and for OLMo it is neither
-   shown nor bounded.
+   feedback in one embedder; for the 2026 model the oracle's extra turn is bounded at 0.015, and for OLMo, in a
+   pre-registered test on 150 further papers selected for having an S2-flagged continuation, distance and reviewer
+   feedback add no turn of 0.015 or more beyond revision towards the papers that continue the source, while the oracle's extra turn is
+   neither shown nor bounded.
 4. **The distance of inspiration matters** (Section 6, pre-registered). Ideas often come from material that looks
    irrelevant. I detect no middle distance at which material shown to the model best anticipates the games released
    after its cutoff; distance predicts how unusual the result is, and anticipation only through a small slope that
@@ -400,8 +403,9 @@ lengthens the step more (+0.043, CI +0.031 to +0.055, Holm p < 0.001; +0.023 in 
 the follow-up-specific direction no critique arm differs from NEUTRAL after Holm (GEO +0.012, reviewer +0.020, ORACLE
 +0.013 in Qwen3; −0.006 to +0.010 in BGE-M3), but no interval lies wholly within ±0.015 (intervals between −0.024 and +0.042;
 t-based detectable differences with 80 % power before multiplicity correction 0.024 to 0.033), so for OLMo a
-feedback-specific turn is neither shown nor bounded at that size. Plain revision reproduces a substantial fraction of
-OLMo's larger turns; the additional feedback-specific turn remains unresolved.
+feedback-specific turn is neither shown nor bounded at that size on these contexts. Plain revision reproduces a substantial fraction of
+OLMo's larger turns; the additional feedback-specific turn is unresolved here and is tested in its own pre-registered
+study at the end of this section.
 
 **A confirmatory replication with gpt-4o (pre-registered, added later).** The ±0.015 reading of gpt-4o above, and "no
 turn beyond revision", rest on one sample of 150 contexts read against a bound chosen after the results, so I treat
@@ -426,6 +430,37 @@ Qwen3, +0.021 in BGE-M3), and pooling the 300 contexts of both samples gives fee
 discovery sample's "at most about 0.015" is withdrawn: critique turns the ideas towards the citing papers specifically
 by estimated mean changes of up to about 0.02 (+0.004 to +0.020 across arms and embedders), plain revision does about half of that or more, and what feedback adds beyond revision is
 resolved in neither direction, except a GEO turn of about 0.011 in BGE-M3.
+
+**A confirmatory test of OLMo against revision (pre-registered, added later).** OLMo's unresolved feedback-specific
+turn got its own study, with two changes of design: the direction is built from the papers that *continue* the source
+rather than from all citing papers, and each arm gets three ideas per context instead of one. The contexts come from a
+new frame of 2021-2022 arXiv cs papers with at least five arXiv follow-ups from 2024 on, disjoint from the original 150
+and from the gpt-4o replication. The two LLM labellers of Section 5.1, blind to each other, labelled follow-up pairs
+by a pre-registered hybrid rule: the pairs Semantic Scholar flags as influential or as using the source's method or
+results first, then the rest of a context only if one of its flagged pairs is a consensus continuation. A context is
+eligible if at least one S2-flagged follow-up is a consensus continuation and it has at least two consensus
+continuations in all; 150 of the 1,800 labelled were (8.3 %), so the population is the contexts with a flagged
+continuation, not all contexts with continuations. A seeded 10 % of contexts was labelled in full as an audit to
+measure that restriction: it found 12 contexts with at least two continuations, all of them eligible, and missed none.
+Over 13,074 labelled pairs the labellers agree on continues-or-not with κ = 0.69 (657 consensus continuations). For these, s is
+rebuilt from the continuations (with as many nearest later papers, excluding all citing papers, as there are
+continuations); the real continuations' leave-one-out alignment is 0.362 in Qwen3 and 0.394 in BGE-M3. OLMo ran GEO,
+the reviewer, ORACLE and NEUTRAL (from GEO's round-0 ideas), 3 ideas and 3 rounds each, in two waves of 100 and 50
+contexts. The stopping rule read only the widths of the primary intervals; it was fixed before the first wave and met
+after the second, and the estimates were read once, after the stop. The primary contrast is each critique arm's change
+along s minus NEUTRAL's, in Qwen3, with 95 % bootstrap intervals, Wilcoxon tests and Holm over three, read against
+±0.015. For GEO (−0.002, CI −0.013 to +0.009) and the reviewer (−0.003, CI −0.014 to +0.008) there is no
+feedback-specific turn of 0.015 or more. For ORACLE the result is insufficient (+0.010, CI −0.004 to +0.024, Holm
+p = 0.69). In BGE-M3, a secondary cell, all three intervals lie within ±0.015 (estimates −0.000 to +0.001), and with
+Table 3's all-follow-up direction on the same contexts the three Qwen3 contrasts are −0.004 to +0.000. NEUTRAL alone
+moves the ideas along s by +0.006 (CI −0.004 to +0.016). Critique still lengthens the step beyond revision (GEO +0.040,
+reviewer +0.015, Holm p < 0.001 and 0.003; ORACLE −0.006, not significant), and GEO's extra move goes towards the
+nearest later papers in general (along p +0.031, CI +0.021 to +0.041). One secondary variant, with p built from as many
+neighbours as saved follow-ups, puts GEO's contrast slightly below zero (−0.012, bootstrap CI −0.024 to −0.0004), but not significantly under the
+registered test (Wilcoxon, Holm p = 0.20). For OLMo,
+then, distance and reviewer feedback add no turn towards the continuations of 0.015 or more beyond plain revision,
+and the oracle's extra turn is neither shown nor bounded. These are other contexts and another direction
+(continuations, not all citing papers), so they qualify rather than overturn the exploratory OLMo cells above.
 
 ![**Figure 4.** Step-invariant direction (exploratory). Arrows go from round 0 to round 2 of each arm; the black bar is the real follow-ups' leave-one-out alignment with each other. Every arm turns towards the follow-ups' direction, including NEUTRAL (grey, gpt-4o only), which revises with no information; no arm gets near the alignment the follow-ups share.](figures/fig4_tangent.png)
 
@@ -474,7 +509,8 @@ follow-ups' own projection on that direction; for gpt-5.4-mini, whose ideas star
 nulls say less. For gpt-5.4-mini, then, a similarity score towards the papers that later cited the source, with or
 without the history of its scores, produced no follow-up-specific turn larger than about 0.015 in cosine; for gpt-4o
 that post-hoc reading was not confirmed by the replication of Section 5.3 (ORACLE +0.012, CI +0.003 to +0.021, in
-Qwen3; within the bound in BGE-M3), and OLMo's oracle does not meet it (Section 5.3), and overall tangent alignment, which includes the move towards
+Qwen3; within the bound in BGE-M3), OLMo's oracle neither meets nor is shown to exceed it in its confirmatory test (+0.010 beyond revision, CI −0.004 to
++0.024; Section 5.3), and overall tangent alignment, which includes the move towards
 any nearby later paper, rises by more (ORACLE-H +0.018). Critique lengthens the step in all three generators.
 
 **A neutral control for the 2026 generator (pre-registered, added later).** The NEUTRAL arm of Section 5.2, run with
@@ -738,11 +774,12 @@ where the future will be.
   with κ = 0.75 (CI 0.65 to 0.81), and on the four labels with κ = 0.41, most disagreements being "unclear" against
   "background". An earlier sample of 30, labelled by one LLM, had found 3 continuations; both new labellers reject all
   three. Semantic Scholar's flags enrich for continuations without isolating them: 11 % of flagged follow-ups are
-  consensus continuations against 2.5 % of the rest, and the S2-flagged subset as analysed holds 40 of the 112. Every
-  "direction towards the follow-ups" in Section 5 means towards the papers that later cite the context. Built from the
-  continuations alone, that direction can be tested in the 17 contexts with at least two consensus continuations
-  (pre-registered as confirmatory once at least ten had them). No critique arm moves along it beyond NEUTRAL after
-  Holm (ORACLE +0.015, CI −0.016 to +0.047; GEO +0.012, CI −0.014 to +0.035; LLM +0.001, CI −0.031 to +0.037), but
+  consensus continuations against 2.5 % of the rest, and the S2-flagged subset as analysed holds 40 of the 112. On the original 150
+  contexts, every "direction towards the follow-ups" in Section 5 means towards the papers that later cite the context;
+  only the OLMo test at the end of Section 5.3, on other contexts, builds it from continuations. Built from the
+  continuations alone, that direction can be tested in the 17 original contexts with at least two consensus
+  continuations (pre-registered as confirmatory once at least ten had them). There, no gpt-4o critique arm moves along
+  it beyond NEUTRAL after Holm (ORACLE +0.015, CI −0.016 to +0.047; GEO +0.012, CI −0.014 to +0.035; LLM +0.001, CI −0.031 to +0.037), but
   no interval lies wholly within ±0.015, so this neither shows feedback steering towards continuations nor bounds it below
   that size. The labellers are LLMs reading abstracts. In a pre-registered blind check I labelled 40 sampled pairs
   myself from the same abstracts, blind to the LLM labels and to the stratum (I am not a domain expert in most of these
@@ -754,7 +791,7 @@ where the future will be.
   independent expert validation.
 - **One domain and three generators for the continuation study.** All contexts are arXiv cs papers. gpt-4o and
   OLMo-7B-0424 predate the follow-ups by design; OLMo is smaller and runs fewer arms, with one idea per context in the
-  critique arms. The 2026 generator of Section 5.4 runs on other contexts, and its training cutoff is reported only by
+  critique arms (three in its confirmatory test of Section 5.3, on other contexts). The 2026 generator of Section 5.4 runs on other contexts, and its training cutoff is reported only by
   third parties: if it is later than stated, some of its follow-ups may be in its training data.
 - **The oracles are inference-time feedback only.** ORACLE sees one score about the previous proposal; ORACLE-H adds
   the history and the best proposal so far. Neither failure says that training on a future-alignment reward cannot
@@ -765,8 +802,10 @@ where the future will be.
   papers; excluding all of them does not change the table (Section 5.3). The equivalence bound of ±0.015 used to read its nulls, and those of Section 5.4, was chosen after the results;
   it was then fixed before the gpt-5.4-mini neutral contrasts and before a confirmatory replication with gpt-4o on 150
   new contexts, which withdrew it for gpt-4o's per-arm changes (Section 5.3).
-- **The neutral control covers all three generators**, and reuses GEO's round-0 ideas. For OLMo it separates the step
-  and alignment changes from revision but leaves the follow-up-specific turn unresolved at ±0.015 (Section 5.3); for
+- **The neutral control covers all three generators**, and reuses GEO's round-0 ideas. For OLMo, on the original 150, it separates the step
+  and alignment changes from revision but leaves the follow-up-specific turn unresolved at ±0.015; a pre-registered
+  test on 150 new contexts, along the continuations' direction, bounds GEO's and the reviewer's extra turn at that size
+  and leaves ORACLE's unresolved in Qwen3 (Section 5.3); for
   gpt-5.4-mini it bounds ORACLE's extra turn at that size in both embedders and the reviewer's in Qwen3, not GEO's
   (Section 5.4); for gpt-4o, in the replication, it leaves all three unresolved in Qwen3 and detects GEO's (+0.011) in
   BGE-M3 (Section 5.3).
@@ -818,6 +857,7 @@ where the future will be.
 | N1, N2, critique lengthens the step beyond neutral revision | 5.2 | replicated |
 | N1-N6 for gpt-5.4-mini (pre-registered in review) | 5.4 | N1, N2 replicated; N5: GEO above and ORACLE below NEUTRAL in both; N6: no contrast after Holm in either (GEO +0.016, uncorrected p 0.02, in BGE-M3) |
 | R1, R2, E1-E6, gpt-4o critique replication on 150 new contexts (pre-registered in review) | 5.3 | R1, R2 replicated; E1, E2 turns detected in both; E3 detected in Qwen3, within ±0.015 in BGE-M3; E4 insufficient in Qwen3, detected in BGE-M3 (+0.011); E5, E6 insufficient in both |
+| OLMo critique against neutral revision along the continuations' direction, 150 new contexts (pre-registered in review) | 5.3 | run in both: GEO and reviewer show no feedback-specific turn of 0.015 or more in either; ORACLE insufficient in Qwen3, within ±0.015 in BGE-M3 |
 | M1-M4, H1-H2, 2026 generator and ORACLE-H | 5.4 | M1-M3 replicated and M4 fails in both; H1 fails in Qwen3 but holds in BGE-M3 (+0.0045, Holm p 0.027); H2's oracle nulls within ±0.015 in both |
 | Short step against true continuations (pre-registered in review) | 5.1 | run in both: holds for gpt-4o in Qwen3 over all 47 contexts with a continuation (0.048, a third of the citing-paper gap, about half in the other cells; 0.064 on the 29 not analysed before), in BGE-M3 (0.086) and for OLMo in both |
 | P1, no positive distance slope | 6 | fails in Qwen3, holds in BGE-M3 |
@@ -836,9 +876,10 @@ came near the far points. Their gaps do not forecast the future: a hole score is
 more clearly once momentum is accounted for, without adding to it as a forecast. Their distances, fed back as a score,
 barely steer a model continuing a paper: gpt-4o takes a shorter step than the papers that later cited the source, as
 Tang and Yang found (and, by a third to a half as much, than the few that continue it), and critique turns the ideas towards those papers specifically by estimated mean
-changes of up to about 0.02 in cosine (gpt-4o, replicated on new papers; OLMo's turns are as large or larger), much of which plain revision
+changes of up to about 0.02 in cosine (gpt-4o, replicated on new papers; OLMo's were as large or larger on the original papers), much of which plain revision
 with no information also produces; what feedback adds beyond revision was detected only once, for distance feedback in
-one embedder, and is bounded at 0.015 only for the 2026 model's oracle and, in one embedder, its reviewer; what turning
+one embedder, and is bounded at 0.015 for the 2026 model's oracle and, in one embedder, its reviewer, and for OLMo's
+distance and reviewer feedback along the direction of the papers that continue the source; what turning
 there is goes mostly towards where any nearby later paper lies. Nor did the distance of inspiration material tell a model how far to look: graded within
 each of nine sources, it changes how unusual and how coherent the proposed games are, with at most a small slope in
 their anticipation of the games that came out after the model's cutoff and no detected middle optimum; and, under
@@ -1395,12 +1436,11 @@ the data it tests were generated or inspected (except `neutral_revision.md`, see
 were added afterwards, in separate sections of the same document. Where a document was revised before its test run,
 the revision has its own commit and date. Smoke calls run before a test run are listed with what happened to their
 outputs: most were run on targets excluded from the test set or not analysed, while the inspiration format check and
-the neutral control's plumbing test used the frozen protocol and are kept in the data. The fourteen completed strengthening studies listed below (`strengthen_*` documents) were written during review, after the original results
+the neutral control's plumbing test used the frozen protocol and are kept in the data. The fifteen completed strengthening studies listed below (`strengthen_*` documents) were written during review, after the original results
 were known: two freeze analyses of saved outputs (BGE-M3 replication, inspiration shape), two simulations from the
-real design (shape coverage, shape band), and ten freeze new labels or generations (continuations, in two steps; the
+real design (shape coverage, shape band), and eleven freeze new labels or generations (continuations, in two steps; the
 stress test, in three runs; the blind author check; the OLMo and gpt-5.4-mini neutral arms; the past game against no
-material; the gpt-4o critique replication). One further registered study (`strengthen_olmo_direction.md`) is still
-running and is not used.
+material; the gpt-4o critique replication; the OLMo direction test).
 
 | Document | Commit, date | Tests | Smoke calls before the test run | Section |
 |---|---|---|---|---|
@@ -1432,3 +1472,4 @@ running and is not used.
 | `strengthen_modern_neutral.md` | `67db500`, 2026-11-06 | content-free revision control for gpt-5.4-mini (N1-N6) | none | 5.4, 8 |
 | `strengthen_anchoring_none.md` | `67db500`, 2026-11-06 | past game under instruction against no material, 1,000 new ideas per arm (A1) | none | 6 |
 | `strengthen_critique_replication.md` | `67db500`, 2026-11-06; clarification `3eb74e5`, 2026-11-06, before analysis | confirmatory replication of the gpt-4o critique study on 150 new contexts (R1, R2, E1-E6) | none | 5.3, 5.4, 8 |
+| `strengthen_olmo_direction.md` | `25e7a0a`, 2026-11-05 | OLMo critique arms against content-free revision along the continuations' direction, 150 new contexts in two waves with a width-only stopping rule | label dry runs (batch counts only); wave 1's first kernel run died of GPU memory in round 1 and was rerun from scratch with the same inputs and seed, its outputs not analysed | 1, 5.3, 5.4, 8, 9 |
