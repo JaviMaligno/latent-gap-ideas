@@ -1,0 +1,16 @@
+{
+  "id": "javieraguilarmartin/latent-gap-review-rewrite-embed",
+  "title": "latent-gap-review-rewrite-embed",
+  "code_file": "embed.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "javieraguilarmartin/latent-gap-review-rewrite-disc-texts"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}

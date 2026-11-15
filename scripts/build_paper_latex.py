@@ -2,9 +2,11 @@
 
   uv run python scripts/build_paper_latex.py            # writes docs/paper/arxiv/{main.tex, figures/, main.pdf, arxiv-source.tar.gz}
 
-The Markdown stays the single source: title, author and abstract are lifted into the LaTeX preamble, section numbers
-are kept as written (secnumdepth 0, so "Section 5.3" in the text matches the heading), figure captions keep their own
-"Figure N." text, and every non-ASCII character is mapped for pdfLaTeX with newunicodechar.
+The Markdown stays the single source: title, author and abstract are lifted into the LaTeX preamble, and every
+non-ASCII character is mapped for pdfLaTeX with newunicodechar. The Lua filter scripts/paper_latex.lua turns the typed
+section numbers into real numbered, labelled sections (checking that LaTeX's numbering matches the typed one), links
+every "Section N", "Table N", "Figure N", "Appendix A.N" and author-year citation, sets tables and figures as floats
+with their "Table N." / "Figure N." captions attached (caption numbers stay as typed), and formats the references.
 """
 from __future__ import annotations
 
@@ -27,21 +29,43 @@ UNI = {
     "³": r"\textsuperscript{3}", "⁴": r"\textsuperscript{4}", "⁵": r"\textsuperscript{5}", "⁶": r"\textsuperscript{6}",
     "⁷": r"\textsuperscript{7}", "⁸": r"\textsuperscript{8}", "⁹": r"\textsuperscript{9}", "⁰": r"\textsuperscript{0}",
 }
-NATIVE = set("—…çíöÉéáóúñü")  # handled by inputenc/T1
+NATIVE = set("—–…çíöÉéáóúñü")  # handled by inputenc/T1
 
 HEADER = r"""
 \usepackage{newunicodechar}
 %UNICODE%
-\setcounter{secnumdepth}{0}
+\setcounter{secnumdepth}{2}
+\makeatletter
+\newcommand*{\section@prefix}{}
+\newcommand*{\setappendixprefix}{\renewcommand*{\section@prefix}{Appendix~}}
+\renewcommand*{\@seccntformat}[1]{\csname #1@prefix\endcsname\csname the#1\endcsname\quad}
+\makeatother
 \usepackage{caption}
-\captionsetup[figure]{labelformat=empty}
+\captionsetup{labelformat=empty, font=small, justification=justified, singlelinecheck=false}
+\captionsetup[table]{position=top, skip=4pt}
+\captionsetup[figure]{skip=4pt}
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{microtype}
-\usepackage{xurl}
-\usepackage{etoolbox}
-\AtBeginEnvironment{longtable}{\small}
+\usepackage{array,booktabs,longtable,graphicx}
+\usepackage{needspace}
+\usepackage[section]{placeins}
+\definecolor{linkblue}{rgb}{0.1,0.2,0.6}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 \renewcommand{\arraystretch}{1.15}
 \setlength{\emergencystretch}{3em}
+\widowpenalty=10000
+\clubpenalty=10000
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.6}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+\AtBeginDocument{%
+  \def\UrlBreaks{\do\/\do\.\do\-\do\_\do\=\do\&\do\?}%
+  \def\UrlBigBreaks{\do\:}%
+  \bookmarksetup{numbered, open, openlevel=1}%
+  \hypersetup{linkcolor=linkblue, citecolor=linkblue, urlcolor=linkblue,
+    pdfsubject={Embedding maps, LLM ideation and forecasting}}%
+}
 """
 
 
@@ -64,12 +88,16 @@ def main() -> None:
     (OUT / "header.tex").write_text(header)
     meta = (OUT / "meta.yaml")
     esc = lambda s: s.replace("\\", "\\\\").replace('"', '\\"')
-    meta.write_text(f'title: "{esc(title)}"\nauthor: |\n  {author.group(1).strip()}\\\n  {affil}\n'
+    name = author.group(1).strip()
+    affil_lines = "\\\n  ".join(p.strip() for p in affil.split("·"))  # affiliation and e-mail on separate lines
+    kw = "".join(f'  - "{esc(k.strip())}"\n' for k in keywords.split(","))
+    meta.write_text(f'title: "{esc(title)}"\nauthor: |\n  {name}\\\n  {affil_lines}\n'
+                    f'author-meta: "{esc(name)}"\nkeywords:\n{kw}'
                     f'date: "November 2026"\nabstract: |\n'
                     + "".join(f"  {ln}\n" for ln in (abstract + f"\n\n**Keywords:** {keywords}").splitlines()))
     (OUT / "body.md").write_text(body)
     subprocess.run(["pandoc", str(OUT / "body.md"), "--metadata-file", str(meta), "-s", "-o", str(OUT / "main.tex"),
-                    "--from", "markdown+autolink_bare_uris", "--lua-filter", str(ROOT / "scripts/paper_code_path.lua"), "--resource-path", str(OUT), "-H", str(OUT / "header.tex"),
+                    "--from", "markdown+autolink_bare_uris", "--lua-filter", str(ROOT / "scripts/paper_latex.lua"), "--resource-path", str(OUT), "-H", str(OUT / "header.tex"),
                     "-V", "documentclass=article", "-V", "fontsize=10pt", "-V", "colorlinks=true",
                     "-V", "linkcolor=blue", "-V", "urlcolor=blue", "--columns=40"], check=True)
     (OUT / "body.md").unlink()
@@ -78,7 +106,10 @@ def main() -> None:
                        capture_output=True, text=True)
     log = (OUT / "main.log").read_text(errors="ignore") if (OUT / "main.log").exists() else r.stdout
     over = [ln for ln in log.splitlines() if ln.startswith("Overfull \\hbox")]
-    print(f"latexmk exit {r.returncode}; overfull hboxes {len(over)}")
+    undef = [ln for ln in log.splitlines() if "undefined" in ln and ("reference" in ln.lower() or "Citation" in ln)]
+    print(f"latexmk exit {r.returncode}; overfull hboxes {len(over)}; undefined references {len(undef)}")
+    for ln in undef[:10]:
+        print("  ", ln)
     for ln in over[:15]:
         print("  ", ln)
     if r.returncode:

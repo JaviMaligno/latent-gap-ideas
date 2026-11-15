@@ -46,11 +46,11 @@ def fig1_anchoring() -> None:
                    label=lab)
         gname = {"luna": "luna", "sonnet": "Sonnet"}
         dname = {"steam": "Steam", "arxiv": "arXiv"}
-        ax.set_xticks(x, [f"{dname[c['domain']]}\n{gname[c['gen']]}" for c in sub], fontsize=7)
+        ax.set_xticks(x, [f"{dname[c['domain']]}\n{gname[c['gen']]}" for c in sub], fontsize=8)
         ax.axhline(0, color="black", lw=0.5)
-        ax.set_title(f"{arm} targets")
+        ax.set_title(f"{arm} targets (own y scale)" if arm != "REAL" else f"{arm} targets")
     axes[0].set_ylabel("cosine of decoded text to target")
-    fig.legend(*axes[0].get_legend_handles_labels(), fontsize=7, ncol=3, loc="upper center",
+    fig.legend(*axes[0].get_legend_handles_labels(), fontsize=8, ncol=3, loc="upper center",
                bbox_to_anchor=(0.5, 1.07))
     fig.tight_layout()
     fig.savefig(OUT / "fig1_anchoring.png")
@@ -67,7 +67,8 @@ def fig2_hole_vs_momentum() -> None:
         hi = [a[k][sc]["ci"][1] - a[k][sc]["auc"] for k in keys]
         ax.errorbar(m, y + off, xerr=[lo, hi], fmt="o", color=col, ms=4, capsize=2, label=lab)
     ax.axvline(0.5, color="black", lw=0.6, ls="--")
-    ax.set_yticks(y, [f"{k.split('/')[0]} / {EMB[k.split('/')[1]]}" for k in keys])
+    dom = {"steam": "Steam", "arxiv": "arXiv", "patents": "Patents"}
+    ax.set_yticks(y, [f"{dom[k.split('/')[0]]} / {EMB[k.split('/')[1]]}" for k in keys])
     ax.set_xlabel("AUC for top-decile growth cells (95 % CI)")
     ax.set_xlim(0.3, 1.0)
     ax.legend(loc="lower center", bbox_to_anchor=(0.5, 1.0), ncol=2, fontsize=8)
@@ -94,6 +95,7 @@ def fig3_step() -> None:
         ax.set_xticks([0, 1, 2], ["round 0", "1", "2"])
         ax.set_xlim(-0.2, 2.2)
     a1.set_xlim(-0.2, 2.9)
+    a2.set_ylim(0.635, 0.680)  # narrow range, stated in the caption
     fig.tight_layout(rect=(0, 0, 1, 0.9))
     fig.legend(*a1.get_legend_handles_labels(), fontsize=7, ncol=4, loc="upper center", bbox_to_anchor=(0.5, 1.0))
     fig.savefig(OUT / "fig3_step.png")
@@ -127,29 +129,38 @@ def fig4_tangent() -> None:
 
 
 def fig5_inspiration() -> None:
+    """One panel per source; the two embedders differ by line style and marker, not by colour alone."""
     res = load("inspiration_from_anything_result.json")
     order = ["steam_game", "board_game", "sports_rules", "movie", "paper", "patent", "news", "recipe", "wikipedia"]
-    pal = [C["black"], C["blue"], C["sky"], C["purple"], C["green"], C["yellow"], C["grey"], C["red"], C["orange"]]
-    fig, axes = plt.subplots(1, 2, figsize=(7.2, 2.9), sharey=True)
-    for ax, e in zip(axes, EMB):
+    style = {"qwen3e06": dict(color=C["blue"], ls="-", marker="o", mfc=C["blue"]),
+             "bgem3": dict(color=C["red"], ls="--", marker="s", mfc="white")}
+    curves = {}
+    for e in EMB:
         d = pd.read_parquet(DATA / f"runs/inspiration/gpt-4o-0806/scored_{e}.parquet")
         d = d[d["arm"] != "NONE"].copy()
         # quintiles of distance re-ranked within source in this embedder, as in the analysis
         d["q"] = np.ceil(d.groupby("source")["dist"].rank(pct=True) * 5).clip(1, 5)
-        for s, col in zip(order, pal):
-            m = d[d["source"] == s].groupby("q")["margin"].mean()
-            ax.plot(m.index, m.values, "o-", color=col, ms=3, lw=1.2, label=s.replace("_", " "))
-        for b, ls in [("NONE", "--"), ("MOMENTUM", ":")]:
-            ax.axhline(res[e]["baselines"][b]["margin"], color=C["black"], lw=1, ls=ls)
+        curves[e] = {s_: d[d["source"] == s_].groupby("q")["margin"].mean() for s_ in order}
+    fig, axes = plt.subplots(3, 3, figsize=(7.0, 5.4), sharex=True, sharey=True)
+    for ax, src in zip(axes.flat, order):
+        for e in EMB:
+            st = style[e]
+            for b, bls in [("NONE", (0, (5, 2))), ("MOMENTUM", (0, (1, 1.5)))]:
+                ax.axhline(res[e]["baselines"][b]["margin"], color=st["color"], lw=0.8, ls=bls, alpha=0.8)
+            m = curves[e][src]
+            ax.plot(m.index, m.values, color=st["color"], ls=st["ls"], marker=st["marker"], mfc=st["mfc"], ms=4,
+                    lw=1.3)
         ax.axhline(0, color=C["grey"], lw=0.4)
-        ax.set_title(f"{EMB[e]} (both framings pooled)")
+        ax.set_title(src.replace("_", " "))
         ax.set_xticks(range(1, 6), ["Q1\nnear", "Q2", "Q3", "Q4", "Q5\nfar"])
-    axes[0].set_ylabel("anticipation margin")
-    h, lab = axes[0].get_legend_handles_labels()
-    fig.legend(h + [plt.Line2D([], [], color="k", ls="--"), plt.Line2D([], [], color="k", ls=":")],
-               lab + ["no material (NONE)", "real 2023 games (MOMENTUM)"], fontsize=7, ncol=6,
-               loc="lower center", bbox_to_anchor=(0.5, -0.12))
-    fig.tight_layout()
+    for ax in axes[:, 0]:
+        ax.set_ylabel("anticipation margin")
+    hand = [plt.Line2D([], [], color=style[e]["color"], ls=style[e]["ls"], marker=style[e]["marker"],
+                       mfc=style[e]["mfc"], ms=4) for e in EMB]
+    hand += [plt.Line2D([], [], color="k", lw=0.8, ls=(0, (5, 2))), plt.Line2D([], [], color="k", lw=0.8, ls=(0, (1, 1.5)))]
+    fig.legend(hand, [f"{EMB[e]} (both framings pooled)" for e in EMB] + ["no-material baseline (NONE)",
+               "real 2023 games (MOMENTUM)"], fontsize=7.5, ncol=4, loc="lower center", bbox_to_anchor=(0.5, -0.04))
+    fig.tight_layout(rect=(0, 0.04, 1, 1))
     fig.savefig(OUT / "fig5_inspiration.png")
 
 

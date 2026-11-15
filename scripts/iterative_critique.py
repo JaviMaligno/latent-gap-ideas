@@ -4,6 +4,12 @@
   uv run python scripts/iterative_critique.py analyse
 NEUTRAL arm (docs/prereg/neutral_revision.md): LG_ITER_ARMS=NEUTRAL LG_ITER_R0_FROM=GEO LG_ITER_OUT=iter_ideas_neutral.jsonl
   LG_TAG=iter-neutral ALIAS=gpt-4o-0806 uv run python scripts/iterative_critique.py generate
+HINT and ORACLE-C arms (docs/prereg/review_posctrl.md, Blocks A and B1; hold-out from review_posctrl.py holdout):
+  LG_RUN=critique-replication LG_FUPS=critique-replication LG_ITER_ARMS=HINT LG_ITER_R0_FROM=GEO
+  LG_ITER_OUT=iter_ideas_posctrl.jsonl LG_POSCTRL_HOLDOUT=posctrl_holdout.json LG_TAG=review-posctrl-hint
+  ALIAS=gpt-4o-0806 uv run python scripts/iterative_critique.py generate [--dry-run]
+  (ORACLE-C: LG_ITER_ARMS=ORACLE-C LG_TAG=review-posctrl-oraclec, same output file). --dry-run prints prompts and the
+  call count without creating a Gateway or loading the embedder.
 Ideas: <run>/iter_ideas.jsonl (one line per idea and round). Results: key "iterative_critique" in
 docs/prereg/continue_from_context_result.json
 """
@@ -32,6 +38,38 @@ BAND = (0.574, 0.661)
 TAG = os.environ.get("LG_TAG", "iter-critique")
 NEUTRAL_FB = "Revise your proposal: write an improved version."  # docs/prereg/neutral_revision.md
 R0_FROM = os.environ.get("LG_ITER_R0_FROM")  # reuse this arm's round 0 from iter_ideas.jsonl (neutral_revision.md)
+POSCTRL = os.environ.get("LG_POSCTRL_HOLDOUT")  # hold-out follow-up per context (review_posctrl.md), relative to the run dir
+
+
+def hint_feedback(title: str) -> str:  # review_posctrl.md, Block A (title only, never the abstract)
+    return f'The title of a paper actually published as a follow-up is "{title}". Try to get closer.'
+
+
+def oraclec_feedback(x: float) -> str:  # review_posctrl.md, Block B1 (centroid of the follow-ups without the hold-out)
+    return (f"Your proposal's similarity to the average of the papers actually published as follow-ups is {x:.2f} "
+            "(embedding cosine). Try to get closer.")
+
+
+def load_holdout(ctx: list[dict]) -> dict[int, dict]:
+    path = Path(POSCTRL)
+    path = path if path.is_absolute() else M.RUN / path
+    hold = {r["ctx"]: r for r in json.loads(path.read_text())}
+    for i, c in enumerate(ctx):
+        h = hold[i]
+        assert h["ctx_arxiv_id"] == c["arxiv_id"] and c["followups"][h["h_index"]]["arxiv_id"] == h["arxiv_id"], i
+    return hold
+
+
+def centroids_without_holdout(ctx, F, owner, hold) -> dict[int, np.ndarray]:
+    """unit(mean of the unit Qwen3 vectors of the saved follow-ups without h_i), per context (ORACLE-C's target)."""
+    out = {}
+    for i, c in enumerate(ctx):
+        Fi = F[owner == i]
+        assert len(Fi) == len(c["followups"])
+        Fi = Fi / np.linalg.norm(Fi, axis=1, keepdims=True)
+        m = np.delete(Fi, hold[i]["h_index"], axis=0).mean(0)
+        out[i] = (m / np.linalg.norm(m)).astype(np.float32)
+    return out
 
 
 def geo_feedback(s: float) -> str:
@@ -53,12 +91,51 @@ def revise_prompt(ctx_block: str, prev: dict, feedback: str) -> str:
             f"Feedback: {feedback}\n\nWrite a revised proposal: a full new title and abstract.")
 
 
-def generate(limit: int | None) -> None:
-    from latent_gap.embedder import LocalQwen
-    from latent_gap.gateway import Gateway
-    gw = Gateway(ledger=M.DATA / "ledger.jsonl", model=os.environ["ALIAS"])
-    q = LocalQwen(threads=int(os.environ.get("OMP_NUM_THREADS", "4")))
-    meta, _ = M.corpus()
+def dry_run(ctx, by_id, C, F, owner, done, seed, hold, cen) -> None:
+    """No Gateway, no embedder: counts the chat calls generate() would make and prints a couple of prompts."""
+    calls, shown = {}, 0
+    vec0 = {}
+    vp = M.RUN / "ideas_emb_qwen3e06.npy"  # saved Qwen3 vectors of the critique rows (strengthen_critique_replication)
+    if "ORACLE-C" in ARMS and vp.exists():
+        base = [json.loads(l) for l in (M.RUN / "iter_ideas.jsonl").read_text().splitlines()]
+        rows = [r for r in base if r["abstract"] and r["arm"] in ("GEO", "LLM", "ORACLE")]
+        V = np.load(vp)[:len(rows)]
+        vec0 = {(r["ctx"], r["k"]): V[n] for n, r in enumerate(rows) if r["arm"] == R0_FROM and r["round"] == 0}
+    for i in range(len(ctx)):
+        cb = M.paper_block(by_id.loc[ctx[i]["arxiv_id"], "name"], by_id.loc[ctx[i]["arxiv_id"], "abstract"])
+        for arm in ARMS:
+            for k in range(N_IDEAS):
+                n = 0
+                for r in range(N_ROUNDS):
+                    if (i, arm, k, r) in done or (r == 0 and (i, k) in seed):
+                        continue
+                    n += 1 + (arm == "LLM" and r < N_ROUNDS - 1)
+                calls[arm] = calls.get(arm, 0) + n
+                if shown < 2 and (i, k) in seed and (i, arm, k, 1) not in done:
+                    prev = seed[(i, k)]
+                    if arm == "HINT":
+                        fb = hint_feedback(hold[i]["title"])
+                    elif arm == "ORACLE-C" and (i, k) in vec0:
+                        e = vec0[(i, k)] / np.linalg.norm(vec0[(i, k)])
+                        fb = oraclec_feedback(float(e @ cen[i]))
+                    else:
+                        continue
+                    print(f"--- {arm} ctx {i} idea {k} round 1 (system: {M.SYSTEM})\n{revise_prompt(cb, prev, fb)}\n")
+                    shown += 1
+    tot = sum(calls.values())
+    print(f"DRY RUN, no call made. Contexts {len(ctx)}, arms {ARMS}, round 0 from {R0_FROM}, tag {TAG}, "
+          f"alias {os.environ.get('ALIAS')}, out {OUT}")
+    print(f"chat calls per arm {calls}; total {tot} (at most {3 * tot} if every reply needed both JSON retries)")
+    print(f"estimated cost at ~571 in / 226 out tokens per call, USD 2.50 / 10.00 per M: "
+          f"USD {tot * (571 * 2.5 + 226 * 10) / 1e6:.2f}")
+
+
+def generate(limit: int | None, dry: bool = False) -> None:
+    if dry:  # metadata only: the dry run does not need the corpus vectors
+        import pandas as pd
+        meta = pd.read_parquet(M.DATA / "prepared/arxiv/corpus.parquet", columns=["id", "name", "abstract"])
+    else:
+        meta, _ = M.corpus()
     by_id = meta.set_index("id")
     z = np.load(M.RUN / "emb.npz")
     C, F, owner = z["C"], z["F"], z["owner"]  # loaded once, before threading
@@ -70,6 +147,17 @@ def generate(limit: int | None) -> None:
     if R0_FROM:
         base = [json.loads(l) for l in (M.RUN / "iter_ideas.jsonl").read_text().splitlines()]
         seed = {(r["ctx"], r["k"]): r for r in base if r["arm"] == R0_FROM and r["round"] == 0}
+    hold, cen = {}, {}
+    if {"HINT", "ORACLE-C"} & set(ARMS):
+        assert POSCTRL, "HINT / ORACLE-C need LG_POSCTRL_HOLDOUT"
+        hold = load_holdout(ctx)
+        cen = centroids_without_holdout(ctx, F, owner, hold)
+    if dry:
+        return dry_run(ctx, by_id, C, F, owner, done, seed, hold, cen)
+    from latent_gap.embedder import LocalQwen
+    from latent_gap.gateway import Gateway
+    gw = Gateway(ledger=M.DATA / "ledger.jsonl", model=os.environ["ALIAS"])
+    q = LocalQwen(threads=int(os.environ.get("OMP_NUM_THREADS", "4")))
 
     def chat(text: str, key: str) -> dict:
         for _ in range(3):
@@ -96,6 +184,8 @@ def generate(limit: int | None) -> None:
                 rec = done[(i, arm, k, r)]
             elif r == 0 and (i, k) in seed:
                 rec = {**seed[(i, k)], "arm": arm, "r0_from": R0_FROM}
+                if arm == "ORACLE-C" and rec["abstract"]:  # its round-1 feedback needs the round-0 score
+                    rec["fit_c"] = float(q.embed_one(item_text(rec["title"], rec["abstract"])) @ cen[i])
                 with lock, OUT.open("a") as fh:
                     fh.write(json.dumps(rec) + "\n")
             else:
@@ -104,6 +194,8 @@ def generate(limit: int | None) -> None:
                 step = float(e @ C[i]) if e is not None else float("nan")
                 fit = float((Fi @ e).max()) if e is not None else float("nan")
                 rec = {"ctx": i, "arm": arm, "k": k, "round": r, **idea, "feedback_in": feedback, "step": step, "fit": fit}
+                if arm == "ORACLE-C":
+                    rec["fit_c"] = float(e @ cen[i]) if e is not None else float("nan")
                 with lock, OUT.open("a") as fh:
                     fh.write(json.dumps(rec) + "\n")
             prev = rec
@@ -125,6 +217,10 @@ def generate(limit: int | None) -> None:
                                 "above is that one. Try to get closer.")
                 elif arm == "NEUTRAL":
                     feedback = NEUTRAL_FB
+                elif arm == "HINT":
+                    feedback = hint_feedback(hold[i]["title"])
+                elif arm == "ORACLE-C":
+                    feedback = oraclec_feedback(rec["fit_c"])
                 elif arm == "ORACLE":
                     feedback = (f"Your proposal's similarity to the closest paper actually published as a follow-up is "
                                 f"{rec['fit']:.2f} (embedding cosine). Try to get closer.")
@@ -213,6 +309,6 @@ def analyse() -> None:
 if __name__ == "__main__":
     if sys.argv[1] == "generate":
         lim = int(sys.argv[sys.argv.index("--limit") + 1]) if "--limit" in sys.argv else None
-        generate(lim)
+        generate(lim, dry="--dry-run" in sys.argv)
     else:
         analyse()
