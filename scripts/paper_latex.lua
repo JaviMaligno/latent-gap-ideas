@@ -215,20 +215,20 @@ local TABLE_SPECS = {
   ['7'] = { cols = { 0.31, 0.23, 0.23, 0.23 }, breakable_cols = { [1] = true } },
   ['8'] = { cols = { 0.28, 0.13, 0.13, 0.24, 0.22 }, breakable_cols = { [1] = true } },
   ['9'] = { cols = { 0.20, 0.20, 0.20, 0.20, 0.20 } },
-  ['corpus'] = { cols = { 0.30, 0.27, 0.19, 0.24 }, place = '!h' },
-  ['A1'] = { cols = { 0.40, 0.20, 0.20, 0.20 } },
-  ['A2'] = { cols = { 0.085, 0.12, 0.07, 0.255, 0.2, 0.27 } },
-  ['A3'] = { cols = { 'l', 'l', 'l', 'l', 'l' } },
-  ['A4'] = { cols = { 0.26, 0.14, 0.15, 0.15, 0.15, 0.15 } },
-  ['A5'] = { cols = { 'l', 'l', 'l', 'l', 'l' } },
-  ['A6'] = { cols = { 0.16, 0.15, 0.155, 0.18, 0.175, 0.18 }, breakable_cols = { [1] = true } },
-  ['A7'] = { cols = { 0.33, 0.09, 0.58 }, long = true },
-  ['A8'] = { cols = { 0.26, 0.24, 0.13, 0.24, 0.13 } },
-  ['A9'] = { cols = { 0.22, 0.20, 0.14, 0.16, 0.13, 0.15 }, breakable_cols = { [1] = true } },
-  ['A10'] = { cols = { 0.36, 0.14, 0.22, 0.28 }, long = true, breakable_cols = { [1] = true } },
-  ['A11'] = { cols = { 0.13, 0.05, 0.06, 0.08, 0.227, 0.227, 0.226 }, breakable_cols = { [1] = true } },
-  ['A12'] = { cols = { 0.18, 0.205, 0.205, 0.205, 0.205 }, breakable_cols = { [1] = true, [2] = true, [3] = true, [4] = true, [5] = true } },
-  ['prereg'] = { cols = { 0.24, 0.18, 0.27, 0.23, 0.08 }, long = true },
+  ['A1'] = { cols = { 0.30, 0.27, 0.19, 0.24 }, place = '!h' },
+  ['A2'] = { cols = { 0.40, 0.20, 0.20, 0.20 } },
+  ['A3'] = { cols = { 0.22, 0.20, 0.14, 0.16, 0.13, 0.15 }, breakable_cols = { [1] = true } },
+  ['A4'] = { cols = { 0.085, 0.12, 0.07, 0.255, 0.2, 0.27 } },
+  ['A5'] = { cols = { 'l', 'l', 'l', 'l', 'l', 'l', 'l' } },
+  ['A6'] = { cols = { 0.26, 0.14, 0.15, 0.15, 0.15, 0.15 } },
+  ['A7'] = { cols = { 'l', 'l', 'l', 'l', 'l' } },
+  ['A8'] = { cols = { 0.16, 0.15, 0.155, 0.18, 0.175, 0.18 }, breakable_cols = { [1] = true } },
+  ['A9'] = { cols = { 0.24, 0.16, 0.13, 0.21, 0.26 }, long = true, breakable_cols = { [1] = true, [2] = true } },
+  ['A10'] = { cols = { 0.13, 0.05, 0.06, 0.08, 0.227, 0.227, 0.226 }, breakable_cols = { [1] = true } },
+  ['A11'] = { cols = { 0.18, 0.205, 0.205, 0.205, 0.205 }, breakable_cols = { [1] = true, [2] = true, [3] = true, [4] = true, [5] = true } },
+  ['A12'] = { cols = { 0.24, 0.18, 0.27, 0.23, 0.08 }, long = true },
+  ['A13'] = { cols = { 0.33, 0.09, 0.58 }, long = true },
+  ['A14'] = { cols = { 0.26, 0.24, 0.13, 0.24, 0.13 } },
 }
 
 local function txt(el)
@@ -319,7 +319,7 @@ local function render_table(tbl, caption, id, capname)
   if spec.long then
     local name = id and ('Table ' .. id) or capname:gsub('%.$', '')
     return rawb(table.concat({
-      '\\needspace{6\\baselineskip}',
+      '\\needspace{15\\baselineskip}',
       '\\begingroup\\footnotesize\\setlength{\\tabcolsep}{4pt}\\setlength{\\LTcapwidth}{\\linewidth}',
       '\\begin{longtable}{' .. cs .. '}',
       '\\caption[]{' .. cap .. '}' .. lab .. '\\\\',
