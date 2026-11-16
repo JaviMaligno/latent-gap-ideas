@@ -1,0 +1,584 @@
+{
+ "steam/qwen3e06": {
+  "reproduction": {
+   "n": 6697,
+   "rho": 0.10737542971018514,
+   "p": 1.2410946373705402e-18,
+   "top1_mean_quality": 0.8417589722904728,
+   "rest_mean_quality": 0.8397691123265716
+  },
+  "C1": {
+   "raw_rho": 0.10737542971018514,
+   "raw_ci": [
+    0.08295345834579705,
+    0.13048038766604553
+   ],
+   "partial_rho": 0.10236764841487841,
+   "partial_p": 4.5499275010283826e-17,
+   "partial_ci": [
+    0.07820196658894266,
+    0.1250239979192908
+   ],
+   "attenuation": 0.9533619440795429,
+   "partial_by_block": {
+    "log_reviews": 0.1008142835742615,
+    "year": 0.10933182302262297,
+    "owners": 0.10427969151483754,
+    "genre": 0.10667340736925192
+   }
+  },
+  "C2": {
+   "20-99": {
+    "n": 3682,
+    "raw_rho": 0.07430869882869162,
+    "raw_ci": [
+     0.04279273595326442,
+     0.10579175429302623
+    ],
+    "partial_rho": 0.07471819644358622,
+    "partial_ci": [
+     0.04268053234727985,
+     0.1054913312621591
+    ],
+    "mean_quality": 0.8422522215044554
+   },
+   "100-999": {
+    "n": 2224,
+    "raw_rho": 0.15882806992991763,
+    "raw_ci": [
+     0.11863150929949551,
+     0.19937352108972858
+    ],
+    "partial_rho": 0.15727703154552425,
+    "partial_ci": [
+     0.11483850930091648,
+     0.1969192577497756
+    ],
+    "mean_quality": 0.8350808461161104
+   },
+   ">=1000": {
+    "n": 791,
+    "raw_rho": 0.11048560371162056,
+    "raw_ci": [
+     0.03758202547299469,
+     0.18171166921923565
+    ],
+    "partial_rho": 0.11540201060410397,
+    "partial_ci": [
+     0.04192299182334141,
+     0.18852093937194403
+    ],
+    "mean_quality": 0.8415607895410834
+   }
+  },
+  "C3": {
+   "top1": {
+    "n_tail": 67,
+    "mean_quality_tail": 0.8417589722904728,
+    "mean_quality_rest": 0.8397691123265716,
+    "diff": 0.0019898599639012193,
+    "diff_ci": [
+     -0.035282598553243116,
+     0.03856050905203232
+    ],
+    "p_boot": 0.885,
+    "diff_residualised": -0.004142045911658085,
+    "diff_residualised_ci": [
+     -0.041115010038537785,
+     0.030595329483026845
+    ]
+   },
+   "bottom1": {
+    "n_tail": 67,
+    "mean_quality_tail": 0.853909749373066,
+    "mean_quality_rest": 0.8396463216682709,
+    "diff": 0.01426342770479505,
+    "diff_ci": [
+     -0.03476635347407398,
+     0.04065367486048645
+    ],
+    "p_boot": 0.72,
+    "diff_residualised": 0.017267693558437026,
+    "diff_residualised_ci": [
+     -0.03228272060900891,
+     0.04336669005846352
+    ]
+   },
+   "top10": {
+    "n_tail": 670,
+    "mean_quality_tail": 0.8519455495317606,
+    "mean_quality_rest": 0.8384376219814753,
+    "diff": 0.013507927550285292,
+    "diff_ci": [
+     0.0009246713250666838,
+     0.023266340370537437
+    ],
+    "p_boot": 0.039,
+    "diff_residualised": 0.010983544921440661,
+    "diff_residualised_ci": [
+     -0.0013931718523051994,
+     0.02057108259138488
+    ]
+   },
+   "bottom10": {
+    "n_tail": 670,
+    "mean_quality_tail": 0.8164388117323423,
+    "mean_quality_rest": 0.8423847788299258,
+    "diff": -0.025945967097583456,
+    "diff_ci": [
+     -0.03835580139851098,
+     -0.014804908285025334
+    ],
+    "p_boot": 0.0,
+    "diff_residualised": -0.025698902164349367,
+    "diff_residualised_ci": [
+     -0.037709464054799274,
+     -0.014563876268166125
+    ]
+   }
+  },
+  "controls": [
+   "log_reviews",
+   "year",
+   "owners",
+   "genre"
+  ],
+  "levels": {
+   "genre_levels": [
+    "Action",
+    "Adventure",
+    "Casual",
+    "Indie",
+    "Other",
+    "RPG",
+    "Simulation",
+    "Strategy"
+   ]
+  },
+  "runtime_s": 111.5
+ },
+ "steam/bgem3": {
+  "reproduction": {
+   "n": 6697,
+   "rho": 0.13177970004498116,
+   "p": 2.496179651198886e-27,
+   "top1_mean_quality": 0.851112357648373,
+   "rest_mean_quality": 0.839674590936077
+  },
+  "C1": {
+   "raw_rho": 0.13177970004498116,
+   "raw_ci": [
+    0.10860232926436796,
+    0.15470175227061506
+   ],
+   "partial_rho": 0.12639953872694384,
+   "partial_p": 2.942394854568704e-25,
+   "partial_ci": [
+    0.10349405102001791,
+    0.14926322624342464
+   ],
+   "attenuation": 0.9591730644689518,
+   "partial_by_block": {
+    "log_reviews": 0.1280676311119007,
+    "year": 0.13315650671220344,
+    "owners": 0.1297143026842601,
+    "genre": 0.12838239583217836
+   }
+  },
+  "C2": {
+   "20-99": {
+    "n": 3682,
+    "raw_rho": 0.11895448293679668,
+    "raw_ci": [
+     0.0857657765799704,
+     0.15039697592276363
+    ],
+    "partial_rho": 0.1218566524186771,
+    "partial_ci": [
+     0.0887188180926807,
+     0.1533870409753189
+    ],
+    "mean_quality": 0.8422522215044554
+   },
+   "100-999": {
+    "n": 2224,
+    "raw_rho": 0.14534313887712363,
+    "raw_ci": [
+     0.103672336890617,
+     0.18350255054117903
+    ],
+    "partial_rho": 0.13982449314300657,
+    "partial_ci": [
+     0.09636002486479615,
+     0.17789707326245227
+    ],
+    "mean_quality": 0.8350808461161104
+   },
+   ">=1000": {
+    "n": 791,
+    "raw_rho": 0.14444440490886643,
+    "raw_ci": [
+     0.07736747054792449,
+     0.2090396000863494
+    ],
+    "partial_rho": 0.13101339056806144,
+    "partial_ci": [
+     0.061966269493486575,
+     0.1994391971252742
+    ],
+    "mean_quality": 0.8415607895410834
+   }
+  },
+  "C3": {
+   "top1": {
+    "n_tail": 67,
+    "mean_quality_tail": 0.851112357648373,
+    "mean_quality_rest": 0.839674590936077,
+    "diff": 0.011437766712296016,
+    "diff_ci": [
+     -0.02359987136849873,
+     0.04859263198377914
+    ],
+    "p_boot": 0.417,
+    "diff_residualised": 0.01617542256431568,
+    "diff_residualised_ci": [
+     -0.017456045681717523,
+     0.05290752749511763
+    ]
+   },
+   "bottom1": {
+    "n_tail": 67,
+    "mean_quality_tail": 0.82516596925418,
+    "mean_quality_rest": 0.8399367942577076,
+    "diff": -0.014770825003527666,
+    "diff_ci": [
+     -0.049349641505546084,
+     0.01885008620249918
+    ],
+    "p_boot": 0.379,
+    "diff_residualised": -0.011154759892408763,
+    "diff_residualised_ci": [
+     -0.04622535621853483,
+     0.022495095702045574
+    ]
+   },
+   "top10": {
+    "n_tail": 670,
+    "mean_quality_tail": 0.8585688026864995,
+    "mean_quality_rest": 0.8377013386541691,
+    "diff": 0.02086746403233042,
+    "diff_ci": [
+     0.009492415563176333,
+     0.03161275220299998
+    ],
+    "p_boot": 0.0,
+    "diff_residualised": 0.020632294740700045,
+    "diff_residualised_ci": [
+     0.00946945246409895,
+     0.031018299112000984
+    ]
+   },
+   "bottom10": {
+    "n_tail": 670,
+    "mean_quality_tail": 0.8113629920681347,
+    "mean_quality_rest": 0.8429490395193265,
+    "diff": -0.03158604745119187,
+    "diff_ci": [
+     -0.04432457516403733,
+     -0.020494531384430234
+    ],
+    "p_boot": 0.0,
+    "diff_residualised": -0.03049978097417995,
+    "diff_residualised_ci": [
+     -0.043064192281444605,
+     -0.019581453600799676
+    ]
+   }
+  },
+  "controls": [
+   "log_reviews",
+   "year",
+   "owners",
+   "genre"
+  ],
+  "levels": {
+   "genre_levels": [
+    "Action",
+    "Adventure",
+    "Casual",
+    "Indie",
+    "Other",
+    "RPG",
+    "Simulation",
+    "Strategy"
+   ]
+  },
+  "runtime_s": 136.1
+ },
+ "patents/qwen3e06": {
+  "reproduction": {
+   "n": 9477,
+   "rho": -0.08119675393870261,
+   "p": 2.4423967363253926e-15,
+   "top1_mean_quality": 0.8,
+   "rest_mean_quality": 0.842357706246003
+  },
+  "C1": {
+   "raw_rho": -0.08119675393870261,
+   "raw_ci": [
+    -0.10025576142960681,
+    -0.062045260120956965
+   ],
+   "partial_rho": -0.05914113529125281,
+   "partial_p": 8.328741917418682e-09,
+   "partial_ci": [
+    -0.07872876151525642,
+    -0.03968277171890222
+   ],
+   "attenuation": 0.7283682219106922,
+   "partial_by_block": {
+    "year": -0.08170162087920642,
+    "cpc_section": -0.058366373091035394
+   }
+  },
+  "C2": null,
+  "C3": {
+   "top1": {
+    "n_tail": 95,
+    "mean_quality_tail": 0.8,
+    "mean_quality_rest": 0.842357706246003,
+    "diff": -0.04235770624600299,
+    "diff_ci": [
+     -0.13667097322468458,
+     0.02799933640031223
+    ],
+    "p_boot": 0.234,
+    "diff_residualised": -0.0337354372474609,
+    "diff_residualised_ci": [
+     -0.1298564580364331,
+     0.03855032166536719
+    ]
+   },
+   "bottom1": {
+    "n_tail": 95,
+    "mean_quality_tail": 0.8842105263157894,
+    "mean_quality_rest": 0.8415050095928374,
+    "diff": 0.042705516722952086,
+    "diff_ci": [
+     -0.031625006308626406,
+     0.10213552827923567
+    ],
+    "p_boot": 0.254,
+    "diff_residualised": 0.05980692430485223,
+    "diff_residualised_ci": [
+     -0.008275079148309461,
+     0.11783793739131486
+    ]
+   },
+   "top10": {
+    "n_tail": 948,
+    "mean_quality_tail": 0.8122362869198312,
+    "mean_quality_rest": 0.8452339078438269,
+    "diff": -0.03299762092399572,
+    "diff_ci": [
+     -0.058896080357611826,
+     -0.005404517946179647
+    ],
+    "p_boot": 0.014,
+    "diff_residualised": -0.017235592442964475,
+    "diff_residualised_ci": [
+     -0.042018477610514124,
+     0.009504037909501661
+    ]
+   },
+   "bottom10": {
+    "n_tail": 948,
+    "mean_quality_tail": 0.8987341772151899,
+    "mean_quality_rest": 0.8356196506038223,
+    "diff": 0.06311452661136763,
+    "diff_ci": [
+     0.04192687585134536,
+     0.08339705003427486
+    ],
+    "p_boot": 0.0,
+    "diff_residualised": 0.04769780119139516,
+    "diff_residualised_ci": [
+     0.02700319789422009,
+     0.06895334627054442
+    ]
+   }
+  },
+  "controls": [
+   "year",
+   "cpc_section"
+  ],
+  "levels": {
+   "cpc_levels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+   ]
+  },
+  "runtime_s": 87.7
+ },
+ "patents/bgem3": {
+  "reproduction": {
+   "n": 9477,
+   "rho": -0.08429384131360819,
+   "p": 2.0427723643769835e-16,
+   "top1_mean_quality": 0.7684210526315789,
+   "rest_mean_quality": 0.8426774674909401
+  },
+  "C1": {
+   "raw_rho": -0.08429384131360819,
+   "raw_ci": [
+    -0.10378409854438177,
+    -0.06409269325991948
+   ],
+   "partial_rho": -0.05466070188102416,
+   "partial_p": 1.012357046449709e-07,
+   "partial_ci": [
+    -0.0742715362346249,
+    -0.0351423728108405
+   ],
+   "attenuation": 0.6484542764834217,
+   "partial_by_block": {
+    "year": -0.08446446004740985,
+    "cpc_section": -0.054314357224855156
+   }
+  },
+  "C2": null,
+  "C3": {
+   "top1": {
+    "n_tail": 95,
+    "mean_quality_tail": 0.7684210526315789,
+    "mean_quality_rest": 0.8426774674909401,
+    "diff": -0.07425641485936119,
+    "diff_ci": [
+     -0.1579419997980455,
+     0.014834621728057103
+    ],
+    "p_boot": 0.102,
+    "diff_residualised": -0.03766993314566892,
+    "diff_residualised_ci": [
+     -0.11922648225588553,
+     0.047938127319020474
+    ]
+   },
+   "bottom1": {
+    "n_tail": 95,
+    "mean_quality_tail": 0.8736842105263158,
+    "mean_quality_rest": 0.841611596674483,
+    "diff": 0.0320726138518328,
+    "diff_ci": [
+     -0.036603919243986954,
+     0.09971516004891788
+    ],
+    "p_boot": 0.307,
+    "diff_residualised": 0.05103002360428667,
+    "diff_residualised_ci": [
+     -0.014383965641819764,
+     0.11775146255598426
+    ]
+   },
+   "top10": {
+    "n_tail": 948,
+    "mean_quality_tail": 0.7732067510548524,
+    "mean_quality_rest": 0.8495720483057803,
+    "diff": -0.07636529725092789,
+    "diff_ci": [
+     -0.10063309940621,
+     -0.046736209249534484
+    ],
+    "p_boot": 0.0,
+    "diff_residualised": -0.0563820144325175,
+    "diff_residualised_ci": [
+     -0.08067437586874246,
+     -0.02669077822465692
+    ]
+   },
+   "bottom10": {
+    "n_tail": 948,
+    "mean_quality_tail": 0.8934599156118144,
+    "mean_quality_rest": 0.8362058858013836,
+    "diff": 0.05725402981043082,
+    "diff_ci": [
+     0.03732503847632275,
+     0.07870829938363674
+    ],
+    "p_boot": 0.0,
+    "diff_residualised": 0.03531023541528391,
+    "diff_residualised_ci": [
+     0.015427975700918075,
+     0.05692364604596047
+    ]
+   }
+  },
+  "controls": [
+   "year",
+   "cpc_section"
+  ],
+  "levels": {
+   "cpc_levels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+   ]
+  },
+  "runtime_s": 85.4
+ },
+ "decisions": {
+  "C1": {
+   "steam": "survives controls",
+   "patents": "survives controls"
+  },
+  "C1_holm": {
+   "steam/bgem3": 1.1769579418274816e-24,
+   "steam/qwen3e06": 1.3649782503085148e-16,
+   "patents/qwen3e06": 1.6657483834837364e-08,
+   "patents/bgem3": 1.012357046449709e-07
+  },
+  "C2": {
+   "consistent_across_review_volume": true,
+   "opposite_sign_ci_excl0_both": []
+  },
+  "C3": {
+   "steam/top1": "not distinguishable from the rest",
+   "steam/bottom1": "not distinguishable from the rest",
+   "steam/top10": "different from the rest (higher)",
+   "steam/bottom10": "different from the rest (lower)",
+   "patents/top1": "not distinguishable from the rest",
+   "patents/bottom1": "not distinguishable from the rest",
+   "patents/top10": "different from the rest (lower)",
+   "patents/bottom10": "different from the rest (higher)"
+  },
+  "C3_holm": {
+   "steam/qwen3e06/bottom10": 0.0,
+   "steam/bgem3/top10": 0.0,
+   "steam/bgem3/bottom10": 0.0,
+   "patents/qwen3e06/bottom10": 0.0,
+   "patents/bgem3/top10": 0.0,
+   "patents/bgem3/bottom10": 0.0,
+   "patents/qwen3e06/top10": 0.14,
+   "steam/qwen3e06/top10": 0.351,
+   "patents/bgem3/top1": 0.816,
+   "patents/qwen3e06/top1": 1.0,
+   "patents/qwen3e06/bottom1": 1.0,
+   "patents/bgem3/bottom1": 1.0,
+   "steam/bgem3/bottom1": 1.0,
+   "steam/bgem3/top1": 1.0,
+   "steam/qwen3e06/bottom1": 1.0,
+   "steam/qwen3e06/top1": 1.0
+  }
+ }
+}

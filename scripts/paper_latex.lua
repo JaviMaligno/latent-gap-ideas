@@ -206,15 +206,16 @@ end
 -------------------------------------------------------------------------------------------------------------- tables
 -- Column widths per table: a number is a fraction of \linewidth (ragged-right p column), a string a literal column.
 local TABLE_SPECS = {
-  ['1'] = { cols = { 0.27, 0.27, 0.30, 0.16 } },
-  ['2'] = { cols = { 'l', 'l', 'l', 'l' } },
-  ['3'] = { cols = { 0.235, 0.255, 0.255, 0.255 }, bracket_newline = true },
-  ['4'] = { cols = { 0.10, 0.12, 0.235, 0.105, 0.105, 0.245, 0.09 }, breakable_cols = { [1] = true } },
-  ['5'] = { cols = { 0.24, 0.21, 0.11, 0.21, 0.23 }, breakable_cols = { [1] = true, [5] = true } },
-  ['6'] = { cols = { 0.42, 0.29, 0.29 }, breakable_cols = { [1] = true } },
-  ['7'] = { cols = { 0.31, 0.23, 0.23, 0.23 }, breakable_cols = { [1] = true } },
-  ['8'] = { cols = { 0.28, 0.13, 0.13, 0.24, 0.22 }, breakable_cols = { [1] = true } },
-  ['9'] = { cols = { 0.20, 0.20, 0.20, 0.20, 0.20 } },
+  ['1'] = { cols = { 0.24, 0.36, 0.16, 0.24 }, breakable_cols = { [1] = true, [2] = true, [3] = true, [4] = true } },
+  ['2'] = { cols = { 0.27, 0.27, 0.30, 0.16 } },
+  ['3'] = { cols = { 'l', 'l', 'l', 'l' } },
+  ['4'] = { cols = { 0.235, 0.255, 0.255, 0.255 }, bracket_newline = true },
+  ['5'] = { cols = { 0.10, 0.12, 0.235, 0.105, 0.105, 0.245, 0.09 }, breakable_cols = { [1] = true } },
+  ['6'] = { cols = { 0.24, 0.21, 0.11, 0.21, 0.23 }, breakable_cols = { [1] = true, [5] = true } },
+  ['7'] = { cols = { 0.42, 0.29, 0.29 }, breakable_cols = { [1] = true } },
+  ['8'] = { cols = { 0.31, 0.23, 0.23, 0.23 }, breakable_cols = { [1] = true } },
+  ['9'] = { cols = { 0.28, 0.13, 0.13, 0.24, 0.22 }, breakable_cols = { [1] = true } },
+  ['10'] = { cols = { 0.20, 0.20, 0.20, 0.20, 0.20 } },
   ['A1'] = { cols = { 0.30, 0.27, 0.19, 0.24 }, place = '!h' },
   ['A2'] = { cols = { 0.40, 0.20, 0.20, 0.20 } },
   ['A3'] = { cols = { 0.22, 0.20, 0.14, 0.16, 0.13, 0.15 }, breakable_cols = { [1] = true } },
@@ -319,7 +320,7 @@ local function render_table(tbl, caption, id, capname)
   if spec.long then
     local name = id and ('Table ' .. id) or capname:gsub('%.$', '')
     return rawb(table.concat({
-      '\\needspace{15\\baselineskip}',
+      '\\Needspace*{15\\baselineskip}',
       '\\begingroup\\footnotesize\\setlength{\\tabcolsep}{4pt}\\setlength{\\LTcapwidth}{\\linewidth}',
       '\\begin{longtable}{' .. cs .. '}',
       '\\caption[]{' .. cap .. '}' .. lab .. '\\\\',

@@ -59,19 +59,25 @@ def fig1_anchoring() -> None:
 def fig2_hole_vs_momentum() -> None:
     a = load("where_future_lands_controls.json")["auc_no_cv"]
     keys = [f"{d}/{e}" for e in EMB for d in ["steam", "arxiv", "patents"]]
-    fig, ax = plt.subplots(figsize=(5.2, 2.6))
-    y = np.arange(len(keys))[::-1]
-    for off, sc, col, lab in [(0.15, "momentum", C["blue"], "momentum"), (-0.15, "hole", C["orange"], "hole score")]:
+    fig, ax = plt.subplots(figsize=(5.2, 3.0))
+    y = np.arange(len(keys))[::-1] * 1.3
+    for off, sc, col, lab in [(0.25, "momentum", C["blue"], "momentum"), (-0.06, "hole", C["orange"], "registered hole score")]:
         m = [a[k][sc]["auc"] for k in keys]
         lo = [a[k][sc]["auc"] - a[k][sc]["ci"][0] for k in keys]
         hi = [a[k][sc]["ci"][1] - a[k][sc]["auc"] for k in keys]
         ax.errorbar(m, y + off, xerr=[lo, hi], fmt="o", color=col, ms=4, capsize=2, label=lab)
+    # one valid gap score (H3, uncovered probe share; raw space, 256 cells) from docs/prereg/review_hole_validity.json
+    hv = load("review_hole_validity.json")
+    t1 = [hv[k]["raw"]["K256"]["H3"]["T1"] for k in keys]
+    m = [t["auc_direct"] for t in t1]
+    ax.errorbar(m, y - 0.38, xerr=[[a - t["ci"][0] for a, t in zip(m, t1)], [t["ci"][1] - a for a, t in zip(m, t1)]],
+                fmt="s", color=C["green"], ms=3.5, capsize=2, label="valid gap score (H3)")
     ax.axvline(0.5, color="black", lw=0.6, ls="--")
     dom = {"steam": "Steam", "arxiv": "arXiv", "patents": "Patents"}
     ax.set_yticks(y, [f"{dom[k.split('/')[0]]} / {EMB[k.split('/')[1]]}" for k in keys])
     ax.set_xlabel("AUC for top-decile growth cells (95 % CI)")
-    ax.set_xlim(0.3, 1.0)
-    ax.legend(loc="lower center", bbox_to_anchor=(0.5, 1.0), ncol=2, fontsize=8)
+    ax.set_xlim(0.2, 1.0)
+    ax.legend(loc="lower center", bbox_to_anchor=(0.5, 1.0), ncol=3, fontsize=7)
     fig.savefig(OUT / "fig2_hole_vs_momentum.png")
 
 

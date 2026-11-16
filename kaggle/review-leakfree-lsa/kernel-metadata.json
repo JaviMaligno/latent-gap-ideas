@@ -1,0 +1,14 @@
+{
+  "id": "javieraguilarmartin/latent-gap-review-leakfree-lsa",
+  "title": "latent-gap-review-leakfree-lsa",
+  "code_file": "run.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["javieraguilarmartin/latent-gap-leakfree-inputs"],
+  "model_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}
