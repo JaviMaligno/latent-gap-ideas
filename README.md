@@ -4,6 +4,9 @@ Does a point far from everything in an embedding space decode to a new idea? Thi
 catalogue, pick points far from every item, turn them back into text) on three catalogues: Steam games, arXiv
 computer-science papers and US patent applications.
 
+Paper: [arXiv:2611.21408](https://arxiv.org/abs/2611.21408), *Do Embedding-Map Distances Guide LLM Ideation? Four Tests
+Against What Came Next*.
+
 Write-up: [The Gaps in the Map Are Not Ideas](https://www.javieraguilar.ai/en/blog/far-points-are-not-ideas/)
 ([español](https://www.javieraguilar.ai/es/blog/far-points-are-not-ideas/)).
 
@@ -25,7 +28,7 @@ Write-up: [The Gaps in the Map Are Not Ideas](https://www.javieraguilar.ai/en/bl
 
 ## Paper and later studies
 
-The preprint draft is [`docs/paper/draft.md`](docs/paper/draft.md) (figures in `docs/paper/figures/`, every number
+The preprint is [arXiv:2611.21408](https://arxiv.org/abs/2611.21408); its source is [`docs/paper/draft.md`](docs/paper/draft.md) (figures in `docs/paper/figures/`, every number
 traced to its source file in `docs/paper/provenance.md`). Besides the decoding results above it reports three
 pre-registered studies run against what was published or released later, and a set of strengthening studies
 pre-registered during review (`docs/prereg/strengthen_*.md`, listed with their commits in the paper's Appendix B):
